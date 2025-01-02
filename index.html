@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Astrid PA.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ccef3511e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Astrid <br>Pehrsson <br>Ankarstrand</h1>
+                <p><span>Technical + UI / UX Designer</span></p>
+            </div>
+        </div>
+    </div>
+    <!-------------About---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hi, I'm a [blank] located in Stockholm, Sweden. <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('tools')">Tools</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI / UX Designer</span><br>Say something smart bout it</li>
+                            <li><span>Technical Designer</span><br>Say something smart bout it</li>
+                            <li><span>UE5 Blueprints</span><br>Say something smart bout it</li>
+                            <li><span>C# Programmer</span><br>Say something smart bout it</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="tools">
+                        <ul>
+                            <li><span>Unreal Engine</span><br>Say something smart bout it</li>
+                            <li><span>Unity</span><br>Say something smart bout it</li>
+                            <li><span>Figma</span><br>Say something smart bout it</li>
+                            <li><span>Miro</span><br>Say something smart bout it</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-2025</span><br>Game Design, Specialization Tech/ Systems Designer at FutureGames Stockholm</li>
+                            <li><span>2017-2022</span><br>Bachelor in Computer Game Development at Stockholm University</li>
+                            <li><span>2014-2017</span><br>The Social Sciences Program - Behavioural Sciences at Klara Theoretical High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------Portfolio---------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Latest Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/FearOfTheLight.png">
+                    <div class="layer">
+                        <h3>Fear of the Light</h3>
+                        <p>
+                            Nominated for Best Design at the Swedish Game Award 2024.
+                            Released on Steam the same year.
+                        </p>
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/FearOfTheLight.png">
+                    <div class="layer">
+                        <h3>VamPower</h3>
+                        <p>A fast paced survival-like tower defense game about defending your evil vampire overlord.</p>
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/FearOfTheLight.png">
+                    <div class="layer">
+                        <h3>CatFished</h3>
+                        <p>A personal project currently in development. Visual Novel. </p>
+                        <a href="#">See More</a>
+                    </div>
+                </div>
+            </div>
+            <a href="projects.html" class="btn">See All Projects</a>
+        </div>
+    </div>
+
+    <!-------------Contact---------->
+
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="contact-content">
+                <p><i class="fa-solid fa-envelope"></i> astrid.pehrsson_ankarstrand@hotmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> (+46) 073-630 51 53</p>
+                <p><i class="fa-solid fa-location-dot"></i> Stockholm, Sweden</p>
+                <div class="social-icons">
+                    <a target="_blank" href="https://www.linkedin.com/in/astrid-pehrsson-ankarstrand-2a9680223/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a target="_blank" href="https://astridpehrssonankarstrand.artstation.com"><i class="fa-brands fa-artstation"></i></a>
+                </div>
+                <a target="_blank" href="images/cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made with spite by Me</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>

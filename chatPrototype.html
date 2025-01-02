@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Astrid PA - Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pageStyle.css">
+    <script type="text/javascript" src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/ccef3511e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navbar">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+    <div class="bg-image chatProt"></div>
+
+    <div class="container">
+
+        <img src="Images/ChatGame_Prog_04.gif" alt="Chat Gameplay">
+
+        <h1 class="sub-title">Development</h1>
+
+
+        <p>
+            Mockup of a Discord inspired mobile app made in Figma.
+        </p>
+        <br>
+        <img src="Images/ChatPrototype/Mockup_Small.png" alt="Chat Gameplay">
+        <br>
+        <h1>Implementation</h1>
+
+        <p>
+            I learnt about using CSV-files to import data into data tables in Unreal Engine.
+            All the games dialogue comes from Data tables that I manaually imported as a CSV file to Unreal Engine.
+            I couldn't find a easy way to get the data automatically from a live Google sheets document in without a plugin or C++.
+            I might return to the topic in more detail in the future.
+        </p>
+
+        <h2>Game Mode</h2>
+        <p>
+            The game mode has two actor components, one for the data and the other for parsing the data.
+            The parse component doesn't contain any data of its own, it just handles data given to it and parses it into the appropriate format.
+            The game mode has functions for continuing dialogue, if that isn't possible the story will be continued instead.
+            <br>
+            For handling the story I have one story skeleton that informs what dialogue should come next in the story.
+            The story skeleton is a data table that stores references to the dialogue data and what chatroom ID it should be added to.
+            If the chatroom ID doesn't exist a new one will be created by the data actor component.
+            The dialogue is also a data table, one data table per conversation, where a row represents one dialogue line.
+            This could use some more clarification so see below a more indept description on how the data table is set up.
+        </p>
+        <br>
+        <h3>Dialogue Data (Expandable)</h3>
+        <p>
+            I took inspiration from how Honkai Stair Rail writes their dialogue, as I found a good guide on Wikipedia explaining it.
+            To explain the dialogue syntax a bit.
+            <br>
+            The ID needs to be unique as it will be the Data tables row name in Unreal.
+            In the prototype I used the element index but for an actual production a more advanced ID would most likely be needed.
+            <br>
+            The indent informs what level the story is at. Used after dialogue choice to branch the story.
+            <br>
+            IsExtend is a bool that informs if the dialogue comes from the same sender as the previous one.
+            This changes the message widgets margin and if it's not the player wether their name is shown.
+            <br>
+            The sender will be the name that is displayed. It is also used as an ID for getting the message material.
+            A message from the player should use the syntax (Me) instead.
+            If the player should be able to select a reply, the syntax is {Choice}. The choice selected by the player will be sent as a message by default.
+            The default can be overriden by using the syntax {Choice|True}.
+            This could be useful for summarizing a choice and then sending the actual longer messages after.
+            <br>
+            Then there's the dialogue line itself. There is some text styling that can be done here.
+            The normal <i>italic</i> and <b>bold</b> is one. Note that because of Unreal being Unreal, style notations can't be nested.
+            You need to end the previous one before starting a new one which is a bit tedious. A line break is also possible.
+            I also added emojis, but they're using a different font so need to be wrapped with style notation as well. I currently have option for text sized emojis, fontsize 48 and 68.
+            The two latter looks best if it's only an emoji and no text, as the emojis will change the font height and therefor leave unwanted gaps.
+
+        </p>
+        <br>
+        <img src="Images/ChatPrototype/ChatProt_DialogueDataTable.png" alt="Chat Gameplay">
+
+        <h2>HUD-class</h2>
+
+        <h2>Widgets</h2>
+
+        <p>
+            I knew I wanted multiple different chatrooms that the player can read through but wasn't sure on how to structure it.
+            I could have one chatroom widget and update it's contents based on which chatroom is currently open, or multiple chatrooms and just hide the unopen ones.
+            I chose the second approach, that way the chatroom could still get updated when not open and I wouldn't have to handle saving and reapplying different chatroom states and data.
+
+        </p>
+        <br>
+        <iframe width="768" height="432"
+                src="https://miro.com/app/embed/uXjVL5hUvhw=/?pres=1&frameId=3458764610146073731&embedId=865046017667"
+                frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen>
+        </iframe>
+    </div>
+
+    
+
+    <div class="copyright">
+        <p>Made with spite by Me</p>
+    </div>
+
+</body>
+</html>
