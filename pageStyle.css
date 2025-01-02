@@ -37,11 +37,11 @@ body {
     height: 50%;
 }
 .catFished {
-    background-image: url("images/CatFished.png");
+    background-image: url("images/catfished.png");
     height: 50%;
 }
 .chatProt {
-    background-image: url("images/ChatPrototype/ChatProt_BG.png");
+    background-image: url("images/chatprototype/ChatProt_BG.png");
     height: 50%;
 }
 
