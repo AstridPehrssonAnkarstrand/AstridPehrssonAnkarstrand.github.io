@@ -1,0 +1,517 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Astrid PA - Project</title>
+    <link rel="stylesheet" href="projectStyle.css">
+    <link rel="stylesheet" href="sliderStyle.css">
+    <script type="text/javascript" src="app.js" defer></script>
+</head>
+<body>
+    <nav>Navbar</nav>
+
+    <main>
+        <div class="header vampower">
+            <img src="images/vampower/Vampower_Title.png" alt="Vampower Title text" width="748" height="150">
+        </div>
+
+        <div id="summary">
+            <div class="container">
+                <div class="list">
+                    <div class="summary-item">
+                        <h5>Tools</h5>
+                        <p>
+                            Unreal Engine 5, Figma, Miro, Github
+                        </p>
+                    </div>
+                    <div class="summary-item">
+                        <h5>Role(s)</h5>
+                        <p>
+                            UI/UX Designer,
+                            Technical Designer, System Designer
+                        </p>
+                    </div>
+                    <div class="summary-item">
+                        <h5>Time</h5>
+                        <p>
+                            Two weeks pre-production + four weeks production.
+                        </p>
+                    </div>
+                    <div class="summary-item">
+                        <h5>Team size</h5>
+                        <p>
+                            8 person team, consisting of designers and programmers.
+                        </p>
+                    </div>
+                </div>
+                <div class="divide-line"></div>
+                <div>
+                    <p>
+                        Vampower is a survival-like tower defense game with minor roguelike elements centered on protecting a key point from being destroyed by hordes of enemies.
+                        The gameplay loop focuses around strategizing and becoming stronger during the night by purchasing upgrades and structures,
+                        then fighting off the attackers during the day.
+                        Tailor your playstyle by selecting one out of ten hearts to serve and choose between three different playable characters,
+                        each with their own strengths and weaknesses and a different starting weapon.
+                        <br><br>
+                        I designed and implemented the functionality for all the games UI.
+                        I started utilizing the HUD-class for handling everything widget related and used data tables to populate the UI.
+                        I was responsible for implementing gameplay features and worked closely with the designers and programmers to build the games systems.
+                        I handled structuring and creating the game's data.
+                        As survival-likes often have a lot of stats needing balancing,
+                        I had as a goal for this project to get all the data from data tables so editing it would be easier.
+                        <br><br>
+                        The concept was definitely overscoped for the short timeframe but even so we pulled through and made a fun and replayable game.
+                        I developed new habits that I feel will greatly improve my workflow in the future.
+                        I had a great experience working with my team and am super proud of the game we ended up with.
+
+                    </p>
+                </div>
+
+                <div class="summary-gamelink">
+                    <h3>Play the game!</h3>
+                    <a target="_blank" href="https://futuregames.itch.io/vampower" class="btn"><h6>Itch.io Page</h6></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="wrapper bg2">
+            <h2 style="text-align:center;">New workflow habits</h2>
+            <br><br>
+            <div class="list">
+                <div class="item">
+                    <h5 class="text-gradient">HUD class</h5>
+                    <p>
+                        Use the HUD-class for creating and storing references to the UI instead of the player or controller blueprints.
+                        This greatly helped the project's structure and improved communication with the rest of the team.
+                    </p>
+                </div>
+                <div class="item">
+                    <h5 class="text-gradient">Collapse Widgets</h5>
+                    <p>
+                        Collapse and reuse widgets instead of continuously creating and destroying them.
+                    </p>
+                </div>
+                <div class="item">
+                    <h5 class="text-gradient">RichTextBlocks & RichTextStyle</h5>
+                    <p>
+                        RichTextStyles helps keep text consistent and makes font adjustment easier.
+                        The setup is slower to start but the time saved later is well worth it.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <h1 style="text-align:center;">Screenshots from the game</h1>
+            <br><br>
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="images/vampower/Vampower_MainMenu_Fin.png" alt="Vampower main menu screenshot" width="1920" height="1080">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/vampower/Vampower_SelectMenu_1_Fin.png" alt="Vampower select menu screenshot" width="1920" height="1080">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/vampower/Vampower_SelectMenu_2_Fin.png" alt="Vampower heart select menu screenshot" width="1920" height="1080">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/vampower/Vampower_SelectMenu_3_Fin.png" alt="Vampower playable class select menu screenshot" width="1920" height="1080">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/vampower/Vampower_SelectMenu_4_Fin.png" alt="Vampower confirm loadout selection menu screenshot" width="1920" height="1080">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/vampower/Vampower_PauseMenu_Fin.png" alt="Vampower pause menu screenshot" width="1920" height="1080">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/vampower/Vampower_GameOver_Fin.png" alt="Vampower game over menu screenshot" width="1920" height="1080">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/vampower/Vampower_Cutscene_Fin.png" alt="Vampower cutscene screenshot" width="1920" height="1080">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/vampower/Vampower_BuildMenu_Fin.png" alt="Vampower build menu screenshot" width="1920" height="1080">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/vampower/Vampower_ShopMenu_Fin.png" alt="Vampower upgrade shop select menu screenshot" width="1920" height="1080">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/vampower/Vampower_Night_Fin.png" alt="Vampower gameplay during night screenshot" width="1920" height="1080">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/vampower/Vampower_Gameplay_WeaponTooltip_Fin.png" alt="Vampower weapon tooltip hover screenshot" width="1920" height="1080">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/vampower/Vampower_Night_StartDay_Fin.png" alt="Vampower gameplay holding spacebar to start the day screenshot" width="1920" height="1080">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/vampower/Vampower_Gameplay_DayStart_Fin.png" alt="Vampower gameplay day started screenshot" width="1920" height="1080">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/vampower/Vampower_Gameplay_Day_1_Fin.png" alt="Vampower gameplay combat during daytime screenshot" width="1920" height="1080">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/vampower/Vampower_Gameplay_Day_2_Fin.png" alt="Vampower gameplay more combat during daytime but heart is visible screenshot" width="1920" height="1080">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <br>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    <span class="dot" onclick="currentSlide(9)"></span>
+                    <span class="dot" onclick="currentSlide(10)"></span>
+                    <span class="dot" onclick="currentSlide(11)"></span>
+                    <span class="dot" onclick="currentSlide(12)"></span>
+                    <span class="dot" onclick="currentSlide(13)"></span>
+                    <span class="dot" onclick="currentSlide(14)"></span>
+                    <span class="dot" onclick="currentSlide(15)"></span>
+                    <span class="dot" onclick="currentSlide(16)"></span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="wrapper bg1">
+            <h1 style="text-align:center;" class="text-gradient">Pre-production</h1>
+            <br><br>
+            <p>
+                Two weeks exploring three game concepts, developing a playable prototype for each one.
+                First half of the week went to concepting and roughly planning out the different concepts.
+                The rest was split up into two days of development time per prototype.
+            </p>
+            <br><br>
+            <br><br>
+            <div class="container">
+                <div class="text-wrapper">
+                    <h3 style="text-align:center;">Health system</h3>
+                    <p>
+                        I created a versatile health system with blueprints that was reused for all of the prototypes, saving on development time to work on other features.
+                        <br><br>
+                        To test the health system I made a simple target dummy with the health system properly implemented and a health bar to visualize the current health.
+                        <br><br>
+                        To deal damage I made an actor component attack that can be applied to any actor and a turret actor that fires projectiles.
+                    </p>
+                </div>
+                <img src="images/vampower/Vampower_Preprod_Healthsystem.gif" alt="Gif showcasing health system" width="837" height="517">
+
+            </div>
+            <br><br>
+            <div class="divide-line"></div>
+            <br><br>
+            <div class="container">
+                <div class="item">
+                    <h3>Prototype</h3>
+                    <p>
+                        Focused on testing the core mechanic of defending a central point from waves of enemies by building structures.
+                    </p>
+                    <br><br>
+                    <h6>The prototype features:</h6>
+                    <ul>
+                        <li><p>Simple enemies that target either the player or the central point (the heart).</p></li>
+                        <li><p>An enemy spawner that spawns an increasing amount of enemies per wave.</p></li>
+                        <li><p>Structures, two different types.</p></li>
+                        <li><p>Actor with the attack actor component.</p></li>
+                        <li><p>Turret actor that fires projectiles.</p></li>
+                        <li><p>The player can interact with structures to activate them.</p></li>
+                        <li><p>Day & night cycle.</p></li>
+
+                    </ul>
+                </div>
+                <img src="images/vampower/Vampower_Pre-production.gif" alt="Gif showcasing gameplay from Vampower's prototype" width="1035" height="541" class="item">
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <h1 style="text-align: center; color: #ff6a00">Production</h1>
+            <br>
+            <h3 style="text-align:center;">My UI workflow</h3>
+
+            <div class="list">
+                <div class="item">
+                    <h5>Plan & research</h5>
+                    <p>
+                        I outline what UI is needed based on what information should be displayed, in which contexts and prioritize its importance over others.
+                        The importance determines how much screen space it should occupy.
+                        To help this outlining process I study games with similar mechanics and make user stories.
+                </div>
+                <div class="item">
+                    <h5>Layout blockout</h5>
+                    <p>
+                        The blockout is either on paper or in Figma,
+                        helping to iron out problems and missing pieces as well as giving me a good idea of the scope.
+                        The blockout serves as a great way to showcase my vision early and get feedback from my team as well as potential future players.
+                    </p>
+                </div>
+                <div class="item">
+                    <h5>Implementation & functionality</h5>
+                    <p>
+                        Once the blockout is at a good stage I transition into recreating it in the engine, focusing on making it functional.
+                        The blockout helps inform how I’ll go about structuring the widgets.
+                    </p>
+                </div>
+            </div>
+
+            <br><br>
+
+            <h3 style="text-align:center;">Inspiration & research</h3>
+            <p>
+                I took inspiration from games in the survival-like genre for the UI. The main ones were Brotato, Soulstone Survivor, the League of Legends gamemode Swarm and a non survival-like Thronefall.
+                Brotato was used as reference for the layout, particularly the weapon and item shop before you start a wave.
+                Soulstone Survivor was used for the overall aesthetics and the HUD layout.
+                The League of Legends temporary gamemode Swarm was mainly used as inspiration for how to word skills and item descriptions.
+                Thronefall had a big influence on both the project's design and the UI. The hold to start night mechanic is one example and the minimalist UI design for menus is another.
+            </p>
+
+            <br><br>
+        </div>
+
+        <div class="wrapper bg1">
+            <h3 style="text-align:center;">HUD-class</h3>
+            <br><br>
+            <p>
+                The HUD-class creates and handles all the widgets logic, only exception is the in world healthbars.
+                I really like this approach, as it centralizes everything UI related in one place,
+                making it easier to manage and for others to work around.
+                For information other systems needed from the UI,
+                I created Event dispatchers in the HUD-class that the widgets triggered.
+                n example of this is when an upgrade is purchased from the shop widget that the player blueprint listens to in order to apply the changes.
+                <br><br>
+                For this project I tried to keep gameplay logic out of the widgets.
+                I only wanted the widgets to take in data, display it and handle UI related player input.
+                When UI input is received the widget would fire an event dispatcher so the HUD-class would be informed and handle it.
+            </p>
+        </div>
+
+        <div class="wrapper bg2">
+            <h2 style="text-align:center;">Selection Menu</h2>
+            <br><br>
+            <p>
+                The select menu does not have a layout blockout,
+                but was made directly in the engine taking standards I’d made for the other menus.
+                I reused widgets whenever possible, for example the heart select cards are repurposed build structure cards.
+            </p>
+            <img src="Images/vampower/Vampower_SelectMenu_Blockout.gif" alt="Select Menu work in progress" width="877" height="539" style="justify-content: center; text-align: center;">
+
+            <p>
+                For later playtests the main menu was separated out into its own menu and level. This made map selection and restarting a level a lot simpler.
+                The Heart select cards design was simplified to fit more of them. This was accomplished by moving the additional information into tooltips.
+                <br><br>
+                The Quick play button was added for debug purposes. It picks all the default options, skipping the selection process getting you into the game with one click.
+                Ironically the best and most used feature I made, by skipping the other stuff I made.
+            </p>
+
+            <h3 style="text-align:center;">Final appearance</h3>
+            <br><br>
+            <div class="outerVideoWrapper">
+                <div class="videoWrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JuDgWzycyBo?si=jxVRRPunPSUGT0QL"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper bg1">
+            <h2 style="text-align:center;">Upgrade Shop Menu</h2>
+            <br><br>
+            <div class="container">
+                <div class="item">
+                    <h3 style="text-align:center;">Feature brief</h3>
+                </div>
+                <div class="item">
+                    <p>
+                        The Upgrade shop needed to display 3 or 5 purchasable cards.
+                        In the plan we had three different card types, Weapon cards, Structure cards and Stat cards.
+                        In the final game the structure cards got removed because they didn't get applied properly.
+                        The shop has a randomness to what cards get displayed and the player has the option to reroll the selection.
+                        The cards can also be locked so they won't get rerolled.
+                        The player should also be able to see their current stats and previously purchased upgrades in order to make a more informed choice.
+                    </p>
+                </div>
+            </div>
+
+            <br><br><div class="divide-line"></div><br><br>
+
+            <h3 style="text-align:center;">Blockout</h3>
+            <p>
+                For the upgrade cards I had a lot of references to go from.
+                I had difficulties placing the current player information and couldn’t get to a point I was satisfied with it.
+                <br><br>
+                Now having taken time away from the project, I tried tackling the main issues I had with the layout.
+                I feel the previous one has too much information packed into one big blob that takes up a third of the screen.
+                It’s overwhelming and doesn’t look good.
+                To solve this I kept the weapon and upgrade icons but moved the other information into tooltips.
+                This gives a lot more space and allows me to make the container shorter and the icons could potentially be made even smaller if needed.
+                I also moved the active heart up to the top of the screen, as it was very awkwardly placed with the upgrades prior.
+            </p>
+
+            <div class="list">
+                <div class="item">
+                    <h5 style="text-align:center;">Original Blockout</h5>
+                    <img src="images/vampower/Vampower_ShopMenu_Blockout.png" width="960" height="540">
+                </div>
+                <div class="item">
+                    <h5 style="text-align:center;">Reimagined Blockout</h5>
+                    <img src="images/vampower/Vampower_ShopMenu_Blockout2.png" width="960" height="540">
+                </div>
+            </div>
+
+            <br><br>
+            <div class="divide-line"></div>
+            <br><br>
+            <div class="container">
+                <div class="item">
+                    <img src="images/vampower/Vampower_CardAnimation.gif" width="1202" height="672">
+                </div>
+                <div class="item-half">
+                    <h3>Animation</h3>
+                    <p>
+                        For some polish I added animations for hovering over cards and purchasing.
+                        I made the card spin animation by decreasing the widgets x scale and the y shear simultaneously.
+                        Was super simple to do but looks convincingly 3D!
+                    </p>
+                </div>
+            </div>
+            <br><br>
+            <h3 style="text-align:center;">Final appearance</h3>
+            <br><br>
+            <div class="outerVideoWrapper">
+                <div class="videoWrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2slYKv06cQk?si=FrounMIuPS1mC5RA"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="wrapper">
+            <h2 style="text-align:center;">Build Menu</h2>
+            <br><br>
+            <div class="container">
+                <div class="item">
+                    <h3 style="text-align:center;">Feature brief</h3>
+                </div>
+                <div class="item">
+                    <p>
+                        The game has three different types of structures; offence, defence and support.
+                        Each of the types have three structures, making a total of 9 structures.
+                        With this in mind I designed a menu with tab buttons and container holding three elements.
+                        The elements content update to fit the active tab.
+                        Hovering over the elements display a window with more detailed information on the structure.
+                    </p>
+                </div>
+            </div>
+
+            <br><br><div class="divide-line"></div><br><br>
+
+            <img src="images/vampower/Vampower_BuildMenu_Blockout.png" width="960" height="540">
+
+            <br><br><div class="divide-line"></div><br><br>
+
+            <h3 style="text-align:center;">Feedback</h3>
+
+            <br><br>
+            <div class="list">
+                <div class="item">
+                    <h5>Hold to purchase feature</h5>
+                    <p>
+                        Added when purchasing items as a way to give the player a split second to cancel.
+                        When conducting playtests the feature confused players at first.
+                        It took them a bit to figure it out but they all did without outside input.
+                        When asked if they’d preferred not having it most said no and said they like it.
+                        Most constructive feedback was on shortening the hold time requirement so it went faster, but still keeping the feature.
+                        The feature could also be made a toggle so the player gets to decide what they prefer.
+                </div>
+                <div class="item">
+                    <h5>Tab buttons</h5>
+                    <p>
+                        Playtesters often missed the tab buttons, unless they accidentally hovered over them and realized they’re buttons.
+                        Curiously, the same button design and layout is used in the select menu for character select but doesn't have the same issue.
+                        The select menu has a Header text right under the buttons displaying what tab is currently open.
+                        I’d be curious to see if adding that to the builds menu would help alleviate the problem.
+                        Otherwise I’d work on clarifying the tab buttons visual language to more clearly communicate to the player that they are in fact buttons.
+                    </p>
+                </div>
+                <div class="item">
+                    <h5>Currency text color</h5>
+                    <img src="images/vampower/Vampower_BuildMenu_CardComparison.png" width="663" height="175">
+                    <p>
+                        The choice of red for the currency text made some playtesters believe they couldn’t afford to purchase a structure even though they could.
+                        From a UX stand point red is often used to communicate an error or lack of resources in this context.
+                        Knowing this I made a visual distinction between elements when an element can’t be afforded by lowering the opacity.
+                        Unfortunately, this difference doesn’t matter if all the structures can be afforded.
+                        They all look the same so it’s easy to make the assumption that you can’t afford any of them.
+                        I should have done a better job communicating this visually or picked a more conventional color for better UX.
+                    </p>
+                </div>
+            </div>
+            <br><br>
+            <div class="divide-line"></div>
+            <br><br>
+            <h3 style="text-align:center;">Final appearance</h3>
+            <br><br>
+            <div class="outerVideoWrapper">
+                <div class="videoWrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZXz4zTk4q3M?si=62q--HTEU6CPFLfn"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrapper bg2">
+            <h2 style="text-align:center;">Cutscene</h2>
+            <p>
+                I've experimented with visual novel style game before so I repurposed and simplified that code to work for a cutscene.
+                The cutscene widget needs an array of images (textures) and an array of string of the same lengths.
+                The widget goes through the array, fading to the background image whilst displaying the string letter by letter.
+                Once the full string has been displayed there's a short delay before automatically continuing to the next element.
+                The player can click or press on the keyboard to continue the story quicker.
+                To handle this input I made an invisible button that covers the entire screen.
+            </p>
+
+            <img src="images/vampower/Vampower_Cutscene.gif" width="1245" height="651">
+        </div>
+    </main>
+
+    <footer>Footer</footer>
+
+</body>
+</html>
