@@ -132,50 +132,50 @@ nav .button open {
     display: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
     nav .button {
         display: block;
     }
 
-    nav .button open {
-        align-items: center;
-    }
+        nav .button open {
+            align-items: center;
+        }
 
     nav {
         padding: 0;
     }
 
-    nav ul.show {
-        right: 0;
-    }
+        nav ul.show {
+            right: 0;
+        }
 
-    nav ul.show ~ #overlay {
-        display: block;
-    }
+            nav ul.show ~ #overlay {
+                display: block;
+            }
 
-    nav ul {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        height: 100dvh;
-        width: 100%;
-        z-index: 10;
-        background-color: #080808;
-        border-left: 1px solid #272832;
-        transition: right 300ms ease-out;
-        flex-direction: column;
-    }
+        nav ul {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            height: 100dvh;
+            width: 100%;
+            z-index: 10;
+            background-color: #080808;
+            border-left: 1px solid #272832;
+            transition: right 300ms ease-out;
+            flex-direction: column;
+        }
 
 
-    nav a{
-        width: 100%;
-        padding-left: 2.5em;
-    }
+        nav a {
+            width: 100%;
+            padding-left: 2.5em;
+        }
 
-    nav .logo {
-        margin-right: unset;
-        padding-left: 5%;
-    }
+        nav .logo {
+            margin-right: unset;
+            padding-left: 5%;
+        }
 }
 
 main {
