@@ -198,6 +198,13 @@ footer {
 .vampower {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("images/vampower/Vampower_Gameplay_Day_2_Fin.png");
 }
+.catfished {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("images/catfished.png");
+}
+.chat-prototype {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("images/chatprototype/ChatProt_BG.png");
+}
+
 
 .header img {
     text-align: center;
@@ -226,6 +233,7 @@ footer {
 }
 
 .list {
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
