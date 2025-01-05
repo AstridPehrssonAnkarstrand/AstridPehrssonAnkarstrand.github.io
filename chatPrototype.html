@@ -84,13 +84,19 @@
         </div>
 
         <div class="wrapper bg2">
-            <p>
-                Show off the final game.
-            </p>
+            <h3 style="text-align:center;">Video of the full game</h3>
+            <br>
+            <div class="outerVideoWrapper">
+                <div class="videoWrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5-Kd7oZkdxY?si=mUWz6Sm2-pIScdaV"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
 
         <div class="header chat-prototype">
-            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);" class="text-gradient">Development</h1>
+            <h2 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);" class="text-gradient">Development</h2>
         </div>
 
         <div class="wrapper">
@@ -98,7 +104,7 @@
             <br><br>
             <div class="container">
                 <div class="item" style="text-align: center;">
-                    <h4>Layout in figma</h4>
+                    <h5>Layout in figma</h5>
                     <br>
                     <img src="images/chatprototype/Mockup.png" width="348" height="651"
                          alt="Mobile chat UI layout in Figma">
@@ -108,7 +114,7 @@
                 alt="Mobile chat UI layout in Figma">-->
                 </div>
                 <div class="item" style="text-align:center;">
-                    <h4>Final version in engine</h4>
+                    <h5>Final version in engine</h5>
                     <br>
                     <!-- Og size 573, 869 -->
                     <img src="images/chatprototype/ChatProt.png" width="429" height="651"
@@ -214,16 +220,16 @@
         <div class="wrapper">
             <h3 style="text-align:center;">Widgets</h3>
             <br><br>
-                <p>
-                    I have a main widget that holds a side menu and a container for the chatroom.
-                    <br>
-                    I debated on how I should structure the chatroom. I could have one chat room widget and change its contents based on which chat room is currently open,
-                    or have multiple chat rooms that are hidden when not in use.
-                    In the end I chose the second approach, that way the chatroom could handle itself and I wouldn't have to create systems for saving and reapplying different chatroom states and data.
-                    <br>
-                    The chatroom widget has a scrollable area containing messages and a container for choice buttons. The choice buttons are always there but set to collapsed when not used.
-                    The start and pause menu are in different widgets but renderer above the main widget. Also set to collapsed when not used.
-                </p>
+            <p>
+                I have a main widget that holds a side menu and a container for the chatroom.
+                <br>
+                I debated on how I should structure the chatroom. I could have one chat room widget and change its contents based on which chat room is currently open,
+                or have multiple chat rooms that are hidden when not in use.
+                In the end I chose the second approach, that way the chatroom could handle itself and I wouldn't have to create systems for saving and reapplying different chatroom states and data.
+                <br>
+                The chatroom widget has a scrollable area containing messages and a container for choice buttons. The choice buttons are always there but set to collapsed when not used.
+                The start and pause menu are in different widgets but renderer above the main widget. Also set to collapsed when not used.
+            </p>
 
             <br><br>
             <h4 style="text-align:center;">Animation showcase</h4>
@@ -238,11 +244,19 @@
                 I created a debug menu to help control some of the game's parameters, like type speed, message delay, show animations.
                 This made debugging the story and its branches a lot quicker.
             </p>
+            <br>
+            <div class="outerVideoWrapper">
+                <div class="videoWrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KSiKQ8HUA_M?si=gc-Lue0XjFsZu-Uh"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
         <!--<iframe width="768" height="432"
-                src="https://miro.com/app/embed/uXjVL5hUvhw=/?pres=1&frameId=3458764610146073731&embedId=865046017667"
-                frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen>
-        </iframe>-->
+            src="https://miro.com/app/embed/uXjVL5hUvhw=/?pres=1&frameId=3458764610146073731&embedId=865046017667"
+            frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen>
+    </iframe>-->
 
     </main>
 
