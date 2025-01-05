@@ -215,11 +215,11 @@
             </div>
         </div>
 
-
+        <div class="header vampower">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);" class="text-gradient">Pre-production</h1>
+        </div>
 
         <div class="wrapper bg2">
-            <h1 style="text-align:center;" class="text-gradient">Pre-production</h1>
-            <br><br>
             <p>
                 Two weeks exploring three game concepts, developing a playable prototype for each one.
                 First half of the week went to concepting and roughly planning out the different concepts.
@@ -268,9 +268,11 @@
             </div>
         </div>
 
+        <div class="header vampower">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);" class="text-gradient">Production</h1>
+        </div>
+
         <div class="wrapper">
-            <h1 style="text-align: center; color: #ff6a00">Production</h1>
-            <br>
             <h3 style="text-align:center;">My UI workflow</h3>
 
             <div class="list">
@@ -332,13 +334,45 @@
         <div class="wrapper bg2">
             <h2 style="text-align:center;">Selection Menu</h2>
             <br><br>
+            <div class="container">
+                <div class="item">
+                    <h3 style="text-align:center;">Feature brief</h3>
+                </div>
+                <div class="item">
+                    <p>
+                        At the start of the game the player should pick their playstyle by selecting this runs modifiers and their player character.
+                        The menu should display all the available choices and their pros and cons.
+                    </p>
+                </div>
+            </div>
+
+            <br><br><div class="divide-line"></div><br><br>
+
+            <!--<h4>First iteration</h4>
+            <br>
             <p>
                 The select menu does not have a layout blockout,
                 but was made directly in the engine taking standards I’d made for the other menus.
                 I reused widgets whenever possible, for example the heart select cards are repurposed build structure cards.
             </p>
+            <br>
+            <img src="Images/vampower/Vampower_SelectMenu_Blockout.gif" alt="Select Menu work in progress" width="877" height="539">-->
 
-            <img src="Images/vampower/Vampower_SelectMenu_Blockout.gif" alt="Select Menu work in progress" width="877" height="539">
+            <div class="container">
+                <div class="item">
+                    <img src="Images/vampower/Vampower_SelectMenu_Blockout.gif" alt="Select Menu work in progress" width="877" height="539">
+                </div>
+                <div class="item">
+                    <h4>First iteration</h4>
+                    <br>
+                    <p>
+                        The select menu does not have a layout blockout,
+                        but was made directly in the engine taking standards I’d made for the other menus.
+                        I reused widgets whenever possible, for example the heart select cards are repurposed build structure cards.
+                    </p>
+                </div>
+            </div>
+            <br><br>
 
             <p>
                 For later playtests the main menu was separated out into its own menu and level. This made map selection and restarting a level a lot simpler.
@@ -347,8 +381,9 @@
                 The Quick play button was added for debug purposes. It picks all the default options, skipping the selection process getting you into the game with one click.
                 Ironically the best and most used feature I made, by skipping the other stuff I made.
             </p>
+            <br><br>
 
-            <h3 style="text-align:center;">Final appearance</h3>
+            <h3 style="text-align:center;">Selection menu fully implemented</h3>
             <br><br>
             <div class="outerVideoWrapper">
                 <div class="videoWrapper">
@@ -382,10 +417,18 @@
             <br><br><div class="divide-line"></div><br><br>
 
             <h3 style="text-align:center;">Blockout</h3>
+            <br><br>
+
+            <h5 style="text-align:center;">Original blockout</h5>
             <p>
                 For the upgrade cards I had a lot of references to go from.
-                I had difficulties placing the current player information and couldn’t get to a point I was satisfied with it.
-                <br><br>
+                The difficult part was figuring out how to place the current player information. Their weapons, their stats and upgrades.
+                I got stuck moving things around but didn't find something I was satisfied with it.
+            </p>
+            <img src="images/vampower/Vampower_ShopMenu_Blockout.png" width="1440" height="810" class="center">
+            <br><br>
+            <h5 style="text-align:center;">Reimagined blockout</h5>
+            <p>
                 Now having taken time away from the project, I tried tackling the main issues I had with the layout.
                 I feel the previous one has too much information packed into one big blob that takes up a third of the screen.
                 It’s overwhelming and doesn’t look good.
@@ -393,36 +436,37 @@
                 This gives a lot more space and allows me to make the container shorter and the icons could potentially be made even smaller if needed.
                 I also moved the active heart up to the top of the screen, as it was very awkwardly placed with the upgrades prior.
             </p>
+            <img src="images/vampower/Vampower_ShopMenu_Blockout2.png" width="1440" height="810" class="center">
 
-            <div class="list">
-                <div class="item">
-                    <h5 style="text-align:center;">Original Blockout</h5>
-                    <img src="images/vampower/Vampower_ShopMenu_Blockout.png" width="960" height="540">
+            <!--<div class="list">
+        <div class="item">
+            <h5 style="text-align:center;">Original Blockout</h5>
+            <img src="images/vampower/Vampower_ShopMenu_Blockout.png" width="960" height="540">
+        </div>
+        <div class="item">
+            <h5 style="text-align:center;">Reimagined Blockout</h5>
+            <img src="images/vampower/Vampower_ShopMenu_Blockout2.png" width="960" height="540">
+        </div>
+    </div>-->
+
+            <br><br>
+            <br><br>
+            <h3 style="text-align:center;">Card animation</h3>
+            <br><br>
+            <div class="container">
+                <div class="item-half">
+                    <p>
+                        For some polish I added animations for hovering over cards and purchasing.
+                        I made the card spin animation by decreasing the widgets x scale and the y shear simultaneously.
+                        Was super simple to do but looks convincingly 3D!
+                    </p>
                 </div>
                 <div class="item">
-                    <h5 style="text-align:center;">Reimagined Blockout</h5>
-                    <img src="images/vampower/Vampower_ShopMenu_Blockout2.png" width="960" height="540">
+                    <img src="images/vampower/Vampower_CardAnimation.gif" width="1202" height="672">
                 </div>
             </div>
-
             <br><br>
-            <div class="divide-line"></div>
-            <br><br>
-                <div class="container">
-                    <div class="item-half">
-                        <h3>Animation</h3>
-                        <p>
-                            For some polish I added animations for hovering over cards and purchasing.
-                            I made the card spin animation by decreasing the widgets x scale and the y shear simultaneously.
-                            Was super simple to do but looks convincingly 3D!
-                        </p>
-                    </div>
-                    <div class="item">
-                        <img src="images/vampower/Vampower_CardAnimation.gif" width="1202" height="672">
-                    </div>
-                </div>
-            <br><br>
-            <h3 style="text-align:center;">Final appearance</h3>
+            <h3 style="text-align:center;">Upgrade shop menu in game</h3>
             <br><br>
             <div class="outerVideoWrapper">
                 <div class="videoWrapper">
@@ -454,7 +498,7 @@
 
             <br><br><div class="divide-line"></div><br><br>
 
-            <img src="images/vampower/Vampower_BuildMenu_Blockout.png" width="960" height="540">
+            <img src="images/vampower/Vampower_BuildMenu_Blockout.png" width="1440" height="810" class="center">
 
             <br><br><div class="divide-line"></div><br><br>
 
@@ -522,7 +566,7 @@
                 To handle this input I made an invisible button that covers the entire screen.
             </p>
 
-            <img src="images/vampower/Vampower_Cutscene.gif" width="1245" height="651">
+            <img src="images/vampower/Vampower_Cutscene.gif" width="1245" height="651" class="center">
         </div>
     </main>
 

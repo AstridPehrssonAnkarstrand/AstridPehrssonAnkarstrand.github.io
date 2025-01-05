@@ -133,8 +133,9 @@
                 For how a dialogue line is broken up I took inspiration from how Honkai: Stair Rail writes their dialogue, as I found it concise and readable.
             </p>
             <br><br>
-            <img src="images/chatprototype/ChatProt_DialogueDataTable.png" width="1463" height="485"
-                 alt="Dialogue Data table showing the games first conversation.">
+            <!-- OG size: 1464, 485 -->
+            <img src="images/chatprototype/ChatProt_DialogueDataTable.png" width="1097" height="363"
+                 alt="Dialogue Data table showing the games first conversation." class="center">
             <br><br>
             <h4 style="text-align:center;">Dialogue data table syntax</h4>
             <br>
@@ -213,19 +214,21 @@
         <div class="wrapper">
             <h3 style="text-align:center;">Widgets</h3>
             <br><br>
-            <p>
-                I have a main widget that holds a side menu and a container for the chatroom.
-                I debated on how I should structure the chatroom. I could have one chat room widget and change its contents based on which chat room is currently open,
-                or have multiple chat rooms that are hidden when not in use.
-                In the end I chose the second approach, that way the chatroom could handle itself and I wouldn't have to create systems for saving and reapplying different chatroom states and data.
-                The chatroom widget has a scrollable area containing messages and a container for choice buttons. The choice buttons are always there but set to collapsed when not used.
-                The start and pause menu are in different widgets but renderer above the main widget. Also set to collapsed when not used.
-            </p>
+                <p>
+                    I have a main widget that holds a side menu and a container for the chatroom.
+                    <br>
+                    I debated on how I should structure the chatroom. I could have one chat room widget and change its contents based on which chat room is currently open,
+                    or have multiple chat rooms that are hidden when not in use.
+                    In the end I chose the second approach, that way the chatroom could handle itself and I wouldn't have to create systems for saving and reapplying different chatroom states and data.
+                    <br>
+                    The chatroom widget has a scrollable area containing messages and a container for choice buttons. The choice buttons are always there but set to collapsed when not used.
+                    The start and pause menu are in different widgets but renderer above the main widget. Also set to collapsed when not used.
+                </p>
 
             <br><br>
-            <h4 style="text-align:center;">Animations</h4>
+            <h4 style="text-align:center;">Animation showcase</h4>
             <br><br>
-            <img src="images/ChatGame_Prog_04.gif" width="590" height="864" alt="Chat Gameplay" style="text-align: center;">
+            <img src="images/ChatGame_Prog_04.gif" width="590" height="864" alt="Chat Gameplay" class="center">
         </div>
 
         <div class="wrapper">
