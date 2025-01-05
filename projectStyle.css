@@ -70,8 +70,8 @@ nav {
     position: sticky;
     top: 0;
     grid-area: navbar;
-    /*    padding: 0 10%;*/
-    background-color: #11121a;
+    /*padding: 0 10%;*/
+    background-color: #080808;
     border-bottom: 1px solid #272832;
     z-index: 3;
     list-style: none;
@@ -83,6 +83,7 @@ nav .logo {
 }
 
 nav .logo img {
+    max-width: auto;
     width: 140px;
     height: auto;
 
@@ -101,9 +102,9 @@ nav a {
     height: 100%;
     align-items: center;
     text-decoration: none;
-    padding: 0.5em 2em;
+    padding: 1em 2em;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     transition: background-color 150ms ease;
 }
 
@@ -136,6 +137,10 @@ nav .button open {
     nav .button {
         display: block;
     }
+
+    /*nav {
+        padding: 0;
+    }*/
 
     nav ul.show {
         right: 0;
@@ -245,13 +250,10 @@ footer {
     flex: 100%;
 }
 
-@media (width >= 40em) {
-    .summary-item, .item {
-        flex: 0.5;
-    }
+@media only screen and (min-width: 600px) {
 }
 
-@media (width >= 60em) {
+@media only screen and (min-width: 768px) {
     .summary-item, .item {
         flex: 1;
     }
