@@ -1,4 +1,15 @@
 // JavaScript source code
+const navbar = document.getElementById('navbar')
+
+function OpenNavbar() {
+    navbar.classList.add('show')
+}
+
+function CloseNavbar() {
+    navbar.classList.remove('show')
+}
+
+
 initComparisons();
 
 function initComparisons() {
