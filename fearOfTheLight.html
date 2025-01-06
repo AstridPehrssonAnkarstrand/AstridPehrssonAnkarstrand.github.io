@@ -3,37 +3,163 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Astrid PA - Fear of the Light</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projectStyle.css">
+    <link rel="stylesheet" href="sliderStyle.css">
+    <script type="text/javascript" src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/ccef3511e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="navbar">
-        <nav>
-            <a href="index.html"><img src="images/Logo.png" class="logo"></a>
-            <ul id="sidemenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-    </div>
+    <nav>
+        <a href="index.html" class="logo"><img src="images/Logo.png" width="344" height="50"> </a>
+        <ul id="navbar">
+            <li><i class="fa-solid fa-xmark button close" onclick="CloseNavbar()" aria-label="close sidebar"></i></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars button open" onclick="OpenNavbar()" aria-label="open sidebar"></i>
+    </nav>
 
-    <div class="outerVideoWrapper">
-        <div class="videoWrapper">
-            <iframe src="https://www.youtube.com/embed/yljS435vGw8">
-                <!--?controls=0&autoplay=1&mute=1&loop=1-->
-            </iframe>
+    <div id="overlay" onclick="CloseNavbar()" aria-hidden="true"></div>
+
+    <main>
+        <div class="header fearofthelight">
+
+            <!--<h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Fear of the Light</h1>-->
+            <img src="images/fearofthelight/Fearofthelight_Logo.png" alt="Fear of the Light Title text" width="1069" height="142">
         </div>
-    </div>
 
+        <div id="summary">
+            <div class="container">
+                <div class="list">
+                    <div class="summary-item">
+                        <h5>My Role(s)</h5>
+                        <p>
+                            UI/UX Designer, Narrative Designer
+                        </p>
+                    </div>
+                    <div class="summary-item">
+                        <h5>Tools</h5>
+                        <p>
+                            Unreal Engine 5, Figma, Miro, Perforce
+                        </p>
+                    </div>
 
-    <div class="copyright">
-        <p>Made with spite by Me</p>
-    </div>
+                    <div class="summary-item">
+                        <h5>Time</h5>
+                        <p>
+                            Seven weeks production
+                        </p>
+                    </div>
+                    <div class="summary-item">
+                        <h5>Team size</h5>
+                        <p>
+                            10 people team
+                        </p>
+                    </div>
+                </div>
+                <div class="divide-line"></div>
+                <div>
+                    <p>
+                        A short sci-fi survival horror game set on a spaceship where the light is scarier than the dark.
+                        Nominated for Best Design at the Swedish Game Awards 2024 and released on Steam.
+                        <br><br>
+                        I designed and implemented all the game's UI, my first time tackling diegetic UI for the data terminal and tools the player has.
+                        <br><br>
+
+                    </p>
+                </div>
+
+                <div class="summary-gamelink">
+                    <h3>Play the game!</h3>
+                    <a target="_blank" href="https://store.steampowered.com/app/3126140/Fear_of_the_Light/" class="btn"><h6>Steam Page</h6></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper bg2">
+            <h1 style="text-align:center;">Game trailer</h1>
+            <br><br>
+            <div class="outerVideoWrapper">
+                <div class="videoWrapper">
+                    <iframe src="https://www.youtube.com/embed/yljS435vGw8">
+                        <!--?controls=0&autoplay=1&mute=1&loop=1-->
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="header fearofthelight-1">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); color:aqua;">UI Development</h1>
+        </div>
+
+        <div class="wrapper">
+            <h2 style="text-align: center; color: aqua;">Tools</h2>
+            <br><br>
+            <p>
+                Navigating in the dark is difficult, especially when you're being hunted down by alien moths.
+                To help the player out a bit they have three different tools they can pick up along the way.
+                To increase immersion I wanted to make the tools diegetic.
+            </p>
+            <br><br>
+            <h4 style="text-align: center; color: aqua;">Radar</h4>
+            <br>
+            <p>
+                The radar helps the player detect objects of interests, and objects to avoid. It drains battery whilst being used.
+                I made icons to distinquish between the different signals.
+                <br><br>
+                During early playtests I noticed the battery level was often missed as it's located in the bottom left corner.
+                To improve this I added the current battery level to the Radar tool screen.
+            </p>
+            <br><br>
+            <img src="images/fearofthelight/Screenshot (498).png" alt="In game screenshot" width="1920" height="1080" class="center">
+            <img src="images/fearofthelight/Screenshot (509).png" alt="In game screenshot" width="1920" height="1080" class="center">
+            <br><br>
+            <h4 style="text-align: center; color: aqua;">EMP</h4>
+            <br>
+            <p>
+                The EMP can turn off lamps for a short period of time at the cost of 10% of your battery.
+                For the UI I reused the layout for the radar, as it's using the same screen so I felt it made sense for consistency.
+                I also added a crosshair to help inform the player where they're aiming and when they can shoot.
+                I use color to inform the current status. Green for ready, red to warn that an action isn't possible.
+            </p>
+            <br><br>
+            <img src="images/fearofthelight/Screenshot (490).png" alt="In game screenshot" width="1920" height="1080" class="center">
+            <img src="images/fearofthelight/Screenshot (492).png" alt="In game screenshot" width="1920" height="1080" class="center">
+            <img src="images/fearofthelight/Screenshot (491).png" alt="In game screenshot" width="1920" height="1080" class="center">
+        </div>
+
+        <div class="wrapper">
+            <h3 style="text-align: center; color: aqua;">Interactive Data Terminal</h3>
+            <br><br>
+            <p>
+                The data terminal is an important part of the game, letting the player progress further by unlocking new areas.
+                It also contains lore in the form of files and a map of the level.
+            </p>
+            <br><br>
+            <img src="images/fearofthelight/Screenshot (499).png" alt="In game screenshot" width="1920" height="1080" class="center">
+            <img src="images/fearofthelight/Screenshot (500).png" alt="In game screenshot" width="1920" height="1080" class="center">
+            <img src="images/fearofthelight/Screenshot (501).png" alt="In game screenshot" width="1920" height="1080" class="center">
+        </div>
+
+        <div class="header fearofthelight-2">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); color:aqua;">Menu Design</h1>
+        </div>
+
+        <div class="wrapper">
+            <h3 style="text-align: center; color: aqua;">Main menu</h3>
+            <br><br>
+            <p>
+                [Insert pictures of main menu, pause menu, credits, settings menu.]
+            </p>
+        </div>
+
+    </main>
+
+    <footer>Footer</footer>
 
 </body>
 </html>
