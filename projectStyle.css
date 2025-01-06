@@ -101,7 +101,7 @@ nav a {
     height: 100%;
     align-items: center;
     text-decoration: none;
-    padding: 1em 2em;
+    padding: 1.5em 2em;
     color: #fff;
     font-size: 18px;
     transition: background-color 150ms ease;
@@ -195,6 +195,10 @@ footer {
     text-align: center;
 }
 
+.projects {
+    /*background: linear-gradient(45deg, red, blue);*/
+    background: rgba(0, 0, 0, 0.75);
+}
 .vampower {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("images/vampower/Vampower_Gameplay_Day_2_Fin.png");
 }
@@ -312,8 +316,6 @@ footer {
     margin-right: auto;
 }
 
-
-
 .bg1 {
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -344,6 +346,58 @@ footer {
     .wrapper {
         padding: 60px 5%;
     }
+}
+
+/*------------- Projects cards ----------*/
+.card-container {
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));*/
+    grid-template-columns: repeat(auto-fit, 1fr);
+    justify-content: center;
+    grid-auto-rows: 1fr;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #272832;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 0.5em 2em rgba(0,0,0,0.5);
+    margin: 1em;
+    text-decoration: none;
+    display: flex;
+    border: 0.25em solid #272832;
+    transition: border 0.25s;
+    max-height: 400px;
+}
+
+.card:hover {
+    border: 0.25em solid;
+}
+
+.card-image {
+    max-width: 40%;
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1em;
+    padding-left: 2em;
+}
+
+.card-content h2 {
+    margin-bottom: 0.25em;
+    color: #fff;
+}
+
+.card-content p span {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: #b54769;
 }
 
 /*------------- Video Wrapper ----------*/

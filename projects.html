@@ -3,32 +3,125 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Astrid PA - Projects</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projectStyle.css">
+    <script type="text/javascript" src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/ccef3511e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="navbar">
-        <nav>
-            <a href="index.html"><img src="images/Logo.png" class="logo"></a>
-            <ul id="sidemenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-    </div>
+    <nav>
+        <a href="index.html" class="logo"><img src="images/Logo.png" width="344" height="50"> </a>
+        <ul id="navbar">
+            <li><i class="fa-solid fa-xmark button close" onclick="CloseNavbar()" aria-label="close sidebar"></i></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars button open" onclick="OpenNavbar()" aria-label="open sidebar"></i>
+    </nav>
 
-    <div id="projects">
-        <div class="container">
-            <h1 class="sub-title">Projects</h1>
+    <div id="overlay" onclick="CloseNavbar()" aria-hidden="true"></div>
+
+    <main>
+        <div class="header projects">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Projects</h1>
         </div>
-    </div>
 
-    <div id="project">
+        <div class="wrapper">
+
+            <div class="card-container">
+                <a href="projectLayout.html" class="card">
+                    <div class="card-image">
+                        <img src="images/VamPower_MainMenu.png" width="1915" height="989">
+                    </div>
+                    <div class="card-content">
+                        <h2>Vampower</h2>
+                        <p><span>UI/UX Design, Technical Design, Unreal Engine 5</span></p>
+                        <p>
+                            A fast paced survival-like tower defense were you must protect your master, an evil vampire overlord, from the local towns folk.
+                            <br>
+                            Created for Game Project 4 at Futuregames in a 8 people team of designers and programmers.
+                            <br>
+                            Developement time: Two week pre-production + four weeks.
+                        </p>
+                    </div>
+                </a>
+                <a href="fearOfTheLight.html" class="card">
+                    <div class="card-image">
+                        <img src="images/fearofthelight/FearoftheLight_Thumbnail.png" width="1077" height="1077">
+                    </div>
+                    <div class="card-content">
+                        <h2>Fear of the Light</h2>
+                        <p><span>UI/UX Design, Unreal Engine 5</span></p>
+                        <p>
+                            A short sci-fi survival horror game set on a spaceship where the light is scarier then the dark.
+                            Nominateed for Best Design at the Swedish Game Awards 2024. Released for free on Steam!
+                            <br>
+                            Created for Game Project 3 at Futuregames in a 10 people team.
+                            <br>
+                            Development time: Seven weeks.
+                        </p>
+                    </div>
+                </a>
+                <a href="chatPrototype.html" class="card">
+                    <div class="card-image">
+                        <img src="images/chatprototype/ChatProt.png" width="573" height="869">
+                    </div>
+                    <div class="card-content">
+                        <h2>Chat Prototype</h2>
+                        <p><span>Solo developer, UI/UX Design, Technical Design, Unreal Engine 5</span></p>
+                        <p>
+                            Developed solo in two weeks time for a Advanced Visual Scripting course at Futuregames.
+                            Made a Technical design document to structure the project.
+                            <br><br>
+                            Inspired by my side project Catfished.
+                            Learnt a lot about actor components and project structure aswell as alternatives to casting.
+                        </p>
+                    </div>
+                </a>
+                <a href="catFished.html" class="card">
+                    <div class="card-image">
+                        <img src="images/catfished/CatFished.png" width="1601" height="901">
+                    </div>
+                    <div class="card-content">
+                        <h2>Catfished</h2>
+                        <p><span>Solo developer, Side-project, UI/UX Design, Unity, Unreal Engine 5</span></p>
+                        <p>
+                            I wrote a short novel that I'm quite fond of but felt the story would be more suited for a different, more interactive medium. <br>
+                            The story? A classic unlikely romance featuring two young adult guys who meet through video games & start developing a close bond. <br>
+                            The catch? Both are pretending to be a girl & are desperate to keep it a secret.
+                            <br><br>
+                            Catfished is an ongoing solo passion-project I've been working on since I finished the first story draft in 2019.
+                            The idea is to make a visual novel style game that takes place on a desktop.
+                            The project can be broken down into three distinct iterations, the earlier two developed in Unity whilst the current one in Unreal Engine 5.<br>
+                        </p>
+                    </div>
+                </a>
+                <a href="kingMockup.html" class="card">
+                    <div class="card-image">
+                        <img src="images/kinginspiredmockup/MobileMenuMockup.png" width="1844" height="1080">
+                    </div>
+                    <div class="card-content">
+                        <h2>Mobile Game Menu Mockup</h2>
+                        <p><span>UI/UX Design, Figma, Mobile game</span></p>
+                        <p>
+                            Mobile game menus for a King inspired mobile game.
+                            Created in Figma in two weeks.
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer>Footer</footer>
+
+    <!--<div id="project">
         <div class="container">
             <div class="row">
                 <div class="col-image">
@@ -121,11 +214,6 @@
         </div>
     </div>
 
-    <a href="kingMockup.html" class="btn"> Mobile mockup UI</a>
-
-    <div class="copyright">
-        <p>Made with spite by Me</p>
-    </div>
-
+    <a href="kingMockup.html" class="btn"> Mobile mockup UI</a>-->
 </body>
 </html>
