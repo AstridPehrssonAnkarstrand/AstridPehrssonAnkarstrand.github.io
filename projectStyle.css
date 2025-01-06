@@ -193,6 +193,12 @@ footer {
     text-align: center;
 }
 
+.header img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .projects {
     /*background: linear-gradient(45deg, red, blue);*/
     background: rgba(0, 0, 0, 0.75);
