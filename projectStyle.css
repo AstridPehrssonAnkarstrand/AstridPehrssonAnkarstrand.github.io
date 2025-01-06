@@ -8,7 +8,6 @@
 p {
     font-size: 1rem;
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
-
     color: #ababab;
 }
 
@@ -142,7 +141,7 @@ nav .button open {
         }
 
     nav {
-        padding: 0;
+        padding: 0 0;
     }
 
         nav ul.show {
@@ -184,7 +183,6 @@ main {
 
 footer {
     grid-area: footer;
-    padding: 2em;
 }
 
 .header {
@@ -348,7 +346,137 @@ footer {
     }
 }
 
+/*------------- Home page ----------*/
+
+#header {
+    width: 100%;
+    height: 80vh;
+    background-image: url("images/fearofthelight/Screenshot (509).png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.header-text {
+    position: absolute;
+    bottom: 0;
+/*    top: 40%;*/
+    width: 100%;
+    padding: 1em 2em;
+    /*border-radius: 1em;*/
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+    .header-text h1 {
+        color: #080808;
+        /*font-size: 5em;*/
+        margin-right: 0.25em;
+        /*text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);*/
+    }
+
+    .header-text p span {
+        color: #080808;
+        /*font-size: 1.5em;*/
+        font-weight: bold;
+/*        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);*/
+    }
+
+/*------------- Footer ----------*/
+#footer {
+}
+
+.container-footer {
+    width: 100%;
+    margin: auto;
+    background-color: #272832;
+    padding: 60px 10%;
+}
+
+ul {
+    list-style: none;
+}
+
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-footer {
+    width: 33%;
+    padding: 0 1em;
+}
+
+.col-footer h4 {
+    margin-bottom: 0.75em;
+}
+
+.col-footer ul li:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.col-footer ul li a {
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+    color: #ababab;
+    text-decoration: none;
+    display: block;
+    padding-left: 0.5em;
+    transition: all 0.3s ease;
+}
+
+.col-footer ul li a:hover {
+    color: #fff;
+    padding-left: 0.4em;
+}
+
+.col-footer .social-links {
+    padding-left: 0.5em;
+}
+
+.col-footer .social-links a {
+    display: inline-block;
+    font-size: 2em;
+    color: #ababab;
+    margin: 0 0.5em 0.5em 0;
+    /*width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);*/
+    /*font-size: 2em;*/
+    /*margin: 0 0.5em 0.5em 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;*/
+    transition: transform 0.5s;
+}
+
+.col-footer .social-links a:hover {
+    color: #fff;
+    transform: translateY(-2px);
+        /*color: #272832;
+    background-color: #ababab;*/
+}
+
+@media (max-width: 767px) {
+    .col-footer {
+        width: 100%;
+        margin-bottom: 4em;
+    }
+
+    .container-footer {
+        padding: 60px 2% 0;
+    }
+}
+
 /*------------- Projects cards ----------*/
+
 .card-container {
     display: grid;
     /*grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));*/
