@@ -3,99 +3,278 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Astrid PA - Catfished</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="pageStyle.css">
+    <link rel="stylesheet" href="projectStyle.css">
+    <link rel="stylesheet" href="sliderStyle.css">
     <script type="text/javascript" src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/ccef3511e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="navbar">
-        <nav>
-            <a href="index.html"><img src="images/Logo.png" class="logo"></a>
-            <ul id="sidemenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-    </div>
+    <nav>
+        <a href="index.html" class="logo"><img src="images/Logo.png" width="344" height="50"> </a>
+        <ul id="navbar">
+            <li><i class="fa-solid fa-xmark button close" onclick="CloseNavbar()" aria-label="close sidebar"></i></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars button open" onclick="OpenNavbar()" aria-label="open sidebar"></i>
+    </nav>
 
-    <div class="bg-image catFished"></div>
+    <div id="overlay" onclick="CloseNavbar()" aria-hidden="true"></div>
 
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
-
-        <div class="mySlides fade">
-            <img src="images/catfished/Discord_V1.png" alt="Vampower Main menu">
+    <main>
+        <div class="header catfished">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Catfished - A Visual Novel Game</h1>
         </div>
 
-        <div class="mySlides fade">
-            <img src="images/catfished/Discord_V2.png" alt="Vampower Main menu">
+        <div id="summary">
+            <div class="container">
+                <div class="list">
+                    <div class="summary-item">
+                        <h5>My Role(s)</h5>
+                        <p>
+                            Solo Developer
+                        </p>
+                    </div>
+                    <div class="summary-item">
+                        <h5>Tools</h5>
+                        <p>
+                            Unity, Unreal Engine 5, Figma, Fungus, Ink
+                        </p>
+                    </div>
+
+                    <div class="summary-item">
+                        <h5>Time</h5>
+                        <p>
+                            From 2019 - Ongoing
+                        </p>
+                    </div>
+                    <div class="summary-item">
+                        <h5>Team size</h5>
+                        <p>
+                            Solo
+                        </p>
+                    </div>
+                </div>
+                <div class="divide-line"></div>
+                <div>
+                    <p>
+                        I wrote a short novel that I'm quite fond of but felt the story would be more suited for a different medium.
+                        The story? A romance featuring two young adult guys who meet through video games and start developing a close relationship.
+                        The catch? Both are pretending to be a girl and desperate to keep that fact a secret.
+                        <br><br>
+                        Catfished is a solo passion-project I started after finishing the first story draft in 2019.
+                        The core concept is to make a visual novel style game that takes place on a computer desktop.
+                        <br><br>
+                        Being a long lived project, it has seen many iterations and versions.
+                        Remaking it in any new software I’m trying has become a bit of a habit of mine.
+                        It's a fairly effective way to learn though, doing something familiar in an unfamiliar tool.
+                        It’s helped me build a lot of the UI habits I have and motivated me to keep learning and improving myself both as a person and creator.
+                        I genuinely love creating.
+
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div class="mySlides fade">
-            <img src="images/catfished/Discord_V3.png" alt="Vampower Main menu">
+        <div class="wrapper bg2">
+            <h2 style="text-align:center;">A long journey with many bumps</h2>
+            <br>
+            <p style="text-align:center;">TLDR: I’m an idiot. Ask people for help. Kill your darlings.</p>
+            <br><br>
+            <p>
+                I started out with the plan of making a visual novel retelling of the novel I wrote with little deviation from the source.
+                My ambition for the project, as it often does for creators, grew overtime.
+                I imagined multiple different branches and endings, more involved interactions.
+                <br><br>
+                One of my biggest pitfalls was getting stuck in my own head and being afraid to get others input.
+                Once I actually reached out for advice I gained so much clarity from just explaining the problems I was having.
+                I was trying to find solutions to features I had tacked on but I didn’t really need.
+                I love the game Simulacra’s premise; the idea of going through someone’s device and trying to find clues about what happened to them is such an intriguing concept.
+                But Catfished isn’t a mystery horror game, it’s a cute linear romance story.
+                I don’t need to allow the player complete freedom and make all the apps functional with content.
+                There’s no point to it here. I’m trying to tell a linear story and that freedom would only introduce more issues I’d need to solve.
+                <br><br>
+                I want to make a game of my own inspired by Simulacra one day, but Catfished is not the place for it.
+                Realizing that and accepting that has helped remove a lot of unnecessary features I deemed must haves.
+            </p>
         </div>
 
-        <div class="mySlides fade">
-            <img src="images/catfished/Discord_V4-Blue.png" alt="Vampower Main menu">
+        <div class="wrapper">
+            <h2 style="text-align:center;">How we're going to structuring this</h2>
+            <br><br>
+            <p>
+                The project can be broken down into three distinct iterations, the earlier two developed in Unity whilst the current one in Unreal Engine 5.
+                Alongside that there’s the UI design journey that has taken place overtime.
+                To structure this somewhat I’ll break it into three different sections: UI design process, Unity implementation and Unreal Engine implementation.
+            </p>
         </div>
 
-        <div class="mySlides fade">
-            <img src="images/catfished/Discord_V4-Red.png" alt="Vampower Main menu">
+        <div class="header catfished-1">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">The UI design iteration process</h1>
         </div>
 
-        <div class="mySlides fade">
-            <img src="images/catfished/Discord_V4-Light.png" alt="Vampower Main menu">
+        <div class="wrapper">
+            <p>
+                The first verion I ever made I drew on my iPad by sketching over a screenshot of Discord.
+            </p>
+
+            <img src="images/catfished/Discord_V1.png" alt="Discord Version 1" width="1289" height="775" class="center">
+            <br><br>
+            <p>
+                Second version: I removed the server list and other unneeded details. Did keep some of the icons to fill the empty space.
+                The empty headers would be populated in the engine so it could be changed dynamically.
+            </p>
+            <img src="images/catfished/Discord_V2.png" alt="Discord Version 2" width="1290" height="779" class="center">
+
+            <br><br>
+            <p>
+                For the third version I had discovered Figma and took the opportunity to learn how to use it whilst recreating the Discord layout I was now very familiar with.
+                I did start to simplify areas by removing even more unnecessary details.
+                I got into the habit of using a consistent value for padding and margins which made the design look more professional.
+                <br><br>
+                Previously the window had just been a background image with messages being spawned in but at this stage design wise for the project,
+                I wanted the game to be more interactive. The player should be able to go through different chats, open and close different applications,
+                so I needed to be more conscious throughout my design. This is one of the reasons I removed as many unnecessary details as possible.
+                If it wasn’t interactive it was a distraction and therefore should be removed. Buttons should be consistent and clear that it was interactive.
+            </p>
+            <img src="images/catfished/Discord_V3.png" alt="Discord Version 3" width="1288" height="770" class="center">
+
+            <br><br>
+            <p>
+                Forth version: I tried with rounder shapes and less outlines. Discord light is kind of cursed though.
+            </p>
+            <img src="images/catfished/Discord_V4-Light.png" alt="Discord Version 4" width="1288" height="770" class="center">
+
+            <br><br>
+            <p>
+                Forth version different color palette.
+                I can’t help but find light mode Discord cursed. I’m an avid darkmode user but it turns out dark mode has some interesting design nuggets.
+                Was very interesting reading up on it and learning about research on how much contrast to have between the font and the background color to make it readable.
+                After that I did some of my own experiments with darker color palettes.
+            </p>
+            <img src="images/catfished/Discord_V4-Red.png" alt="Discord Version 4 dark colorpalette red" width="1324" height="780" class="center">
+            <img src="images/catfished/Discord_V4-Blue.png" alt="Discord Version 4 dark colorpalette blue" width="1284" height="764" class="center">
+
+            <br><br>
+            <p>
+                Fifth version: After that darkness I wanted to play around with some more fun and colorful palettes.
+            </p>
+            <img src="images/catfished/Discord_V5.png" alt="Discord Version 5 more round and colorful" width="1282" height="722" class="center">
+
+            <br><br>
+            <p>
+                Sixth version: Up until now it’s all been fun and I’ve learnt a lot but does it actually fit the game?
+                I do like the more clean digital looks of the Figma designs but my art style is more sketchy.
+                I decided to go back to my roots and redraw the original style with the new simplified design.
+            </p>
+            <img src="images/catfished/Discord_V6.png" alt="Discord Version 6 grey scale and simplified design" width="1284" height="757" class="center">
+
+            <br><br>
+            <p>
+                Seventh version: I used the previous version as a template and drew over it, creating a sketchy version to use in the engine.
+            </p>
+            <img src="images/catfished/Discord_V7.png" alt="Discord Version 7, sketched over version of the previous one" width="1244" height="760" class="center">
+
         </div>
 
-        <div class="mySlides fade">
-            <img src="images/catfished/Discord_V5.png" alt="Vampower Main menu">
+        <div class="header catfished-2">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Unity Iteration</h1>
         </div>
 
-        <div class="mySlides fade">
-            <img src="images/catfished/Discord_V6.png" alt="Vampower Main menu">
+        <div class="wrapper">
+            <h3 style="text-align:center;">Fungus Implementation</h3>
+            <br><br>
+            <p>
+                For the first Unity iteration I used the Unity plugin Fungus. It’s a very powerful tool and has basically everything one would need to make a standard visual novel.
+                I was at the time very new to creating UI so I spent time getting used to all the different UI components,
+                went mad about four times trying to get the vertical and horizontal boxes to size to content properly,
+                in the process created monstrosities that shall never see the light of day. Important part was that I learnt a lot.
+                <br>
+                I simultaneously took on learning more C# so I could extend Fungus’ functionality and in doing so learnt a lot about code structure and reading other people's code.
+                In so, the first version prototype was born. Truly majestic.
+                <br>
+                As it was a visual novel I wanted to make I kept to the formula; a dialogue box to display the text.
+                The rest of the screen mainly became a history of past messages. Not super immersive but holding closely to what a visual novel is.
+            </p>
+
+            <img src="images/catfished/DatcordUI_Screenshot1.png" alt="Screenshot from early version of the game." width="1598" height="900" class="center">
+
+            <p>
+                This version of the game does have a playable build!
+            </p>
+
+            <p>
+                A technical limitation was also a reason why I stuck to having the dialogue box.
+                Fungus’ Say command is what I was using for all the dialogue and the command displays text in a dialogue box.
+                I just added my own code to inform my system to spawn a message as well. I ended up making my own command using the Say command as a reference.
+                Doing this got me very familiar with how Fungus is programmed and made me comfortable with reading C# code and let me dip my toes into the world of custom editors.
+                I ended up making a few more custom commands to control what windows to show on screen.
+                <br><br>
+                And so, finally only the dialogue I specified would be shown in a dialogue box, the rest would be spawned on screen.
+            </p>
+
+            <img src="images/catfished/Screenshot_7Feb_4.png" alt="Screenshot from early version of the game." width="1601" height="902" class="center">
+
+            <p>
+                This system works fine and I could probably have made the entire game with it, but I personally wasn’t a fan of creating and editing content in Fungus’ node based system.
+                It’s great for smaller projects but this bad boy was going to need a lot of text and I was already burnt out translating the first chapter.
+                Spell checking was a nightmare because there was none and I can’t spell to save my life.
+                I wanted to just write the story in a text editor, slap that into the game and let it run but that wasn’t possible with Fungus.
+                You can export the existing nodes to a spreadsheet and edit that before importing it again, but a major limitation is you can’t add or remove nodes in the spreadsheet.
+                Another big one is that the export didn’t treat my custom commands too nicely, which was an issue when about 90% of the content was using my custom commands.
+                Now I could dive deep and try to extend Fungus further but I didn’t really feel up to the task nor found it worth my time.
+            </p>
+            <br><br>
+            <p>
+                This version also has a playable build of roughly the games first chapter!
+            </p>
         </div>
 
-        <div class="mySlides fade">
-            <img src="images/catfished/Discord_V7.png" alt="Vampower Main menu">
+        <div class="wrapper bg2">
+            <h3 style="text-align:center;">Ink</h3>
+            <br><br>
+
+            <p>
+                I did spend some time making my own text parser but stopped when I found Ink, a text editor that handles the branching paths and logic for you.
+                It also has a plugin for Unity so you can get the data line by line. Perfect.
+            </p>
+
+            <img src="images/catfished/Catfished_Progress2.1.gif" alt="Gif of the Ink Unity version" width="1121" height="630" class="center">
+
+            <p>
+                This version of the game got the main windows working and a basic dialogue box. No portraits though.
+            </p>
         </div>
 
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <br>
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <span class="dot" onclick="currentSlide(7)"></span>
-            <span class="dot" onclick="currentSlide(8)"></span>
-            <span class="dot" onclick="currentSlide(9)"></span>
+        <div class="header catfished-3">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Unreal Engine 5 Iteration</h1>
         </div>
-    </div>
 
+        <div class="wrapper">
+            <p>
+                After working in Unreal Engine and getting familiar with coding in blueprints and UMG, I started anew.
+                And will you look at that, Ink just happens to have an Unreal Engine plugin! Well, kind of, it’s not as official as the Unity version but still. It works!
 
-    <div class="container">
-        <img src="images/catfished/Catfished_VN_Transitions.gif" style="width:80%">
+                <br><br>
+                You can make round corners!! And materials specifically for UI.
+            </p>
+            <br><br>
+            <img src="images/catfished/Catfished_Progress3.1.gif" alt="Gif of the Unreal Engine version" width="1306" height="785" class="center">
+            <br><br>
+            <p>
+                Visual novel scene transitions.
+            </p>
+            <br><br>
+            <img src="images/catfished/Catfished_VN_Transitions.gif" alt="Gif of the visual novel scene transitions" width="1164" height="592" class="center">
+        </div>
 
-        <img src="images/catfished/Catfished_Progress3.1.gif" style="width:80%">
+    </main>
 
-        <img src="images/catfished/Catfished_Progress2.1.gif" style="width:80%">
-    </div>
-
-    <div class="copyright">
-        <p>Made with spite by Me</p>
-    </div>
+    <footer>Footer</footer>
 
 </body>
 </html>

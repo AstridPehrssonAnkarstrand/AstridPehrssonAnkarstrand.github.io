@@ -201,8 +201,26 @@ footer {
 .catfished {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("images/catfished.png");
 }
+.catfished-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("images/catfished/WindowFrame_Flat(2).png");
+    /*background-position: top;*/
+}
+.catfished-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("images/catfished/Screenshot_13Feb.png");
+    background-position: top;
+}
+.catfished-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("images/catfished/Screenshot 2024-07-09 161025.png");
+    background-position: top;
+}
+
 .chat-prototype {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("images/chatprototype/ChatProt_BG.png");
+    background-position: bottom;
+}
+.chat-prototype-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("images/chatprototype/ChatProt_BG2.png");
+    background-position: bottom;
 }
 
 
