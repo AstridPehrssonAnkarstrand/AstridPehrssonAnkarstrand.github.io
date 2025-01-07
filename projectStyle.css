@@ -428,6 +428,15 @@ footer {
     transition: all 0.3s ease;
 }
 
+#contact .accent {
+    color: #b54769;
+    transition: all 0.3s ease;
+}
+
+#contact .accent:hover {
+    color: #ff004f;
+}
+
 .col-footer ul li a:hover {
     color: #fff;
     padding-left: 0.4em;

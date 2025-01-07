@@ -16,7 +16,7 @@
             <li><i class="fa-solid fa-xmark button close" onclick="CloseNavbar()" aria-label="close sidebar"></i></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#about">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a class="accent" href="index.html#projects">Projects</a></li>
             <li><a href="index.html#contact">Contact</a></li>
         </ul>
         <i class="fa-solid fa-bars button open" onclick="OpenNavbar()" aria-label="open sidebar"></i>
@@ -108,15 +108,16 @@
             <p>
                 The project can be broken down into three distinct iterations, the earlier two developed in Unity whilst the current one in Unreal Engine 5.
                 Alongside that there’s the UI design journey that has taken place overtime.
-                To structure this somewhat I’ll break it into three different sections: UI design process, Unity implementation and Unreal Engine implementation.
+                To structure this page I’ll break it into three different sections: Fungus + Unity iteration, Ink + Unity iteration and Unreal Engine iteratiom.
+                Fungus and Ink will make sense later.
             </p>
         </div>
 
-        <div class="header catfished-1">
+        <!--<div class="header catfished-1">
             <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">The UI design iteration process</h1>
-        </div>
+        </div>-->
 
-        <div class="wrapper">
+        <!--<div class="wrapper">
             <p>
                 The first verion I ever made I drew on my iPad by sketching over a screenshot of Discord.
             </p>
@@ -178,69 +179,126 @@
             </p>
             <img src="images/catfished/Discord_V7.png" alt="Discord Version 7, sketched over version of the previous one" width="1244" height="760" class="center">
 
-        </div>
+        </div>-->
 
         <div class="header catfished-2">
-            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Unity Iteration</h1>
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Unity + Fungus Iteration</h1>
         </div>
+
+        <!-- Fungus Unity -->
 
         <div class="wrapper">
-            <h3 style="text-align:center;">Fungus Implementation</h3>
-            <br><br>
             <p>
-                For the first Unity iteration I used the Unity plugin Fungus. It’s a very powerful tool and has basically everything one would need to make a standard visual novel.
-                I was at the time very new to creating UI so I spent time getting used to all the different UI components,
-                went mad about four times trying to get the vertical and horizontal boxes to size to content properly,
-                in the process created monstrosities that shall never see the light of day. Important part was that I learnt a lot.
-                <br>
-                I simultaneously took on learning more C# so I could extend Fungus’ functionality and in doing so learnt a lot about code structure and reading other people's code.
-                In so, the first version prototype was born. Truly majestic.
-                <br>
-                As it was a visual novel I wanted to make I kept to the formula; a dialogue box to display the text.
-                The rest of the screen mainly became a history of past messages. Not super immersive but holding closely to what a visual novel is.
-            </p>
-
-            <img src="images/catfished/DatcordUI_Screenshot1.png" alt="Screenshot from early version of the game." width="1598" height="900" class="center">
-
-            <p>
-                This version of the game does have a playable build!
-            </p>
-
-            <p>
-                A technical limitation was also a reason why I stuck to having the dialogue box.
-                Fungus’ Say command is what I was using for all the dialogue and the command displays text in a dialogue box.
-                I just added my own code to inform my system to spawn a message as well. I ended up making my own command using the Say command as a reference.
-                Doing this got me very familiar with how Fungus is programmed and made me comfortable with reading C# code and let me dip my toes into the world of custom editors.
-                I ended up making a few more custom commands to control what windows to show on screen.
+                Fungus is a node based visual novel plugin for Unity with great documentation and practically all the features needed to create a standard visual novel.
+                I’ve created a more standard visual novel with the plugin previously so I was familiar working with the plugin.
+                A key feature I hadn't attempted before was extending Fungus with my own commands.
                 <br><br>
-                And so, finally only the dialogue I specified would be shown in a dialogue box, the rest would be spawned on screen.
-            </p>
-
-            <img src="images/catfished/Screenshot_7Feb_4.png" alt="Screenshot from early version of the game." width="1601" height="902" class="center">
-
-            <p>
-                This system works fine and I could probably have made the entire game with it, but I personally wasn’t a fan of creating and editing content in Fungus’ node based system.
-                It’s great for smaller projects but this bad boy was going to need a lot of text and I was already burnt out translating the first chapter.
-                Spell checking was a nightmare because there was none and I can’t spell to save my life.
-                I wanted to just write the story in a text editor, slap that into the game and let it run but that wasn’t possible with Fungus.
-                You can export the existing nodes to a spreadsheet and edit that before importing it again, but a major limitation is you can’t add or remove nodes in the spreadsheet.
-                Another big one is that the export didn’t treat my custom commands too nicely, which was an issue when about 90% of the content was using my custom commands.
-                Now I could dive deep and try to extend Fungus further but I didn’t really feel up to the task nor found it worth my time.
+                Catfished takes place on a desktop and I need a couple of different windows showing unique data. I built a system to handle these windows and update their data.
+                I wrote the games content using Fungus, but in order for Fungus to interact with my system I had to create custom commands of my own that supplies my system with data,
+                for example on what window to display.
+                <br><br>
+                Getting content for spawning in chat messages was more of a struggle to integrate from Fungus into my system. One of the most used Fungus commands is the Say command,
+                which displays dialogue in a dialogue box with a typewriting effect. By default this command waits for user input before continuing to the next command, which is something I wanted.
+                I didn’t know how to do this on my own at the time so I added my own code into Fungus’ Say command.
+                It was scuffed. The Say command can take in a reference to a custom dialogue box, so I created multiple different ones depending on what message type I needed to display.
+                Then in code I used that dialogue box reference’s and it's name to determine what type of message should be sent, if any.
+                <br><br>
+                All the assets were drawn by me on my iPad. First version I just traced over screenshots of Discord and League of Legends. Unsure how legal this actually is.
             </p>
             <br><br>
+            <img src="images/catfished/DatcordUI_Screenshot1.png" alt="Screenshot from early version of the game." width="1598" height="900" class="center">
+            <br>
             <p>
-                This version also has a playable build of roughly the games first chapter!
+                This version of the game has a playable build!
             </p>
+            <br><br>
+
+            <p>
+                I wasn't satisfyied with the dialogue box displaying every message. Made the windows in the background somewhat redundant.
+                I did make another scuffed cheat to circumvent this by just hiding the dialogue box UI, which works but is as I said.. scuffed.
+
+                I decided to take on the task of making my own Say command so normal dialogue could be separated from chat dialogue.
+                I created the Chat command and got to code a custom editor in order to decide what variables to show depending on the context of what chat type it was.
+            </p>
+
+            <br><br>
+            <img src="images/catfished/Fungus_ChatCommand.gif" alt="Custom Chat command extending Fungus" width="565" height="573" class="center">
+            <br><br>
+            <p>
+                I also decided to remake the art assets so there was some design thought put into it. I removed a lot of unnecessary details as I wanted it to be more readable and simplified.
+            </p>
+            <br><br>
+            <img src="images/catfished/Screenshot_7Feb_4.png" alt="Screenshot from early version of the game." width="1601" height="902" class="center">
+            <br><br>
+            <p>
+                This iteration works, the only major feature it’s missing is a solid save system.
+                I could probably have made the entire game with it but, considering that I’ve spoiled there's two more after this, that didn’t end up happening.
+                I personally wasn’t a fan of creating and editing content in Fungus’ node based system.
+                It’s great for smaller projects but this bad boy was going to need a lot of text and I was already burnt out translating the first chapter.
+                Spell checking was a nightmare because there was none and I can’t spell to save my life. I wanted to just write the story in a text editor,
+                slap that into the game and let it run but that wasn’t possible with Fungus.
+                <br><br>
+                You can export the existing nodes to a spreadsheet and edit that before importing it again,
+                but a major limitation is you can’t add or remove nodes in the spreadsheet.
+                Another big one is that the export didn’t handle my custom commands too nicely, which was a slight issue when about 90% of the content was using my custom commands.
+                Now I could have deep dove and tried to extend Fungus further but I didn’t really feel up to the task nor found it worth my time.
+                <br><br>
+                And that’s where we leave this one. This version also has a build, approximately the game's first chapter.
+
+            </p>
+            <br><br>
+            <h3 style="text-align:center;">Window transition showcase</h3>
+            <br><br>
+            <img src="images/catfished/Fungus_CommandShowcase.gif" alt="Gif showcasing the different commands working" width="1287" height="753" class="center">
+
         </div>
+
+        <div class="header catfished-1">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Unity + Ink Iteration</h1>
+        </div>
+
+        <!-- Ink Unity -->
 
         <div class="wrapper bg2">
             <h3 style="text-align:center;">Ink</h3>
             <br><br>
-
             <p>
-                I did spend some time making my own text parser but stopped when I found Ink, a text editor that handles the branching paths and logic for you.
-                It also has a plugin for Unity so you can get the data line by line. Perfect.
+                After Fungus I restarted on a new project, writing my own system for parsing text from a json file.
+                This was short lived as I found Ink, a text editor with a scripting language for writing interactive stories, with a plugin for Unity.
+                The plan was similar to the Fungus iteration, just replacing Fungus with Ink.
+                For this new system, I write the story in Ink who manages the story flow, supplying the game with the next line when prompted.
+                I do still need to handle that line properly. I made syntax for how to format the dialogue so I could easier parse through it in code.
+                <br><br>
+                A change with this version was I wanted the game to be more interactive, less visual novel.
+                To do this I gave the player more freedom, letting them control the windows instead of the system doing it.
+                I prototyped up a taskbar that the player could interact with to open, bring to front and close windows with.
+                Clicking on a window will bring it to the front. The player can also move the windows around.
             </p>
+            <br><br>
+            <img src="images/catfished/UnityWindowShowcase.gif" alt="Gif of the Ink Unity version" width="1096" height="629" class="center">
+            <br><br>
+            <p>
+                This new design direction meant I needed to implement a way to notify the player when a change happened and their input was needed in a closed window.
+                Basically, I needed notifications.
+            </p>
+            <br><br>
+            <img src="images/catfished/UnityHighlighting.gif" alt="Gif of the Ink Unity version" width="768" height="469" class="center">
+            <br><br>
+            <p>
+                By this stage I flip-flopped a lot regarding the games visuals. I have a fairly sketchy artstyle for characters so I went with that for the UI aswell.
+                I had however discovered Figma and started to really enjoy playing around with it, creating a bunch of layout mockups.
+                I do like the sketchy look to the Fungus iteration of the game but wanted to try something new so I went with a more digital vector approach for this iteration.
+            </p>
+
+            <h3>Figma concepts</h3>
+            <p>
+                As my opinions on the games interactiveness had changed, so did the UI need to in order to reflect it. The windows would no longer be static background elements, 
+                the player could interact with them so I needed to streamline my design. I started soaking up a lot more UI and UX concepts. Keeping consistent margins, padding and sizes for elements, 
+                visual hierarchy emphasizing importance. The list goes on. Studying how the original apps I was trying to recreate in Figma taught me a lot.
+                Having a clear design direction. This was made a bit difficult with the fact I was trying to redesign different apps with quite differing design identities.
+                I wanted to keep the original inspirations unique design in my version so it'd still be recognizable but I also want a consistent design for my windows in my game.
+            </p>
+            <img src="images/catfished/Discord_V3.png" alt="Discord Version 3" width="1288" height="770" class="center">
 
             <img src="images/catfished/Catfished_Progress2.1.gif" alt="Gif of the Ink Unity version" width="1121" height="630" class="center">
 
@@ -252,7 +310,7 @@
         <div class="header catfished-3">
             <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Unreal Engine 5 Iteration</h1>
         </div>
-
+        <!-- Unreal Engine -->
         <div class="wrapper">
             <p>
                 After working in Unreal Engine and getting familiar with coding in blueprints and UMG, I started anew.
@@ -287,7 +345,7 @@
                 <div class="col-footer">
                     <h4>Project Links</h4>
                     <ul>
-                        <li><a href="projects.html">All Projects</a></li>
+                        <li><a class="accent" href="index.html#projects">All Projects</a></li>
                         <li><a href="projectLayout.html">Vampower</a></li>
                         <li><a href="fearOfTheLight.html">Fear of the Light</a></li>
                         <li><a href="chatPrototype.html">Chat Prototype</a></li>
