@@ -400,8 +400,8 @@ footer {
     gap: 4em;
     flex-wrap: wrap;
 }
-#about h2 {
-    margin-bottom: 0.5em;
+#about h1 {
+    margin-bottom: 0.25em;
 }
 
 #about .list {
