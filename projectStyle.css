@@ -493,13 +493,16 @@ footer {
     margin-bottom: 1em;
 }
 
+.col-footer ul li {
+    padding-left: 0.5em;
+}
+
 .col-footer ul li a {
     font-size: 1rem;
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
     color: #ababab;
     text-decoration: none;
     display: block;
-    padding-left: 1em;
     transition: all 0.3s ease;
 }
 
