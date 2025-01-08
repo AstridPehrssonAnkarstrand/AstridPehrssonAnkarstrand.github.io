@@ -1,4 +1,6 @@
-﻿* {
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serifs;
@@ -53,6 +55,8 @@ img {
 }
 
 body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
     background: #080808;
     color: #fff;
     min-height: 100vh;
@@ -201,7 +205,11 @@ footer {
 }
 
 .projects {
-    background: linear-gradient(45deg, red, blue);
+/*    background: linear-gradient(45deg, red, blue);*/
+    background: -webkit-radial-gradient(top left, ellipse, red 0%, blue);
+    background: -moz-radial-gradient(top left, ellipse, red 0%, blue);
+    background: radial-gradient(top left, ellipse, red 0%, blue);
+    background-attachment: fixed;
     /*background: rgba(0, 0, 0, 0.75);*/
 }
 .vampower {
@@ -386,6 +394,73 @@ footer {
 /*        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);*/
 }
 
+.row-about {
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+    flex-wrap: wrap;
+}
+#about h2 {
+    margin-bottom: 0.5em;
+}
+
+#about .list {
+    gap: 4em;
+}
+
+#about ul {
+    list-style: none;
+}
+#about ul li {
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+    color: #ababab;
+    text-decoration: none;
+    display: block;
+    padding-left: 0.5em;
+}
+
+#about h5 {
+    margin-bottom: 0.5em;
+}
+
+#about ul li h6{
+    color: #b54769;
+}
+
+#about img {
+    border-radius: 0.5em;
+}
+
+#about span {
+    color: #ff004f;
+}
+
+#about ul li p {
+    font-size: 0.9rem;
+    font-size: clamp(0.9rem, 0.86rem + 0.2000000000000001vw, 1.1rem);
+}
+
+/*#about .education {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}*/
+
+#about ul li:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+/*@media (max-width: 767px) {
+    .col-about {
+        width: 100%;
+        margin-bottom: 4em;
+    }*/
+
+/*    .container-footer {
+        padding: 60px 2% 0;
+    }*/
+/*}*/
+
 /*------------- Footer ----------*/
 
 .container-footer {
@@ -406,7 +481,7 @@ footer {
 }
 
 .col-footer {
-    width: auto;
+    width: fit-content;
     padding: 0 1em;
 }
 
@@ -424,7 +499,7 @@ footer {
     color: #ababab;
     text-decoration: none;
     display: block;
-    padding-left: 0.5em;
+    padding-left: 1em;
     transition: all 0.3s ease;
 }
 
@@ -439,7 +514,7 @@ footer {
 
 .col-footer ul li a:hover {
     color: #fff;
-    padding-left: 0.4em;
+    /*padding-left: 0.4em;*/
 }
 
 .col-footer .social-links {
