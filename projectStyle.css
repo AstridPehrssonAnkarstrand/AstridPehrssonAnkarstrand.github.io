@@ -362,6 +362,46 @@ footer {
     background-position: center;
     background-attachment: fixed;
     position: relative;
+    animation: slideshowAnimation;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    transition: all 500ms ease-in 200ms;
+}
+
+@keyframes slideshowAnimation {
+    from {
+        background-image: url("images/fearofthelight/Screenshot (509).png");
+    }
+    10% {
+        background-image: url("images/vampower/Vampower_MainMenu_Fin.png");
+    }
+    20% {
+        background-image: url("images/vampower/Vampower_ShopMenu_Fin.png");
+    }
+    30% {
+        background-image: url("images/fearofthelight/Screenshot (498).png");
+    }
+    40% {
+        background-image: url("images/catfished/WindowFrame_Flat(2).png");
+    }
+    50% {
+        background-image: url("images/fearofthelight/Screenshot (491).png");
+    }
+    60% {
+        background-image: url("images/vampower/Vampower_Gameplay_Day_2_Fin.png");
+    }
+    70% {
+        background-image: url("images/fearofthelight/Screenshot (500).png");
+    }
+    80% {
+        background-image: url("images/kinginspiredmockup/MobileMenuMockup.png");
+    }
+    90% {
+        background-image: url("images/catfished/Screenshot_13Feb.png");
+    }
+    to {
+        background-image: url("images/fearofthelight/Screenshot (509).png");
+    }
 }
 
 .header-text {

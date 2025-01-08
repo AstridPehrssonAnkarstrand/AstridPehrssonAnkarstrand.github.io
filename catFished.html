@@ -82,28 +82,48 @@
         <div class="wrapper bg2">
             <h2 style="text-align:center;">A long journey with many bumps</h2>
             <br>
-            <p style="text-align:center;">TLDR: I’m an idiot. Ask people for help. Kill your darlings.</p>
+            <p style="text-align:center;">TLDR: Ask people for help. Kill your darlings. Keep things simple, details can always be added but once there can be hard to remove.</p>
             <br><br>
             <p>
-                I started out with the plan of making a visual novel retelling of the novel I wrote with little deviation from the source.
+                I started out with the plan of making a visual novel retelling of the story I wrote with little deviation from the source.
                 My ambition for the project, as it often does for creators, grew overtime.
-                I imagined multiple different branches and endings, more involved interactions.
+                I began imagining multiple different branches and endings, more involved interactions.
                 <br><br>
-                One of my biggest pitfalls was getting stuck in my own head and being afraid to get others input.
-                Once I actually reached out for advice I gained so much clarity from just explaining the problems I was having.
+                One of my biggest struggles was getting stuck in my own head, afraid of seeking others input.
+                Once I actually reached out for advice I gained so much clarity from just trying to motivate and explain what I was trying to accomplish.
                 I was trying to find solutions to features I had tacked on but I didn’t really need.
-                I love the game Simulacra’s premise; the idea of going through someone’s device and trying to find clues about what happened to them is such an intriguing concept.
+                <br><br>
+                I love the premise of the game Simulacra;
+                the idea of going through someone’s device and trying to find clues about why they went missing and what happened to them is such an intriguing concept.
                 But Catfished isn’t a mystery horror game, it’s a cute linear romance story.
                 I don’t need to allow the player complete freedom and make all the apps functional with content.
-                There’s no point to it here. I’m trying to tell a linear story and that freedom would only introduce more issues I’d need to solve.
+                There’s no point to it here, just more work. It would increase immersion maybe but it would most likely only serve as a distraction.
+                I’m trying to tell a linear story and that freedom would only introduce more issues I’d need to solve.
                 <br><br>
-                I want to make a game of my own inspired by Simulacra one day, but Catfished is not the place for it.
+                I’d love to tackle a game like Simulacra and the challenges that come with it one day, but Catfished is not the place for it.
                 Realizing that and accepting that has helped remove a lot of unnecessary features I deemed must haves.
             </p>
         </div>
 
+        <div class="header catfished-1">
+        <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Development</h1>
+        </div>
+
         <div class="wrapper">
-            <h2 style="text-align:center;">How we're going to structuring this</h2>
+            <div class="container">
+                <div class="item">
+                    <h3 style="text-align:center;">Feature brief</h3>
+                </div>
+                <div class="item">
+                    <p>
+                        Catfished mainly takes place via desktop interactions, switching perspective between the two main characters. 
+                        I need to show an approximation of a desktop with a couple of different windows showing unique data for that window. 
+                        Discord and League of Legends are the two main windows, but also a web browser.
+                    </p>
+                </div>
+            </div>
+
+            <br><br><div class="divide-line"></div><br><br>
             <br><br>
             <p>
                 The project can be broken down into three distinct iterations, the earlier two developed in Unity whilst the current one in Unreal Engine 5.
@@ -114,72 +134,71 @@
         </div>
 
         <!--<div class="header catfished-1">
-            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">The UI design iteration process</h1>
-        </div>-->
-
+        <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">The UI design iteration process</h1>
+    </div>-->
         <!--<div class="wrapper">
-            <p>
-                The first verion I ever made I drew on my iPad by sketching over a screenshot of Discord.
-            </p>
+        <p>
+            The first verion I ever made I drew on my iPad by sketching over a screenshot of Discord.
+        </p>
 
-            <img src="images/catfished/Discord_V1.png" alt="Discord Version 1" width="1289" height="775" class="center">
+        <img src="images/catfished/Discord_V1.png" alt="Discord Version 1" width="1289" height="775" class="center">
+        <br><br>
+        <p>
+            Second version: I removed the server list and other unneeded details. Did keep some of the icons to fill the empty space.
+            The empty headers would be populated in the engine so it could be changed dynamically.
+        </p>
+        <img src="images/catfished/Discord_V2.png" alt="Discord Version 2" width="1290" height="779" class="center">
+
+        <br><br>
+        <p>
+            For the third version I had discovered Figma and took the opportunity to learn how to use it whilst recreating the Discord layout I was now very familiar with.
+            I did start to simplify areas by removing even more unnecessary details.
+            I got into the habit of using a consistent value for padding and margins which made the design look more professional.
             <br><br>
-            <p>
-                Second version: I removed the server list and other unneeded details. Did keep some of the icons to fill the empty space.
-                The empty headers would be populated in the engine so it could be changed dynamically.
-            </p>
-            <img src="images/catfished/Discord_V2.png" alt="Discord Version 2" width="1290" height="779" class="center">
+            Previously the window had just been a background image with messages being spawned in but at this stage design wise for the project,
+            I wanted the game to be more interactive. The player should be able to go through different chats, open and close different applications,
+            so I needed to be more conscious throughout my design. This is one of the reasons I removed as many unnecessary details as possible.
+            If it wasn’t interactive it was a distraction and therefore should be removed. Buttons should be consistent and clear that it was interactive.
+        </p>
+        <img src="images/catfished/Discord_V3.png" alt="Discord Version 3" width="1288" height="770" class="center">
 
-            <br><br>
-            <p>
-                For the third version I had discovered Figma and took the opportunity to learn how to use it whilst recreating the Discord layout I was now very familiar with.
-                I did start to simplify areas by removing even more unnecessary details.
-                I got into the habit of using a consistent value for padding and margins which made the design look more professional.
-                <br><br>
-                Previously the window had just been a background image with messages being spawned in but at this stage design wise for the project,
-                I wanted the game to be more interactive. The player should be able to go through different chats, open and close different applications,
-                so I needed to be more conscious throughout my design. This is one of the reasons I removed as many unnecessary details as possible.
-                If it wasn’t interactive it was a distraction and therefore should be removed. Buttons should be consistent and clear that it was interactive.
-            </p>
-            <img src="images/catfished/Discord_V3.png" alt="Discord Version 3" width="1288" height="770" class="center">
+        <br><br>
+        <p>
+            Forth version: I tried with rounder shapes and less outlines. Discord light is kind of cursed though.
+        </p>
+        <img src="images/catfished/Discord_V4-Light.png" alt="Discord Version 4" width="1288" height="770" class="center">
 
-            <br><br>
-            <p>
-                Forth version: I tried with rounder shapes and less outlines. Discord light is kind of cursed though.
-            </p>
-            <img src="images/catfished/Discord_V4-Light.png" alt="Discord Version 4" width="1288" height="770" class="center">
+        <br><br>
+        <p>
+            Forth version different color palette.
+            I can’t help but find light mode Discord cursed. I’m an avid darkmode user but it turns out dark mode has some interesting design nuggets.
+            Was very interesting reading up on it and learning about research on how much contrast to have between the font and the background color to make it readable.
+            After that I did some of my own experiments with darker color palettes.
+        </p>
+        <img src="images/catfished/Discord_V4-Red.png" alt="Discord Version 4 dark colorpalette red" width="1324" height="780" class="center">
+        <img src="images/catfished/Discord_V4-Blue.png" alt="Discord Version 4 dark colorpalette blue" width="1284" height="764" class="center">
 
-            <br><br>
-            <p>
-                Forth version different color palette.
-                I can’t help but find light mode Discord cursed. I’m an avid darkmode user but it turns out dark mode has some interesting design nuggets.
-                Was very interesting reading up on it and learning about research on how much contrast to have between the font and the background color to make it readable.
-                After that I did some of my own experiments with darker color palettes.
-            </p>
-            <img src="images/catfished/Discord_V4-Red.png" alt="Discord Version 4 dark colorpalette red" width="1324" height="780" class="center">
-            <img src="images/catfished/Discord_V4-Blue.png" alt="Discord Version 4 dark colorpalette blue" width="1284" height="764" class="center">
+        <br><br>
+        <p>
+            Fifth version: After that darkness I wanted to play around with some more fun and colorful palettes.
+        </p>
+        <img src="images/catfished/Discord_V5.png" alt="Discord Version 5 more round and colorful" width="1282" height="722" class="center">
 
-            <br><br>
-            <p>
-                Fifth version: After that darkness I wanted to play around with some more fun and colorful palettes.
-            </p>
-            <img src="images/catfished/Discord_V5.png" alt="Discord Version 5 more round and colorful" width="1282" height="722" class="center">
+        <br><br>
+        <p>
+            Sixth version: Up until now it’s all been fun and I’ve learnt a lot but does it actually fit the game?
+            I do like the more clean digital looks of the Figma designs but my art style is more sketchy.
+            I decided to go back to my roots and redraw the original style with the new simplified design.
+        </p>
+        <img src="images/catfished/Discord_V6.png" alt="Discord Version 6 grey scale and simplified design" width="1284" height="757" class="center">
 
-            <br><br>
-            <p>
-                Sixth version: Up until now it’s all been fun and I’ve learnt a lot but does it actually fit the game?
-                I do like the more clean digital looks of the Figma designs but my art style is more sketchy.
-                I decided to go back to my roots and redraw the original style with the new simplified design.
-            </p>
-            <img src="images/catfished/Discord_V6.png" alt="Discord Version 6 grey scale and simplified design" width="1284" height="757" class="center">
+        <br><br>
+        <p>
+            Seventh version: I used the previous version as a template and drew over it, creating a sketchy version to use in the engine.
+        </p>
+        <img src="images/catfished/Discord_V7.png" alt="Discord Version 7, sketched over version of the previous one" width="1244" height="760" class="center">
 
-            <br><br>
-            <p>
-                Seventh version: I used the previous version as a template and drew over it, creating a sketchy version to use in the engine.
-            </p>
-            <img src="images/catfished/Discord_V7.png" alt="Discord Version 7, sketched over version of the previous one" width="1244" height="760" class="center">
-
-        </div>-->
+    </div>-->
 
         <div class="header catfished-2">
             <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Unity + Fungus Iteration</h1>
@@ -190,35 +209,42 @@
         <div class="wrapper">
             <p>
                 Fungus is a node based visual novel plugin for Unity with great documentation and practically all the features needed to create a standard visual novel.
-                I’ve created a more standard visual novel with the plugin previously so I was familiar working with the plugin.
-                A key feature I hadn't attempted before was extending Fungus with my own commands.
+                I’ve created a more standard visual novel with the plugin previously so I’m familiar with it.
+                A key feature I hadn't attempted before was extending Fungus with my own commands using C#.
                 <br><br>
-                Catfished takes place on a desktop and I need a couple of different windows showing unique data. I built a system to handle these windows and update their data.
-                I wrote the games content using Fungus, but in order for Fungus to interact with my system I had to create custom commands of my own that supplies my system with data,
-                for example on what window to display.
-                <br><br>
-                Getting content for spawning in chat messages was more of a struggle to integrate from Fungus into my system. One of the most used Fungus commands is the Say command,
-                which displays dialogue in a dialogue box with a typewriting effect. By default this command waits for user input before continuing to the next command, which is something I wanted.
-                I didn’t know how to do this on my own at the time so I added my own code into Fungus’ Say command.
-                It was scuffed. The Say command can take in a reference to a custom dialogue box, so I created multiple different ones depending on what message type I needed to display.
-                Then in code I used that dialogue box reference’s and it's name to determine what type of message should be sent, if any.
-                <br><br>
-                All the assets were drawn by me on my iPad. First version I just traced over screenshots of Discord and League of Legends. Unsure how legal this actually is.
             </p>
+            <br><br>
+            <p>
+                To simulate a desktop I built the windows with UI and developed a system to handle updating the windows.
+                I wrote the game's content using Fungus, but in order for Fungus to interact with my system I had to create custom commands of my own that supplied my system with data,
+                for example what window to display.
+                <br><br>
+                Getting content from Fungus to my system in order to spawn in chat messages was more of a challenge to integrate. One of the most used Fungus commands is the Say command,
+                which displays dialogue in a dialogue box with a typewriting effect. By default this command waits for user input before continuing to the next command.
+                I wanted this delay until input between each message but didn’t know how to do this on my own. Instead, I added my own code into Fungus’ Say command.
+                <br><br>
+                The implementation I came up with was a bit scuffed. The Say command can take in a reference to a custom dialogue box,
+                so I created multiple different ones depending on what message type I needed to display.
+                Then in code I used that dialogue box reference and its name to determine what type of message should be sent, if any.
+                A side effect of this was that every message got displayed as a dialogue box.
+            </p>
+
             <br><br>
             <img src="images/catfished/DatcordUI_Screenshot1.png" alt="Screenshot from early version of the game." width="1598" height="900" class="center">
-            <br>
-            <p>
-                This version of the game has a playable build!
-            </p>
             <br><br>
 
+            <h3 style="text-align:center;">Removing the dialogue box</h3>
             <p>
-                I wasn't satisfyied with the dialogue box displaying every message. Made the windows in the background somewhat redundant.
-                I did make another scuffed cheat to circumvent this by just hiding the dialogue box UI, which works but is as I said.. scuffed.
+                I made unique dialogue boxes to match the window it came from but after implementing it and playtesting I found it odd.
+                It was distracting, acting like a magnifying glass on the latest message.
+                The window with the messages is already there so it feels unnecessary displaying it twice.
+                I quickly hacked a test solution of hiding the dialogue box by lowering the UI’s opacity.
+                I found this to work better and though the solution works it isn’t a very clean approach.
+                <br><br>
+                I decided to take on the task of making my own Say command so normal dialogue is separated from chat dialogue.
+                I created the Chat command by duplicating the Say command and removing unneeded code.
+                I then coded a custom editor for the command so I could toggle what variables to show based on the context of what chat type it was.
 
-                I decided to take on the task of making my own Say command so normal dialogue could be separated from chat dialogue.
-                I created the Chat command and got to code a custom editor in order to decide what variables to show depending on the context of what chat type it was.
             </p>
 
             <br><br>
@@ -230,6 +256,17 @@
             <br><br>
             <img src="images/catfished/Screenshot_7Feb_4.png" alt="Screenshot from early version of the game." width="1601" height="902" class="center">
             <br><br>
+            <h3 style="text-align:center;">Window animations</h3>
+            <br><br>
+            <p>
+                I worked a bit on transitions between the different windows using a tweening library.
+            </p>
+            <br><br>
+            <img src="images/catfished/Fungus_CommandShowcase.gif" alt="Gif showcasing the different commands working" width="1287" height="753" class="center">
+            <br><br><br><br>
+            <h3 style="text-align:center;">Concluding the first iteration</h3>
+
+            <br>
             <p>
                 This iteration works, the only major feature it’s missing is a solid save system.
                 I could probably have made the entire game with it but, considering that I’ve spoiled there's two more after this, that didn’t end up happening.
@@ -247,10 +284,6 @@
 
             </p>
             <br><br>
-            <h3 style="text-align:center;">Window transition showcase</h3>
-            <br><br>
-            <img src="images/catfished/Fungus_CommandShowcase.gif" alt="Gif showcasing the different commands working" width="1287" height="753" class="center">
-
         </div>
 
         <div class="header catfished-1">
@@ -259,52 +292,83 @@
 
         <!-- Ink Unity -->
 
-        <div class="wrapper bg2">
-            <h3 style="text-align:center;">Ink</h3>
+        <div class="wrapper">
             <br><br>
             <p>
-                After Fungus I restarted on a new project, writing my own system for parsing text from a json file.
+                After Fungus I started with writing my own system for parsing text from a json file.
                 This was short lived as I found Ink, a text editor with a scripting language for writing interactive stories, with a plugin for Unity.
                 The plan was similar to the Fungus iteration, just replacing Fungus with Ink.
-                For this new system, I write the story in Ink who manages the story flow, supplying the game with the next line when prompted.
-                I do still need to handle that line properly. I made syntax for how to format the dialogue so I could easier parse through it in code.
                 <br><br>
-                A change with this version was I wanted the game to be more interactive, less visual novel.
+                I made an effort to use proper coding standards and separation of concerns so one script didn’t do everything.
+                I set up a couple of different manager scripts as singletons for handling a specific part of the system
+                and used inheritance for the windows so basic features that should be shared didn’t need to be duplicated.
+
+            </p>
+            <br><br>
+            <h3 style="text-align:center;">Dialogue Parsing</h3>
+            <br>
+            <p>
+                For this new system, I wrote the content in Ink, which manages the story flow and supplies the game manager with the next line when prompted.
+                I do still need a way to handle that line properly. I made syntax for how to format the dialogue so I could easier parse through it in code.
+            </p>
+            <br><br>
+            <h3 style="text-align:center;">Increase interactiveness</h3>
+            <br>
+            <p>
+                My vision for the game had changed, I wanted the game to be more immersive and interactive, less visual novel.
                 To do this I gave the player more freedom, letting them control the windows instead of the system doing it.
-                I prototyped up a taskbar that the player could interact with to open, bring to front and close windows with.
+                I prototyped a taskbar that the player could interact with to open, bring to front and close windows with.
                 Clicking on a window will bring it to the front. The player can also move the windows around.
+                In order for all the windows to be able to do this I used inheritance.
+                The base window class holds the code for moving around and communicates with a Desktop manager on being placed in front.
             </p>
             <br><br>
             <img src="images/catfished/UnityWindowShowcase.gif" alt="Gif of the Ink Unity version" width="1096" height="629" class="center">
             <br><br>
+
+            <h3>UI development in Figma</h3>
+            <br>
             <p>
-                This new design direction meant I needed to implement a way to notify the player when a change happened and their input was needed in a closed window.
-                Basically, I needed notifications.
+                The UI should reflect my new design ideas of interactiveness.
+                I started with simplifying and removed unnecessary details if the player couldn’t interact with it or gain some information from it.
+                A struggle I had redesigning the UI was balancing aspects of the original with a consistent design for my game.
+                I wanted to keep the original’s more unique aspects so it's still recognizable but it shouldn’t be a rip-off.
             </p>
             <br><br>
-            <img src="images/catfished/UnityHighlighting.gif" alt="Gif of the Ink Unity version" width="768" height="469" class="center">
+            <h5 style="text-align:center;">First Figma design of Discord and League client windows</h5>
+            <br>
+            <div class="container">
+                <div class="item">
+                    <img src="images/catfished/Discord_V3.png" alt="Discord Version 3" width="1288" height="770" class="center">
+                </div>
+                <div class="item">
+                    <img src="images/catfished/LOLWindow.png" alt="League version 3" width="1284" height="762" class="center">
+                </div>
+            </div>
+            <br><br><br>
+            <h5 style="text-align:center;">Second Figma design of Discord and League client windows</h5>
+            <br>
+            <div class="container">
+                <div class="item">
+                    <img src="images/catfished/Discord_V4-Blue.png" alt="Discord Version 3" width="1284" height="764" class="center">
+                </div>
+                <div class="item">
+                    <img src="images/catfished/WindowFrame_Flat(2).png" alt="Discord Version 3" width="1920" height="1080" class="center">
+                </div>
+            </div>
+            <br><br><br>
+            <h3 style="text-align:center;">Concluding the second iteration</h3>
+            <br>
+            <p>
+                I learnt a lot about project structure and got more advanced with how I handled the UI.
+                The previous version was static whilst the current one can be rescaled if needed. I also added more animations and features to this one.
+                The windows work and can display information properly. There’s also a basic dialogue box functionality working.
+                What’s missing is the basic visual novel features for later in the story when I want to display character portraits.
+                <br><br>
+                This iteration doesn’t have a build.
+            </p>
             <br><br>
-            <p>
-                By this stage I flip-flopped a lot regarding the games visuals. I have a fairly sketchy artstyle for characters so I went with that for the UI aswell.
-                I had however discovered Figma and started to really enjoy playing around with it, creating a bunch of layout mockups.
-                I do like the sketchy look to the Fungus iteration of the game but wanted to try something new so I went with a more digital vector approach for this iteration.
-            </p>
-
-            <h3>Figma concepts</h3>
-            <p>
-                As my opinions on the games interactiveness had changed, so did the UI need to in order to reflect it. The windows would no longer be static background elements, 
-                the player could interact with them so I needed to streamline my design. I started soaking up a lot more UI and UX concepts. Keeping consistent margins, padding and sizes for elements, 
-                visual hierarchy emphasizing importance. The list goes on. Studying how the original apps I was trying to recreate in Figma taught me a lot.
-                Having a clear design direction. This was made a bit difficult with the fact I was trying to redesign different apps with quite differing design identities.
-                I wanted to keep the original inspirations unique design in my version so it'd still be recognizable but I also want a consistent design for my windows in my game.
-            </p>
-            <img src="images/catfished/Discord_V3.png" alt="Discord Version 3" width="1288" height="770" class="center">
-
             <img src="images/catfished/Catfished_Progress2.1.gif" alt="Gif of the Ink Unity version" width="1121" height="630" class="center">
-
-            <p>
-                This version of the game got the main windows working and a basic dialogue box. No portraits though.
-            </p>
         </div>
 
         <div class="header catfished-3">
@@ -312,20 +376,42 @@
         </div>
         <!-- Unreal Engine -->
         <div class="wrapper">
-            <p>
-                After working in Unreal Engine and getting familiar with coding in blueprints and UMG, I started anew.
-                And will you look at that, Ink just happens to have an Unreal Engine plugin! Well, kind of, it’s not as official as the Unity version but still. It works!
+            <br><br>
+            <h3 style="text-align:center;">Continued UI development in Figma</h3>
+            <br>
+            <h5 style="text-align:center;">Third Figma design of Discord and League client windows</h5>
+            <br>
+            <div class="container">
+                <div class="item">
+                    <img src="images/catfished/Discord_V5.png" alt="Discord Version 3" width="1282" height="722" class="center">
+                </div>
+                <div class="item">
+                    <img src="images/catfished/WindowFrame_Flat(1).png" alt="League version 3" width="1920" height="1080" class="center">
+                </div>
+            </div>
+            <br><br><br>
+            <h5 style="text-align:center;">Fourth Figma design of Discord and League client windows</h5>
+            <br>
+            <div class="container">
+                <div class="item">
+                    <img src="images/catfished/Discord_V6.png" alt="Discord Version 3" width="1284" height="757" class="center">
+                </div>
+                <div class="item">
+                    <img src="images/catfished/WindowFrame_Flat.png" alt="Discord Version 3" width="1920" height="1080" class="center">
+                </div>
+            </div>
+            <br><br><br>
 
-                <br><br>
-                You can make round corners!! And materials specifically for UI.
+            <h3 style="text-align:center;">In Progress</h3>
+            <br>
+            <p>
+                I implemented a system for handling emoji's and sending images.
             </p>
             <br><br>
             <img src="images/catfished/Catfished_Progress3.1.gif" alt="Gif of the Unreal Engine version" width="1306" height="785" class="center">
             <br><br>
-            <p>
-                Visual novel scene transitions.
-            </p>
-            <br><br>
+                <h3 style="text-align:center;">Visual novel transitions</h3>
+            <br>
             <img src="images/catfished/Catfished_VN_Transitions.gif" alt="Gif of the visual novel scene transitions" width="1164" height="592" class="center">
         </div>
 
