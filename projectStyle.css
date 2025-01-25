@@ -43,6 +43,10 @@ h1 {
     font-size: clamp(3.05rem, 2.97375rem + 0.3812500000000001vw, 3.43125rem);
 }
 
+span {
+    color: #b54769;
+}
+
 img {
     max-width: 100%;
     height: auto;
