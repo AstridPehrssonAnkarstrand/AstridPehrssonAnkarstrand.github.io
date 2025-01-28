@@ -25,18 +25,69 @@
     <div id="overlay" onclick="CloseNavbar()" aria-hidden="true"></div>
 
     <main>
+
         <div class="header chat-prototype">
             <!--<img src="images/vampower/Vampower_Title.png" alt="Vampower Title text" width="748" height="150">-->
             <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Chat Prototype</h1>
         </div>
 
+        <div style="max-width: 50%;" class="center">
+            <div class="outerVideoWrapper">
+                <div class="videoWrapper">
+                    <iframe width="720" height="405" src="https://www.youtube.com/embed/5-Kd7oZkdxY?si=mUWz6Sm2-pIScdaV"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
         <div id="summary">
             <div class="container">
-                <div class="list">
-                    <div class="summary-item">
-                        <h5>My Role(s)</h5>
-                        <p>
-                            Solo developer
+                <!--<div class="item" style="flex: 0.35">
+                <h5>My Role(s)</h5>
+                <p>-->
+                <!--Solo developer,-->
+                <!--Solo, Technical Design, UI/ UX Design
+                </p>
+                <br>
+                <h5>Tools</h5>
+                <p>
+                    Unreal Engine 5, Figma, Miro, Github, Google Sheets
+                </p>
+                <br>
+                <h5>Time</h5>
+                <p>
+                    2 weeks
+                </p>
+                <br>
+                <h5>Team size</h5>
+                <p>
+                    Solo
+                </p>
+            </div>-->
+
+
+
+
+                <!--<div class="item" style="flex: 100%">
+                    <h6>Prototype Features</h6>
+                    <ul>
+                        <li><p>Dialogue system</p></li>
+                        <li><p>Game content read from Data tables made from CSV-files</p></li>
+                        <li><p>Text parser that handles branching storypaths</p></li>
+                        <li><p>System can handle multiple chat conversations at once</p></li>
+                        <li><p>UI portraying a mobile chatting app</p></li>
+                    </ul>
+                </div>-->
+
+                <div class="item">
+                    <!--<h1>Chat Prototype</h1>-->
+                    <div class="list">
+                <div class="summary-item">
+                    <h5>My Role(s)</h5>
+                    <p>
+                    Solo developer,
+                    Solo, Technical Design, UI/ UX Design
                         </p>
                     </div>
                     <div class="summary-item">
@@ -49,7 +100,7 @@
                     <div class="summary-item">
                         <h5>Time</h5>
                         <p>
-                            Two weeks
+                            2 weeks
                         </p>
                     </div>
                     <div class="summary-item">
@@ -59,203 +110,419 @@
                         </p>
                     </div>
                 </div>
-                <div class="divide-line"></div>
-                <div>
-                    <p>
-                        A short prototype exploring storytelling through chat conversations.
-                        Made for an Advanced Visual Scripting course at Futuregames. Game concept inspired by my side project.
-                        <br><br>
+                    <div class="divide-line"></div>
+                    <div>
+                        <p>
+                            A short <span>prototype</span> exploring <span>storytelling</span> through <span>chat conversations</span>.
+                            Made for an Advanced Visual Scripting course at Futuregames. Game concept inspired by my side project.
+                            <!--<br><br>
 
                         I created a dialogue system that gets its content from data tables and parses it into chat messages.
                         The parser can handle branching choices and the system can handle multiple chat rooms at the same time.
                         Content can be written then imported into the game engine using CSV-files.
                         <br><br>
 
-                        Learned a lot of best practices regarding visual scripting and project structure.
-                    </p>
+                        Learned a lot of best practices regarding visual scripting and project structure.-->
+                        </p>
+                        <br>
+                        <h6>Prototype Features</h6>
+                        <ul>
+                            <li><p>Dialogue system</p></li>
+                            <li><p>Game content read from Data tables made from CSV-files</p></li>
+                            <li><p>Text parser that handles branching storypaths</p></li>
+                            <li><p>System can handle multiple chat conversations at once</p></li>
+                            <li><p>UI portraying a mobile chatting app</p></li>
+                        </ul>
+                    </div>
                 </div>
+
 
                 <!--<div class="summary-gamelink">
-                    <h3>Play the game!</h3>
-                    <a target="_blank" href="https://futuregames.itch.io/vampower" class="btn"><h6>Itch.io Page</h6></a>
-                </div>-->
+                <h3>Play the game!</h3>
+                <a target="_blank" href="https://futuregames.itch.io/vampower" class="btn"><h6>Itch.io Page</h6></a>
+            </div>-->
             </div>
         </div>
 
-        <div class="wrapper bg1">
-            <h3 style="text-align:center;">Video of the full game</h3>
-            <br>
-            <div class="outerVideoWrapper">
-                <div class="videoWrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5-Kd7oZkdxY?si=mUWz6Sm2-pIScdaV"
-                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
+
+
 
         <div class="header chat-prototype-2">
-            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);" class="text-gradient">Development</h1>
-        </div>
-
-        <div class="wrapper bg2">
-            <h3 style="text-align:center;">UI Layout</h3>
-            <br><br>
-            <div class="container">
-                <div class="item" style="text-align: center;">
-                    <h5>Layout in figma</h5>
-                    <br>
-                    <img src="images/chatprototype/Mockup.png" width="348" height="651"
-                         alt="Mobile chat UI layout in Figma">
-                    <!--<img src="images/chatprototype/Mockup_Small.png" width="232" height="434"
-                    alt="Mobile chat UI layout in Figma">-->
-                    <!--<img src="images/chatprototype/Mockup.png" width="464" height="868"
-                    alt="Mobile chat UI layout in Figma">-->
-                </div>
-                <div class="item" style="text-align:center;">
-                    <h5>Final version in engine</h5>
-                    <br>
-                    <!-- Og size 573, 869 -->
-                    <img src="images/chatprototype/ChatProt.png" width="429" height="651"
-                         alt="Final Mobile chat UI layout in Unreal Engine">
-                </div>
-            </div>
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);" class="text-gradient">TECHNICAL DESIGN</h1>
         </div>
 
 
 
         <div class="wrapper">
-            <h3 style="text-align:center;">Data structure</h3>
-            <br><br>
+            <h3 style="text-align:center;">Dialogue System</h3>
             <p>
-                All the games content comes from Data tables that I manually imported as CSV- files into Unreal Engine.
-                I sadly didn’t find an easy alternative to get the data automatically from a live Google Sheets document without a plugin or C++,
-                which wasn’t allowed for the course.
-                <br><br>
-                The game has two types of content, the story skeleton and dialogue.
-                The story skeleton is a data table that contains references to the dialogue content and dictates the order in which it is shown.
-                The dialogue content is also a data table, one data table per conversation, where a row represents one dialogue line.
-                For how a dialogue line is broken up I took inspiration from how Honkai: Stair Rail writes their dialogue, as I found it concise and readable.
+
             </p>
             <br><br>
-            <!-- OG size: 1464, 485 -->
-            <img src="images/chatprototype/ChatProt_DialogueDataTable.png" width="1097" height="363"
-                 alt="Dialogue Data table showing the games first conversation." class="center">
-            <br><br>
-            <h4 style="text-align:center;">Dialogue data table syntax</h4>
-            <br>
-            <div class="container" style="flex-wrap: wrap;">
-                <div class="item" style="flex: 100%">
-                    <h6>ID:</h6>
-                    <p>
-                        Unreal Engine needs it for the row name, must be unique.
-                        I used the element index but in an actual production a more advanced ID would be needed.
-                    </p>
+            <div class="container">
+                <div class="item">
+                    <img src="images/chatprototype/Chat_ContentLoop.jpg" width="1021" height="382" class="center">
                 </div>
-                <div class="item" style="flex: 100%">
-                    <h6>Indent:</h6>
+                <div class="item">
+                    <h6>GameMode</h6>
                     <p>
-                        Informs what level the story is at. Used after dialogue choice to branch the story.
+                        Responsible for handling the games content.
                     </p>
-                </div>
-                <div class="item" style="flex: 100%">
-                    <h6>IsExtend:</h6>
+                    <br>
+                    <h6>WBP_Window</h6>
                     <p>
-                        A bool that informs if the row is sent from the same sender as the previous one.
-                        This determines the message's margin and whether to display the sender.
+                        Holds multiple WBP_Chatroom referenced. Responsible for creating them and updating them with content. Also handles which chatroom to show.
                     </p>
-                </div>
-                <div class="item" style="flex: 100%">
-                    <h6>Sender:</h6>
+                    <br>
+                    <h6>WBP_Chatroom</h6>
                     <p>
-                        Name that is displayed on the message, used as NameID to get the message material.
-                        <br>
-                        A message from the player should use the syntax (Me) instead.
-                        <br>
-                        If the player should be able to select a reply, the syntax is {Choice}. The choice selected by the player will be sent as a message by default.
-                        <br>
-                        The default can be overridden by using the syntax {Choice|True}. This could be useful for summarizing a choice and then sending the actual longer messages after.
-                    </p>
-                </div>
-                <div class="item" style="flex: 100%">
-                    <h6>Dialogue:</h6>
-                    <p>
-                        The actual dialogue. Can be styled. A line break can also be forced.
-                        <br>
-                        Currently implemented styling is: italic, bold, emoji.
-                        <br>
-                        For styling I use HTML formulation.
-                        <br>
-                        Note that style notations can’t be nested, you need to end the previous one before starting a new one.
-                        This is an engine limitation with how RichTextStyles work.
-                        <br>
-                        Emojis use a different font so need to be wrapped with styling notation in order to be displayed properly. All emojis should however be possible.
-                        Emoji styling has 3 versions, normal text size, font size 48, font size 68.
-                        The latter two are only recommended when no text is used as the larger ones will increase the breadtexts fontsize, leaving unwanted gaps.
+                        Displays the content and handles player dialogue input.
                     </p>
                 </div>
             </div>
+
         </div>
 
         <div class="wrapper bg1">
             <h3 style="text-align:center;">Game Mode</h3>
             <br><br>
             <p>
-                The game mode has all the story information. When prompted it tries to continue the dialogue, but if that’s not possible it will try to continue the story instead.
-                To handle the story information the game mode has two actor components, one that contains the data and the other for parsing it.
-                The parse component parses the data into the specified format. This does mean any actor could be managing the story,
-                but I decided to use the game mode as it’s easily reached by other actors and I know the game is single player so the lack of replication isn’t an issue.
+                I use a custom GameMode class to handle the games content as it's easily reached and the lack of replication isn't an issue in a single player game.
+                It has all two actor components, one that contains the data and the other for parsing it.
+            </p>
+            <img src="images/chatprototype/Chat_GameModeComponents.jpg" width="810" height="270" class="center">
+        </div>
+
+        <div class="wrapper">
+            <h4 style="text-align:center;">Data/ Content structure</h4>
+            <br><br>
+            <p>
+                All the games content comes from <span>Data tables</span> that I manually <span>imported</span> as <span>CSV-files</span> into <span>Unreal Engine</span>.
+                <!--I sadly didn’t find an easy alternative to get the data automatically from a live Google Sheets document without a plugin or C++,
+            which wasn’t allowed for the course.-->
+                The game has <span>2 content types</span>; <span>story</span> and <span>dialogue</span>.
             </p>
             <br><br>
-            <h4 style="text-align:center;">Interface + Function library</h4>
-            <br>
+            <!--<div class="container">
+            <div class="item">
+                <h6>Story content</h6>
+                <p>
+                    The story content is a <span>data table</span> with <span>references</span> to the <span>ChatroomID</span> and <span>dialogue content</span>. All case sensitive.
+                </p>
+            </div>
+            <div class="item">
+                <h6>Dialogue content</h6>
+                <p>
+                    The dialogue content is also a <span>data table</span>, one data table per conversation, where a <span>row represents one dialogue line</span>.
+                    <br>
+                    I used <span>Honkai: Stair Rail</span> as inspiration for the <span>dialogue formatting</span>, as I found it concise and readable.
+                </p>
+            </div>
+        </div>-->
+
+            <br><br>
+
+            <h5 style="text-align:center;">Story content</h5>
             <p>
-                During the course we learnt different ways to access references without casting.
-                The most used in my project is a combination of an interface
-                and a blueprint function library to get references to my custom game mode and HUD class.
+                The story content is a data table with references to the ChatroomID and dialogue content. All case sensitive.
             </p>
+            <br>
+            <div class="container">
+                <div class="item">
+                    <img src="images/chatprototype/Chat_StoryDataTable.png" width="1089" height="338" alt="Story Data table" class="center">
+                </div>
+                <div class="item">
+                    <!--<h6>Syntax explanation</h6>-->
+                    <p>
+                        <span><b>Command: </b></span>
+                        The command type. Chatroom-command adds dialogue to a chatroom.
+                    </p>
+                    <br>
+                    <p>
+                        <span><b>Data: </b></span>
+                        <!--Different for each command-type.--> For the Chatroom-command; ChatroomID is required, if it's a new chatroom a CategoryID is also required divided by "|".
+                    </p>
+                    <br>
+                    <p>
+                        <span><b>DialogueDataTable: </b></span>
+                        The file path to the dialogue content.
+                    </p>
+                </div>
+            </div>
+
+            <br><br>
+
+
+            <!--<div class="container">
+
+            <div class="item">
+                <h6>Indent</h6>
+                <p>
+                    Informs what indentation level the dialogue is at. Used after dialogue choice to branch the dialogue.
+                </p>
+                <br>
+                <h6>IsExtend</h6>
+                <p>
+                    Informs if different sender from previous message. Determines the margin and whether to display the sender.
+                </p>
+                <br>
+                <h6>Sender</h6>
+                <p>
+                    <span>Name</span> of message sender, used as NameID to get the message material.
+                    <br>
+                    Player sent message uses syntax <span>(Me)</span>.
+                    <br>
+                    Player choice uses syntax <span>{Choice}</span>. By default the choice selected by the player will be sent as a message.
+                    <br>
+                    Player choice override default uses syntax <span>{Choice|True}</span>. Useful for summarizing a choice, then sending the actual messages.
+                </p>
+                <h6>Dialogue</h6>
+                <p>
+                    The actual dialogue. Can be <span>styled</span>. A line break can also be forced.
+                    <br>
+                    Available styling is: <span>italic, bold, emoji</span>.
+                    <br>
+                    For styling I use HTML formulation.
+                    <br>
+                    Note that style notations can’t be nested, you need to end the previous one before starting a new one.
+                    This is an engine limitation with how RichTextStyles work.
+                    <br>
+                    Emojis use a different font so need to be wrapped with styling notation in order to be displayed properly. All emojis should however be possible.
+                    Emoji styling has 3 versions, normal text size, font size 48, font size 68.
+                    The latter two are only recommended when no text is used as the larger ones will increase the breadtexts fontsize, leaving unwanted gaps.
+                </p>
+                <br>
+            </div>
+            <div class="item">
+                <img src="images/chatprototype/Chat_DialogueDataTable.png" width="1040" height="428" alt="Dialogue Data table showing the games first conversation." class="center">
+            </div>
+        </div>-->
+
+
+            <div class="wrapper">
+                <h5 style="text-align:center;">Dialogue content</h5>
+                <p>
+                    The dialogue content is also a data table, <span>one data table per conversation</span>, where a <span>row represents one dialogue line</span>.
+                    <br>
+                    I used <span>Honkai: Stair Rail</span> as inspiration for the <span>dialogue formatting</span>, as I found it concise and readable.
+                </p>
+                <br>
+                <!-- OG size: 1464, 485 -->
+                <!--<img src="images/chatprototype/ChatProt_DialogueDataTable.png" width="1097" height="363" alt="Dialogue Data table showing the games first conversation." class="center">-->
+                <img src="images/chatprototype/Chat_DialogueDataTable.png" width="1040" height="428" alt="Dialogue Data table showing the games first conversation." class="center">
+                <br>
+                <h6>Syntax explanation</h6>
+                <div class="container" style="flex-wrap: wrap;">
+
+                    <div class="item" style="flex: 100%">
+                        <p>
+                            <span><b>ID: </b></span>
+                            Row name, must be unique.
+                            <!--I used the element index but in an actual production a more advanced ID would be needed.-->
+                        </p>
+                    </div>
+                    <div class="item" style="flex: 100%">
+                        <p>
+                            <span><b>Indent: </b></span>
+                            Dialogue indentation level. Used after dialogue choice to branch the dialogue.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <p>
+                            <span><b>IsExtend: </b></span>
+                            If same sender as previous message.
+                            Determines the margin and whether to display the sender.
+                        </p>
+                    </div>
+                    <div class="item" style="flex: 100%">
+                        <p>
+                            <span><b>Sender: </b></span>
+                            Name of message sender, used as NameID to get the message material.
+                            <br>
+                            Player sent message uses syntax <b>(Me)</b>.
+                            <br>
+                            Player choice uses syntax <b>{Choice}</b>. By default the choice selected by the player will be sent as a message.
+                            <br>
+                            Player choice override default uses syntax <b>{Choice|True}</b>. Useful for summarizing a choice, then sending the actual messages.
+                        </p>
+                    </div>
+                    <div class="item" style="flex: 100%">
+                        <p>
+                            <span><b>Dialogue: </b></span>
+                            Dialogue line. Available styling is: italic, bold, emoji.
+                            <br>
+                            Note that style notations can’t be nested, the previous styling needs to be ended before starting a new one.
+                            This is a limitation with how RichTextStyles work.
+                            <!--<br>
+                        Emojis use a different font so need to be wrapped with styling notation in order to be displayed properly. All emojis should however be possible.
+                        Emoji styling has 3 versions, normal text size, font size 48, font size 68.
+                        The latter two are only recommended when no text is used as the larger ones will increase the breadtexts fontsize, leaving unwanted gaps.-->
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="wrapper">
             <h3 style="text-align:center;">Widgets</h3>
             <br><br>
+
             <p>
-                I have a main widget that holds a side menu and a container for the chatroom.
-                <br>
-                I debated on how I should structure the chatroom. I could have one chat room widget and change its contents based on which chat room is currently open,
-                or have multiple chat rooms that are hidden when not in use.
-                In the end I chose the second approach, that way the chatroom could handle itself and I wouldn't have to create systems for saving and reapplying different chatroom states and data.
-                <br>
-                The chatroom widget has a scrollable area containing messages and a container for choice buttons. The choice buttons are always there but set to collapsed when not used.
-                The start and pause menu are in different widgets but renderer above the main widget. Also set to collapsed when not used.
+                I debated on how I should handle showing different chat histories and came up with two directions.
             </p>
+            <br><br>
+            <div class="container">
+                <div class="item">
+                    <h6>
+                        Singular Chatroom Widget
+                    </h6>
+                    <p>
+                        One chatroom widget. Widget updates when swapping chatrooms.
+                        <br>
+                        Less widgets overall, improves performance.
+                        <br>
+                        Needs a system for storing and swapping chatroom content and state.
+                    </p>
+                </div>
+                <div class="item">
+                    <h6>
+                        Multiple Chatroom Widgets
+                    </h6>
+                    <p>
+                        One chatroom widget per chatroom. Widget is collapsed when not used.
+                        <br>
+                        More widgets but most will be collapsed so performance shouldn't be effect.
+                        <br>
+                        Can be updated with new content directly, stores it's own content and state.
+
+                    </p>
+                </div>
+            </div>
 
             <br><br>
-            <h4 style="text-align:center;">Animation showcase</h4>
+            <p>
+                I went with the second approach as I felt it made the most sense for the scope.
+            </p>
             <br><br>
+            <h4 style="text-align:center;">Widget Hierarchy</h4>
+            <br>
+            <div class="container">
+                <div class="item">
+                    <img src="images/chatprototype/Chat_WindowHierarchy.jpg" width="977" height="399" alt="Chat Gameplay" class="center">
+                </div>
+                <div class="item">
+                    <p>
+                        <span><b>WBP_Window: </b></span>
+                        Holds references to <span>multiple Chatroom widgets</span> using their <span>unique ChatroomID</span>.
+                    </p>
+                    <br>
+                    <p>
+                        <span><b>WBP_BTN_Chatroom: </b></span>
+                        Has a reference to what ChatroomID it belongs to.
+                        Has a OnClick() event dispatcher that informs the WBP_Window to show a chatroom using the ChatroomID.
+                    </p>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="container">
+                <div class="item">
+                    <p>
+                        <span><b>WBP_Chatroom: </b></span>
+                        Handles creating new messages and logic for displaying choice buttons.
+                    </p>
+                    <br>
+                    <p>
+                        <span><b>WBP_Message: </b></span>
+                        Takes a FMessage struct on construct and sets it's content based on it.
+                    </p>
+                    <br>
+                    <p>
+                        <span><b>WBP_BTN_Choice: </b></span>
+                        Visibility set to collapse when not in use.
+                        Has an OnClick event dispatcher that sends the FChoice struct the button has stored.
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="images/chatprototype/Chat_ChatroomHierarchy.jpg" width="977" height="399" alt="Chat Gameplay" class="center">
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <h3 style="text-align:center;">References without casting</h3>
+            <br>
+            <p>
+                During the course we learnt different ways to get references without casting.
+                The most used in my project is a combination of an <span>interface</span>
+                and a <span>blueprint function library</span> to get <span>references</span> to my <span>custom game mode</span> and <span>HUD class</span>.
+            </p>
+            <br>
+            <img src="images/chatprototype/Chat_ReferenceInterface.jpg" width="1579" height="555" class="center">
+        </div>
+
+        <div class="header chat-prototype">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);" class="text-gradient">UI/UX DESIGN</h1>
+        </div>
+
+        <div class="wrapper">
+            <h3 style="text-align:center;">Figma Layout</h3>
+            <br>
+            <img class="center" src="images/chatprototype/Mockup.png" width="348" height="651"
+                 alt="Mobile chat UI layout in Figma">
+            <!--<div class="container">
+        <div class="item" style="text-align: center;">
+
+        </div>
+        <div class="item" style="text-align:center;">
+            <h5>Final version in engine</h5>
+            <br>-->
+            <!--Og size 573, 869-->
+            <!--<img src="images/chatprototype/ChatProt.png" width="429" height="651"
+                     alt="Final Mobile chat UI layout in Unreal Engine">
+            </div>
+        </div>-->
+
+            <br><br>
+            <h3 style="text-align:center;">Animation showcase</h3>
+            <br>
             <img src="images/ChatGame_Prog_04.gif" width="590" height="864" alt="Chat Gameplay" class="center">
         </div>
 
         <div class="wrapper bg1">
             <h3 style="text-align:center;">Debug menu</h3>
             <br><br>
-            <p>
-                I created a debug menu to help control some of the game's parameters, like type speed, message delay, show animations.
-                This made debugging the story and its branches a lot quicker.
-            </p>
-            <br>
-            <div class="outerVideoWrapper">
-                <div class="videoWrapper">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KSiKQ8HUA_M?si=gc-Lue0XjFsZu-Uh"
-                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <div class="container">
+                <div class="item">
+                    <p>
+                        I created a debug menu to help <span>control</span> some of the game's <span>parameters</span>, like type speed, message delay, show animations.
+                        <br><br>
+                        I also added a button to skip forward in the story.
+                        <br><br>
+                        The debug menu helped make debugging the story and its branches a lot quicker.
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="outerVideoWrapper">
+                        <div class="videoWrapper">
+                            <iframe width="720" height="405" src="https://www.youtube.com/embed/KSiKQ8HUA_M?si=gc-Lue0XjFsZu-Uh"
+                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <br>
+
         </div>
         <!--<iframe width="768" height="432"
-                src="https://miro.com/app/embed/uXjVL5hUvhw=/?pres=1&frameId=3458764610146073731&embedId=865046017667"
-                frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen>
-        </iframe>-->
+            src="https://miro.com/app/embed/uXjVL5hUvhw=/?pres=1&frameId=3458764610146073731&embedId=865046017667"
+            frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen>
+    </iframe>-->
 
     </main>
 

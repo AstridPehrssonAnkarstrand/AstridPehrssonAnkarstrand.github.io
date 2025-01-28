@@ -31,15 +31,16 @@
             <img src="images/vampower/Vampower_Title.png" alt="Vampower Title text" width="748" height="150">
         </div>
 
-        <div class="outerVideoWrapper">
-            <div class="videoWrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/FFIyCpb1rCc?si=7rZwfD93YMGdVI8y"
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        <div style="max-width: 50%;" class="center">
+            <div class="outerVideoWrapper">
+                <div class="videoWrapper">
+                    <iframe width="720" height="405" src="https://www.youtube.com/embed/FFIyCpb1rCc?si=7rZwfD93YMGdVI8y"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
                         web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
+                    </iframe>
+                </div>
             </div>
         </div>
-
 
 
         <div id="summary">
@@ -414,7 +415,6 @@
             <img src="images/vampower/Vampower_ShopMenu_Blockout2.png" width="960" height="540">
         </div>
     </div>-->
-            <br><br>
 
             <div class="container">
                 <div class="item">
@@ -474,7 +474,7 @@
 
             <br><br><div class="divide-line"></div><br><br>
 
-            <h4 style="text-align:center;">Upgrade shop menu in game</h4>
+            <h4 style="text-align:center;">Shop menu in game</h4>
             <br>
             <div class="outerVideoWrapper">
                 <div class="videoWrapper">
@@ -536,126 +536,196 @@
 
             <br><br><div class="divide-line"></div><br><br>
 
-            <h4 style="text-align:center;">Feedback</h4>
+            <h4 style="text-align:center;">Feedback for the Build menu</h4>
             <br>
             <!--<div class="container">
+        <div class="item">
+            <img src="images/vampower/Vampower_BuildMenu_Hold.png" width="220" height="180" class="center">
+        </div>
+        <div class="item">
+            <h6>Hold to purchase feature</h6>
+            <br>
+            <p>
+                Gives the player a split second to cancel when buying items.
+                <br><br>
+                The feature took players a bit to understand during playtests but they all did without outside prompting.
+                When asked if they’d preferred not having the feature, most said no and that they like it.
+                <br><br>
+                Most constructive feedback was on shortening the hold time requirement so it went faster, but still keeping the feature.
+                The feature could also be made a toggle so the player gets to decide what they prefer.
+
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="item">
+            <img src="images/vampower/Vampower_BuildMenu_TabComparison.png" width="641" height="355">
+        </div>
+        <div class="item">
+            <h6 style="text-align:center;">Tab buttons</h6>
+            <br>
+            <p>
+                Playtesters often missed the tab buttons, unless they accidentally hovered over them and realized they’re buttons.
+                Curiously, the same button design and layout is used in the select menu for character select but doesn't have the same issue.
+                The select menu has a Header text right under the buttons displaying what tab is currently open.
+                I’d be curious to see if adding that to the builds menu would help alleviate the problem.
+                Otherwise I’d work on clarifying the tab buttons visual language to more clearly communicate to the player that they are in fact buttons.
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="item">
+            <img src="images/vampower/Vampower_BuildMenu_CardComparison.png" width="663" height="175">
+        </div>
+        <div class="item">
+            <h6 style="text-align:center;">Currency text color</h6>
+            <br>
+            <p>
+                The choice of red for the currency text made some playtesters believe they couldn’t afford to purchase a structure even though they could.
+                From a UX stand point red is often used to communicate an error or lack of resources in this context.
+                Knowing this I made a visual distinction between elements when an element can’t be afforded by lowering the opacity.
+                Unfortunately, this difference doesn’t matter if all the structures can be afforded.
+                They all look the same so it’s easy to make the assumption that you can’t afford any of them.
+                I should have done a better job communicating this visually or picked a more conventional color for better UX.
+            </p>
+        </div>
+    </div>-->
+
+            <h5 style="text-align:center;">1. Hold to purchase feature</h5>
+            <br>
+            <div class="container">
                 <div class="item">
                     <img src="images/vampower/Vampower_BuildMenu_Hold.png" width="220" height="180" class="center">
                 </div>
                 <div class="item">
-                    <h6>Hold to purchase feature</h6>
-                    <br>
-                    <p>
-                        Gives the player a split second to cancel when buying items.
-                        <br><br>
-                        The feature took players a bit to understand during playtests but they all did without outside prompting.
-                        When asked if they’d preferred not having the feature, most said no and that they like it.
-                        <br><br>
-                        Most constructive feedback was on shortening the hold time requirement so it went faster, but still keeping the feature.
-                        The feature could also be made a toggle so the player gets to decide what they prefer.
-
-                    </p>
-                </div>
-            </div>
-            <br><br>
-            <div class="container">
-                <div class="item">
-                    <img src="images/vampower/Vampower_BuildMenu_TabComparison.png" width="641" height="355">
-                </div>
-                <div class="item">
-                    <h6 style="text-align:center;">Tab buttons</h6>
-                    <br>
-                    <p>
-                        Playtesters often missed the tab buttons, unless they accidentally hovered over them and realized they’re buttons.
-                        Curiously, the same button design and layout is used in the select menu for character select but doesn't have the same issue.
-                        The select menu has a Header text right under the buttons displaying what tab is currently open.
-                        I’d be curious to see if adding that to the builds menu would help alleviate the problem.
-                        Otherwise I’d work on clarifying the tab buttons visual language to more clearly communicate to the player that they are in fact buttons.
-                    </p>
-                </div>
-            </div>
-            <br><br>
-            <div class="container">
-                <div class="item">
-                    <img src="images/vampower/Vampower_BuildMenu_CardComparison.png" width="663" height="175">
-                </div>
-                <div class="item">
-                    <h6 style="text-align:center;">Currency text color</h6>
-                    <br>
-                    <p>
-                        The choice of red for the currency text made some playtesters believe they couldn’t afford to purchase a structure even though they could.
-                        From a UX stand point red is often used to communicate an error or lack of resources in this context.
-                        Knowing this I made a visual distinction between elements when an element can’t be afforded by lowering the opacity.
-                        Unfortunately, this difference doesn’t matter if all the structures can be afforded.
-                        They all look the same so it’s easy to make the assumption that you can’t afford any of them.
-                        I should have done a better job communicating this visually or picked a more conventional color for better UX.
-                    </p>
-                </div>
-            </div>-->
-
-            <div class="list">
-                <div class="item">
-                    <h6>Hold to purchase feature</h6>
                     <p>
                         Gives the player a chance to <span>cancel purchase</span>.
-                    </p>
-                    <br>
-                    <img src="images/vampower/Vampower_BuildMenu_Hold.png" width="220" height="180" class="center">
-                    <br>
-                    <p>
                         <span>Confused players at first</span> but they quickly adapted without outside prompting.
-                        <br><br>
+                        <br>
                         When asked if they’d preferred not having the feature, most said no and that they <span>like it</span>.
                         <br><br>
-                        Feedback on <span>shortening the hold time</span> requirement so it went faster, but still keeping the feature.
-                        <br><br>
+                        Feedback on <span>shortening the hold time</span> requirement so it went faster.
+                        <br>
                         The feature could also be a <span>settings option</span>, so the player gets the final say.
                     </p>
                 </div>
+            </div>
+            <br><br><div class="divide-line"></div><br><br>
+
+            <h5 style="text-align:center;">2. Tab buttons</h5>
+            <br>
+            <div class="container">
                 <div class="item">
-                    <h6>Tab buttons</h6>
-                    <p>
-                        Playtesters frequently <span>missed the tab buttons</span>.
-                    </p>
-                    <br>
+                    <p>Playtesters frequently <span>missed the tab buttons</span>.</p>
                     <img src="images/vampower/Vampower_TabMenu_1.png" width="640" height="154">
-                    <br>
+
+
+                </div>
+                <div class="item">
                     <p>
                         <span>Same design</span> is used in the class select menu but <span>not the same issue</span>.
                         Difference is it has a <span>Header text</span> right under the buttons.
                     </p>
-                    <br>
                     <img src="images/vampower/Vampower_TabMenu_2.png" width="640" height="201">
-                    <br>
-                    <p>
-                        I’d be curious to see if adding that to the builds menu would help alleviate the problem.
-                        <br><br>
-                        Otherwise I’d work on <span>clarifying</span> the tab buttons <span>visual language</span> to more <span>clearly communicate</span> to the player that they are in fact buttons.
-                    </p>
+
                 </div>
+            </div>
+            <p>
+                I’d be curious to see if adding that to the builds menu would help alleviate the problem.
+                Otherwise I’d work on <span>clarifying</span> the tab buttons <span>visual language</span> to more <span>clearly communicate</span> to the player that they are in fact buttons.
+            </p>
+
+            <br><br><div class="divide-line"></div><br><br>
+
+            <h5 style="text-align:center;">3. Currency text color</h5>
+            <br>
+            <div class="container">
                 <div class="item">
-                    <h6>Currency text color</h6>
+                    <img src="images/vampower/Vampower_BuildMenu_CardComparison_1.png" width="648" height="180">
                     <p>
                         The <span>red color</span> for the <span>currency text</span> gave playtesters the <span>impression</span> that an <span>item they could afford wasn't purchasable</span>.
-                    </p>
-                    <br>
-                    <img src="images/vampower/Vampower_BuildMenu_CardComparison_1.png" width="648" height="180">
-                    <br>
-                    <p>
                         From a UX stand point <span>red</span> is used to <span>communicate an error</span> or <span>lack of resources</span> in this context.
-                        <br><br>
-                        Knowing this I made a <span>visual distinction between elements</span> when an element can’t be afforded by lowering the opacity.
                     </p>
-                    <br>
+
+                </div>
+                <div class="item">
+                    <p>
+                        Knowing this I made a <span>visual distinction between elements</span> when an element can’t be afforded by lowering the opacity.
+
+                    </p>
                     <img src="images/vampower/Vampower_BuildMenu_CardComparison.png" width="663" height="175">
-                    <br>
                     <p>
                         Unfortunately, this <span>distinction isn't there when all the elements can be afforded</span>, leading to the <span>assumption that you can’t purchase it</span>.
-                        <br><br>
                         I should have done a better job communicating this visually or picked a more conventional color for better UX.
                     </p>
                 </div>
             </div>
+
+            <!--<div class="list">
+        <div class="item">
+            <h6>1. Hold to purchase feature</h6>
+            <p>
+                Gives the player a chance to <span>cancel purchase</span>.
+            </p>
+            <br>
+            <img src="images/vampower/Vampower_BuildMenu_Hold.png" width="220" height="180" class="center">
+            <br>
+            <p>
+                <span>Confused players at first</span> but they quickly adapted without outside prompting.
+                <br><br>
+                When asked if they’d preferred not having the feature, most said no and that they <span>like it</span>.
+                <br><br>
+                Feedback on <span>shortening the hold time</span> requirement so it went faster, but still keeping the feature.
+                <br><br>
+                The feature could also be a <span>settings option</span>, so the player gets the final say.
+            </p>
+        </div>
+        <div class="item">
+            <h6>2. Tab buttons</h6>
+            <p>
+                Playtesters frequently <span>missed the tab buttons</span>.
+            </p>
+            <br>
+            <img src="images/vampower/Vampower_TabMenu_1.png" width="640" height="154">
+            <br>
+            <p>
+                <span>Same design</span> is used in the class select menu but <span>not the same issue</span>.
+                Difference is it has a <span>Header text</span> right under the buttons.
+            </p>
+            <br>
+            <img src="images/vampower/Vampower_TabMenu_2.png" width="640" height="201">
+            <br>
+            <p>
+                I’d be curious to see if adding that to the builds menu would help alleviate the problem.
+                <br><br>
+                Otherwise I’d work on <span>clarifying</span> the tab buttons <span>visual language</span> to more <span>clearly communicate</span> to the player that they are in fact buttons.
+            </p>
+        </div>
+        <div class="item">
+            <h6>3. Currency text color</h6>
+            <p>
+                The <span>red color</span> for the <span>currency text</span> gave playtesters the <span>impression</span> that an <span>item they could afford wasn't purchasable</span>.
+            </p>
+            <br>
+            <img src="images/vampower/Vampower_BuildMenu_CardComparison_1.png" width="648" height="180">
+            <br>
+            <p>
+                From a UX stand point <span>red</span> is used to <span>communicate an error</span> or <span>lack of resources</span> in this context.
+                <br><br>
+                Knowing this I made a <span>visual distinction between elements</span> when an element can’t be afforded by lowering the opacity.
+            </p>
+            <br>
+            <img src="images/vampower/Vampower_BuildMenu_CardComparison.png" width="663" height="175">
+            <br>
+            <p>
+                Unfortunately, this <span>distinction isn't there when all the elements can be afforded</span>, leading to the <span>assumption that you can’t purchase it</span>.
+                <br><br>
+                I should have done a better job communicating this visually or picked a more conventional color for better UX.
+            </p>
+        </div>
+    </div>-->
 
         </div>
 
@@ -664,7 +734,7 @@
             <br><br>
             <div class="container">
                 <div class="item">
-                    <h3 style="text-align:center;">Feature brief</h3>
+                    <h3 style="text-align: center; color: #b54769;">Feature brief</h3>
                 </div>
                 <div class="item">
                     <p>
@@ -713,10 +783,14 @@
 
             <div class="container">
                 <div class="item">
-                    <iframe width="720" height="405" src="https://www.youtube.com/embed/JuDgWzycyBo?si=jxVRRPunPSUGT0QL"
-                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
+                    <div class="outerVideoWrapper">
+                        <div class="videoWrapper">
+                            <iframe width="720" height="405" src="https://www.youtube.com/embed/JuDgWzycyBo?si=jxVRRPunPSUGT0QL"
+                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
                     <h5>Final version</h5>

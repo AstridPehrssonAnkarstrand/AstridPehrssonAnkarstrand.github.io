@@ -121,3 +121,16 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
+// Accordion menu
+var acc = document.getElementsByClassName("accordion");
+//var i;
+
+function toggleAccordion(i) {
+    acc[i].classList.toggle("active");
+    var panel = acc[i].nextElementSibling;
+    if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+    } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+}
