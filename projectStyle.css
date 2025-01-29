@@ -324,7 +324,7 @@ footer {
 }
 
 .wrapper {
-    padding: 80px 10%;
+    padding: 80px 5%;
 }
 
 .center {
@@ -708,6 +708,14 @@ footer {
         background-color: #ccc;
     }
 
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
     .accordion:after {
         content: '\02795'; /* Unicode character for "plus" sign (+) */
         font-size: 13px;
@@ -721,10 +729,10 @@ footer {
 }
 
 /* Style the accordion panel. Note: hidden by default */
-.panel {
+/*.panel {
     padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-}
+}*/
