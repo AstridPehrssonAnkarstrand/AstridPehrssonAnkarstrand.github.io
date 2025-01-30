@@ -634,7 +634,8 @@ footer {
     display: flex;
     border: 0.25em solid #272832;
     transition: border 0.25s;
-    max-height: 400px;
+    max-height: 356px;
+
 }
 
 .card:hover {
@@ -643,14 +644,22 @@ footer {
 
 .card-image {
     max-width: auto;
+    position: relative;
 }
 
 .card img {
     object-fit: cover;
 }
 
+.card-awards {
+    position: absolute;
+    top: -40px;
+    right: -8px;
+}
+
 .card-content {
-    min-width: 60%;
+/*    min-width: 60%;*/
+    width: 100%;
     padding: 1em;
     padding-left: 2em;
 }
