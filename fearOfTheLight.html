@@ -105,230 +105,255 @@
         </div>
 
         <div class="header fearofthelight-1">
-            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); color:aqua;">DATA TERMINAL</h1>
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">UI/UX DESIGN</h1>
         </div>
 
-        <!-- Data Terminal -->
-        <div class="wrapper">
-            <div class="container">
-                <div class="item">
-                    <div class="outerVideoWrapper">
-                        <div class="videoWrapper">
-                            <iframe width="720" height="405" src="https://www.youtube.com/embed/PQB7IBVX_Go?si=a4vGlAdrXkSZ9u5L"
-                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <h6>The data terminal serves multiple purposes;</h6>
-                    <ul>
-                        <li><p>convey <span>lore</span> with information about the current situation</p></li>
-                        <li><p>a <span>map</span> of the area</p></li>
-                        <li><p><span>progression</span> by unlocking the next area and <span>autosaving</span> the game</p></li>
-                    </ul>
-                </div>
-            </div>
-            <br><br><div class="divide-line"></div><br><br>
+        <!-- UI / UX -->
+        <div class="wrapper-main">
 
-            <!-- Technical Implementation -->
-            <div class="wrapper">
-                <h2 style="text-align: center;">TECHNICAL IMPLEMENTATION</h2><br><br>
+            <!-- Data Terminal -->
+            <div class="wrapper outer">
+                <h2 style="text-align: center;">DATA TERMINAL</h2>
+                <div class="divide-line"></div><br><br>
                 <div class="container">
                     <div class="item">
-                        <img src="images/fearofthelight/FOTL_DataTerminal_Diagram.jpg" alt="" width="946" height="412">
+                        <div class="outerVideoWrapper">
+                            <div class="videoWrapper">
+                                <iframe width="720" height="405" src="https://www.youtube.com/embed/PQB7IBVX_Go?si=a4vGlAdrXkSZ9u5L"
+                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
                     </div>
                     <div class="item">
-                        <h6>BP_DataTerminal</h6>
+                        <h6>The data terminal serves multiple purposes;</h6>
                         <ul>
-                            <li><p>The main <span>actor</span> blueprint.</p></li>
-                            <li><p>Handles the <span>transition</span> between gameplay & UI.</p></li>
-                            <li><p>Holds <span>data</span> for the widgets.</p></li>
-                        </ul>
-                        <br><br>
-                        <h6>WBP_DataTerminal</h6>
-                        <ul>
-                            <li><p>The main <span>widget</span> blueprint.</p></li>
-                            <li><p>Holds the <span>layout</span> for the UI.</p></li>
-                            <li><p>Manages the different <span>content pages</span>.</p></li>
+                            <li><p>convey <span>lore</span> with information about the current situation</p></li>
+                            <li><p>a <span>map</span> of the area</p></li>
+                            <li><p><span>progression</span> by unlocking the next area and <span>autosaving</span> the game</p></li>
                         </ul>
                     </div>
                 </div>
-
                 <br><br>
+                <div class="divide-line"></div>
 
-                <div class="container">
-                    <div class="item">
-                        <h5>Page Data</h5>
-                        <br>
-                        <p><span><b>Logs:</b></span> Takes in a string array of LogID:s. The log content is stored in a data table, one row represents one log. The LogID matches the data table row name.</p>
-                        <br>
-                        <p><span><b>Map:</b></span> Takes a bool and a SaveID. Every BP_DataTerminal has a unique ID, I use it to display the current position on the map.</p>
-                        <br>
-                        <p><span><b>Systems:</b></span> Takes in an AreaItem struct with text to display on the UI, references to doors in the level and needed clearance level.</p>
-                    </div>
-                    <div class="item">
-                        <img src="images/fearofthelight/FOTL_DataTerminal_DataInput.png" alt="" width="629" height="317">
-                    </div>
-                </div>
-
-                <!-- Log page -->
+                <!-- Technical Implementation -->
                 <div class="wrapper">
-                    <h3 style="text-align: center;">LOG PAGE</h3>
-                    <p>
-                        The log page consists of <span>two containers</span>. First one holds a <span>sidebar</span> listing all the available logs.
-                        The second holds the <span>log content</span>, with a <span>header</span> and the <span>breadtext</span>. I experimented with formatting the breadtext by using <span>Rich Text Styles</span> so the writer can emphasize certain words.
-                    </p>
-                </div>
-
-                <!-- Map page -->
-                <div class="wrapper">
-                    <h3 style="text-align: center;">MAP PAGE</h3>
-                    <p>
-                        The map needed to convey a lot of information in a <span>limited space</span>.
-                        The entire level would undoubtedly <span>not fit</span> whilst still being readable so <span>zoom in/out and panning functionality</span> would be suitable.
-                    </p>
-                    <br><br>
+                    <h3 style="text-align: center;">TECHNICAL IMPLEMENTATION</h3><br>
                     <div class="container">
                         <div class="item">
-                            <h5>Early version</h5>
-                            <br>
-                            <p>
-                                I was unsure how to implement this so for early playtests I nested two scroll boxes inside each other. It works, be it awkwardly.
-                            </p>
+                            <img src="images/fearofthelight/FOTL_DataTerminal_Diagram.jpg" alt="" width="946" height="412">
                         </div>
                         <div class="item">
-                            <img src="images/fearofthelight/FOTL_OldMapFunctionality.gif" alt="" width="688" height="399">
-                        </div>
-                    </div>
-                    <br><br>
-
-                    <div class="container">
-                        <div class="item">
-                            <img src="images/fearofthelight/FOTL_MapFunctionality.gif" alt="" width="584" height="436">
-                        </div>
-                        <div class="item">
-                            <h5>Final version</h5>
-                            <br>
-                            <p>
-                                After researching I saw a smarter solution using 2 canvases. The <span>outer canvas</span> functions as a <span>mask</span> and is the <span>required window size</span>.
-                                The <span>inner canvas</span> is the size of the full map. The <span>position and size</span> of the inner canvas can then be <span>panned and zoomed</span> based on user input and mouse position.
-                                <br><br>
-                                The map itself is an image made using a <span>top down screenshot</span> of the game level as a guide and <span>drawing</span> the outlines over it.
-                                The area names and special icons are added over this image in the engine so they are easy to edit.
-                            </p>
-                            <br>
-                            <a target="_blank" href="https://forums.unrealengine.com/t/how-to-scale-zoom-a-widget-with-blueprints/430983"><p>Original source with full explanation and code</p></a>
-                        </div>
-                    </div>
-                    <br><br>
-
-                    <!-- Icons -->
-                    <div class="container">
-                        <div class="item">
-                            <h5>Icons</h5>
-                            <p>
-                                The old icons had <span>clarity issues</span>, particularly for the Radar because of the <span>small size</span> combind with the <span>emissive color</span> making them <span>unreadable</span>.
-                                <br><br>
-                                The <span>letters confused players</span> on what they referred to. I tried using <span>different letters</span> based on playtesters feedback but the <span>problem still persisted</span>.
-                                <br><br>
-                                I decided to skip the letters and instead <span>imitate the object's appearance</span> ingame.
-                                This has seemed to help and the icons have <span>different silhouettes</span> at the least, making them <span>distinct</span> from each other.
-                            </p>
-                        </div>
-                        <div class="item">
-                            <img src="images/fearofthelight/FOTL_IconLegend.png" alt="" width="600" height="380">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="header fearofthelight-2">
-            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); color:aqua;">TOOLS</h1>
-        </div>
-
-        <!-- Tools -->
-        <div class="wrapper">
-            <p>
-                <span>Navigating</span> in the dark is difficult, especially when you're being hunted down by alien moths.
-                To help the player out a bit they have <span>3 tools</span>, 2 of which have UI.
-            </p>
-
-            <!-- Radar -->
-            <div class="wrapper">
-                <h2 style="text-align: center;">RADAR</h2>
-                <br>
-                <div class="container">
-                    <div class="item">
-                        <p>
-                            The radar <span>detects objects</span> of interests, and objects to <span>avoid</span>. It drains battery whilst being used.
+                            <h6>BP_DataTerminal</h6>
+                            <ul>
+                                <li><p>The main <span>actor</span> blueprint.</p></li>
+                                <li><p>Handles the <span>transition</span> between gameplay & UI.</p></li>
+                                <li><p>Holds <span>data</span> for the widgets.</p></li>
+                            </ul>
                             <br><br>
-                            During early <span>playtests</span> I noticed the <span>current battery level</span> was often <span>missed</span>.
-                            I <span>added</span> the <span>battery</span> to the <span>radar's tool screen</span>.
+                            <h6>WBP_DataTerminal</h6>
+                            <ul>
+                                <li><p>The main <span>widget</span> blueprint.</p></li>
+                                <li><p>Holds the <span>layout</span> for the UI.</p></li>
+                                <li><p>Manages the different <span>content pages</span>.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                    <div class="container">
+                        <div class="item">
+                            <h5>Page Data</h5>
+                            <br>
+                            <p><span><b>Logs:</b></span> Takes in a string array of LogID:s. The log content is stored in a data table, one row represents one log. The LogID matches the data table row name.</p>
+                            <br>
+                            <p><span><b>Map:</b></span> Takes a bool and a SaveID. Every BP_DataTerminal has a unique ID, I use it to display the current position on the map.</p>
+                            <br>
+                            <p><span><b>Systems:</b></span> Takes in an AreaItem struct with text to display on the UI, references to doors in the level and needed clearance level.</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/fearofthelight/FOTL_DataTerminal_DataInput.png" alt="" width="629" height="317">
+                        </div>
+                    </div>
+
+                    <br><br>
+                    <div class="divide-line"></div>
+
+
+                    <!-- Log page -->
+                    <div class="wrapper">
+                        <h4 style="text-align: center;">LOG PAGE</h4>
+                        <p>
+                            The log page consists of <span>two containers</span>. First one holds a <span>sidebar</span> listing all the available logs.
+                            The second holds the <span>log content</span>, with a <span>header</span> and the <span>breadtext</span>. I experimented with formatting the breadtext by using <span>Rich Text Styles</span> so the writer can emphasize certain words.
                         </p>
                     </div>
-                    <div class="item">
-                        <div class="outerVideoWrapper">
-                            <div class="videoWrapper">
-                                <iframe width="720" height="405" src="https://www.youtube.com/embed/n4G_CrOkLIs?si=_zNaagdtnmDV-OJ5"
-                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-                        web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                                </iframe>
+
+                    <div class="divide-line"></div>
+
+                    <!-- Map page -->
+                    <div class="wrapper">
+                        <h4 style="text-align: center;">MAP PAGE</h4>
+                        <p>
+                            The map needed to convey a lot of information in a <span>limited space</span>.
+                            The entire level would undoubtedly <span>not fit</span> whilst still being readable so <span>zoom in/out and panning functionality</span> would be suitable.
+                        </p>
+                        <br><br>
+                        <div class="container">
+                            <div class="item">
+                                <h5>Early version</h5>
+                                <br>
+                                <p>
+                                    I was unsure how to implement this so for early playtests I nested two scroll boxes inside each other. It works, be it awkwardly.
+                                </p>
+                            </div>
+                            <div class="item">
+                                <img src="images/fearofthelight/FOTL_OldMapFunctionality.gif" alt="" width="688" height="399">
                             </div>
                         </div>
+                        <br><br>
 
-                    </div>
-                </div>
-            </div>
+                        <div class="container">
+                            <div class="item">
+                                <img src="images/fearofthelight/FOTL_MapFunctionality.gif" alt="" width="584" height="436">
+                            </div>
+                            <div class="item">
+                                <h5>Final version</h5>
+                                <br>
+                                <p>
+                                    After researching I saw a smarter solution using 2 canvases. The <span>outer canvas</span> functions as a <span>mask</span> and is the <span>required window size</span>.
+                                    The <span>inner canvas</span> is the size of the full map. The <span>position and size</span> of the inner canvas can then be <span>panned and zoomed</span> based on user input and mouse position.
+                                    <br><br>
+                                    The map itself is an image made using a <span>top down screenshot</span> of the game level as a guide and <span>drawing</span> the outlines over it.
+                                    The area names and special icons are added over this image in the engine so they are easy to edit.
+                                </p>
+                                <br>
+                                <a target="_blank" href="https://forums.unrealengine.com/t/how-to-scale-zoom-a-widget-with-blueprints/430983"><p>Original source with full explanation and code</p></a>
+                            </div>
+                        </div>
+                        <br><br>
 
-            <!-- EMP -->
-            <div class="wrapper">
-                <h2 style="text-align: center;">EMP</h2>
-                <br>
-                <div class="container">
-                    <div class="item">
-                        <div class="outerVideoWrapper">
-                            <div class="videoWrapper">
-                                <iframe width="720" height="405" src="https://www.youtube.com/embed/SEHo5Va9iOY?si=dbZ0zB6znTE7i-zQ"
-                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-                        web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                                </iframe>
+                        <!-- Icons -->
+                        <div class="container">
+                            <div class="item">
+                                <h5>Icons</h5>
+                                <p>
+                                    The old icons had <span>clarity issues</span>, particularly for the Radar because of the <span>small size</span> combind with the <span>emissive color</span> making them <span>unreadable</span>.
+                                    <br><br>
+                                    The <span>letters confused players</span> on what they referred to. I tried using <span>different letters</span> based on playtesters feedback but the <span>problem still persisted</span>.
+                                    <br><br>
+                                    I decided to skip the letters and instead <span>imitate the object's appearance</span> ingame.
+                                    This has seemed to help and the icons have <span>different silhouettes</span> at the least, making them <span>distinct</span> from each other.
+                                </p>
+                            </div>
+                            <div class="item">
+                                <img src="images/fearofthelight/FOTL_IconLegend.png" alt="" width="600" height="380">
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <p>
-                            The EMP can <span>turn off lights</span> for a duration at the cost of battery charge.
-                            <br>
-                            The EMP has the <span>same screen layout</span> as the <span>radar</span> because they're both on the same mesh.
-                            <br><br>
-                            A <span>crosshair</span> was added to the HUD to <span>improve aiming</span>. This let me give more <span>feedback</span> to the player on when they can or can’t shoot.
-                            I use <span>color and opacity to inform</span> the tool's current status.
-                        </p>
+
+                </div>
+
+            </div>
+
+            <!-- Tools -->
+            <div class="wrapper outer">
+
+                <h2 style="text-align: center;">TOOLS</h2>
+                <div class="divide-line"></div><br><br>
+                <p>
+                    <span>Navigating</span> in the dark is difficult, especially when you're being hunted down by alien moths.
+                    To help the player out a bit they have <span>3 tools</span>, 2 of which have UI.
+                </p>
+
+                <!-- Radar -->
+                <div class="wrapper">
+                    <h3 style="text-align: center;">RADAR</h3>
+                    <br>
+                    <div class="container">
+                        <div class="item">
+                            <p>
+                                The radar <span>detects objects</span> of interests, and objects to <span>avoid</span>. It drains battery whilst being used.
+                                <br><br>
+                                During early <span>playtests</span> I noticed the <span>current battery level</span> was often <span>missed</span>.
+                                I <span>added</span> the <span>battery</span> to the <span>radar's tool screen</span>.
+                            </p>
+                        </div>
+                        <div class="item">
+                            <div class="outerVideoWrapper">
+                                <div class="videoWrapper">
+                                    <iframe width="720" height="405" src="https://www.youtube.com/embed/n4G_CrOkLIs?si=_zNaagdtnmDV-OJ5"
+                                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+                                            web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divide-line"></div>
+
+                <!-- EMP -->
+                <div class="wrapper">
+                    <h3 style="text-align: center;">EMP</h3>
+                    <br>
+                    <div class="container">
+                        <div class="item">
+                            <div class="outerVideoWrapper">
+                                <div class="videoWrapper">
+                                    <iframe width="720" height="405" src="https://www.youtube.com/embed/SEHo5Va9iOY?si=dbZ0zB6znTE7i-zQ"
+                                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+                                            web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p>
+                                The EMP can <span>turn off lights</span> for a duration at the cost of battery charge.
+                                <br>
+                                The EMP has the <span>same screen layout</span> as the <span>radar</span> because they're both on the same mesh.
+                                <br><br>
+                                A <span>crosshair</span> was added to the HUD to <span>improve aiming</span>. This let me give more <span>feedback</span> to the player on when they can or can’t shoot.
+                                I use <span>color and opacity to inform</span> the tool's current status.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="header fearofthelight-1">
-            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); color:aqua;">MAIN & PAUSE MENUS</h1>
-        </div>
-
-        <!-- Menus -->
-        <div class="wrapper">
-            <div class="outerVideoWrapper">
-                <div class="videoWrapper">
-                    <iframe width="720" height="405" src="https://www.youtube.com/embed/1PtceXc2kBI?si=s72dCYUdXM-D3OLc"
-                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
+            <!-- Menus -->
+            <div class="wrapper outer">
+                <h2 style="text-align: center;">MAIN & PAUSE MENU</h2>
+                <div class="divide-line"></div><br><br>
+                <div class="outerVideoWrapper">
+                    <div class="videoWrapper">
+                        <iframe width="720" height="405" src="https://www.youtube.com/embed/1PtceXc2kBI?si=s72dCYUdXM-D3OLc"
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
             </div>
+
         </div>
+
+        <!--<div class="header fearofthelight-2">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">TOOLS</h1>
+        </div>-->
+
+       
+
+        <!--<div class="header fearofthelight-1">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">MAIN & PAUSE MENUS</h1>
+        </div>-->
+
+        
 
     </main>
 

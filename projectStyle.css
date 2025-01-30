@@ -10,7 +10,7 @@
 p {
     font-size: 1rem;
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
-    color: #ababab;
+    color: #a5a5a5;
 }
 
 h6 {
@@ -31,20 +31,23 @@ h4 {
 h3 {
     font-size: 1.95625rem;
     font-size: clamp(1.95625rem, 1.9075rem + 0.24375000000000013vw, 2.2rem);
+    text-shadow: 1px 1px 2px #1E1E1E;
 }
 
 h2 {
     font-size: 2.44375rem;
     font-size: clamp(2.44375rem, 2.38375rem + 0.2999999999999998vw, 2.74375rem);
+    text-shadow: 1px 1px 2px #1E1E1E;
 }
 
 h1 {
     font-size: 3.05rem;
     font-size: clamp(3.05rem, 2.97375rem + 0.3812500000000001vw, 3.43125rem);
+    text-shadow: 2px 2px 4px #000000;
 }
 
 span {
-    color: #b54769;
+    color: #bb86fc;
 }
 
 img {
@@ -61,8 +64,8 @@ img {
 body {
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
-    background: #080808;
-    color: #fff;
+    background: #121212;
+    color: #e1e1e1;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -77,9 +80,10 @@ nav {
     position: sticky;
     top: 0;
     grid-area: navbar;
-    padding: 0 8%;
-    background-color: #080808;
-    border-bottom: 1px solid #272832;
+    padding: 0 10%;
+    background-color: #1E1E1E;
+    border-bottom: 1px solid #121212;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
     z-index: 3;
     list-style: none;
     display: flex;
@@ -110,13 +114,15 @@ nav a {
     align-items: center;
     text-decoration: none;
     padding: 1.5em;
-    color: #fff;
-    font-size: 18px;
-    transition: background-color 150ms ease;
+    color: #A5A5A5;
+    text-shadow: 1px 1px 2px #1E1E1E;
+    font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+    transition: background-color color 150ms ease;
 }
 
 nav a:hover {
-    background-color: #272832;
+    background-color: #242424;
+    color: #bb86fc;
 }
 
 nav .button {
@@ -132,7 +138,7 @@ nav .button {
 
 nav .open {
     margin-left: auto;
-    border-left: 1px solid #272832;
+    border-left: 1px solid #222222;
 }
 
 #overlay {
@@ -167,7 +173,7 @@ nav .open {
             height: 100vh;
             width: 100%;
             z-index: 10;
-            background-color: #080808;
+            background-color: #1E1E1E;
             transition: right 300ms ease-out;
             flex-direction: column;
         }
@@ -254,7 +260,7 @@ footer {
 }
 
 .divide-line {
-    border-bottom: 4px solid #b54769;
+    border-bottom: 4px solid #616161;
     width: 100%;
 }
 
@@ -289,17 +295,22 @@ footer {
 }
 
 .item{
-    flex: 1;
+    flex: 100%;
     /*border: 1px solid #ff004f;*/
 }
 
 .icon {
     font-size: 68px;
-    color: #b54769;
+    color: #bb86fc;
     justify-content: center;
     text-align: center;
     align-items: center;
     padding-bottom: 0.5em;
+    text-shadow: 1px 1px 4px #1E1E1E;
+}
+
+.accent {
+    color: #03dac5;
 }
 
 .item-half {
@@ -323,8 +334,42 @@ footer {
     }
 }
 
+.wrapper-main {
+    padding: 80px 10%;
+    /*max-width: 1200px;*/
+    /*    background-color: #444;*/
+/*
+    background-color: #222222;
+    box-shadow: 0 0 6px #000000;*/
+}
+
 .wrapper {
-    padding: 80px 5%;
+    padding: 80px 4em;
+}
+
+.outer {
+    background-color: #1E1E1E;
+    border-radius: 0.25em;
+    margin: 40px 0;
+    box-shadow: 0 0 16px #080808;
+}
+
+.middle {
+    background-color: #242424;
+    border-radius: 0.25em;
+    margin: 40px 0;
+    box-shadow: 0 0 16px #080808;
+}
+
+.inner {
+    background-color: #2C2C2C;
+    border-radius: 0.25em;
+    margin: 40px 0;
+    box-shadow: 0 0 16px #080808;
+}
+
+.wrapper li {
+    margin-left: 2em;
 }
 
 .center {
@@ -334,7 +379,7 @@ footer {
 }
 
 .bg1 {
-    background-color: rgba(0, 0, 0, 0.5);
+    /*background-color: rgba(0, 0, 0, 0.5);*/
 }
 
 .bg2 {
@@ -351,17 +396,21 @@ footer {
     padding: 1em 2em;
     border-radius: 0.5em;
     text-decoration: none;
-    background: #ff004f;
-    color: #fff;
+    background: #bb86fc;
+    color: #121212;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     #summary {
         padding: 1em 5% 3em;
     }
 
     .wrapper {
-        padding: 60px 5%;
+        padding: 40px 1em;
+    }
+
+    .wrapper-main {
+        padding: 80px 1em;
     }
 }
 
@@ -371,17 +420,18 @@ footer {
     width: 100%;
     height: 80vh;
     background-image: url("images/fearofthelight/Screenshot (509).png");
+/*    background-image: url("images/Vampower_Growth.gif");*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    animation: slideshowAnimation;
+    /*    animation: slideshowAnimation;
     animation-duration: 80s;
     animation-iteration-count: infinite;
-    transition: all 500ms ease-in 200ms;
+    transition: all 500ms ease-in 200ms;*/
 }
 
-@keyframes slideshowAnimation {
+/*@keyframes slideshowAnimation {
     from {
         background-image: url("images/fearofthelight/Screenshot (509).png");
     }
@@ -415,33 +465,39 @@ footer {
     to {
         background-image: url("images/fearofthelight/Screenshot (509).png");
     }
-}
+}*/
 
 .header-text {
-    position: absolute;
-    bottom: 0;
-/*    top: 40%;*/
-    width: 100%;
-    padding: 1em 2em;
+    /*position: absolute;
+    bottom: 0;*/
+    /*    top: 40%;*/
+    /*width: 100%;
+    padding: 1em 2em;*/
     /*border-radius: 1em;*/
-    background: rgba(255, 255, 255, 0.2);
+    /*background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
-    align-items: center;
+    align-items: center;*/
+    margin-bottom: 10%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 10%;
 }
 
 .header-text h1 {
-    color: #080808;
+    /*color: #080808;*/
         /*font-size: 5em;*/
-    margin-right: 0.25em;
+/*    margin-right: 0.25em;*/
         /*text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);*/
 }
 
-.header-text p span {
-    color: #080808;
+.header-text h3 span {
+    color: #bb86fc;
+/*    color: #080808;*/
         /*font-size: 1.5em;*/
     font-weight: bold;
 /*        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);*/
@@ -478,7 +534,7 @@ footer {
 }
 
 #about ul li h6{
-    color: #b54769;
+    color: #bb86fc;
 }
 
 #about img {
@@ -486,7 +542,7 @@ footer {
 }
 
 #about span {
-    color: #ff004f;
+    color: #bb86fc;
 }
 
 #about ul li p {
@@ -519,7 +575,7 @@ footer {
 .container-footer {
     width: 100%;
     margin: auto;
-    background-color: #272832;
+    background-color: #1E1E1E;
     padding: 60px 10%;
 }
 
@@ -553,23 +609,23 @@ footer {
 .col-footer ul li a {
     font-size: 1rem;
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
-    color: #ababab;
+    color: #A5A5A5;
     text-decoration: none;
     display: block;
     transition: all 0.3s ease;
 }
 
 #contact .accent {
-    color: #b54769;
+    color: #A5A5A5;
     transition: all 0.3s ease;
 }
 
 #contact .accent:hover {
-    color: #ff004f;
+    color: #03DAC5;
 }
 
 .col-footer ul li a:hover {
-    color: #fff;
+    color: #bb86fc;
     /*padding-left: 0.4em;*/
 }
 
@@ -580,7 +636,7 @@ footer {
 .col-footer .social-links a {
     display: inline-block;
     font-size: 2em;
-    color: #ababab;
+    color: #A5A5A5;
     margin: 0 0.5em 0.5em 0;
     /*width: 40px;
     height: 40px;
@@ -595,7 +651,7 @@ footer {
 }
 
 .col-footer .social-links a:hover {
-    color: #fff;
+    color: #bb86fc;
     transform: translateY(-2px);
         /*color: #272832;
     background-color: #ababab;*/
@@ -625,17 +681,16 @@ footer {
 }
 
 .card {
-    background-color: #272832;
-    border-radius: 1em;
+    background-color: #272727;
+    border-radius: 0.5em;
     overflow: hidden;
     box-shadow: 0 0.5em 2em rgba(0,0,0,0.5);
     margin: 1em;
     text-decoration: none;
     display: flex;
-    border: 0.25em solid #272832;
+    border: 0.25em solid #272727;
     transition: border 0.25s;
-    max-height: 356px;
-
+    max-height: 350px;
 }
 
 .card:hover {
@@ -666,13 +721,13 @@ footer {
 
 .card-content h2 {
     margin-bottom: 0.25em;
-    color: #fff;
+    color: #E1E1E1;
 }
 
 .card-content p span {
     font-size: 1.2em;
     margin-bottom: 1em;
-    color: #b54769;
+    color: #bb86fc;
 }
 
 /*------------- Video Wrapper ----------*/
