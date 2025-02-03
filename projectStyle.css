@@ -670,6 +670,17 @@ footer {
 
 /*------------- Projects cards ----------*/
 
+#projects .wrapper-main {
+    padding-top: 40px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    #projects .wrapper-main {
+        padding-top: 40px;
+    }
+}
+
 .card-container {
     display: grid;
     /*grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));*/
@@ -708,8 +719,11 @@ footer {
 
 .card-awards {
     position: absolute;
-    top: -40px;
-    right: -8px;
+    display: flex;
+    top: 0;
+    right: 0;
+/*    top: -40px;
+    right: -8px;*/
 }
 
 .card-content {
@@ -725,7 +739,7 @@ footer {
 }
 
 .card-content p span {
-    font-size: 1.2em;
+    /*font-size: 1.2em;*/
     margin-bottom: 1em;
     color: #bb86fc;
 }
