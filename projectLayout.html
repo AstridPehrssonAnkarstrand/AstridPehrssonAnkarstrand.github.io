@@ -31,7 +31,7 @@
             <img src="images/vampower/Vampower_Title.png" alt="Vampower Title text" width="748" height="150">
         </div>
 
-        <div style="max-width: 50%;" class="center">
+        <div class="center video">
             <div class="outerVideoWrapper">
                 <div class="videoWrapper">
                     <iframe width="720" height="405" src="https://www.youtube.com/embed/FFIyCpb1rCc?si=7rZwfD93YMGdVI8y"
@@ -215,279 +215,6 @@
         </div>
     </div>-->
 
-        <div class="header vampower">
-            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">TECHNICAL & SYSTEM DESIGN</h1>
-        </div>
-
-        <!-- Tech + System -->
-        <div class="wrapper-main">
-            <!-- Pre-production -->
-            <div class="wrapper outer">
-                <h2 style="text-align: center;">Pre-production phase</h2>
-                <p>
-                    <span>2 weeks</span> exploring <span>3 game concepts</span>, developing a <span>playable prototype</span> for each one.
-                    First half of the week went to concepting and roughly planning out the different concepts.
-                    The rest was split up into <span>2 days of development time</span> per prototype.
-                </p>
-                <br>
-                <div class="divide-line"></div>
-
-                <!-- Health system -->
-                <div class="wrapper">
-                    <h3 style="text-align:center;">Health system</h3>
-                    <br>
-                    <div class="container">
-                        <div class="item">
-                            <img src="images/vampower/Vampower_Preprod_Healthsystem.gif" alt="Gif showcasing health system" width="837" height="517">
-                        </div>
-                        <div class="item">
-                            <p>
-                                I created a <span>versatile health system</span> in blueprints that was <span>reused</span> for all of the prototypes, <span>saving on development time</span> to work on other features.
-                                <br><br>
-                                To test the health system I made a <span>target dummy</span> with the health system properly implemented with a <span>health bar</span> to visualize the current health.
-                                <br><br>
-                                To deal damage I made an <span>attack actor component</span> that can be applied to any actor and a <span>turret that shoots projectiles</span>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="divide-line"></div>
-
-                <!-- Vampower Prototype -->
-                <div class="wrapper">
-                    <h3 style="text-align:center;">Vampower Prototype</h3>
-                    <br>
-                    <div class="container">
-                        <div class="item">
-                            <p>
-                                The prototype focused on <span>testing the core mechanics</span> of defending a central point from waves of enemies by building structures.
-                            </p>
-                            <br><br>
-                            <h6>The prototype features:</h6>
-                            <ul>
-                                <li><p>Simple <span>enemies</span> that target either the player or the central point (the heart).</p></li>
-                                <li><p>An enemy spawner that <span>spawns an increasing amount</span> of enemies per wave.</p></li>
-                                <li><p>Structures, 2 different types.</p></li>
-                                <li><p>Actor with the <span>attack actor component</span>.</p></li>
-                                <li><p><span>Turret actor</span> that shoots projectiles at closest enemy.</p></li>
-                                <li><p>The player can <span>interact</span> with structures to activate them.</p></li>
-                                <li><p>Day & night cycle.</p></li>
-                            </ul>
-                        </div>
-                        <div class="item">
-                            <img src="images/vampower/Vampower_Pre-production.gif" alt="Gif showcasing gameplay from Vampower's prototype" width="1035" height="541" class="item">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Production -->
-            <div class="wrapper outer">
-                <h2 style="text-align: center;">Production phase</h2>
-                <p style="text-align: center;">
-                    <span>4 weeks</span> to create the finished game.
-                </p>
-            </div>
-
-            <!-- Units -->
-            <div class="wrapper outer">
-                <h2 style="text-align: center;">Units</h2>
-                <div class="divide-line"></div>
-                <br><br>
-                <p>
-                    For the prototype we'd utilized <span>inheritance</span> for the units, since all of them would need to have health logic.
-                    It worked great for the prototype so we used it for the actual game as well.
-                </p>
-
-                <br><br>
-
-                <div class="container">
-                    <div class="item">
-                        <img src="images/vampower/Vampower_UnitInheritance.jpg" width="815" height="479" class="center">
-                    </div>
-                    <div class="item">
-                        <p>Classes in <span>C++</span> which blueprint inherits from. </p>
-                        <br>
-                        <p>
-                            The Ally and Enemy Base distinction was needed for targetting.
-                        </p>
-                        <br>
-
-                        <h6>Unit Stat Structure</h6>
-                        <ul>
-                            <li><p>Max Health</p></li>
-                            <li><p>Health Regeneration</p></li>
-                            <li><p>Lifesteal</p></li>
-                            <li><p>Defense</p></li>
-                            <li><p>Movement Speed</p></li>
-                            <li><p>Attack Damage</p></li>
-                            <li><p>Attack Speed</p></li>
-                            <li><p>Critical Rate</p></li>
-                            <li><p>AOE Radius</p></li>
-                        </ul>
-                        <br>
-                        <p>
-                            Units get their stats from a data table on Begin play.
-                        </p>
-                    </div>
-                </div>
-
-                <br><br>
-                <div class="divide-line"></div>
-                <br><br>
-
-                <h3 style="text-align: center;">Player</h3>
-                <p>
-                    The player has <span>three classes</span>, each class has a <span>different</span> set of <span>base stats</span> and <span>starting weapon</span>.
-                    The <span>weapons</span> have the same class types and are <span>designed to synergize</span> best with the <span>same class</span> but still work with the other classes.
-                </p>
-                <br>
-
-                <img src="images/vampower/Vampower_Classes.jpg" width="1180" height="216" class="center">
-            </div>
-
-            <!-- Enemy Spawning -->
-            <div class="wrapper outer">
-                <h2 style="text-align: center;">Enemy Spawning (WIP)</h2>
-                <div class="divide-line"></div>
-                <br><br>
-
-
-            </div>
-
-            <!-- HUD-class -->
-            <div class="wrapper outer">
-                <h2 style="text-align:center;">HUD-class</h2>
-                <div class="divide-line"></div>
-                <br><br>
-                <p>
-                    For this project I tried a new approach for managing widgets, as I knew this game would have a lot of menus.
-                    After learning some more best practices I decided to use the HUD-class.
-                    The HUD-class <span>creates</span> and <span>handles</span> all the <span>widgets</span>.
-                    <br><br>
-                    I really like this approach, as it centralizes everything UI related in one place,
-                    making it easier to manage and for others to work around.
-                    For information other systems needed from the UI,
-                    I created <span>event dispatchers</span> that the widgets triggered.
-                    Example; when an upgrade is purchased from the shop widget that the player blueprint listens to in order to apply the changes.
-                    <br><br>
-                    Another new approach I tried for this project was to <span>keep gameplay logic out of the widgets</span>.
-                    The widgets should only <span>display given data</span> and <span>forward button inputs</span>.
-                    When button input is received the widget fires an <span>event dispatcher</span> so the <span>HUD-class can handle it</span>.
-                </p>
-            </div>
-
-            <!-- Build Structure -->
-            <div class="wrapper outer">
-                <h2 style="text-align: center;">Build Structure</h2>
-                <div class="divide-line"></div>
-                <br><br>
-                <p style="text-align: center;">
-                    I began with planning out how the player would build a structure from start to finish.
-                </p>
-                <br>
-                <img src="images/vampower/Vampower_BuildMenuFlow.jpg" width="714" height="546" class="center">
-                <br><br>
-                <div class="divide-line"></div>
-                <br><br>
-
-                <div class="container">
-                    <div class="item">
-                        <img src="images/vampower/Vampower_BuildMenuEarlyInteraction.gif" width="1314" height="576" class="center">
-                    </div>
-                    <div class="item">
-                        <h6>First iteration</h6>
-                        <p>
-                            The player <span>walk up to the resource node</span> in order to <span>interact</span> with it.
-                            This was extremely <span>tedious and time consuming</span>.
-                        </p>
-                        <br>
-                        <p>
-                            I <span>changed</span> the <span>interact input</span> to use <span>mouse click</span> instead. This way the <span>distance doesn't matter</span>.
-                        </p>
-                    </div>
-                </div>
-
-                <br><br>
-                <div class="divide-line"></div>
-
-                <div class="wrapper">
-                    <h3 style="text-align: center;">Bugs</h3>
-                    <br>
-                    <h5>1. Delayed interact after purchase</h5>
-                    <p>
-                        <span>After building a structure</span> there was a noticable <span>delay before</span> you could <span>interact with another node</span>.
-                        After debugging I still couldn't figure it out so I ended up rewriting how the click interact works in hopes of fixing it, but the delay was still there. As it wasn't gamebreaking I had to leave it.
-                        <br><br>
-                        I ended up accidentally <span>solving</span> it when I was fixing a similar hover bug, but over UI weapon icons on the HUD.
-                        Turns out it had to do with <span>changing Input mode when exiting menus</span>.
-                        Previously I just set it to <span>Input Mode Game Only</span> whenever exiting a menu, but <span>using Input Mode UI And Game</span> instead just… <span>solved it</span>. Good to know. :)
-                    </p>
-                    <br><br>
-                    <h5>2. Click inconsistency</h5>
-                    <p>
-                        There was a lot of <span>inconsistency</span> with clicking on the <span>resource node</span>. This lead to some <span>frustration and confusion from playertesters</span>.
-                        <br>
-                        The <span>reason</span> for this inconsistency was <span>other objects blocking the raycast</span> from the cursor.
-                        <br>
-                        When rewriting the click interact I <span>added a object channel for Interact</span>, which helped reduce the inconsistency.
-                    </p>
-                </div>
-
-
-                <div class="divide-line"></div>
-                <br><br>
-
-                <h3>Data structure (WIP)</h3>
-                <p>
-                    Data table. Struct with variables for the UI and class reference to the structure.
-                </p>
-
-                <br><br><div class="divide-line"></div><br><br>
-
-                <div class="container">
-                    <div class="item">
-                        <h6>Player Feedback</h6>
-                        <p>
-                            To improve the user experience I added more <span>feedback to the players actions</span>. I <span>swap the cursor icon</span> and added a <span>hover effect</span> on the resource node by changing the material.
-                            This makes the resource nodes feel more like <span>buttons</span> and helps <span>inform that the player should click on it</span>.
-                            <br><br>
-                            The resource nodes were sometimes <span>missed</span> so I very subtly added <span>animated pointing arrows</span> ontop of the resource nodes.
-                            <br><br>
-                            The hover effects and arrows are <span>only active during nighttime</span> when they are interactable.
-                        </p>
-                    </div>
-                    <div class="item">
-                        <img src="images/vampower/Vampower_BuildClick.gif" width="1113" height="613" class="center">
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Upgrade shop -->
-            <div class="wrapper outer">
-                <h2 style="text-align: center;">Upgrade Shop (WIP)</h2>
-                <div class="divide-line"></div>
-                <br><br>
-                <img src="images/vampower/Vampower_UpgradeFlow_1.jpg" width="903" height="432" class="center">
-                <br><br>
-                <img src="images/vampower/Vampower_UpgradeFlow_2.jpg" width="954" height="409" class="center">
-                <br><br><div class="divide-line"></div><br><br>
-                <h4>Shop data</h4>
-                <p>
-                    Card Struct. Weapon Struct with Upgrade information for the weapons. HUD-class makes card struct out of the Weapon data table based on the current weapon level.
-                </p>
-                <br><br><div class="divide-line"></div><br><br>
-                <h4>Random cards and scaling costs</h4>
-                <p>
-                    The cost of cards needs to scale based on the amount you've purchased.
-                </p>
-            </div>
-
-        </div>
-
-
 
         <div class="header vampower">
             <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">UI/UX DESIGN</h1>
@@ -556,16 +283,16 @@
                 </div>
 
                 <!--<br><br>
-    <h3 style="text-align:center;">Inspiration & research</h3>
-    <p>
-        I took inspiration from games in the survival-like genre for the UI. The main ones were Brotato, Soulstone Survivor, the League of Legends gamemode Swarm and a non survival-like Thronefall.
-        Brotato was used as reference for the layout, particularly the weapon and item shop before you start a wave.
-        Soulstone Survivor was used for the overall aesthetics and the HUD layout.
-        The League of Legends temporary gamemode Swarm was mainly used as inspiration for how to word skills and item descriptions.
-        Thronefall had a big influence on both the project's design and the UI. The hold to start night mechanic is one example and the minimalist UI design for menus is another.
-    </p>
+            <h3 style="text-align:center;">Inspiration & research</h3>
+            <p>
+                I took inspiration from games in the survival-like genre for the UI. The main ones were Brotato, Soulstone Survivor, the League of Legends gamemode Swarm and a non survival-like Thronefall.
+                Brotato was used as reference for the layout, particularly the weapon and item shop before you start a wave.
+                Soulstone Survivor was used for the overall aesthetics and the HUD layout.
+                The League of Legends temporary gamemode Swarm was mainly used as inspiration for how to word skills and item descriptions.
+                Thronefall had a big influence on both the project's design and the UI. The hold to start night mechanic is one example and the minimalist UI design for menus is another.
+            </p>
 
-    <br><br>-->
+            <br><br>-->
             </div>
 
 
@@ -901,6 +628,579 @@
             </div>
 
         </div>
+
+
+        <div class="header vampower">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">TECHNICAL & SYSTEM DESIGN</h1>
+        </div>
+
+        <!-- Tech + System -->
+        <div class="wrapper-main">
+            <!-- Pre-production -->
+            <div class="wrapper outer">
+                <h2 style="text-align: center;">Pre-production phase</h2>
+                <p>
+                    <span>2 weeks</span> exploring <span>3 game concepts</span>, developing a <span>playable prototype</span> for each one.
+                    First half of the week went to concepting and roughly planning out the different concepts.
+                    The rest was split up into <span>2 days of development time</span> per prototype.
+                </p>
+                <br>
+                <div class="divide-line"></div>
+
+                <!-- Health system -->
+                <div class="wrapper">
+                    <h3 style="text-align:center;">Health system</h3>
+                    <br>
+                    <div class="container">
+                        <div class="item">
+                            <img src="images/vampower/Vampower_Preprod_Healthsystem.gif" alt="Gif showcasing health system" width="837" height="517">
+                        </div>
+                        <div class="item">
+                            <p>
+                                I created a <span>versatile health system</span> in blueprints that was <span>reused</span> for all of the prototypes, <span>saving on development time</span> to work on other features.
+                                <br><br>
+                                To test the health system I made a <span>target dummy</span> with the health system properly implemented with a <span>health bar</span> to visualize the current health.
+                                <br><br>
+                                To deal damage I made an <span>attack actor component</span> that can be applied to any actor and a <span>turret that shoots projectiles</span>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divide-line"></div>
+
+                <!-- Vampower Prototype -->
+                <div class="wrapper">
+                    <h3 style="text-align:center;">Vampower Prototype</h3>
+                    <br>
+                    <div class="container">
+                        <div class="item">
+                            <p>
+                                The prototype focused on <span>testing the core mechanics</span> of defending a central point from waves of enemies by building structures.
+                            </p>
+                            <br><br>
+                            <h6>The prototype features:</h6>
+                            <ul>
+                                <li><p>Simple <span>enemies</span> that target either the player or the central point (the heart).</p></li>
+                                <li><p>An enemy spawner that <span>spawns an increasing amount</span> of enemies per wave.</p></li>
+                                <li><p>Structures, 2 different types.</p></li>
+                                <li><p>Actor with the <span>attack actor component</span>.</p></li>
+                                <li><p><span>Turret actor</span> that shoots projectiles at closest enemy.</p></li>
+                                <li><p>The player can <span>interact</span> with structures to activate them.</p></li>
+                                <li><p>Day & night cycle.</p></li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <img src="images/vampower/Vampower_Pre-production.gif" alt="Gif showcasing gameplay from Vampower's prototype" width="1035" height="541" class="item">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Production -->
+            <div class="wrapper outer">
+                <h2 style="text-align: center;">Production phase</h2>
+                <p style="text-align: center;">
+                    <span>4 weeks</span> to create the finished game.
+                </p>
+            </div>
+
+            <!-- Units -->
+            <div class="wrapper outer">
+                <h2 style="text-align: center;">Units</h2>
+                <div class="divide-line"></div>
+                <br><br>
+                <p>
+                    For the prototype we'd utilized <span>inheritance</span> for the units, since all of them would need to have health logic.
+                    It worked great for the prototype so we used it for the actual game as well.
+                </p>
+
+                <br><br>
+
+                <div class="container">
+                    <div class="item">
+                        <img src="images/vampower/Vampower_UnitInheritance.jpg" width="1675" height="928">
+                    </div>
+                    <div class="item">
+                        <p>Classes in <span>C++</span> which blueprint inherits from. </p>
+                        <br>
+                        <p>
+                            The Ally and Enemy Base distinction was needed for targetting.
+                        </p>
+                        <br>
+
+                        <h6>Unit Stat Structure</h6>
+                        <ul>
+                            <li><p>Max Health</p></li>
+                            <li><p>Health Regeneration</p></li>
+                            <li><p>Lifesteal</p></li>
+                            <li><p>Defense</p></li>
+                            <li><p>Movement Speed</p></li>
+                            <li><p>Attack Damage</p></li>
+                            <li><p>Attack Speed</p></li>
+                            <li><p>Critical Rate</p></li>
+                            <li><p>AOE Radius</p></li>
+                        </ul>
+                        <br>
+                        <p>
+                            Units get their stats from a data table on Begin play.
+                        </p>
+                    </div>
+                </div>
+
+                <br><br>
+                <div class="divide-line"></div>
+                <br><br>
+
+                <h3 style="text-align: center;">Player</h3>
+                <p>
+                    The player has <span>three classes</span>, each class has a <span>different</span> set of <span>base stats</span> and <span>starting weapon</span>.
+                    The <span>weapons</span> have the same class types and are <span>designed to synergize</span> best with the <span>same class</span> but still work with the other classes.
+                </p>
+                <br>
+
+                <img src="images/vampower/Vampower_Classes.jpg" width="1236" height="314" class="center">
+            </div>
+
+            <!-- Enemy Spawning -->
+            <div class="wrapper outer">
+                <h2 style="text-align: center;">Enemy Spawning</h2>
+                <div class="divide-line"></div>
+                <br><br>
+
+                <p>
+                    I made 2 blueprint classes, the BP_SpawnManager and BP_Spawner.
+                    The SpawnManager listens to events from the day/night system to know when to start spawning and the day count to get spawn data.
+                    The SpawnManager then gives the spawn data to the needed spawners and tell them to start spawning.
+                </p>
+                <img src="images/vampower/Vampower_SpawnerFlow.jpg" width="1125" height="345" class="center">
+
+                <br><br>
+                <div class="divide-line"></div>
+                <br><br>
+
+                <p>
+                    The enemy spawning does not utilize <span>object pooling</span> so the later days, 10 and up, do start impacting performance negatively.
+                    If the team were to publish the game properly I'd work on implementing object pooling.
+                </p>
+
+                <br><br>
+                <div class="divide-line"></div>
+                <br><br>
+
+                <h4 style="text-align: center;">Wave Data</h4>
+                <p>
+                    For us designers to have full control of each wave, I made a data table to specify; where to spawn, what to spawn, the amount to spawn, the delay until next spawn.
+                    Each data table row contains the spawn content for 1 day. The data table is built using 3 structs.
+                </p>
+
+                <br>
+
+                <div class="list" style="text-align: center;">
+                    <div class="item">
+                        <h5>WaveInfo</h5>
+                        <ul style="display: inline-block; text-align: left;">
+                            <li><p>An array of SpawnerInfo</p></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h5>SpawnerInfo</h5>
+                        <ul style="display: inline-block; text-align: left;">
+                            <li><p>Spawner Index</p></li>
+                            <li><p>An array of EnemySpawnInfo</p></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h5>EnemySpawnInfo</h5>
+                        <ul style="display: inline-block; text-align: left;">
+                            <li><p>Enemy class</p></li>
+                            <li><p>Spawn Amount</p></li>
+                            <li><p>Delay Until Next Spawn</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <img src="images/vampower/Vampower_WaveInfo.png" width="721" height="452" class="center">
+
+            </div>
+
+            <!-- HUD-class -->
+            <div class="wrapper outer">
+                <h2 style="text-align:center;">HUD-class</h2>
+                <div class="divide-line"></div>
+                <br><br>
+                <p>
+                    For this project I tried a new approach for managing widgets, as I knew this game would have a lot of menus.
+                    After learning some more best practices I decided to use the HUD-class.
+                    The HUD-class <span>creates</span> and <span>handles</span> all the <span>widgets</span>.
+                    <br><br>
+                    I really like this approach, as it centralizes everything UI related in one place,
+                    making it easier to manage and for others to work around.
+                    For information other systems needed from the UI,
+                    I created <span>event dispatchers</span> that the widgets triggered.
+                    Example; when an upgrade is purchased from the shop widget that the player blueprint listens to in order to apply the changes.
+                    <br><br>
+                    Another new approach I tried for this project was to <span>keep gameplay logic out of the widgets</span>.
+                    The widgets should only <span>display given data</span> and <span>forward button inputs</span>.
+                    When button input is received the widget fires an <span>event dispatcher</span> so the <span>HUD-class can handle it</span>.
+                </p>
+            </div>
+
+            <!-- Build Structure -->
+            <div class="wrapper outer">
+                <h2 style="text-align: center;">Build Structure</h2>
+                <div class="divide-line"></div>
+                <br><br>
+                <p style="text-align: center;">
+                    I began with planning out how the player would build a structure from start to finish.
+                </p>
+                <br>
+                <img src="images/vampower/Vampower_BuildMenuFlow.jpg" width="756" height="513" class="center">
+                <br><br>
+                <div class="divide-line"></div>
+                <br><br>
+
+                <div class="container">
+                    <div class="item">
+                        <img src="images/vampower/Vampower_BuildMenuEarlyInteraction.gif" width="1314" height="576" class="center">
+                    </div>
+                    <div class="item">
+                        <h6>First iteration</h6>
+                        <p>
+                            The player <span>walks up to the resource node</span> in order to <span>interact</span> with it.
+                            This was extremely <span>tedious and time consuming</span>.
+                        </p>
+                        <br>
+                        <p>
+                            For the final version I <span>changed</span> the <span>interact input</span> to use <span>mouse positon and input</span> instead.
+                        </p>
+                    </div>
+                </div>
+
+                <br><br>
+                <div class="divide-line"></div>
+
+                <div class="wrapper" style="text-align: center;">
+                    <h3>Data structure</h3>
+                    <p>
+                        The UI gets it's data from a <span>data table</span>.
+                    </p>
+                    <br>
+
+                    <h5>Data table struct</h5>
+                    <ul style="display: inline-block; text-align: left;">
+                        <li><p>Spawn class reference</p></li>
+                        <li><p>Structure name</p></li>
+                        <li><p>Description</p></li>
+                        <li><p>Cost</p></li>
+                    </ul>
+
+                    <br><br>
+                    <p style="text-align: left;">
+                        9 total structures were planned but not all got completed before the deadline. The UI requires 9 items so instead of deleting the structures I kept them but made the cost impossible to get.
+                    </p>
+                </div>
+
+                <div class="divide-line"></div>
+
+                <div class="wrapper">
+                    <h3 style="text-align: center;">Bugs</h3>
+                    <br>
+                    <h5>1. Delayed interact after purchase</h5>
+                    <p>
+                        <span>After building a structure</span> there was a noticable <span>delay before</span> you could <span>interact with another node</span>.
+                        After debugging I still couldn't figure it out so I ended up rewriting how the click interact works in hopes of fixing it, but the delay was still there. As it wasn't gamebreaking I had to leave it.
+                        <br><br>
+                        I ended up accidentally <span>solving</span> it when I was fixing a similar hover bug, but over UI weapon icons on the HUD.
+                        Turns out it had to do with <span>changing Input mode when exiting menus</span>.
+                        Previously I just set it to <span>Input Mode Game Only</span> whenever exiting a menu, but <span>using Input Mode UI And Game</span> instead just… <span>solved it</span>. Good to know. :)
+                    </p>
+                    <br><br>
+                    <h5>2. Click inconsistency</h5>
+                    <p>
+                        There was a lot of <span>inconsistency</span> with clicking on the <span>resource node</span>. This lead to some <span>frustration and confusion from playtesters</span>.
+                        <br>
+                        The <span>reason</span> for this inconsistency was <span>other objects blocking the raycast</span> from the cursor.
+                        <br>
+                        When rewriting the click interact I <span>added a object channel for Interact</span>, which helped reduce the inconsistency.
+                    </p>
+                </div>
+
+                <div class="divide-line"></div><br><br>
+
+                <h3 style="text-align: center;">Player Feedback</h3>
+                <br>
+                <div class="container">
+                    <div class="item">
+                        <p>
+                            To improve the user experience I added more <span>feedback to the players actions</span>. I <span>swap the cursor icon</span> and added a <span>hover effect</span> on the resource node by changing the material.
+                            This makes the resource nodes feel more like <span>buttons</span> and helps <span>inform that the player should click on it</span>.
+                            <br><br>
+                            The resource nodes were sometimes <span>missed</span> so I very subtly added <span>animated pointing arrows</span> ontop of the resource nodes.
+                            <br><br>
+                            The hover effects and arrows are <span>only active during nighttime</span> when they are interactable.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/vampower/Vampower_BuildClick.gif" width="1113" height="613" class="center">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Upgrade shop -->
+            <div class="wrapper outer">
+                <h2 style="text-align: center;">Upgrade Shop</h2>
+                <div class="divide-line"></div>
+                <br><br>
+                <p style="text-align: center;">
+                    I started with outlining the full interaction from start to end.
+                </p>
+                <br>
+                <img src="images/vampower/Vampower_UpgradeFlow_1.jpg" width="701" height="556" class="center">
+
+                <br><br><div class="divide-line"></div><br><br>
+
+                <h3 style="text-align: center;">Purchase Card</h3>
+                <br>
+                <img src="images/vampower/Vampower_PurchaseCardLogic.jpg" width="802" height="484" class="center">
+
+                <br><br><div class="divide-line"></div><br><br>
+
+                <div class="container">
+                    <div class="item">
+                        <h6>First Iteration</h6>
+                        <p>
+                            The core functionality working; <span>reroll buttons</span> updates the shop, <span>locking/ unlocking</span> cards work and purchase hides them.
+                            <br><br>
+                            At this stage no real data is used for the cards and currency isn't taken into consideration. Focus is getting the UI interaction in place so it can be playtested.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/vampower/Vampower_UpgradeShop_EarlyIteration.gif" width="1134" height="596">
+                    </div>
+                </div>
+
+                <br><br><div class="divide-line"></div><br><br>
+
+                <div>
+                    <h3 style="text-align: center;">Shop Data</h3>
+
+                    <p>
+                        For the shop I have <span>2 data tables</span>. One for the stat upgrade cards and one for the weapons.
+                        I made this distinction because the weapons need more data. During runtime the HUD-class makes upgrade card structs out of the weapon data table.
+                    </p>
+
+                    <br><br>
+
+                    <div class="container">
+                        <div class="item">
+                            <img src="images/vampower/Vampower_Shop_CardStruct.png" width="707" height="246">
+                        </div>
+                        <div class="item">
+                            <h5>Card Struct</h5>
+                            <p>
+                                Struct is used for the UI and for applying upgrades to the player stats.
+                            </p>
+                            <br>
+                            <ul>
+                                <li><p><span>Description:</span> Only used to convey information for the widget, needs to be manually updated to match the actual modified value.</p></li>
+                                <li><p><span>Modifier:</span> A C++ struct with multipliers for all the stats. Data is used to apply the stat upgrades.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                    <div class="container">
+                        <div class="item">
+                            <h5>Weapon Struct</h5>
+                            <br>
+                            <ul>
+                                <li><p><span>Short Description:</span> Used by the card widget when the weapon is not owned.</p></li>
+                                <li><p><span>Long Description:</span> Used on the weapon tooltip.</p></li>
+                                <li><p><span>Upgrade Description array:</span> Description text for all the levels. Which one is used is determined by the weapons upgrade level.</p></li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <img src="images/vampower/Vampower_Shop_WeaponStruct.png" width="905" height="432">
+                        </div>
+                    </div>
+                </div>
+
+
+                <br><br><div class="divide-line"></div><br><br>
+
+                <div>
+                    <h3 style="text-align: center;">Reroll shop</h3>
+                    <p>
+                        The shop gets rerolled automatically at the start of the night. The player can also decide to reroll the shop with currency.
+                        <br>
+                        <span>Weapon cards</span> have a <span>lower chance</span> of appearing.
+                    </p>
+                    <br>
+                    <div class="container">
+                        <div class="item">
+                            <img src="images/vampower/Vampower_RerollShopLogic.jpg" width="740" height="525">
+                        </div>
+                        <div class="item">
+                            <h5>Duplicate cards</h5>
+                            <p>
+                                The <span>current cards</span> are <span>not considered</span> when <span>checking for duplicates</span>.
+                            </p>
+                            <br>
+                            <h5>Update shop</h5>
+                            <p>
+                                When updating the cards, <span>locked cards</span> get <span>skipped</span> and therefore keep their old data. This does mean there is still a <span>chance for duplicates</span>.
+                            </p>
+                            <br>
+                            <h5>Item pool</h5>
+                            <p>
+                                Contains all potential items that can appear in the store.
+                                <!--I have a pool of potential items, it contains all the stat cards. The weapon cards have critera for being in the item pool. They are changed based on their upgrade level. If they're fully maxed they're removed from the pool completely.-->
+                            </p>
+                            <p>This includes;</p>
+                            <ul>
+                                <li><p>All stat cards</p></li>
+                                <li>
+                                    <p>A version of each weapon if it's;</p>
+                                    <ul>
+                                        <li><p>not owned by the player</p></li>
+                                        <li><p>not max upgrade level</p></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <br><br>
+                    <p>
+                        The <span>current cards data</span> and <span>lock/unlock state</span> is only <span>saved in the card widget</span>.
+                        <span>In hindsight</span>, the <span>HUD-class</span> should be <span>responsible for</span> this <span>data</span>, not the widgets.
+                    </p>
+
+
+                </div>
+
+                <br><br><div class="divide-line"></div>
+
+                
+
+            </div>
+
+
+            <div class="wrapper outer">
+                <h2 style="text-align: center;">Game balance</h2>
+                <div class="divide-line"></div><br><br>
+                <p>
+                    Scaling is a big part of any survival-like game. As the player gets stronger, resources get sparser and enemies tougher or increase in amount.
+                    Balancing numbers in a spreadsheet is not quite my expertise or interest but I did try keeping scaling in mind when designing the games systems.
+                </p>
+                <br>
+                <ul>
+                    <li><p><span>Upgrade shop reroll  cost</span> increases with each use.</p></li>
+                    <li>
+                        <p><span>Weapon card cost</span> scale based on;</p>
+                        <ul>
+                            <li><p>Total owned weapon count.</p></li>
+                            <li><p>Weapon upgrade level.</p></li>
+                        </ul>
+                    </li>
+                    <li><p><span>Enemies health and damage</span> scale with day count.</p></li>
+                    <li><p><span>Enemy amount</span> increases each day.</p></li>
+                </ul>
+
+                <br><br><div class="divide-line"></div><br><br>
+                <p>
+                    Unfortunately, the games <span>current balance</span> is <span>broken</span>. Especially the economy. Not surprising though, I did only get time to spend on it during the night before the final playtest trying to fix it.
+                </p>
+                <br>
+                <div class="container">
+                    <div class="item">
+                        <h6>Problem</h6>
+                        <p>
+                            The <span>player</span> gets <span>too much money too early</span> so they end up purchasing everything.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h6>Consequences</h6>
+                        <ul>
+                            <li><p><span>Strategi:</span> The player no longer needs to manage their resources. There is no choosing between two great options but only being able to afford one.</p></li>
+                            <li><p><span>Overpowered:</span> The player becomes too strong, they no longer feel threatened by the enemies. In the long run, less stakes makes the combat less engaging and less fun.</p></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h6>Solution</h6>
+                        <ul>
+                            <li><p><span>Currency: </span>Decrease the amount of currency the player gets.</p></li>
+                            <li><p><span>Enemy: </span>Increase enemy health and/ or damage stats.</p></li>
+                            <li><p><span>Cost: </span>Increase cost of upgrades and structures.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <br><br><div class="divide-line"></div><br><br>
+
+                <h3 style="text-align: center;">Weapon scaling</h3>
+                <br>
+                <p>
+                    Since the weapons are so impactful- buying one should require a fair bit of investment.
+                    My <span>goal</span> was to <span>limit</span> the <span>player</span> to EITHER <span>invest horizontally</span> with <span>a lot of weapons</span> OR <span>vertically</span> with <span>few well upgraded weapons</span>.
+                    The <span>player</span> should <span>NOT</span> be able to <span>buy most weapons AND heavily upgrade them</span>.
+                </p>
+
+            </div>
+
+
+        </div>
+
+        <div class="header vampower">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">TAKE AWAYS</h1>
+        </div>
+
+        <div class="wrapper-main">
+            <div class="wrapper outer">
+
+                <p>
+                    In short, we overscoped the game by a lot considering the limited timeframe.
+                </p>
+                <br>
+                <div class="container">
+                    <div class="item">
+                        <h2>UI/UX designer</h2>
+                        <br>
+                        <ul>
+                            <li>
+                                <p>New UI/UX workflow habits in Unreal Engine;</p>
+                                <ul>
+                                    <li><p>Utilizing the HUD-class.</p></li>
+                                    <li><p>Using richtextstyles for all the games text.</p></li>
+                                    <li><p>Reusing widgets instead of removing and constructing again.</p></li>
+                                </ul>
+                            </li>
+                            <li><p>How valuable doing research and getting references is.</p></li>
+                            <li><p>Got to experience designing more complex gameplay menus. Struggles with how to best display a lot of information.</p></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h2>Technical designer</h2>
+                        <br>
+                        <ul>
+                            <li><p>Communication and co-operation with programmers and other designers.</p></li>
+                            <li><p>Problem solving, quick but effective solutions in order to get the game done in time.</p></li>
+                            <li><p>Separating out data from functionality. Used data tables.</p></li>
+                            <li><p>How to structure data in a readable and easily editable way.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+
 
     </main>
 

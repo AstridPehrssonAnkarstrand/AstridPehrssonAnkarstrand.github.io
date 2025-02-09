@@ -668,6 +668,7 @@ footer {
     }
 }
 
+
 /*------------- Projects cards ----------*/
 
 #projects .wrapper-main {
@@ -682,12 +683,14 @@ footer {
 }
 
 .card-container {
-    display: grid;
+    /*display: grid;*/
     /*grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));*/
-    grid-template-columns: repeat(auto-fit, 1fr);
+    /*grid-template-columns: repeat(auto-fit, 1fr);
     justify-content: center;
     grid-auto-rows: 1fr;
     gap: 16px;
+    flex-wrap: wrap;*/
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -699,9 +702,10 @@ footer {
     margin: 1em;
     text-decoration: none;
     display: flex;
+    /*flex-wrap: wrap;*/
     border: 0.25em solid #272727;
     transition: border 0.25s;
-    max-height: 350px;
+    /*max-height: 350px;*/
 }
 
 .card:hover {
@@ -717,34 +721,59 @@ footer {
     object-fit: cover;
 }
 
-.card-awards {
-    position: absolute;
-    display: flex;
-    top: 0;
-    right: 0;
-/*    top: -40px;
-    right: -8px;*/
-}
-
 .card-content {
-/*    min-width: 60%;*/
+    /*    min-width: 60%;*/
     width: 100%;
     padding: 1em;
     padding-left: 2em;
 }
 
-.card-content h2 {
-    margin-bottom: 0.25em;
-    color: #E1E1E1;
+    .card-content h2 {
+        margin-bottom: 0.25em;
+        color: #E1E1E1;
+    }
+
+    .card-content p span {
+        /*font-size: 1.2em;*/
+        margin-bottom: 1em;
+        color: #bb86fc;
+    }
+
+@media only screen and (max-width: 768px) {
+    .card {
+        flex-wrap: wrap;
+        /*margin: 2em;*/
+        padding-bottom: 1em;
+    }
+
+    .card-image {
+        /*max-width: 100%;*/
+        /*flex: 1;*/
+    }
+
+    .card-content {
+        flex: 1;
+        padding: 1em;
+    }
+
+    .card-content h2, .card-content p span {
+        text-align: center;
+    }
 }
 
-.card-content p span {
-    /*font-size: 1.2em;*/
-    margin-bottom: 1em;
-    color: #bb86fc;
-}
 
 /*------------- Video Wrapper ----------*/
+
+.video {
+    max-width: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .video {
+        max-width: 100%;
+    }
+}
 
 .outerVideoWrapper {
     /*width: 50%;*/
