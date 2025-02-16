@@ -259,6 +259,10 @@ footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("images/fearofthelight/Screenshot (509).png");
 }
 
+.farm-prototype {
+    background: black;
+}
+
 .divide-line {
     border-bottom: 4px solid #616161;
     width: 100%;
