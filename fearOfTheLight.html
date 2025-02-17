@@ -152,9 +152,9 @@
                         </div>
                     </div>
                     <div class="item">
-                        <h6>The data terminal serves multiple purposes;</h6>
+                        <h6>The data terminal serves multiple purposes:</h6>
                         <ul>
-                            <li><p>convey <span>lore</span> with information about the current situation</p></li>
+                            <li><p>to convey <span>lore</span> with information about the current situation</p></li>
                             <li><p>a <span>map</span> of the area</p></li>
                             <li><p><span>progression</span> by unlocking the next area and <span>autosaving</span> the game</p></li>
                         </ul>
@@ -193,7 +193,7 @@
                         <div class="item">
                             <h5>Page Data</h5>
                             <br>
-                            <p><span><b>Logs:</b></span> Takes in a string array of LogID:s. The log content is stored in a data table, one row represents one log. The LogID matches the data table row name.</p>
+                            <p><span><b>Logs:</b></span> Takes in a string array of LogID's. The log content is stored in a data table, one row represents one log. The LogID matches the data table row name.</p>
                             <br>
                             <p><span><b>Map:</b></span> Takes a bool and a SaveID. Every BP_DataTerminal has a unique ID, I use it to display the current position on the map.</p>
                             <br>
@@ -213,7 +213,7 @@
                         <h4 style="text-align: center;">LOG PAGE</h4>
                         <p>
                             The log page consists of <span>two containers</span>. First one holds a <span>sidebar</span> listing all the available logs.
-                            The second holds the <span>log content</span>, with a <span>header</span> and the <span>breadtext</span>. I experimented with formatting the breadtext by using <span>Rich Text Styles</span> so the writer can emphasize certain words.
+                            The second holds the <span>log content</span>, with a <span>header</span> and the <span>bread text</span>. I experimented with formatting the bread text by using <span>Rich Text Styles</span> so the writer can emphasize certain words.
                         </p>
                     </div>
 
@@ -252,8 +252,8 @@
                                     After researching I saw a smarter solution using 2 canvases. The <span>outer canvas</span> functions as a <span>mask</span> and is the <span>required window size</span>.
                                     The <span>inner canvas</span> is the size of the full map. The <span>position and size</span> of the inner canvas can then be <span>panned and zoomed</span> based on user input and mouse position.
                                     <br><br>
-                                    The map itself is an image made using a <span>top down screenshot</span> of the game level as a guide and <span>drawing</span> the outlines over it.
-                                    The area names and special icons are added over this image in the engine so they are easy to edit.
+                                    The map itself is an image made using a <span>top-down screenshot</span> of the game level as a guide and <span>drawing</span> the outlines over it.
+                                    The area names and special icons are added over this image in the engine, so they are easy to edit.
                                 </p>
                                 <br>
                                 <a target="_blank" href="https://forums.unrealengine.com/t/how-to-scale-zoom-a-widget-with-blueprints/430983"><p>Original source with full explanation and code</p></a>
@@ -266,12 +266,12 @@
                             <div class="item">
                                 <h5>Icons</h5>
                                 <p>
-                                    The old icons had <span>clarity issues</span>, particularly for the Radar because of the <span>small size</span> combind with the <span>emissive color</span> making them <span>unreadable</span>.
+                                    The old icons had <span>clarity issues</span>, particularly for the radar because of the <span>small size</span> combined with the <span>emissive color</span> making them <span>unreadable</span>.
                                     <br><br>
-                                    The <span>letters confused players</span> on what they referred to. I tried using <span>different letters</span> based on playtesters feedback but the <span>problem still persisted</span>.
+                                    The <span>letters confused players</span> on what they referred to. I tried using <span>different letters</span> based on play testers feedback, but the <span>problem still persisted</span>.
                                     <br><br>
-                                    I decided to skip the letters and instead <span>imitate the object's appearance</span> ingame.
-                                    This has seemed to help and the icons have <span>different silhouettes</span> at the least, making them <span>distinct</span> from each other.
+                                    I decided to skip the letters and instead <span>imitate the object's appearance</span> in game.
+                                    This gives the icons a <span>unique silhouette</span>, making them <span>distinct</span> from each other.
                                 </p>
                             </div>
                             <div class="item">

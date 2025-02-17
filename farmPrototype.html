@@ -186,16 +186,24 @@
             <div class="wrapper outer">
                 <h2 style="text-align:center;">Leveling System</h2>
                 <div class="divide-line"></div>
+                <br>
+                <p>
+                    I recreated the leveling system from a childhood game I played a lot, Nordgame.
+                    You put crops into a <span>fortune wheel</span> that gave exp on win.
+                </p>
+                <br><br>
+                <div style="text-align:center;">
+                    <h5>Key design points:</h5>
+                    <ul style="display: inline-block; text-align: left;">
+                        <li><p><span>6 item slots</span> requesting specific items</p></li>
+                        <li><p><span>X2 slot</span> that gives <span>double exp</span> when landed on, if <span>all item slots</span> have been <span>filled</span>.</p></li>
+                        <li><p>Wheel can be played with 1 item minimum.</p></li>
+                        <li><p>All added items get used up after spinning.</p></li>
+                    </ul>
+                </div>
+
 
                 <div class="wrapper">
-                    <h3 style="text-align:center;">Fortune Wheel</h3>
-                    <p>
-                        I tried recreating a mechanic from a childhood game I played a lot, Nordgame.
-                        A fortune wheel that gave exp on win. The wheel had a firm list of 6 items that you supplied to increase your chance of winning.
-                        For my version, I decided to scale the amount of items needed based on level.
-                    </p>
-                    <br><br>
-
                     <!--<img src="images/farmprototype/farm_Wheel1.gif" width="520" height="680" class="center">-->
 
                     <div class="container">
@@ -204,41 +212,56 @@
                         </div>
                         <div class="item">
                             <p>
-                                To make the wheel spin and slow down I used a <span>float curve</span> as <span>alpha</span> to <span>lerp the rotation speed multiplier</span> until it reached 0.
-                                <br><br>
-                                To make the slot it landed on random, I made multiple curves, a random range for the spin duration and the starting speed multiplier.
+                                I scale the number of item slots required with level.
                             </p>
+                            <br>
+
+                            <p>
+                                To gradually slow down the wheel I used a <span>float curve</span> as <span>alpha</span> to <span>lerp</span> the <span>rotation speed multiplier</span> until it reached 0.
+                                <br><br>
+                                To make the slot it landed on unpredictable I used;
+                            </p>
+
+                            <ul>
+                                <li><p>Multiple curves, picking a random one</p></li>
+                                <li><p>Randomized the spin duration within a range</p></li>
+                                <li><p>Randomized the starting speed multiplier within a range</p></li>
+                            </ul>
                         </div>
                     </div>
+                </div>
 
-                    <br><br>
-                    <div class="divide-line"></div>
-                    <br><br>
+                <div class="divide-line"></div>
+
+                <div class="wrapper">
                     <h4 style="text-align:center;">Wheel content</h4>
                     <p>
-                        The wheels first and middle slot are always predetermined, but the items slots aren't. I had a couple iterations how I handled deciding the item slots.
+                        I can use the items the wheel requires to incentivize the player to get new crops and tiles. I went through a couple iterations for deciding the item slots content.
                     </p>
                     <br>
                     <div class="container">
                         <div class="item">
-                            <h5>Full control</h5>
                             <p>
-                                First iteration I designed each wheel in a data table. This gave consistency and a lot of control over the progression and difficulty, but was very time consuming.
+                                <span>Full control: </span>
+                                Creating each wheel’s item slots manually. Gives complete control over the progression and difficulty but time consuming.
                             </p>
                         </div>
                         <div class="item">
-                            <h5>No control</h5>
-                            <p>Second iteration I used an item pool array containing all the unlocked items. The wheel would be filled with random items from the pool. This was quick but very inconsistent.</p>
+                            <p>
+                                <span>No control: </span>
+                                Fill the item slots with random items from an item poo. When new items get unlocked, they get added to the pool. Quick but inconsistent and impossible to balance.
+                            </p>
                         </div>
                     </div>
 
                     <br>
                     <p>
-                        What I ended up with was a mixture of both. I kept the item pool, but made a data table that determines what items should be in the potential pool.
-                        This gave me enough control to specify what items should be possible on each level. I could also increase or decrease the chance of those items by entering more or less copies of it.
+                        I kept the item pool but wanted more control over it. I made a data table that specifies what items are in the potential pool at any given level. 
+                        This allowed increasing the likelyhood of an item appearing by entering more copies of it.
                     </p>
 
                 </div>
+
             </div>
 
 
@@ -278,14 +301,14 @@
                         <p>
                             Performed when the AI's specified criteria is fulfilled.
                             <br><br>
-                            When setting target; the <span>AI marks</span> the <span>target tile</span> as <span>taken</span> so other <span>AI:s ignore it</span>.
+                            When setting target; the <span>AI marks</span> the <span>target tile</span> as <span>taken</span> so other <span>AIs ignore it</span>.
                         </p>
 
                         <br><br>
 
                         <h6>Secondary Objective:</h6>
                         <p>
-                            Performed when the criteria can't be fulfilled in order to fulfill the criteria.
+                            Performed to fulfill the criteria.
                         </p>
                     </div>
                     <div class="item">
@@ -318,7 +341,7 @@
                         <p>
                             I made the Watering and Harvesting AI first.
                             <br><br>
-                            To simplify <span>debugging</span> I added <span>text</span> to display the <span>AI:s current target</span> and <span>resource count</span>. The tiles also got text to display their state.
+                            To simplify <span>debugging</span> I added <span>text</span> to display the <span>AI's current target</span> and <span>resource count</span>. The tiles also got text to display their state.
                         </p>
                     </div>
                 </div>
@@ -331,8 +354,8 @@
                     <div class="item">
                         <h4>Adjustments</h4>
                         <ul>
-                            <li><p>Nerfed their movement speed.</p></li>
-                            <li><p>A <span>diegetic indicator</span> on the mesh for their resource count.</p></li>
+                            <li><p>Nerfed movement speed.</p></li>
+                            <li><p>A <span>diegetic indicator</span> on the mesh to display resource count.</p></li>
                         </ul>
                     </div>
                     <div class="item">
@@ -354,7 +377,7 @@
                             Larger testing scenario.
                             <br><br>
                             Problem; lack of <span>visual clarity</span> because <span>overlapping text</span>.
-                            To solve it I hide the AI:s text and moved the tile text so it's laying flat against the mesh.
+                            To solve it I hide the AI text.
                         </p>
                     </div>
                 </div>

@@ -93,7 +93,7 @@
                     <ul>
                         <li><p>Dialogue system</p></li>
                         <li><p>Game content read from Data tables made from CSV-files</p></li>
-                        <li><p>Text parser that handles branching storypaths</p></li>
+                        <li><p>Text parser that handles branching story paths</p></li>
                         <li><p>System can handle multiple chat conversations at once</p></li>
                         <li><p>UI portraying a mobile chatting app</p></li>
                     </ul>
@@ -145,7 +145,7 @@
                 <h2 style="text-align:center;">Game Mode</h2>
                 <br><br>
                 <p>
-                    I use a custom GameMode class to handle the games content as it's easily reached and the lack of replication isn't an issue in a single player game.
+                    I use a custom GameMode class to handle the games content as it's globally referenced, and the lack of replication isn't an issue in a single player game.
                     It has all two actor components, one that contains the data and the other for parsing it.
                 </p>
                 <img src="images/chatprototype/Chat_GameModeComponents.jpg" width="810" height="270" class="center">
@@ -216,7 +216,7 @@
                         <div class="item" style="flex: 100%">
                             <p>
                                 <span><b>ID: </b></span>
-                                Row name, must be unique.
+                                The row name. Must be unique.
                                 <!--I used the element index but in an actual production a more advanced ID would be needed.-->
                             </p>
                         </div>
@@ -240,7 +240,7 @@
                                 <br>
                                 Player sent message uses syntax <b>(Me)</b>.
                                 <br>
-                                Player choice uses syntax <b>{Choice}</b>. By default the choice selected by the player will be sent as a message.
+                                Player choice uses syntax <b>{Choice}</b>. By default, the choice selected by the player will be sent as a message.
                                 <br>
                                 Player choice override default uses syntax <b>{Choice|True}</b>. Useful for summarizing a choice, then sending the actual messages.
                             </p>
@@ -248,7 +248,7 @@
                         <div class="item" style="flex: 100%">
                             <p>
                                 <span><b>Dialogue: </b></span>
-                                Dialogue line. Available styling is: italic, bold, emoji.
+                                Dialogue line. Available styling: italic, bold, emoji.
                                 <br>
                                 Note that style notations can’t be nested, the previous styling needs to be ended before starting a new one.
                                 This is a limitation with how RichTextStyles work.
@@ -296,7 +296,7 @@
                             <br>
                             More widgets but most will be collapsed so performance shouldn't be effect.
                             <br>
-                            Can be updated with new content directly, stores it's own content and state.
+                            Can be updated with new content directly, stores its own content and state.
 
                         </p>
                     </div>
@@ -340,7 +340,7 @@
                         <br>
                         <p>
                             <span><b>WBP_Message: </b></span>
-                            Takes a FMessage struct on construct and sets it's content based on it.
+                            Takes a FMessage struct on construct and sets its content based on it.
                         </p>
                         <br>
                         <p>
