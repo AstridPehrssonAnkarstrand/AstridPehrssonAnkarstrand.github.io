@@ -4,216 +4,283 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Astrid PA.</title>
+    <title>Astrid Pehrsson Ankarstrand | Tech & UI/UX Designer</title>
     <link rel="stylesheet" href="projectStyle.css">
     <script type="text/javascript" src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/ccef3511e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
-        <a href="#" class="logo"><img src="images/Logo.png" width="344" height="50"> </a>
+        <a href="#" class="logo"><!--<img src="images/Logo.png" width="344" height="50">--><h5>Astrid Pehrsson Ankarstrand | Technical & UI/UX Designer</h5></a>
         <ul id="navbar">
             <li><i class="fa-solid fa-xmark button close" onclick="CloseNavbar()" aria-label="close sidebar"></i></li>
-            <li><a href="#" onclick="CloseNavbar()">Home</a></li>
-            <li><a href="#about" onclick="CloseNavbar()">About</a></li>
-            <li><a href="#projects" onclick="CloseNavbar()">Projects</a></li>
-            <li><a href="#contact" onclick="CloseNavbar()">Contact</a></li>
+            <li><a href="#" onclick="CloseNavbar()">PROJECTS</a></li>
+            <li><a href="resume.html" onclick="CloseNavbar()">RESUME</a></li>
+            <li><a href="about.html" onclick="CloseNavbar()">ABOUT ME</a></li>
+            <li><a href="contact.html" onclick="CloseNavbar()">CONTACT</a></li>
         </ul>
         <i class="fa-solid fa-bars button open" onclick="OpenNavbar()" aria-label="open sidebar"></i>
     </nav>
 
     <main>
-        <div id="header">
+        <!--<div id="header">
             <div class="header-text">
                 <h1>Astrid</h1>
                 <h1>Pehrsson</h1>
-                <h1>Ankarstrand</h1>
+                <h1>Ankarstrand</h1>-->
                 <!--<h1>Astrid Pehrsson Ankarstrand</h1>-->
-                <h3>
+                <!--<h3>
                     <span>
-                        UI / UX Designer
-                        <br>
                         Technical Designer
+                        <br>
+                        UI / UX Designer
                     </span>
                 </h3>
 
             </div>
-        </div>
+        </div>-->
+        <div class="fairway">
+            <!-------------Projects---------->
+            <div id="projects">
+                <!--<div class="header projects">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Projects</h1>
+        </div>-->
 
-
-        <!-------------Projects---------->
-        <div id="projects">
-            <!--<div class="header">
-                <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Projects</h1>
-            </div>-->
-
-            <div class="wrapper-main">
-                <h1 style="text-align: center;">PROJECTS</h1>
-                <br>
-
-                <div class="card-container">
-                    <a href="projectLayout.html" class="card">
-                        <div class="card-image">
-                            <img src="images/vampower/Vampower_MainMenu_Fin.png" width="960" height="540">
-                        </div>
-                        <div class="card-content">
-                            <h2>Vampower</h2>
-                            <p><span>UI/UX Design, Technical Design, UE5</span></p>
-                            <p>
-                                A survival-like tower defense game with minor roguelike elements were you must protect your Vampire overlord from hordes of enemies.
+                <div>
+                    <h1 style="text-align: center;">PROJECTS</h1>
+                    <div class="divide-line"></div>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-content">
+                                <h2>Equinox: Homecoming</h2>
+                                <div class="two-column-layout margin-bottom-small">
+                                    <p><b>Blue Scarab Entertainment</b></p>
+                                    <p><b>UI/UX & Technical Design Intern</b></p>
+                                    <p><b>Engine:</b> Unreal Engine 5</p>
+                                    <p><b>Duration:</b> May 2025 - December 2025</p>
+                                    <p><b>Status:</b> Early Access</p>
+                                </div>
+                                <p>
+                                    Equinox: Homecoming is an MMORPG centered around you, your horse, and an open world to explore together. For fans of horses, murder mysteries and cozy exploration.
+                                </p>
                                 <br><br>
-                                Developed in 6 weeks by a 8 people team consisting only of designers and programmers.
+                                <p><b>Highlights:</b></p>
+                                <ul>
+                                    <li><p>UI/UX Design</p></li>
+                                    <li><p>Technical Design</p></li>
+                                    <li><p>Blueprint scripting</p></li>
+                                </ul>
                                 <br><br>
-                                I was responsible for the games UI and implementing gameplay systems.
-                            </p>
-                        </div>
-                    </a>
-                    <a href="fearOfTheLight.html" class="card">
-                        <div class="card-image">
-                            <img src="images/FOFL.png" width="960" height="540">
-                            <!--<div class="card-awards">
-                    <img src="images/fearofthelight/awards_SGA_2024_2_BEST_DESIGN_NOM_blackBG.png" width="140" height="140">
-                    <img src="images/fearofthelight/fga2024_Winner_BestTech.png" width="140" height="140">
-                </div>-->
-                        </div>
-                        <div class="card-content">
-                            <h2>Fear of the Light</h2>
-                            <p><span>UI/UX Design, Diegetic UI, UE5</span></p>
-                            <p>
-                                Awards: BEST DESIGN Nominee at SGA 2024, BEST TECH winner at the FGA 2024!<br>
-                                Released on Steam early november.
+                                <p><i>Project page is a work in progress!</i></p>
                                 <br>
-                                <br>
-                                A short sci-fi survival horror game where the light is scarier then the dark.
-                                <br>
-                                Developed over 7 weeks in a 10 people team. I was responsible for the games UI.
-                            </p>
-                        </div>
-                    </a>
-                    <a href="chatPrototype.html" class="card">
-                        <div class="card-image">
-                            <img src="images/ChatProt_16-9.png" width="960" height="540">
-                        </div>
-                        <div class="card-content">
-                            <h2>Chat Prototype</h2>
-                            <p><span>Solo, UI/UX Design, Technical Design, UE5</span></p>
-                            <p>
-                                A short prototype exploring storytelling through chat conversations.
+                                <a href="equinox.html" class="btn btn2 center">Project Page</a>
+                            </div>
+                            <div class="card-image">
+                                <!--<p>Image</p>-->
+                                <!--<img src="images/vampower/Vampower_MainMenu_Fin.png">-->
+                            </div>
+                        </div> <!--INTERNSHIP - EQUINOX: HOMECOMING-->
+                        <div class="card">
+                            <div class="card-content">
+                                <h2>Vampower</h2>
+                                <div class="two-column-layout margin-bottom-small">
+                                    <p><b>Team Project</b></p>
+                                    <p><b>UI/UX & Technical Designer</b></p>
+                                    <p><b>Engine:</b> Unreal Engine 5</p>
+                                    <p><b>Duration:</b> 6 Weeks</p>
+                                    <p><b>Status:</b> Released on Itch.io</p>
+                                </div>
+                                <p>
+                                    Defend your evil master, a Vampire overlord, from hordes of enemies in this survival-like tower defense game with minor roguelike elements.
+                                </p>
                                 <br><br>
-                                Developed in 2 weeks time for an Advanced Visual Scripting course at Futuregames.
-                            </p>
-                        </div>
-                    </a>
-                    <a href="farmPrototype.html" class="card">
-                        <div class="card-image">
-                            <img src="images/FarmProt_16-9.png" width="960" height="540">
-                        </div>
-                        <div class="card-content">
-                            <h2>Farm Prototype</h2>
-                            <p><span>Solo, UI/UX Design, System Design, Technical Design, UE5</span></p>
-                            <p>
-                                A small prototype exploring farming and resource management systems.
-                                Features a inventory system, a build system, leveling & progression system.
-                                I also made 3 AI that can help automate the farming.
+                                <p><b>Highlights:</b></p>
+                                <ul>
+                                    <li><p>UI/UX Design</p></li>
+                                    <li><p>Technical Design</p></li>
+                                    <li><p>System Design</p></li>
+                                    <li><p>Blueprint scripting</p></li>
+                                </ul>
                                 <br><br>
-                                Created solo in 4 weeks for a system design course at Futuregames.
-                            </p>
-                        </div>
-                    </a>
-                    <a href="catFished.html" class="card">
-                        <div class="card-image">
-                            <img src="images/Catfished_16-9.png" width="960" height="540">
-                        </div>
-                        <div class="card-content">
-                            <h2>Catfished (WIP)</h2>
-                            <p><span>Solo, Side-project, UI/UX Design, Unity, UE5</span></p>
-                            <p>
-                                Catfished is an ongoing passion-project, a visual novel game taking place on a desktop.
+                                <a href="projectLayout.html" class="btn btn2 center">Project Page</a>
+                            </div>
+                            <div class="card-image">
+                                <img src="images/vampower/Vampower_MainMenu_Fin.png">
+                                <p><i>Available on <a target="_blank" href="https://futuregames.itch.io/vampower">Itch.io</a></i></p>
+
+                            </div>
+                        </div> <!--VAMPOWER-->
+                        <div class="card">
+                            <div class="card-content">
+                                <h2>Fear of the Light</h2>
+                                <div class="two-column-layout margin-bottom-small">
+                                    <p><b>Team Project</b></p>
+                                    <p><b>UI/UX & Technical Designer</b></p>
+                                    <p><b>Engine:</b> Unreal Engine 5</p>
+                                    <p><b>Duration:</b> 7 Weeks</p>
+                                    <p><b>Status:</b> Released on Steam</p>
+                                </div>
+                                <p>
+                                    A short sci-fi surival horror game where the light is scarier then the dark.
+                                </p>
                                 <br><br>
-                                The project has 3 iterations; the earlier 2 developed in Unity, the current one in UE5.
-                            </p>
-                        </div>
-                    </a>
-                    <!--<a href="kingMockup.html" class="card">
-                        <div class="card-image">
-                            <img src="images/CitrusCity_16-9.png" width="960" height="540">
-                        </div>
-                        <div class="card-content">
-                            <h2>Mobile Game Menu Mockup</h2>
-                            <p><span>UI/UX Design, Figma, Mobile game</span></p>
-                            <p>
-                                Mobile game UI for a King inspired mobile game.
+                                <p><b>Highlights:</b></p>
+                                <ul>
+                                    <li><p>UI/UX Design</p></li>
+                                    <li><p>Technical Design</p></li>
+                                    <li><p>Diegetic UI</p></li>
+                                    <li><p>Blueprint scripting</p></li>
+                                </ul>
+                                <br><br>
+                                <p><b>Awards:</b></p>
+                                <ul>
+                                    <li><p>BEST DESIGN Nominee at SGA 2024</p></li>
+                                    <li><p>BEST TECH winner at the FGA 2024</p></li>
+                                </ul>
+                                <br><br>
+                                <img src="images/fearofthelight/awards.png" alt="Swedish Game Awards 2024 Best Design Nominee & Futuregames 2024 Best Tech Winner" class="center">
+                                <br><br>
+                                <a href="fearOfTheLight.html" class="btn btn2 center">Project Page</a>
+                            </div>
+                            <div class="card-image">
+                                <img src="images/FOFL.png">
+                                <p><i>Available on <a target="_blank" href="https://store.steampowered.com/app/3126140/Fear_of_the_Light/">Steam</a></i></p>
+
+                            </div>
+                        </div> <!--FEAR OF THE LIGHT-->
+                        <div class="card">
+                            <div class="card-content">
+                                <h2>Graduation Project</h2>
+                                <div class="two-column-layout margin-bottom-small">
+                                    <p><b>Solo Project</b></p>
+                                    <!--<p><b>UI/UX & Technical Design</b></p>-->
+                                    <p><b>Engine:</b> Unreal Engine 5</p>
+                                    <!--<p><b>Duration:</b> May 2025 - December 2025</p>-->
+                                    <!--<p><b>Status:</b> Early Access</p>-->
+                                </div>
+                                <p>
+                                    Studied and recreated the fishing mechanic from the game Dredge in Unreal Engine 5. Also took inspiration from Wuthering Waves take on Dredge's fishing.
+                                </p>
+                                <br><br>
+                                <p><b>Highlights:</b></p>
+                                <ul>
+                                    <li><p>UI/UX Design</p></li>
+                                    <li><p>Technical Design</p></li>
+                                    <li><p>Blueprint scripting</p></li>
+                                </ul>
+                                <br><br>
+                                <p><i>Project page is a work in progress!</i></p>
                                 <br>
-                                Created in 2 weeks.
-                            </p>
-                        </div>
-                    </a>-->
-
-                </div>
-
-                <img src="images/kinginspiredmockup/MobileMenuMockup.png" alt="Mobile Game Menu Mockups" width="1844" height="1080" class="center">
-
-            </div>
-
-
-        </div>
-
-
-        <!-------------About---------->
-        <div id="about" class="wrapper-main">
-            <div class="list">
-                <!--<img src="images/Me2.jpg" alt="Picture of me" width="558" height="563" style="object-fit: cover;">-->
-                <!--<img src="images/image.jpg" alt="Picture of me" width="756" height="1008" style="object-fit: cover;">-->
-                <img src="images/Me3.jpg" alt="Picture of me" width="408" height="544" style="object-fit: cover;">
-                <div class="item">
-                    <h1>About Me</h1>
-                    <p>
-                        Hello, I’m a versatile game developer with an expertise in <span>UI/UX design</span> and <span>technical design</span>.
-                        I’m proficient working in Figma and have extensive experience working with Unreal Engine 5 and Unity.
-                        I’m dedicated to continuously improving my skills and staying up-to-date with the latest industry trends and technologies.
-                    </p>
-                    <br><br><br>
-                    <div class="row-about">
-                        <div class="col-about">
-                            <h5>Skills</h5>
-                            <ul>
-                                <li><p>UI / UX Designer</p></li>
-                                <li><p>Technical Designer</p></li>
-                                <li><p>UE5 Visual Scripting</p></li>
-                                <li><p>C# Programmer</p></li>
-                                <li><p>HTML + CSS</p></li>
-                                <li><p>C++</p></li>
-                            </ul>
-                        </div>
-                        <div class="col-about">
-                            <h5>Tools</h5>
-                            <ul>
-                                <li><p>Unreal Engine 5</p></li>
-                                <li><p>Unity</p></li>
-                                <li><p>Figma</p></li>
-                                <li><p>Miro</p></li>
-                                <li><p>Github</p></li>
-                                <li><p>Perforce</p></li>
-                            </ul>
-                        </div>
-                        <div class="col-about education">
-                            <h5>Education</h5>
-                            <ul>
-                                <li><h6>2023-2025</h6><p>Game Design - Specialization System/ Technical Designer <br><b><i>Futuregames Stockholm</i></b></p></li>
-                                <li><h6>2017-2022</h6><p>Bachelor in Computer Game Development <br><b><i>Stockholm University</i></b></p></li>
-                                <li><h6>2014-2017</h6><p>The Social Sciences Program - Psychology, Behavioural Sciences <br><b><i>Klara Theoretical High School</i></b></p></li>
-                            </ul>
-                        </div>
-
+                                <a href="gradProj.html" class="btn btn2 center">Project Page</a>
+                                <!--<a href="" class="btn btn2 center">Project Page</a>-->
+                            </div>
+                            <div class="card-image">
+                                <img src="images/Gradproj_16-9.png">
+                            </div>
+                        </div> <!--GRAD PROJ-->
+                        <div class="card">
+                            <div class="card-content">
+                                <h2>Chat Prototype</h2>
+                                <div class="two-column-layout margin-bottom-small">
+                                    <p><b>Solo Project</b></p>
+                                    <!--<p><b>UI/UX & Technical Design</b></p>-->
+                                    <p><b>Engine:</b> Unreal Engine 5</p>
+                                    <p><b>Duration:</b> 2 Weeks</p>
+                                    <!--<p><b>Status:</b> Released on Itch.io</p>-->
+                                </div>
+                                <p>
+                                    A short prototype exploring visual novel style storytelling through chat conversations.
+                                </p>
+                                <br><br>
+                                <p><b>Highlights:</b></p>
+                                <ul>
+                                    <li><p>UI/UX Design</p></li>
+                                    <li><p>Technical Design</p></li>
+                                    <li><p>System Design</p></li>
+                                    <li><p>Blueprint scripting</p></li>
+                                </ul>
+                                <br><br>
+                                <a href="chatPrototype.html" class="btn btn2 center">Project Page</a>
+                            </div>
+                            <div class="card-image">
+                                <img src="images/ChatProt_16-9.png">
+                            </div>
+                        </div> <!--CHAT PROTOTYPE-->
+                        <div class="card">
+                            <div class="card-content">
+                                <h2>Farm Prototype</h2>
+                                <div class="two-column-layout margin-bottom-small">
+                                    <p><b>Solo Project</b></p>
+                                    <!--<p><b>UI/UX & Technical Design</b></p>-->
+                                    <p><b>Engine:</b> Unreal Engine 5</p>
+                                    <p><b>Duration:</b> 4 Weeks</p>
+                                    <!--<p><b>Status:</b> Released on Itch.io</p>-->
+                                </div>
+                                <p>
+                                    A small prototype exploring farming and resource management systems.
+                                </p>
+                                <br><br>
+                                <p><b>Prototype Features:</b></p>
+                                <ul>
+                                    <li><p>Inventory System</p></li>
+                                    <li><p>Build System</p></li>
+                                    <li><p>Leveling & Progression System</p></li>
+                                    <li><p>Farm automation with AI robots</p></li>
+                                </ul>
+                                <br><br>
+                                <p><b>Highlights:</b></p>
+                                <ul>
+                                    <li><p>Technical Design</p></li>
+                                    <li><p>System Design</p></li>
+                                    <li><p>UI/UX Design</p></li>
+                                    <li><p>Blueprint scripting</p></li>
+                                    <li><p>Built AI using State Machine</p></li>
+                                </ul>
+                                <br><br>
+                                <a href="farmPrototype.html" class="btn btn2 center">Project Page</a>
+                            </div>
+                            <div class="card-image">
+                                <img src="images/FarmProt_16-9.png">
+                            </div>
+                        </div> <!--FARM PROTOTYPE-->
+                        <div class="card">
+                            <div class="card-content">
+                                <h2>Catfished</h2>
+                                <div class="two-column-layout margin-bottom-small">
+                                    <p><b>Solo</b></p>
+                                    <!--<p><b>UI/UX & Technical Design</b></p>-->
+                                    <p><b>Engine:</b> Unreal Engine 5 & Unity</p>
+                                    <p><b>Duration:</b> -</p>
+                                    <!--<p><b>Status:</b> Released on Itch.io</p>-->
+                                </div>
+                                <p>
+                                    Catfished is an ongoing passion-project, a visual novel game taking place on a desktop. The project has 3 iterations; the earlier 2 developed in Unity, the current one in UE5.
+                                </p>
+                                <br><br>
+                                <p><b>Highlights:</b></p>
+                                <ul>
+                                    <li><p>Technical Design</p></li>
+                                    <li><p>System Design</p></li>
+                                    <li><p>UI/UX Design</p></li>
+                                    <li><p>Blueprint scripting</p></li>
+                                    <li><p>C# coding</p></li>
+                                </ul>
+                                <br><br>
+                                <a href="catFished.html" class="btn btn2 center">Project Page</a>
+                            </div>
+                            <div class="card-image">
+                                <img src="images/Catfished_16-9.png">
+                            </div>
+                        </div> <!--CATFISHED-->
 
                     </div>
 
-
+                    <img src="images/kinginspiredmockup/MobileMenuMockup.png" alt="Mobile Game Menu Mockups" class="center">
 
                 </div>
+
+
             </div>
-            <br><br>
-            <a target="_blank" href="images/AstridPA_CV.pdf" download class="btn btn2 center">Download CV</a>
         </div>
 
     </main>
@@ -232,13 +299,13 @@
                 <div class="col-footer">
                     <h4>Project Links</h4>
                     <ul>
-                        <!--<li><a href="projects.html">All Projects</a></li>-->
+                        <li><a href="equinox.html">Equinox: Homecoming</a></li>
                         <li><a href="projectLayout.html">Vampower</a></li>
                         <li><a href="fearOfTheLight.html">Fear of the Light</a></li>
+                        <li><a href="gradProj.html">Graduation Project</a></li>
                         <li><a href="chatPrototype.html">Chat Prototype</a></li>
                         <li><a href="farmPrototype.html">Farm Prototype</a></li>
                         <li><a href="catFished.html">Catfished</a></li>
-                        <!--<li><a href="kingMockup.html">Mobile Game Menu Mockup</a></li>-->
                     </ul>
                 </div>
                 <div class="col-footer">
@@ -252,57 +319,5 @@
             </div>
         </div>
     </footer>
-
-    <!--<h1 class="sub-title">Contact Me</h1>
-    <div class="contact-content">
-        <p><i class="fa-solid fa-envelope"></i> astrid.pehrsson_ankarstrand@hotmail.com</p>
-        <p><i class="fa-solid fa-phone"></i> (+46) 073-630 51 53</p>
-        <p><i class="fa-solid fa-location-dot"></i> Stockholm, Sweden</p>
-        <div class="social-icons">
-            <a target="_blank" href="https://www.linkedin.com/in/astrid-pehrsson-ankarstrand-2a9680223/"><i class="fa-brands fa-linkedin"></i></a>
-            <a target="_blank" href="https://astridpehrssonankarstrand.artstation.com"><i class="fa-brands fa-artstation"></i></a>
-        </div>
-    </div>-->
-
-    <!-------------Portfolio---------->
-    <!--<div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Latest Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/FearOfTheLight.png">
-                    <div class="layer">
-                        <h3>Fear of the Light</h3>
-                        <p>
-                            Nominated for Best Design at the Swedish Game Award 2024.
-                            Released on Steam the same year.
-                        </p>
-                        <a href="#">See More</a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/FearOfTheLight.png">
-                    <div class="layer">
-                        <h3>VamPower</h3>
-                        <p>A fast paced survival-like tower defense game about defending your evil vampire overlord.</p>
-                        <a href="#">See More</a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/FearOfTheLight.png">
-                    <div class="layer">
-                        <h3>CatFished</h3>
-                        <p>A personal project currently in development. Visual Novel. </p>
-                        <a href="#">See More</a>
-                    </div>
-                </div>
-            </div>
-            <a href="projects.html" class="btn">See All Projects</a>
-        </div>
-    </div>-->
-    <!-------------Contact---------->
-
-
-
 </body>
 </html>

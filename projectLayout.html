@@ -4,22 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Astrid PA - Vampower</title>
+    <title>Vampower - Astrid Pehrsson Ankarstrand | Tech & UI/UX Designer</title>
     <link rel="stylesheet" href="projectStyle.css">
     <link rel="stylesheet" href="sliderStyle.css">
     <script type="text/javascript" src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/ccef3511e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <nav>
-        <a href="index.html" class="logo"><img src="images/Logo.png" width="344" height="50"> </a>
+        <a href="index.html" class="logo"><!--<img src="images/Logo.png" width="344" height="50">--><h5>Astrid Pehrsson Ankarstrand | Technical & UI/UX Designer</h5></a>
         <ul id="navbar">
             <li><i class="fa-solid fa-xmark button close" onclick="CloseNavbar()" aria-label="close sidebar"></i></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a class="accent" href="index.html#projects">Projects</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html" onclick="CloseNavbar()">PROJECTS</a></li>
+            <li><a href="resume.html" onclick="CloseNavbar()">RESUME</a></li>
+            <li><a href="about.html" onclick="CloseNavbar()">ABOUT ME</a></li>
+            <li><a href="contact.html" onclick="CloseNavbar()">CONTACT</a></li>
         </ul>
         <i class="fa-solid fa-bars button open" onclick="OpenNavbar()" aria-label="open sidebar"></i>
     </nav>
@@ -27,97 +26,54 @@
     <div id="overlay" onclick="CloseNavbar()" aria-hidden="true"></div>
 
     <main>
-        <div class="header vampower">
+        <!--<div class="header vampower">
             <img src="images/vampower/Vampower_Title.png" alt="Vampower Title text" width="748" height="150">
-        </div>
-
-        <div class="center video">
-            <div class="outerVideoWrapper">
-                <div class="videoWrapper">
-                    <iframe width="720" height="405" src="https://www.youtube.com/embed/FFIyCpb1rCc?si=7rZwfD93YMGdVI8y"
-                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-                        web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                </div>
+        </div>-->
+        <div class="fairway">
+            <img src="images/vampower/Vampower_Title.png" alt="Vampower Title text">
+            <div class="divide-line"></div>
+            <div class="card-details">
+                <p><b>Team Project</b></p>
+                <p><b>UI/UX & Technical Designer</b></p>
+                <p><b>Engine:</b> Unreal Engine 5</p>
+                <p><b>Duration:</b> 6 Weeks</p>
+                <p>
+                    <b>Status:</b> Released on Itch.io
+                    <br>
+                    <i>Available on <a target="_blank" href="https://futuregames.itch.io/vampower">Itch.io</a></i>
+                </p>
             </div>
-        </div>
-
-
-        <div id="summary">
-            <div class="container">
-                <div class="list">
-                    <div class="summary-item">
-                        <h5>My Role(s)</h5>
-                        <p>
-                            UI/UX Designer,
-                            Technical & System Designer
-                        </p>
-                    </div>
-                    <div class="summary-item">
-                        <h5>Tools</h5>
-                        <p>
-                            Unreal Engine 5, Figma, Miro, Github
-                        </p>
-                    </div>
-
-                    <div class="summary-item">
-                        <h5>Time</h5>
-                        <p>
-                            2 weeks + 4 weeks
-                        </p>
-                    </div>
-                    <div class="summary-item">
-                        <h5>Team size</h5>
-                        <p>
-                            8 people team; 4 designers & 4 programmers
-                        </p>
-                    </div>
-                </div>
-                <div class="divide-line"></div>
+            <div class="divide-line"></div>
+            <div class="two-column-layout">
                 <div>
                     <p>
                         Vampower is a <span>survival-like tower defence</span> game with minor <span>roguelike elements</span> were you must <span>protect your Vampire overlord from hordes of enemies</span>.
                         Tailor your <span>playstyle</span> by selecting 1 out of 10 hearts to serve and choose between <span>3 classes</span>, with different <span>stats</span> and <span>starting weapon</span>.
                     </p>
-
                     <br><br>
-
-                    <div class="list">
-                        <div class="item">
-                            <h6>Responsibilities as <span>UI/UX Designer</span></h6>
-                            <ul>
-                                <li><p>Design and implement all the game's UI</p></li>
-                                <li><p>The overall user experience</p></li>
-                            </ul>
-                        </div>
-                        <div class="item">
-                            <h6>Responsibilities as <span>Technical & System Designer</span></h6>
-                            <ul>
-                                <li><p>Design the game systems</p></li>
-                                <li><p>Implement gameplay features; enemy spawning & structure building</p></li>
-                                <li><p>Decide on a structure for managing the game data, using data tables so it's easily accessible and editable</p></li>
-                                <li><p>Making and editing most of the game data</p></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <p>
-                        I was a central part of the team and worked closely with both designers and programmers to build and implement all the game systems.
-                    </p>
-
-                    <!--<p>
-                    The concept was definitely overscoped for the short timeframe but even so we pulled through and made a fun and replayable game.
-                    I developed new habits that I feel will greatly improve my workflow in the future.
-                    I had a great experience working with my team and am super proud of the game we ended up with.
-                </p>-->
-
+                    <p><b>UI/UX Design Responsibilities Included:</b></p>
+                    <ul>
+                        <li><p>Design and implement all the game's UI</p></li>
+                        <li><p>The overall user experience</p></li>
+                    </ul>
+                    <br><br>
+                    <p><b>Technical Design Responsibilities Included:</b></p>
+                    <ul>
+                        <li><p>Design the game systems</p></li>
+                        <li><p>Implement gameplay features; enemy spawning & structure building</p></li>
+                        <li><p>Decide on a structure for managing the game data, using data tables so it's easily accessible and editable</p></li>
+                        <li><p>Making and editing most of the game data</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <iframe class="ytVid margin-bottom-small" src="https://www.youtube.com/embed/FFIyCpb1rCc?si=7rZwfD93YMGdVI8y"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+                            web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
                 </div>
 
-                <div class="summary-gamelink">
-                    <h3>Play the game!</h3>
-                    <a target="_blank" href="https://futuregames.itch.io/vampower" class="btn"><h6>Itch.io</h6></a>
-                </div>
             </div>
+
         </div>
 
 
@@ -159,7 +115,7 @@
             <!-- UI workflow -->
             <div class="wrapper inner">
                 <h2 style="text-align:center;">My UI workflow</h2>
-                <br><br>
+                <div class="divide-line"></div>
 
                 <div class="list">
                     <div class="item">
@@ -204,12 +160,12 @@
             <!-- Shop menu -->
             <div class="wrapper outer">
                 <h2 style="text-align:center;">SHOP MENU</h2>
-                <br>
-                <div class="container">
-                    <div class="item">
+                <div class="divide-line"></div>
+                <div class="two-column-layout">
+                    <div>
                         <h3 style="text-align: center;" class="accent">Feature brief</h3>
                     </div>
-                    <div class="item">
+                    <div>
                         <p>
                             The shop needed to display <span>5 upgrade cards</span>.
                             The shop has a <span>randomness</span> to what cards get displayed. There should be a <span>reroll feature</span> to reroll the shops selection.
@@ -219,10 +175,10 @@
                     </div>
                 </div>
 
-                <br><br><div class="divide-line"></div><br><br>
+                <div class="divide-line"></div>
 
-                <div class="container">
-                    <div class="item">
+                <div class="two-column-layout">
+                    <div>
                         <h4>Original block out</h4>
                         <p>
                             For the <span>upgrade cards</span> I had a lot of references to go from. The main inspirations were <span>Brotato</span> and <span>Soulstone Survivor</span> for their layouts.
@@ -234,20 +190,18 @@
                             It feels <span>overwhelming</span> and doesn’t look clean.
                         </p>
                     </div>
-                    <div class="item">
-                        <img src="images/vampower/Vampower_ShopMenu_Blockout.png" width="960" height="540" class="center">
+                    <div>
+                        <img src="images/vampower/Vampower_ShopMenu_Blockout.png">
                     </div>
                 </div>
 
-                <br><br>
                 <div class="divide-line"></div>
-                <br><br>
 
-                <div class="container">
-                    <div class="item">
-                        <img src="images/vampower/Vampower_ShopMenu_Blockout2.png" width="960" height="540" class="center">
+                <div class="two-column-layout">
+                    <div>
+                        <img src="images/vampower/Vampower_ShopMenu_Blockout2.png">
                     </div>
-                    <div class="item">
+                    <div>
                         <h4>Reimagined block out</h4>
                         <p>
                             Taken time away from the project, I tried <span>tackling the main issues</span> I had with the original layout.
@@ -261,9 +215,7 @@
 
                 </div>
 
-                <br><br>
                 <div class="divide-line"></div>
-                <br><br>
 
                 <div class="container">
                     <div class="item">
@@ -275,33 +227,29 @@
                         </p>
                     </div>
                     <div class="item">
-                        <img src="images/vampower/Vampower_CardAnimation.gif" width="1202" height="672">
+                        <img src="images/vampower/Vampower_CardAnimation.gif">
                     </div>
                 </div>
 
-                <br><br><div class="divide-line"></div><br><br>
+                <div class="divide-line"></div>
 
                 <h3 style="text-align:center;">Shop menu in game</h3>
                 <br>
-                <div class="outerVideoWrapper">
-                    <div class="videoWrapper">
-                        <iframe width="720" height="405" src="https://www.youtube.com/embed/2slYKv06cQk?si=FrounMIuPS1mC5RA"
-                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
+                <iframe class="ytVid" src="https://www.youtube.com/embed/2slYKv06cQk?si=FrounMIuPS1mC5RA"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
             </div>
 
             <!-- Build menu -->
             <div class="wrapper outer">
                 <h2 style="text-align:center;">BUILD MENU</h2>
-                <br>
-                <div class="container">
-                    <div class="item">
+                <div class="divide-line"></div>
+                <div class="two-column-layout">
+                    <div>
                         <h3 style="text-align: center;" class="accent">Feature brief</h3>
                     </div>
-                    <div class="item">
+                    <div>
                         <p>
                             The build menu should display <span>all the structures</span> and <span>information</span> about them, such as name, description, cost.
                             The players <span>currency balance</span> should also be present.
@@ -309,13 +257,13 @@
                     </div>
                 </div>
 
-                <br><br><div class="divide-line"></div><br><br>
+                <div class="divide-line"></div>
 
-                <div class="container">
-                    <div class="item">
-                        <img src="images/vampower/Vampower_BuildMenu_Blockout.png" width="960" height="540" class="center">
+                <div class="two-column-layout">
+                    <div>
+                        <img src="images/vampower/Vampower_BuildMenu_Blockout.png">
                     </div>
-                    <div class="item">
+                    <div>
                         <h4>Block out</h4>
                         <p>
                             The game has <span>3 structure types</span>: offence, defence and support.
@@ -329,32 +277,28 @@
                     </div>
                 </div>
 
-                <br><br><div class="divide-line"></div><br><br>
+                <div class="divide-line"></div>
 
                 <h3 style="text-align:center;">Build menu ingame</h3>
                 <br>
-                <div class="outerVideoWrapper">
-                    <div class="videoWrapper">
-                        <iframe width="720" height="405" src="https://www.youtube.com/embed/ZXz4zTk4q3M?si=62q--HTEU6CPFLfn"
-                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
+                <iframe class="ytVid" src="https://www.youtube.com/embed/ZXz4zTk4q3M?si=62q--HTEU6CPFLfn"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
 
-                <br><br><div class="divide-line"></div>
+                <div class="divide-line"></div>
 
                 <!-- Feedback -->
                 <div class="wrapper">
                     <h3 style="text-align:center;">Feedback for the Build menu</h3>
                     <br><br>
-                    <h5 style="text-align:center;">1. Hold to purchase feature</h5>
+                    <h5>1. Hold to purchase feature</h5>
                     <br>
-                    <div class="container">
-                        <div class="item">
-                            <img src="images/vampower/Vampower_BuildMenu_Hold.png" width="220" height="180" class="center">
+                    <div class="two-column-layout">
+                        <div>
+                            <img src="images/vampower/Vampower_BuildMenu_Hold.png">
                         </div>
-                        <div class="item">
+                        <div>
                             <p>
                                 Gives the player a chance to <span>cancel purchase</span>.
                                 <span>Confused players at first</span> but they quickly adapted without outside prompting.
@@ -367,23 +311,23 @@
                             </p>
                         </div>
                     </div>
-                    <br><br><div class="divide-line"></div><br><br>
+                    <div class="divide-line"></div>
 
-                    <h5 style="text-align:center;">2. Tab buttons</h5>
+                    <h5>2. Tab buttons</h5>
                     <br>
-                    <div class="container">
-                        <div class="item">
+                    <div class="two-column-layout">
+                        <div>
                             <p>Play testers frequently <span>missed the tab buttons</span>.</p>
-                            <img src="images/vampower/Vampower_TabMenu_1.png" width="640" height="154">
+                            <img src="images/vampower/Vampower_TabMenu_1.png">
 
 
                         </div>
-                        <div class="item">
+                        <div>
                             <p>
                                 <span>Same design</span> is used in the class select menu but <span>not the same issue</span>.
                                 Difference is it has a <span>Header text</span> right under the buttons.
                             </p>
-                            <img src="images/vampower/Vampower_TabMenu_2.png" width="640" height="201">
+                            <img src="images/vampower/Vampower_TabMenu_2.png">
 
                         </div>
                     </div>
@@ -392,25 +336,25 @@
                         Otherwise, I’d work on <span>clarifying</span> the tab buttons <span>visual language</span> to more <span>clearly communicate</span> to the player that they are in fact buttons.
                     </p>
 
-                    <br><br><div class="divide-line"></div><br><br>
+                    <div class="divide-line"></div>
 
-                    <h5 style="text-align:center;">3. Currency text color</h5>
+                    <h5>3. Currency text color</h5>
                     <br>
-                    <div class="container">
-                        <div class="item">
-                            <img src="images/vampower/Vampower_BuildMenu_CardComparison_1.png" width="648" height="180">
+                    <div class="two-column-layout">
+                        <div>
+                            <img src="images/vampower/Vampower_BuildMenu_CardComparison_1.png">
                             <p>
                                 The <span>red color</span> for the <span>currency text</span> gave play testers the <span>impression</span> that an <span>item they could afford wasn't purchasable</span>.
                                 From a UX standpoint <span>red</span> is used to <span>communicate an error</span> or <span>lack of resources</span> in this context.
                             </p>
 
                         </div>
-                        <div class="item">
+                        <div>
                             <p>
                                 Knowing this I made a <span>visual distinction between elements</span> when an element can’t be afforded by lowering the opacity.
 
                             </p>
-                            <img src="images/vampower/Vampower_BuildMenu_CardComparison.png" width="663" height="175">
+                            <img src="images/vampower/Vampower_BuildMenu_CardComparison.png">
                             <p>
                                 Unfortunately, this <span>distinction isn't there when all the elements can be afforded</span>, leading to the <span>assumption that you can’t purchase it</span>.
                                 I should have done a better job communicating this visually or picked a more conventional color for better UX.
@@ -424,12 +368,12 @@
             <!-- Selection menu -->
             <div class="wrapper outer">
                 <h2 style="text-align:center;">Selection Menu</h2>
-                <br>
-                <div class="container">
-                    <div class="item">
+                <div class="divide-line"></div>
+                <div class="two-column-layout">
+                    <div>
                         <h3 style="text-align: center;" class="accent">Feature brief</h3>
                     </div>
-                    <div class="item">
+                    <div>
                         <p>
                             At the start of the game the <span>player wants to pick their playstyle</span> by selecting modifiers and class.
                             The menu should display all the <span>available choices</span> with <span>relevant information</span> so the player can make <span>informed decisions</span>.
@@ -437,13 +381,13 @@
                     </div>
                 </div>
 
-                <br><br><div class="divide-line"></div><br><br>
+                <div class="divide-line"></div>
 
-                <div class="container">
-                    <div class="item">
-                        <img src="images/vampower/Vampower_SelectMenu_Blockout.gif" alt="Select Menu work in progress" width="877" height="539">
+                <div class="two-column-layout">
+                    <div>
+                        <img src="images/vampower/Vampower_SelectMenu_Blockout.gif" alt="Select Menu work in progress">
                     </div>
-                    <div class="item">
+                    <div>
                         <h4>First iteration</h4>
                         <p>
                             The select menu does not have a block out.
@@ -453,10 +397,10 @@
                     </div>
                 </div>
 
-                <br><br><div class="divide-line"></div><br><br>
+                <div class="divide-line"></div>
 
-                <div class="container">
-                    <div class="item">
+                <div class="two-column-layout">
+                    <div>
                         <h4>Main Menu separation</h4>
                         <p>
                             For the final version of the game the <span>main menu</span> was separated out from the selection menu and put in its <span>own level</span>.
@@ -465,25 +409,19 @@
                             The <span>layout</span> was also changed to be horizontal instead of vertical, inspired by the menus in <span>Thronefall</span>. I setup a quick scene to use as backdrop and added a title.
                         </p>
                     </div>
-                    <div class="item">
-                        <img src="images/vampower/Vampower_MainMenu_Fin.png" alt="Vampower main menu screenshot" width="1920" height="1080">
+                    <div>
+                        <img src="images/vampower/Vampower_MainMenu_Fin.png" alt="Vampower main menu screenshot">
                     </div>
                 </div>
 
-                <br><br><div class="divide-line"></div><br><br>
+                <div class="divide-line"></div>
 
-                <div class="container">
-                    <div class="item">
-                        <div class="outerVideoWrapper">
-                            <div class="videoWrapper">
-                                <iframe width="720" height="405" src="https://www.youtube.com/embed/JuDgWzycyBo?si=jxVRRPunPSUGT0QL"
-                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                                </iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
+                <div class="two-column-layout">
+                    <iframe class="ytVid" src="https://www.youtube.com/embed/JuDgWzycyBo?si=jxVRRPunPSUGT0QL"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div>
                         <h4>Final version</h4>
                         <p>
                             In total I made 10 different Heart types, but to fit them all I had to <span>update the design</span> of the <span>Heart select cards</span>.
@@ -502,8 +440,7 @@
             <div class="wrapper outer">
                 <h2 style="text-align:center;">Healthbar & damage numbers</h2>
                 <div class="divide-line"></div>
-                <br>
-                <img src="images/vampower/Healthbar_DmgNumbers.gif" width="708" height="377" class="center">
+                <img class="center" src="images/vampower/Healthbar_DmgNumbers.gif">
 
             </div>
 
@@ -511,9 +448,8 @@
             <div class="wrapper outer">
                 <h2 style="text-align:center;">Cutscene</h2>
                 <div class="divide-line"></div>
-                <br>
-                <div class="container">
-                    <div class="item">
+                <div class="two-column-layout">
+                    <div>
                         <p>
                             I've experience doing a <span>visual novel style game</span> in Unreal Engine, so I repurposed some of that code to work for a cutscene.
                             <br><br>
@@ -526,8 +462,8 @@
                             To handle this input, I made an <span>invisible button</span> that <span>covers the entire screen</span>.
                         </p>
                     </div>
-                    <div class="item">
-                        <img src="images/vampower/Vampower_Cutscene.gif" width="1245" height="651" class="center">
+                    <div>
+                        <img src="images/vampower/Vampower_Cutscene.gif">
                     </div>
                 </div>
             </div>
@@ -544,23 +480,23 @@
             <!-- Pre-production -->
             <div class="wrapper outer">
                 <h2 style="text-align: center;">Pre-production phase</h2>
+                <div class="divide-line"></div>
                 <p>
                     <span>2 weeks</span> exploring <span>3 game concepts</span>, developing a <span>playable prototype</span> for each one.
                     First half of the week went to concepting and roughly planning out the different concepts.
                     The rest was split up into <span>2 days of development time</span> per prototype.
                 </p>
-                <br>
                 <div class="divide-line"></div>
 
                 <!-- Health system -->
                 <div class="wrapper">
                     <h3 style="text-align:center;">Health system</h3>
                     <br>
-                    <div class="container">
-                        <div class="item">
-                            <img src="images/vampower/Vampower_Preprod_Healthsystem.gif" alt="Gif showcasing health system" width="837" height="517">
+                    <div class="two-column-layout">
+                        <div>
+                            <img src="images/vampower/Vampower_Preprod_Healthsystem.gif" alt="Gif showcasing health system">
                         </div>
-                        <div class="item">
+                        <div>
                             <p>
                                 I created a <span>versatile health system</span> in blueprints that was <span>reused</span> for all the prototypes, <span>saving on development time</span> to work on other features.
                                 <br><br>
@@ -578,8 +514,8 @@
                 <div class="wrapper">
                     <h3 style="text-align:center;">Vampower Prototype</h3>
                     <br>
-                    <div class="container">
-                        <div class="item">
+                    <div class="two-column-layout">
+                        <div>
                             <p>
                                 The prototype focused on <span>testing the core mechanics</span> of defending a central point from waves of enemies by building structures.
                             </p>
@@ -595,8 +531,8 @@
                                 <li><p>Day & night cycle.</p></li>
                             </ul>
                         </div>
-                        <div class="item">
-                            <img src="images/vampower/Vampower_Pre-production.gif" alt="Gif showcasing gameplay from Vampower's prototype" width="1035" height="541" class="item">
+                        <div>
+                            <img src="images/vampower/Vampower_Pre-production.gif" alt="Gif showcasing gameplay from Vampower's prototype">
                         </div>
                     </div>
                 </div>
@@ -614,7 +550,6 @@
             <div class="wrapper outer">
                 <h2 style="text-align: center;">Units</h2>
                 <div class="divide-line"></div>
-                <br><br>
                 <p>
                     For the prototype we'd utilized <span>inheritance</span> for the units, since all of them would need to have health logic.
                     It worked great for the prototype so we used it for the actual game as well.
@@ -622,11 +557,11 @@
 
                 <br><br>
 
-                <div class="container">
-                    <div class="item">
-                        <img src="images/vampower/Vampower_UnitInheritance.jpg" width="1675" height="928">
+                <div class="two-column-layout">
+                    <div>
+                        <img src="images/vampower/Vampower_UnitInheritance.jpg">
                     </div>
-                    <div class="item">
+                    <div>
                         <p>Classes in <span>C++</span> which blueprint inherits from. </p>
                         <br>
                         <p>
@@ -653,9 +588,7 @@
                     </div>
                 </div>
 
-                <br><br>
                 <div class="divide-line"></div>
-                <br><br>
 
                 <h3 style="text-align: center;">Player</h3>
                 <p>
@@ -664,35 +597,30 @@
                 </p>
                 <br>
 
-                <img src="images/vampower/Vampower_Classes.jpg" width="1236" height="314" class="center">
+                <img src="images/vampower/Vampower_Classes.jpg">
             </div>
 
             <!-- Enemy Spawning -->
             <div class="wrapper outer">
                 <h2 style="text-align: center;">Enemy Spawning</h2>
                 <div class="divide-line"></div>
-                <br><br>
 
                 <p>
                     I made 2 blueprint classes, the BP_SpawnManager and BP_Spawner.
                     The SpawnManager listens to events from the day/night system to know when to start spawning and the day count to get spawn data.
                     The SpawnManager then gives the spawn data to the needed spawners and tell them to start spawning.
                 </p>
-                <img src="images/vampower/Vampower_SpawnerFlow.jpg" width="1125" height="345" class="center">
+                <br>
+                <img src="images/vampower/Vampower_SpawnerFlow.jpg">
 
-                <br><br>
                 <div class="divide-line"></div>
-                <br><br>
 
                 <p>
                     The enemy spawning does not utilize <span>object pooling</span> so the later days, 10 and up, do start impacting performance negatively.
                     If the team were to publish the game properly, I'd work on implementing object pooling.
                 </p>
 
-                <br><br>
                 <div class="divide-line"></div>
-                <br><br>
-
                 <h4 style="text-align: center;">Wave Data</h4>
                 <p>
                     For us designers to have full control of each wave, I made a data table to specify; where to spawn, what to spawn, the amount to spawn, the delay until next spawn.
@@ -725,7 +653,7 @@
                     </div>
                 </div>
 
-                <img src="images/vampower/Vampower_WaveInfo.png" width="721" height="452" class="center">
+                <img src="images/vampower/Vampower_WaveInfo.png" class="center">
 
             </div>
 
@@ -733,7 +661,6 @@
             <div class="wrapper outer">
                 <h2 style="text-align:center;">HUD-class</h2>
                 <div class="divide-line"></div>
-                <br><br>
                 <p>
                     For this project I tried a new approach for managing widgets, as I knew this game would have a lot of menus.
                     After learning some more best practices I decided to use the HUD-class.
@@ -755,21 +682,18 @@
             <div class="wrapper outer">
                 <h2 style="text-align: center;">Build Structure</h2>
                 <div class="divide-line"></div>
-                <br><br>
                 <p style="text-align: center;">
                     I began with planning out how the player would build a structure from start to finish.
                 </p>
                 <br>
-                <img src="images/vampower/Vampower_BuildMenuFlow.jpg" width="756" height="513" class="center">
-                <br><br>
+                <img src="images/vampower/Vampower_BuildMenuFlow.jpg"class="center">
                 <div class="divide-line"></div>
-                <br><br>
 
-                <div class="container">
-                    <div class="item">
-                        <img src="images/vampower/Vampower_BuildMenuEarlyInteraction.gif" width="1314" height="576" class="center">
+                <div class="two-column-layout">
+                    <div>
+                        <img src="images/vampower/Vampower_BuildMenuEarlyInteraction.gif">
                     </div>
-                    <div class="item">
+                    <div>
                         <h6>First iteration</h6>
                         <p>
                             The player <span>walks up to the resource node</span> to <span>interact</span> with it.
@@ -782,7 +706,6 @@
                     </div>
                 </div>
 
-                <br><br>
                 <div class="divide-line"></div>
 
                 <div class="wrapper" style="text-align: center;">
@@ -831,12 +754,12 @@
                     </p>
                 </div>
 
-                <div class="divide-line"></div><br><br>
+                <div class="divide-line"></div>
 
                 <h3 style="text-align: center;">Player Feedback</h3>
                 <br>
-                <div class="container">
-                    <div class="item">
+                <div class="two-column-layout">
+                    <div>
                         <p>
                             To improve the user experience, I added more <span>feedback to the players actions</span>. I <span>swap the cursor icon</span> and add a <span>hover effect</span> on the resource node by changing the material.
                             This makes the resource nodes feel more like <span>buttons</span> and helps <span>inform that the player should click on it</span>.
@@ -846,8 +769,8 @@
                             The hover effects and arrows are <span>only active during nighttime</span> when they are interactable.
                         </p>
                     </div>
-                    <div class="item">
-                        <img src="images/vampower/Vampower_BuildClick.gif" width="1113" height="613" class="center">
+                    <div>
+                        <img src="images/vampower/Vampower_BuildClick.gif">
                     </div>
                 </div>
 
@@ -857,23 +780,22 @@
             <div class="wrapper outer">
                 <h2 style="text-align: center;">Upgrade Shop</h2>
                 <div class="divide-line"></div>
-                <br><br>
                 <p style="text-align: center;">
                     I started with outlining the full interaction from start to end.
                 </p>
                 <br>
-                <img src="images/vampower/Vampower_UpgradeFlow_1.jpg" width="701" height="556" class="center">
+                <img src="images/vampower/Vampower_UpgradeFlow_1.jpg">
 
-                <br><br><div class="divide-line"></div><br><br>
+                <div class="divide-line"></div>
 
                 <h3 style="text-align: center;">Purchase Card</h3>
                 <br>
-                <img src="images/vampower/Vampower_PurchaseCardLogic.jpg" width="802" height="484" class="center">
+                <img src="images/vampower/Vampower_PurchaseCardLogic.jpg" class="center">
 
-                <br><br><div class="divide-line"></div><br><br>
+                <div class="divide-line"></div>
 
-                <div class="container">
-                    <div class="item">
+                <div class="two-column-layout">
+                    <div>
                         <h6>First Iteration</h6>
                         <p>
                             The core functionality working; <span>reroll buttons</span> updates the shop, <span>locking/ unlocking</span> cards work, and purchase hides them.
@@ -881,12 +803,12 @@
                             At this stage no real data is used for the cards and currency isn't taken into consideration. Focus is getting the UI interaction in place so it can be play tested.
                         </p>
                     </div>
-                    <div class="item">
-                        <img src="images/vampower/Vampower_UpgradeShop_EarlyIteration.gif" width="1134" height="596">
+                    <div>
+                        <img src="images/vampower/Vampower_UpgradeShop_EarlyIteration.gif">
                     </div>
                 </div>
 
-                <br><br><div class="divide-line"></div><br><br>
+                <div class="divide-line"></div>
 
                 <div>
                     <h3 style="text-align: center;">Shop Data</h3>
@@ -898,11 +820,11 @@
 
                     <br><br>
 
-                    <div class="container">
-                        <div class="item">
-                            <img src="images/vampower/Vampower_Shop_CardStruct.png" width="707" height="246">
+                    <div class="two-column-layout">
+                        <div>
+                            <img src="images/vampower/Vampower_Shop_CardStruct.png">
                         </div>
-                        <div class="item">
+                        <div>
                             <h5>Card Struct</h5>
                             <p>
                                 Struct is used for the UI and for applying upgrades to the player stats.
@@ -917,8 +839,8 @@
 
                     <br><br>
 
-                    <div class="container">
-                        <div class="item">
+                    <div class="two-column-layout">
+                        <div>
                             <h5>Weapon Struct</h5>
                             <br>
                             <ul>
@@ -927,14 +849,14 @@
                                 <li><p><span>Upgrade Description array:</span> Description text for all the levels. Which one is used is determined by the weapons upgrade level.</p></li>
                             </ul>
                         </div>
-                        <div class="item">
-                            <img src="images/vampower/Vampower_Shop_WeaponStruct.png" width="905" height="432">
+                        <div>
+                            <img src="images/vampower/Vampower_Shop_WeaponStruct.png">
                         </div>
                     </div>
                 </div>
 
 
-                <br><br><div class="divide-line"></div><br><br>
+                <div class="divide-line"></div>
 
                 <div>
                     <h3 style="text-align: center;">Reroll shop</h3>
@@ -944,11 +866,11 @@
                         <span>Weapon cards</span> have a <span>lower chance</span> of appearing.
                     </p>
                     <br>
-                    <div class="container">
-                        <div class="item">
-                            <img src="images/vampower/Vampower_RerollShopLogic.jpg" width="740" height="525">
+                    <div class="two-column-layout">
+                        <div>
+                            <img src="images/vampower/Vampower_RerollShopLogic.jpg">
                         </div>
-                        <div class="item">
+                        <div>
                             <h5>Duplicate cards</h5>
                             <p>
                                 The <span>current cards</span> are <span>not considered</span> when <span>checking for duplicates</span>.
@@ -989,16 +911,12 @@
 
                 </div>
 
-                <br><br><div class="divide-line"></div>
-
-                
-
             </div>
 
 
             <div class="wrapper outer">
                 <h2 style="text-align: center;">Game balance</h2>
-                <div class="divide-line"></div><br><br>
+                <div class="divide-line"></div>
                 <p>
                     Scaling is a big part of any survival-like game. As the player gets stronger, resources get sparser and enemies tougher or increase in amount.
                     Balancing numbers in a spreadsheet is not quite my expertise or interest but I did try keeping scaling in mind when designing the games systems.
@@ -1017,7 +935,7 @@
                     <li><p><span>Enemy amount</span> increases each day.</p></li>
                 </ul>
 
-                <br><br><div class="divide-line"></div><br><br>
+                <div class="divide-line"></div>
                 <p>
                     Unfortunately, the games <span>current balance</span> is <span>broken</span>. Especially the economy. Not surprising though, I did only get time to spend on it during the night before the final playtest trying to fix it.
                 </p>
@@ -1046,7 +964,7 @@
                     </div>
                 </div>
 
-                <br><br><div class="divide-line"></div><br><br>
+                <div class="divide-line"></div>
 
                 <h3 style="text-align: center;">Weapon scaling</h3>
                 <br>
@@ -1072,8 +990,8 @@
                     In short, we overscoped the game by a lot considering the limited timeframe.
                 </p>
                 <br>
-                <div class="container">
-                    <div class="item">
+                <div class="two-column-layout">
+                    <div>
                         <h2>UI/UX designer</h2>
                         <br>
                         <ul>
@@ -1089,7 +1007,7 @@
                             <li><p>Got to experience designing more complex gameplay menus. Struggles with how to best display a lot of information.</p></li>
                         </ul>
                     </div>
-                    <div class="item">
+                    <div>
                         <h2>Technical designer</h2>
                         <br>
                         <ul>
@@ -1100,11 +1018,8 @@
                         </ul>
                     </div>
                 </div>
-
-                
             </div>
         </div>
-
 
 
     </main>
@@ -1123,12 +1038,13 @@
                 <div class="col-footer">
                     <h4>Project Links</h4>
                     <ul>
-                        <li><a class="accent" href="index.html#projects">All Projects</a></li>
+                        <li><a href="index.html">All Projects</a></li>
+                        <li><a href="equinox.html">Equinox: Homecoming</a></li>
                         <li><a href="fearOfTheLight.html">Fear of the Light</a></li>
+                        <li><a href="gradProj.html">Graduation Project</a></li>
                         <li><a href="chatPrototype.html">Chat Prototype</a></li>
                         <li><a href="farmPrototype.html">Farm Prototype</a></li>
                         <li><a href="catFished.html">Catfished</a></li>
-                        <!--<li><a href="kingMockup.html">Mobile Game Menu Mockup</a></li>-->
                     </ul>
                 </div>
                 <div class="col-footer">

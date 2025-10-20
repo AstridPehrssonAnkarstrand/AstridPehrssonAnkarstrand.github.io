@@ -51,8 +51,10 @@ span {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    /*max-width: 100%;
+    height: auto;*/
+    display: block;
+    max-inline-size: 100%;
 }
 
 .text-gradient {
@@ -214,6 +216,20 @@ footer {
     transform: translateY(-50%);
 }
 
+.fairway {
+    max-inline-size: 1500px;
+    margin-inline: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.pdf-viewer {
+    aspect-ratio: 1 /1.414;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .projects {
 /*    background: linear-gradient(45deg, red, blue);*/
     background: -webkit-radial-gradient(top left, ellipse, red 0%, blue);
@@ -264,8 +280,10 @@ footer {
 }
 
 .divide-line {
-    border-bottom: 4px solid #616161;
+    border-bottom: 0.25em solid #242424;
     width: 100%;
+    margin-bottom: 2.5em;
+    margin-top: 2.5em;
 }
 
 #summary {
@@ -339,16 +357,19 @@ footer {
 }
 
 .wrapper-main {
-    padding: 80px 10%;
+    max-inline-size: 1660px;
+    margin-inline: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
     /*max-width: 1200px;*/
     /*    background-color: #444;*/
-/*
+    /*
     background-color: #222222;
     box-shadow: 0 0 6px #000000;*/
 }
 
 .wrapper {
-    padding: 80px 4em;
+    padding: 4em;
 }
 
 .outer {
@@ -428,7 +449,7 @@ footer {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    position: relative;
+    /*position: relative;*/
     /*    animation: slideshowAnimation;
     animation-duration: 80s;
     animation-iteration-count: infinite;
@@ -522,15 +543,15 @@ footer {
 }
 
 #about ul {
-    list-style: none;
+    /*list-style: none;*/
+    padding-left: 1.5em;
 }
 #about ul li {
-    font-size: 1rem;
+    /*font-size: 1rem;
     font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
-    color: #ababab;
-    text-decoration: none;
-    display: block;
-    padding-left: 0.5em;
+    color: #ababab;*/
+    /*text-decoration: none;*/
+    
 }
 
 #about h5 {
@@ -549,10 +570,10 @@ footer {
     color: #bb86fc;
 }
 
-#about ul li p {
+/*#about ul li p {
     font-size: 0.9rem;
     font-size: clamp(0.9rem, 0.86rem + 0.2000000000000001vw, 1.1rem);
-}
+}*/
 
 /*#about .education {
     margin-top: 4em;
@@ -672,6 +693,19 @@ footer {
     }
 }
 
+.two-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+}
+
+.margin-top-large {
+    margin-top: 80px;
+}
+
+.margin-bottom-small {
+    margin-bottom: 1em;
+}
 
 /*------------- Projects cards ----------*/
 
@@ -687,54 +721,51 @@ footer {
 }
 
 .card-container {
-    /*display: grid;*/
-    /*grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));*/
-    /*grid-template-columns: repeat(auto-fit, 1fr);
-    justify-content: center;
-    grid-auto-rows: 1fr;
-    gap: 16px;
-    flex-wrap: wrap;*/
-    display: flex;
-    flex-wrap: wrap;
+    margin-top: 5em;
 }
 
 .card {
-    background-color: #272727;
+    /*background-color: #272727;
     border-radius: 0.5em;
-    overflow: hidden;
     box-shadow: 0 0.5em 2em rgba(0,0,0,0.5);
-    margin: 1em;
-    text-decoration: none;
-    display: flex;
-    /*flex-wrap: wrap;*/
     border: 0.25em solid #272727;
-    transition: border 0.25s;
-    /*max-height: 350px;*/
+    transition: border 0.25s;*/
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em; /*Reason that the images to the right get squished.*/
+    margin-bottom: 2.5em;
+    border-bottom: 0.25em solid #242424;
+    padding-bottom: 2.5em;
+    overflow: hidden;
 }
 
-.card:hover {
+/*.card:hover {
     border: 0.25em solid;
-}
+}*/
 
 .card-image {
-    max-width: auto;
-    position: relative;
+    /*object-fit: cover;*/
+    
 }
 
 .card img {
-    object-fit: cover;
+    /*object-fit: contain;*/
+    /*width: 100%;
+    height: 100%;*/
+    /*max-width: 100%;
+    height: auto;*/
+    margin-bottom: 1em;
 }
 
 .card-content {
     /*    min-width: 60%;*/
-    width: 100%;
-    padding: 1em;
-    padding-left: 2em;
 }
 
     .card-content h2 {
-        margin-bottom: 0.25em;
+        margin-bottom: 0.5em;
         color: #E1E1E1;
+        color: #bb86fc;
     }
 
     .card-content p span {
@@ -742,6 +773,16 @@ footer {
         margin-bottom: 1em;
         color: #bb86fc;
     }
+
+.card-details {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 1em;
+}
+
+.card-content ul {
+    padding-left: 2em;
+}
 
 @media only screen and (max-width: 768px) {
     .card {
@@ -767,9 +808,14 @@ footer {
 
 
 /*------------- Video Wrapper ----------*/
+.ytVid {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
 
 .video {
-    max-width: 50%;
+    /*max-width: 50%;*/
 }
 
 @media only screen and (max-width: 900px) {

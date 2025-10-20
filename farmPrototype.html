@@ -4,20 +4,20 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Astrid PA - Farm Prototype</title>
+    <title>Farm Prototype - Astrid Pehrsson Ankarstrand | Tech & UI/UX Designer</title>
     <link rel="stylesheet" href="projectStyle.css">
     <script type="text/javascript" src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/ccef3511e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo"><img src="images/Logo.png" width="344" height="50"> </a>
+        <a href="index.html" class="logo"><!--<img src="images/Logo.png" width="344" height="50">--><h5>Astrid Pehrsson Ankarstrand | Technical & UI/UX Designer</h5></a>
         <ul id="navbar">
             <li><i class="fa-solid fa-xmark button close" onclick="CloseNavbar()" aria-label="close sidebar"></i></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a class="accent" href="index.html#projects">Projects</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html" onclick="CloseNavbar()">PROJECTS</a></li>
+            <li><a href="resume.html" onclick="CloseNavbar()">RESUME</a></li>
+            <li><a href="about.html" onclick="CloseNavbar()">ABOUT ME</a></li>
+            <li><a href="contact.html" onclick="CloseNavbar()">CONTACT</a></li>
         </ul>
         <i class="fa-solid fa-bars button open" onclick="OpenNavbar()" aria-label="open sidebar"></i>
     </nav>
@@ -25,42 +25,21 @@
     <div id="overlay" onclick="CloseNavbar()" aria-hidden="true"></div>
 
     <main>
-        <div class="header farm-prototype">
-            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Farm Prototype</h1>
-        </div>
+        <!--<div class="header farm-prototype">
+        <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Farm Prototype</h1>
+    </div>-->
 
-        <div id="summary">
-            <div class="container">
-                <div class="list">
-                    <div class="summary-item">
-                        <h5>My Role(s)</h5>
-                        <p>
-                            Solo developer,
-                            Technical Design, UI/ UX Design
-                        </p>
-                    </div>
-                    <div class="summary-item">
-                        <h5>Tools</h5>
-                        <p>
-                            Unreal Engine 5, Figma, Miro, Github
-                        </p>
-                    </div>
+        <div class="fairway">
 
-                    <div class="summary-item">
-                        <h5>Time</h5>
-                        <p>
-                            4 weeks
-                        </p>
-                    </div>
-                    <div class="summary-item">
-                        <h5>Team size</h5>
-                        <p>
-                            Solo
-                        </p>
-                    </div>
-                </div>
-                <div class="divide-line"></div>
-                <br>
+            <h1>Farm Prototype</h1>
+            <div class="divide-line"></div>
+            <div class="two-column-layout">
+                <p><b>Solo Project</b></p>
+                <p><b>Engine:</b> Unreal Engine 5</p>
+                <p><b>Duration:</b> 4 Weeks</p>
+            </div>
+            <div class="divide-line"></div>
+            <div class="two-column-layout">
                 <div>
                     <p>
                         A <span>prototype</span> exploring <span>farming & resource management systems</span>.
@@ -69,7 +48,7 @@
                         Made for a System Design course at Futuregames.
                     </p>
                     <br>
-                    <h6>Prototype Features</h6>
+                    <p><b>Prototype Features:</b></p>
                     <ul>
                         <li><p>Inventory system</p></li>
                         <li><p>Level progression system</p></li>
@@ -79,6 +58,9 @@
                         <li><p>Automation with AI helpers</p></li>
                         <li><p>Upgrade system for the AI</p></li>
                     </ul>
+                </div>
+                <div>
+                    <img src="images/farmprototype/farm_InventoryDragAndDrop.gif" class="center">
                 </div>
             </div>
         </div>
@@ -94,12 +76,11 @@
             <div class="wrapper outer">
                 <h2 style="text-align:center;">Tile types</h2>
                 <div class="divide-line"></div>
-                <br>
                 <p>
                     I used <span>inheritance</span> for the tiles and created a <span>base tile</span> blueprint class that <span>implements</span> a <span>Interact interface</span>.
                 </p>
 
-                <br><br>
+                <div class="divide-line"></div>
 
                 <div class="container">
                     <div class="item">
@@ -154,20 +135,19 @@
 
 
                 <!--<br><br>
-        <h3 style="text-align:center;">AI Spawn Tile & Upgrade</h3>-->
+            <h3 style="text-align:center;">AI Spawn Tile & Upgrade</h3>-->
             </div>
 
             <!-- Inventory system -->
             <div class="wrapper outer">
                 <h2 style="text-align:center;">Inventory System</h2>
                 <div class="divide-line"></div>
-                <br>
                 <p>
                     Used an <span>actor component</span> for the Inventory so easy to reuse.
                     The UI has <span>drag and drop</span> functionality to move and combind item stacks.
                 </p>
-                <br>
-                <img src="images/farmprototype/farm_InventoryDragAndDrop.gif" width="757" height="536" class="center">
+                <div class="divide-line"></div>
+                <img src="images/farmprototype/farm_InventoryDragAndDrop.gif" class="center">
 
             </div>
 
@@ -176,24 +156,22 @@
             <div class="wrapper outer">
                 <h2 style="text-align:center;">Build System</h2>
                 <div class="divide-line"></div>
-                <br>
                 <!--<p style="text-align:center;">
-                    The tile selection increased based on level.
-                </p>
-                <br>-->
-                <img src="images/farmprototype/farm_BuildShowcase.gif" width="760" height="537" class="center">
+                The tile selection increased based on level.
+            </p>
+            <br>-->
+                <img src="images/farmprototype/farm_BuildShowcase.gif" class="center">
             </div>
 
             <!-- Leveling system -->
             <div class="wrapper outer">
                 <h2 style="text-align:center;">Leveling System</h2>
                 <div class="divide-line"></div>
-                <br>
                 <p>
                     I recreated the leveling system from a childhood game I played a lot, Nordgame.
                     You put crops into a <span>fortune wheel</span> that gave exp on win.
                 </p>
-                <br><br>
+                <div class="divide-line"></div>
                 <div style="text-align:center;">
                     <h5>Key design points:</h5>
                     <ul style="display: inline-block; text-align: left;">
@@ -203,16 +181,16 @@
                         <li><p>All added items get used up after spinning.</p></li>
                     </ul>
                 </div>
+                <div class="divide-line"></div>
 
-
-                <div class="wrapper">
+                <div>
                     <!--<img src="images/farmprototype/farm_Wheel1.gif" width="520" height="680" class="center">-->
 
-                    <div class="container">
-                        <div class="item">
-                            <img src="images/farmprototype/farm_Wheel2.gif" width="394" height="516" class="center">
+                    <div class="two-column-layout">
+                        <div>
+                            <img src="images/farmprototype/farm_Wheel2.gif" class="center">
                         </div>
-                        <div class="item">
+                        <div>
                             <p>
                                 I scale the number of item slots required with level.
                             </p>
@@ -235,20 +213,20 @@
 
                 <div class="divide-line"></div>
 
-                <div class="wrapper">
+                <div>
                     <h4 style="text-align:center;">Wheel content</h4>
                     <p>
                         I can use the items the wheel requires to incentivize the player to get new crops and tiles. I went through a couple iterations for deciding the item slots content.
                     </p>
-                    <br>
-                    <div class="container">
-                        <div class="item">
+                    <div class="divide-line"></div>
+                    <div class="two-column-layout">
+                        <div>
                             <p>
                                 <span>Full control: </span>
                                 Creating each wheel’s item slots manually. Gives complete control over the progression and difficulty but time consuming.
                             </p>
                         </div>
-                        <div class="item">
+                        <div>
                             <p>
                                 <span>No control: </span>
                                 Fill the item slots with random items from an item poo. When new items get unlocked, they get added to the pool. Quick but inconsistent and impossible to balance.
@@ -256,7 +234,7 @@
                         </div>
                     </div>
 
-                    <br>
+                    <div class="divide-line"></div>
                     <p>
                         I kept the item pool but wanted more control over it. I made a data table that specifies what items are in the potential pool at any given level.
                         This allowed increasing the likelyhood of an item appearing by entering more copies of it.
@@ -266,14 +244,15 @@
 
                 <div class="divide-line"></div>
 
-                <div class="wrapper">
+                <div>
                     <h3 style="text-align:center;">Level Progression</h3>
+                    <div class="divide-line"></div>
                     <p>
                         I use a data table to determine what tiles and crops get unlocked at certain levels. Row name corresponds to level.
                         Instead of using a name or text variable type I use a data table row handler to minimize user error of typing an ID wrong.
                     </p>
                     <br><br>
-                    <img src="images/farmprototype/farm_LevelProgressionDataTable.png" width="1923" height="882" class="center">
+                    <img src="images/farmprototype/farm_LevelProgressionDataTable.png">
 
                 </div>
             </div>
@@ -282,18 +261,18 @@
             <!-- AI -->
             <div class="wrapper outer">
                 <h2 style="text-align:center;">AI helpers</h2>
-                <br>
+                <div class="divide-line"></div>
                 <p>
                     A fun part of farming and resource management games is <span>automating tasks</span> so production can scale up.
                     I decided on some AI helpers that automate different parts of the game.
                 </p>
+                <div class="divide-line"></div>
                 <ul>
                     <li><p><span>Waterer AI: </span>Waters crop tiles</p></li>
                     <li><p><span>Harvester AI: </span>Harvests crop tiles</p></li>
                     <li><p><span>Processor AI: </span> Supplier Factory tiles with items to processes</p></li>
                 </ul>
-
-                <br>
+                <div class="divide-line"></div>
                 <p>
                     I use a simple <span>state machine</span> for the AI. As they share the same overarching states, I utilize <span>inheritance</span> and made a base AI class with the core loop.
                 </p>
@@ -302,8 +281,8 @@
                 <div class="divide-line"></div>
 
                 <br><br>
-                <div class="container">
-                    <div class="item">
+                <div class="two-column-layout">
+                    <div>
                         <h4>Base AI</h4>
                         <p>
                             The AI have a <span>primary</span> and a <span>secondary objective</span>.
@@ -325,32 +304,29 @@
                             Performed to fulfill the criteria.
                         </p>
                     </div>
-                    <div class="item">
-                        <img src="images/farmprototype/farm_Flow_BaseAI.jpg" width="863" height="450">
+                    <div>
+                        <img src="images/farmprototype/farm_Flow_BaseAI.jpg">
                     </div>
                 </div>
 
                 <!--<div class="container">
-            <div class="item">
-                <img src="images/farmprototype/farm_Flow_WateringAI.jpg" width="863" height="450">
-            </div>
-            <div class="item">
-                <h4>Watering AI</h4>
-                <p>
+        <div class="item">
+            <img src="images/farmprototype/farm_Flow_WateringAI.jpg" width="863" height="450">
+        </div>
+        <div class="item">
+            <h4>Watering AI</h4>
+            <p>
 
-                </p>
-            </div>
-        </div>-->
-
-                <br><br>
+            </p>
+        </div>
+    </div>-->
                 <div class="divide-line"></div>
-                <br><br>
 
-                <div class="container">
-                    <div class="item">
-                        <img src="images/farmprototype/farm_EarlyAI.gif" width="1275" height="715">
+                <div class="two-column-layout">
+                    <div>
+                        <img src="images/farmprototype/farm_EarlyAI.gif">
                     </div>
-                    <div class="item">
+                    <div>
                         <h4>Early progress</h4>
                         <p>
                             I made the Watering and Harvesting AI first.
@@ -360,32 +336,28 @@
                     </div>
                 </div>
 
-                <br><br>
                 <div class="divide-line"></div>
-                <br><br>
 
-                <div class="container">
-                    <div class="item">
+                <div class="two-column-layout">
+                    <div>
                         <h4>Adjustments</h4>
                         <ul>
                             <li><p>Nerfed movement speed.</p></li>
                             <li><p>A <span>diegetic indicator</span> on the mesh to display resource count.</p></li>
                         </ul>
                     </div>
-                    <div class="item">
-                        <img src="images/farmprototype/farm_LaterAI.gif" width="973" height="604">
+                    <div>
+                        <img src="images/farmprototype/farm_LaterAI.gif">
                     </div>
                 </div>
 
-                <br><br>
                 <div class="divide-line"></div>
-                <br><br>
 
-                <div class="container">
-                    <div class="item">
-                        <img src="images/farmprototype/farm_VisualClarity.gif" width="1022" height="662">
+                <div class="two-column-layout">
+                    <div>
+                        <img src="images/farmprototype/farm_VisualClarity.gif">
                     </div>
-                    <div class="item">
+                    <div>
                         <h4>Test</h4>
                         <p>
                             Larger testing scenario, more AI. The AI behaves as it should.
@@ -397,20 +369,18 @@
                     </div>
                 </div>
 
-                <br><br>
                 <div class="divide-line"></div>
-                <br><br>
 
                 <h4 style="text-align:center;">Processing AI</h4>
                 <br>
-                <div class="container">
-                    <div class="item">
+                <div class="two-column-layout">
+                    <div>
                         <p>
                             Delivers crop items from storage tiles to factory tiles.
                         </p>
                     </div>
-                    <div class="item">
-                        <img src="images/farmprototype/farm_ProcessorAI.gif" width="605" height="597">
+                    <div>
+                        <img src="images/farmprototype/farm_ProcessorAI.gif">
                     </div>
                 </div>
 
@@ -460,12 +430,13 @@
                 <div class="col-footer">
                     <h4>Project Links</h4>
                     <ul>
-                        <li><a class="accent" href="index.html#projects">All Projects</a></li>
+                        <li><a href="index.html">All Projects</a></li>
+                        <li><a href="equinox.html">Equinox: Homecoming</a></li>
                         <li><a href="projectLayout.html">Vampower</a></li>
                         <li><a href="fearOfTheLight.html">Fear of the Light</a></li>
+                        <li><a href="gradProj.html">Graduation Project</a></li>
                         <li><a href="chatPrototype.html">Chat Prototype</a></li>
                         <li><a href="catFished.html">Catfished</a></li>
-                        <!--<li><a href="kingMockup.html">Mobile Game Menu Mockup</a></li>-->
                     </ul>
                 </div>
                 <div class="col-footer">

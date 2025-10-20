@@ -4,20 +4,20 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Astrid PA - Chat Prototype</title>
+    <title>Chat Prototype - Astrid Pehrsson Ankarstrand | Tech & UI/UX Designer</title>
     <link rel="stylesheet" href="projectStyle.css">
     <script type="text/javascript" src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/ccef3511e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo"><img src="images/Logo.png" width="344" height="50"> </a>
+        <a href="index.html" class="logo"><!--<img src="images/Logo.png" width="344" height="50">--><h5>Astrid Pehrsson Ankarstrand | Technical & UI/UX Designer</h5></a>
         <ul id="navbar">
             <li><i class="fa-solid fa-xmark button close" onclick="CloseNavbar()" aria-label="close sidebar"></i></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a class="accent" href="index.html#projects">Projects</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html" onclick="CloseNavbar()">PROJECTS</a></li>
+            <li><a href="resume.html" onclick="CloseNavbar()">RESUME</a></li>
+            <li><a href="about.html" onclick="CloseNavbar()">ABOUT ME</a></li>
+            <li><a href="contact.html" onclick="CloseNavbar()">CONTACT</a></li>
         </ul>
         <i class="fa-solid fa-bars button open" onclick="OpenNavbar()" aria-label="open sidebar"></i>
     </nav>
@@ -26,70 +26,32 @@
 
     <main>
 
-        <div class="header chat-prototype">
-            <!--<img src="images/vampower/Vampower_Title.png" alt="Vampower Title text" width="748" height="150">-->
-            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Chat Prototype</h1>
-        </div>
+        <!--<div class="header chat-prototype">-->
+        <!--<img src="images/vampower/Vampower_Title.png" alt="Vampower Title text" width="748" height="150">-->
+        <!--<h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Chat Prototype</h1>
+    </div>-->
 
-        <div class="center video">
-            <div class="outerVideoWrapper">
-                <div class="videoWrapper">
-                    <iframe width="720" height="405" src="https://www.youtube.com/embed/5-Kd7oZkdxY?si=mUWz6Sm2-pIScdaV"
-                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+
+
+        <div class="fairway">
+
+            <h1>Chat Prototype</h1>
+            <div class="divide-line"></div>
+            <div class="two-column-layout">
+                <p><b>Solo Project</b></p>
+                <p><b>Engine:</b> Unreal Engine 5</p>
+                <p><b>Duration:</b> 2 Weeks</p>
             </div>
-        </div>
-
-        <div id="summary">
-            <div class="container">
-                <div class="list">
-                    <div class="summary-item">
-                        <h5>My Role(s)</h5>
-                        <p>
-                            Solo developer,
-                            Technical Design, UI/ UX Design
-                        </p>
-                    </div>
-                    <div class="summary-item">
-                        <h5>Tools</h5>
-                        <p>
-                            Unreal Engine 5, Figma, Miro, Github, Google Sheets
-                        </p>
-                    </div>
-
-                    <div class="summary-item">
-                        <h5>Time</h5>
-                        <p>
-                            2 weeks
-                        </p>
-                    </div>
-                    <div class="summary-item">
-                        <h5>Team size</h5>
-                        <p>
-                            Solo
-                        </p>
-                    </div>
-                </div>
-
-                <div class="divide-line"></div>
-                <br>
+            <div class="divide-line"></div>
+            <div class="two-column-layout">
                 <div>
-                    <p>
+                    <p class="margin-bottom-small">
                         A short <span>prototype</span> exploring <span>storytelling</span> through <span>chat conversations</span>.
                         <br>
                         Made for an Advanced Visual Scripting course at Futuregames. Concept inspired by my side project.
-                        <!--<br><br>
-
-            I created a dialogue system that gets its content from data tables and parses it into chat messages.
-            The parser can handle branching choices and the system can handle multiple chat rooms at the same time.
-            Content can be written then imported into the game engine using CSV-files.
-            <br><br>
-
-            Learned a lot of best practices regarding visual scripting and project structure.-->
                     </p>
                     <br>
-                    <h6>Prototype Features</h6>
+                    <p><b>Prototype Features:</b></p>
                     <ul>
                         <li><p>Dialogue system</p></li>
                         <li><p>Game content read from Data tables made from CSV-files</p></li>
@@ -98,10 +60,14 @@
                         <li><p>UI portraying a mobile chatting app</p></li>
                     </ul>
                 </div>
+                <iframe class="ytVid" src="https://www.youtube.com/embed/5-Kd7oZkdxY?si=mUWz6Sm2-pIScdaV"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+
             </div>
+
         </div>
-
-
 
 
         <div class="header chat-prototype-2">
@@ -113,15 +79,12 @@
             <!-- Dialogue System -->
             <div class="wrapper outer">
                 <h2 style="text-align:center;">Dialogue System</h2>
-                <p>
-
-                </p>
-                <br><br>
-                <div class="container">
-                    <div class="item">
-                        <img src="images/chatprototype/Chat_ContentLoop.jpg" width="1016" height="380" class="center">
+                <div class="divide-line"></div>
+                <div class="two-column-layout">
+                    <div>
+                        <img src="images/chatprototype/Chat_ContentLoop.jpg">
                     </div>
-                    <div class="item">
+                    <div>
                         <h6>GameMode</h6>
                         <p>
                             Responsible for handling the games content.
@@ -143,39 +106,41 @@
             <!-- Game Mode -->
             <div class="wrapper outer">
                 <h2 style="text-align:center;">Game Mode</h2>
-                <br><br>
-                <p>
-                    I use a custom GameMode class to handle the games content as it's globally referenced, and the lack of replication isn't an issue in a single player game.
-                    It has all two actor components, one that contains the data and the other for parsing it.
-                </p>
-                <img src="images/chatprototype/Chat_GameModeComponents.jpg" width="810" height="270" class="center">
+                <div class="divide-line"></div>
+                <div class="two-column-layout">
+                    <p>
+                        I use a custom GameMode class to handle the games content as it's globally referenced, and the lack of replication isn't an issue in a single player game.
+                        It has all two actor components, one that contains the data and the other for parsing it.
+                    </p>
+                    <img src="images/chatprototype/Chat_GameModeComponents.jpg">
+                </div>
+
             </div>
 
             <!-- Data/ content structure -->
             <div class="wrapper outer">
                 <h3 style="text-align:center;">Data/ Content structure</h3>
-                <br>
+                <div class="divide-line"></div>
                 <p>
                     The games content comes from <span>Data tables</span> that I manually <span>imported</span> as <span>CSV-files</span> into <span>Unreal Engine</span>.
                     The game has <span>2 content types</span>; <span>story</span> and <span>dialogue</span>.
                 </p>
 
-                <br>
                 <div class="divide-line"></div>
 
                 <!-- Story content -->
-                <div class="wrapper">
-                    <h4 style="text-align:center;">Story content</h4>
+                <div>
+                    <h4>Story content</h4>
                     <p>
                         The story content is a data table with references to the ChatroomID and dialogue content. All case sensitive.
                     </p>
                     <br>
 
-                    <div class="container">
-                        <div class="item">
-                            <img src="images/chatprototype/Chat_StoryDataTable.png" width="1089" height="338" alt="Story Data table" class="center">
+                    <div class="two-column-layout">
+                        <div>
+                            <img src="images/chatprototype/Chat_StoryDataTable.png" alt="Story Data table">
                         </div>
-                        <div class="item">
+                        <div>
                             <!--<h6>Syntax explanation</h6>-->
                             <p>
                                 <span><b>Command: </b></span>
@@ -198,8 +163,8 @@
                 <div class="divide-line"></div>
 
                 <!-- Dialogue content -->
-                <div class="wrapper">
-                    <h4 style="text-align:center;">Dialogue content</h4>
+                <div>
+                    <h4>Dialogue content</h4>
                     <p>
                         The dialogue content is also a data table, <span>one data table per conversation</span>, where a <span>row represents one dialogue line</span>.
                         <br>
@@ -208,7 +173,7 @@
                     <br>
                     <!-- OG size: 1464, 485 -->
                     <!--<img src="images/chatprototype/ChatProt_DialogueDataTable.png" width="1097" height="363" alt="Dialogue Data table showing the games first conversation." class="center">-->
-                    <img src="images/chatprototype/Chat_DialogueDataTable.png" width="1040" height="428" alt="Dialogue Data table showing the games first conversation." class="center">
+                    <img src="images/chatprototype/Chat_DialogueDataTable.png" alt="Dialogue Data table showing the games first conversation." class="center">
                     <br>
                     <h6>Syntax explanation</h6>
                     <div class="container" style="flex-wrap: wrap;">
@@ -267,15 +232,14 @@
             <div class="wrapper outer">
                 <h2 style="text-align:center;">Widgets</h2>
                 <div class="divide-line"></div>
-                <br><br>
 
                 <p>
                     I debated on how I should handle showing different chat histories and came up with two directions.
                 </p>
 
                 <br><br>
-                <div class="container">
-                    <div class="item">
+                <div class="two-column-layout">
+                    <div>
                         <h6>
                             Singular Chatroom Widget
                         </h6>
@@ -287,7 +251,7 @@
                             Needs a system for storing and swapping chatroom content and state.
                         </p>
                     </div>
-                    <div class="item">
+                    <div>
                         <h6>
                             Multiple Chatroom Widgets
                         </h6>
@@ -306,16 +270,14 @@
                 <p>
                     I went with the second approach as I felt it made the most sense for the scope.
                 </p>
-                <br><br>
                 <div class="divide-line"></div>
-                <br><br>
                 <h3 style="text-align:center;">Widget Hierarchy</h3>
-                <br>
-                <div class="container">
-                    <div class="item">
-                        <img src="images/chatprototype/Chat_WindowHierarchy.jpg" width="974" height="398" alt="Chat Gameplay" class="center">
+                <div class="divide-line"></div>
+                <div class="two-column-layout">
+                    <div>
+                        <img src="images/chatprototype/Chat_WindowHierarchy.jpg" alt="Chat Gameplay">
                     </div>
-                    <div class="item">
+                    <div>
                         <p>
                             <span><b>WBP_Window: </b></span>
                             Holds references to <span>multiple Chatroom widgets</span> using their <span>unique ChatroomID</span>.
@@ -329,10 +291,10 @@
                     </div>
                 </div>
 
-                <br><br>
+                <div class="divide-line"></div>
 
-                <div class="container">
-                    <div class="item">
+                <div class="two-column-layout">
+                    <div>
                         <p>
                             <span><b>WBP_Chatroom: </b></span>
                             Handles creating new messages and logic for displaying choice buttons.
@@ -349,8 +311,8 @@
                             Has an OnClick event dispatcher that sends the FChoice struct the button has stored.
                         </p>
                     </div>
-                    <div class="item">
-                        <img src="images/chatprototype/Chat_ChatroomHierarchy.jpg" width="974" height="400" alt="Chat Gameplay" class="center">
+                    <div>
+                        <img src="images/chatprototype/Chat_ChatroomHierarchy.jpg" alt="Chat Gameplay">
                     </div>
                 </div>
             </div>
@@ -360,16 +322,14 @@
                 <h2 style="text-align:center;">References without casting</h2>
 
                 <div class="divide-line"></div>
-                <br>
                 <p>
                     During the course we learnt different ways to get references without casting.
                     The most used in my project is a combination of an <span>interface</span>
                     and a <span>blueprint function library</span> to get <span>references</span> to my <span>custom game mode</span> and <span>HUD class</span>.
                 </p>
                 <br>
-                <img src="images/chatprototype/Chat_ReferenceInterface.jpg" width="2088" height="738" class="center">
+                <img src="images/chatprototype/Chat_ReferenceInterface.jpg">
             </div>
-
 
         </div>
 
@@ -383,17 +343,17 @@
             <!-- Figma Layout + Animation showcase-->
             <div class="wrapper outer">
 
-                <div class="container">
-                    <div class="item">
+                <div class="two-column-layout">
+                    <div>
                         <h2 style="text-align:center;">Figma Layout</h2>
                         <br>
-                        <img class="center" src="images/chatprototype/Mockup.png" width="348" height="651"
+                        <img class="center" src="images/chatprototype/Mockup.png" 
                              alt="Mobile chat UI layout in Figma">
                     </div>
-                    <div class="item">
+                    <div>
                         <h2 style="text-align:center;">Animation showcase</h2>
                         <br>
-                        <img src="images/ChatGame_Prog_04.gif" width="442" height="648" alt="Chat Gameplay" class="center">
+                        <img src="images/ChatGame_Prog_04.gif" alt="Chat Gameplay" class="center">
                     </div>
                 </div>
 
@@ -404,10 +364,9 @@
             <div class="wrapper outer">
                 <h2 style="text-align:center;">Debug menu</h2>
                 <div class="divide-line"></div>
-                <br><br>
 
-                <div class="container">
-                    <div class="item">
+                <div class="two-column-layout">
+                    <div>
                         <p>
                             I created a debug menu to help <span>control</span> some of the game's <span>parameters</span>, like type speed, message delay, show animations.
                             <br><br>
@@ -416,15 +375,10 @@
                             The debug menu helped make debugging the story and its branches a lot quicker.
                         </p>
                     </div>
-                    <div class="item">
-                        <div class="outerVideoWrapper">
-                            <div class="videoWrapper">
-                                <iframe width="720" height="405" src="https://www.youtube.com/embed/KSiKQ8HUA_M?si=gc-Lue0XjFsZu-Uh"
-                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
+                    <iframe class="ytVid" src="https://www.youtube.com/embed/KSiKQ8HUA_M?si=gc-Lue0XjFsZu-Uh"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </div>
@@ -436,7 +390,7 @@
         <div class="wrapper-main">
             <div class="wrapper outer">
                 <h2>Technical designer</h2>
-                <br>
+                
                 <ul>
                     <li><p>Better ways to get references without having to cast.</p></li>
                     <li><p>How to write a technical design document.</p></li>
@@ -468,12 +422,13 @@
                 <div class="col-footer">
                     <h4>Project Links</h4>
                     <ul>
-                        <li><a class="accent" href="index.html#projects">All Projects</a></li>
+                        <li><a href="index.html">All Projects</a></li>
+                        <li><a href="equinox.html">Equinox: Homecoming</a></li>
                         <li><a href="projectLayout.html">Vampower</a></li>
                         <li><a href="fearOfTheLight.html">Fear of the Light</a></li>
+                        <li><a href="gradProj.html">Graduation Project</a></li>
                         <li><a href="farmPrototype.html">Farm Prototype</a></li>
                         <li><a href="catFished.html">Catfished</a></li>
-                        <!--<li><a href="kingMockup.html">Mobile Game Menu Mockup</a></li>-->
                     </ul>
                 </div>
                 <div class="col-footer">

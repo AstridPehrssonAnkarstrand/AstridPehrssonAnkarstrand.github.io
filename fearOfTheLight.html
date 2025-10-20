@@ -4,20 +4,20 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Astrid PA - Fear of the Light</title>
+    <title>Fear of the Light - Astrid Pehrsson Ankarstrand | Tech & UI/UX Designer</title>
     <link rel="stylesheet" href="projectStyle.css">
     <script type="text/javascript" src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/ccef3511e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo"><img src="images/Logo.png" width="344" height="50"> </a>
+        <a href="index.html" class="logo"><!--<img src="images/Logo.png" width="344" height="50">--><h5>Astrid Pehrsson Ankarstrand | Technical & UI/UX Designer</h5></a>
         <ul id="navbar">
             <li><i class="fa-solid fa-xmark button close" onclick="CloseNavbar()" aria-label="close sidebar"></i></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a class="accent" href="index.html#projects">Projects</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html" onclick="CloseNavbar()">PROJECTS</a></li>
+            <li><a href="resume.html" onclick="CloseNavbar()">RESUME</a></li>
+            <li><a href="about.html" onclick="CloseNavbar()">ABOUT ME</a></li>
+            <li><a href="contact.html" onclick="CloseNavbar()">CONTACT</a></li>
         </ul>
         <i class="fa-solid fa-bars button open" onclick="OpenNavbar()" aria-label="open sidebar"></i>
     </nav>
@@ -25,31 +25,17 @@
     <div id="overlay" onclick="CloseNavbar()" aria-hidden="true"></div>
 
     <main>
-        <div class="header fearofthelight">
-            <img src="images/fearofthelight/Fearofthelight_Logo.png" alt="Fear of the Light Title text" width="1069" height="142">
-        </div>
-
+        <!--<div class="header fearofthelight">
+        <img src="images/fearofthelight/Fearofthelight_Logo.png" alt="Fear of the Light Title text" width="1069" height="142">
+    </div>-->
         <!--<div class="wrapper">
-            <img src="images/fearofthelight/awards.png" alt="Swedish Game Awards 2024 Best Design Nominee & Futuregames 2024 Best Tech Winner" width="944" height="417" class="center">
-        </div>-->
-
+        <img src="images/fearofthelight/awards.png" alt="Swedish Game Awards 2024 Best Design Nominee & Futuregames 2024 Best Tech Winner" width="944" height="417" class="center">
+    </div>-->
         <!--<div class="container" style="align-content: center;">
-            <div class="item">
-                <img src="images/fearofthelight/awards_vertical.png" alt="Swedish Game Awards 2024 Best Design Nominee & Futuregames 2024 Best Tech Winner" width="417" height="944" class="center">
-            </div>
-            <div class="item">
-                <div class="outerVideoWrapper">
-                    <div class="videoWrapper">
-                        <iframe width="720" height="405" src="https://www.youtube.com/embed/yljS435vGw8">
-                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-
-        <div class="center video">
+        <div class="item">
+            <img src="images/fearofthelight/awards_vertical.png" alt="Swedish Game Awards 2024 Best Design Nominee & Futuregames 2024 Best Tech Winner" width="417" height="944" class="center">
+        </div>
+        <div class="item">
             <div class="outerVideoWrapper">
                 <div class="videoWrapper">
                     <iframe width="720" height="405" src="https://www.youtube.com/embed/yljS435vGw8">
@@ -59,74 +45,55 @@
                 </div>
             </div>
         </div>
+    </div>-->
+        
 
-
-        <div id="summary">
-            <div class="container">
-                <div class="list">
-                    <div class="summary-item">
-                        <h5>My Role(s)</h5>
-                        <p>
-                            UI/UX Designer, Narrative Designer
-                        </p>
-                    </div>
-                    <div class="summary-item">
-                        <h5>Tools</h5>
-                        <p>
-                            Unreal Engine 5, Figma, Miro, Perforce
-                        </p>
-                    </div>
-
-                    <div class="summary-item">
-                        <h5>Time</h5>
-                        <p>
-                            7 weeks
-                        </p>
-                    </div>
-                    <div class="summary-item">
-                        <h5>Team size</h5>
-                        <p>
-                            10 people team
-                        </p>
-                    </div>
-                </div>
-                <div class="divide-line"></div>
-                <br>
-
+        <div class="fairway">
+            <!--<h1>Equinox: Homecoming</h1>-->
+            <img src="images/fearofthelight/Fearofthelight_Logo.png" alt="Fear of the Light Title text">
+            <div class="divide-line"></div>
+            <div class="two-column-layout">
+                <p><b>Team Project</b></p>
+                <p><b>UI/UX & Technical Designer</b></p>
+                <p><b>Engine:</b> Unreal Engine 5</p>
+                <p><b>Duration:</b> 7 Weeks</p>
+                <p>
+                    <b>Status:</b> Released on Steam<br>
+                    <i>Available on <a target="_blank" href="https://store.steampowered.com/app/3126140/Fear_of_the_Light/">Steam</a></i>
+                </p>
+            </div>
+            <div class="divide-line"></div>
+            <div class="two-column-layout">
                 <div>
                     <p>
-
-                        Nominated for <span>Best Design</span> at the <span>Swedish Game Awards 2024</span>.
-                        <br>
-                        Winner of <span>Best Tech</span> at the <span>Futuregames Awards 2024</span>.
-                        <br>
-                        Released on <span>Steam</span> November 2024.
-                        <br><br>
-                        Fear of the Light is a <span>sci-fi survival horror</span> game where the <span>light is scarier</span> than the <span>dark</span>. Created for the course Game Project 3 at Futuregames.
+                        Fear of the Light is a <span>sci-fi survival horror</span> game where the <span>light is scarier</span> than the <span>dark</span>.
+                        Created for the course Game Project 3 at Futuregames.
                     </p>
                     <br><br>
-
-                    <h6>Responsibilities as UI/UX Designer</h6>
+                    <img src="images/fearofthelight/awards.png" alt="Swedish Game Awards 2024 Best Design Nominee & Futuregames 2024 Best Tech Winner" class="center">
+                    <br><br>
+                    <p><b>UI/UX Design Responsibilities Included:</b></p>
                     <ul>
                         <li><p>Design and implement the game's UI</p></li>
                         <li><p>Diegetic UI for player tools and data terminal</p></li>
                         <li><p>The overall user experience</p></li>
                     </ul>
-                    <br>
-                    <p>
-                        "For a horror game, <span>immersion</span> is key to keeping the player engaged, to strengthen this I wanted a majority of the game's UI to be <span>diegetic</span>."
-                    </p>
+                </div>
+                <div>
+                    <iframe class="ytVid margin-bottom-small" src="https://www.youtube.com/embed/yljS435vGw8">
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    
+                    <p><b>Awards:</b></p>
+                    <ul>
+                        <li><p>BEST DESIGN Nominee at SGA 2024</p></li>
+                        <li><p>BEST TECH winner at the FGA 2024</p></li>
+                    </ul>
+                    
                 </div>
             </div>
 
-            <div class="wrapper">
-                <img src="images/fearofthelight/awards.png" alt="Swedish Game Awards 2024 Best Design Nominee & Futuregames 2024 Best Tech Winner" width="944" height="417" class="center">
-            </div>
-
-            <div class="summary-gamelink wrapper">
-                <h3>Play the game!</h3>
-                <a target="_blank" href="https://store.steampowered.com/app/3126140/Fear_of_the_Light/" class="btn"><h6>Steam Page</h6></a>
-            </div>
         </div>
 
         <div class="header fearofthelight-1">
@@ -139,19 +106,13 @@
             <!-- Data Terminal -->
             <div class="wrapper outer">
                 <h2 style="text-align: center;">DATA TERMINAL</h2>
-                <div class="divide-line"></div><br><br>
-                <div class="container">
-                    <div class="item">
-                        <div class="outerVideoWrapper">
-                            <div class="videoWrapper">
-                                <iframe width="720" height="405" src="https://www.youtube.com/embed/PQB7IBVX_Go?si=a4vGlAdrXkSZ9u5L"
-                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                                </iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
+                <div class="divide-line"></div>
+                <div class="two-column-layout">
+                    <iframe class="ytVid" src="https://www.youtube.com/embed/PQB7IBVX_Go?si=a4vGlAdrXkSZ9u5L"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div>
                         <h6>The data terminal serves multiple purposes:</h6>
                         <ul>
                             <li><p>to convey <span>lore</span> with information about the current situation</p></li>
@@ -160,17 +121,16 @@
                         </ul>
                     </div>
                 </div>
-                <br><br>
                 <div class="divide-line"></div>
 
                 <!-- Technical Implementation -->
                 <div class="wrapper">
                     <h3 style="text-align: center;">TECHNICAL IMPLEMENTATION</h3><br>
-                    <div class="container">
-                        <div class="item">
-                            <img src="images/fearofthelight/FOTL_DataTerminal_Diagram.jpg" alt="" width="1890" height="825">
+                    <div class="two-column-layout">
+                        <div>
+                            <img src="images/fearofthelight/FOTL_DataTerminal_Diagram.jpg">
                         </div>
-                        <div class="item">
+                        <div>
                             <h6>BP_DataTerminal</h6>
                             <ul>
                                 <li><p>The main <span>actor</span> blueprint.</p></li>
@@ -187,10 +147,10 @@
                         </div>
                     </div>
 
-                    <br><br>
+                    <div class="divide-line"></div>
 
-                    <div class="container">
-                        <div class="item">
+                    <div class="two-column-layout">
+                        <div>
                             <h5>Page Data</h5>
                             <br>
                             <p><span><b>Logs:</b></span> Takes in a string array of LogID's. The log content is stored in a data table, one row represents one log. The LogID matches the data table row name.</p>
@@ -199,12 +159,11 @@
                             <br>
                             <p><span><b>Systems:</b></span> Takes in an AreaItem struct with text to display on the UI, references to doors in the level and needed clearance level.</p>
                         </div>
-                        <div class="item">
-                            <img src="images/fearofthelight/FOTL_DataTerminal_DataInput.png" alt="" width="629" height="317">
+                        <div>
+                            <img src="images/fearofthelight/FOTL_DataTerminal_DataInput.png" alt="">
                         </div>
                     </div>
 
-                    <br><br>
                     <div class="divide-line"></div>
 
 
@@ -226,26 +185,26 @@
                             The map needed to convey a lot of information in a <span>limited space</span>.
                             The entire level would undoubtedly <span>not fit</span> whilst still being readable so <span>zoom in/out and panning functionality</span> would be suitable.
                         </p>
-                        <br><br>
-                        <div class="container">
-                            <div class="item">
+                        <div class="divide-line"></div>
+                        <div class="two-column-layout">
+                            <div >
                                 <h5>Early version</h5>
                                 <br>
                                 <p>
                                     I was unsure how to implement this so for early playtests I nested two scroll boxes inside each other. It works, be it awkwardly.
                                 </p>
                             </div>
-                            <div class="item">
-                                <img src="images/fearofthelight/FOTL_OldMapFunctionality.gif" alt="" width="688" height="399">
+                            <div>
+                                <img src="images/fearofthelight/FOTL_OldMapFunctionality.gif" alt="">
                             </div>
                         </div>
-                        <br><br>
+                        <div class="divide-line"></div>
 
-                        <div class="container">
-                            <div class="item">
-                                <img src="images/fearofthelight/FOTL_MapFunctionality.gif" alt="" width="584" height="436">
+                        <div class="two-column-layout">
+                            <div>
+                                <img src="images/fearofthelight/FOTL_MapFunctionality.gif" alt="">
                             </div>
-                            <div class="item">
+                            <div>
                                 <h5>Final version</h5>
                                 <br>
                                 <p>
@@ -262,8 +221,8 @@
                         <br><br>
 
                         <!-- Icons -->
-                        <div class="container">
-                            <div class="item">
+                        <div class="two-column-layout">
+                            <div>
                                 <h5>Icons</h5>
                                 <p>
                                     The old icons had <span>clarity issues</span>, particularly for the radar because of the <span>small size</span> combined with the <span>emissive color</span> making them <span>unreadable</span>.
@@ -274,8 +233,8 @@
                                     This gives the icons a <span>unique silhouette</span>, making them <span>distinct</span> from each other.
                                 </p>
                             </div>
-                            <div class="item">
-                                <img src="images/fearofthelight/FOTL_IconLegend.png" alt="" width="600" height="380">
+                            <div>
+                                <img src="images/fearofthelight/FOTL_IconLegend.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -288,18 +247,18 @@
             <div class="wrapper outer">
 
                 <h2 style="text-align: center;">TOOLS</h2>
-                <div class="divide-line"></div><br><br>
+                <div class="divide-line"></div>
                 <p>
                     <span>Navigating</span> in the dark is difficult, especially when you're being hunted down by alien moths.
                     To help the player out a bit they have <span>3 tools</span>, 2 of which have UI.
                 </p>
 
                 <!-- Radar -->
-                <div class="wrapper">
+                <div>
                     <h3 style="text-align: center;">RADAR</h3>
                     <br>
-                    <div class="container">
-                        <div class="item">
+                    <div class="two-column-layout">
+                        <div>
                             <p>
                                 The radar <span>detects objects</span> of interests, and objects to <span>avoid</span>. It drains battery whilst being used.
                                 <br><br>
@@ -307,39 +266,32 @@
                                 I <span>added</span> the <span>battery</span> to the <span>radar's tool screen</span>.
                             </p>
                         </div>
-                        <div class="item">
-                            <div class="outerVideoWrapper">
-                                <div class="videoWrapper">
-                                    <iframe width="720" height="405" src="https://www.youtube.com/embed/n4G_CrOkLIs?si=_zNaagdtnmDV-OJ5"
-                                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-                                            web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                                    </iframe>
-                                </div>
-                            </div>
-
-                        </div>
+                        <iframe class="ytVid" src="https://www.youtube.com/embed/n4G_CrOkLIs?si=_zNaagdtnmDV-OJ5"
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+                                web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
 
                 <div class="divide-line"></div>
 
                 <!-- EMP -->
-                <div class="wrapper">
+                <div>
                     <h3 style="text-align: center;">EMP</h3>
                     <br>
-                    <div class="container">
-                        <div class="item">
+                    <div class="two-column-layout">
+                        <div>
                             <!--<div class="outerVideoWrapper">
-                <div class="videoWrapper">
-                    <iframe width="720" height="405" src="https://www.youtube.com/embed/SEHo5Va9iOY?si=dbZ0zB6znTE7i-zQ"
-                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-                            web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                </div>
-            </div>-->
-                            <img src="images/fearofthelight/FOTL_EMP_Old.gif" alt="" width="800" height="450">
+                            <div class="videoWrapper">
+                                <iframe width="720" height="405" src="https://www.youtube.com/embed/SEHo5Va9iOY?si=dbZ0zB6znTE7i-zQ"
+                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+                                        web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>-->
+                            <img src="images/fearofthelight/FOTL_EMP_Old.gif" alt="">
                         </div>
-                        <div class="item">
+                        <div>
                             <p>
                                 The EMP can <span>turn off lights</span> for a duration at the cost of battery charge.
                                 <br><br>
@@ -347,9 +299,9 @@
                             </p>
                         </div>
                     </div>
-                    <br><br>
-                    <div class="container">
-                        <div class="item">
+                    <div class="divide-line"></div>
+                    <div class="two-column-layout">
+                        <div>
                             <p>
                                 I added a <span>crosshair</span> to the HUD to <span>improve aiming</span>. This let me give more <span>feedback</span> to the player on when they can or can’t shoot.
                                 <br><br>
@@ -357,7 +309,7 @@
                             </p>
                         </div>
                         <div class="item">
-                            <img src="images/fearofthelight/FOTL_EMP_New.gif" alt="" width="800" height="450">
+                            <img src="images/fearofthelight/FOTL_EMP_New.gif" alt="">
                         </div>
                     </div>
                 </div>
@@ -366,15 +318,11 @@
             <!-- Menus -->
             <div class="wrapper outer">
                 <h2 style="text-align: center;">MAIN & PAUSE MENU</h2>
-                <div class="divide-line"></div><br><br>
-                <div class="outerVideoWrapper">
-                    <div class="videoWrapper">
-                        <iframe width="720" height="405" src="https://www.youtube.com/embed/1PtceXc2kBI?si=s72dCYUdXM-D3OLc"
-                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
+                <div class="divide-line"></div>
+                <iframe class="ytVid" src="https://www.youtube.com/embed/1PtceXc2kBI?si=s72dCYUdXM-D3OLc"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
             </div>
 
         </div>
@@ -404,12 +352,13 @@
                 <div class="col-footer">
                     <h4>Project Links</h4>
                     <ul>
-                        <li><a class="accent" href="index.html#projects">All Projects</a></li>
+                        <li><a href="index.html">All Projects</a></li>
+                        <li><a href="equinox.html">Equinox: Homecoming</a></li>
                         <li><a href="projectLayout.html">Vampower</a></li>
+                        <li><a href="gradProj.html">Graduation Project</a></li>
                         <li><a href="chatPrototype.html">Chat Prototype</a></li>
                         <li><a href="farmPrototype.html">Farm Prototype</a></li>
                         <li><a href="catFished.html">Catfished</a></li>
-                        <!--<li><a href="kingMockup.html">Mobile Game Menu Mockup</a></li>-->
                     </ul>
                 </div>
                 <div class="col-footer">
