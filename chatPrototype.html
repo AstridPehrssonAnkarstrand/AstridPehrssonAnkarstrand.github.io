@@ -24,12 +24,16 @@
 
     <div id="overlay" onclick="CloseNavbar()" aria-hidden="true"></div>
 
+    <div id="modal" class="modal no-display">
+        <img id="modal-img" src="images/gradproj/gradproj_radial.gif">
+    </div>
+
     <main>
 
         <!--<div class="header chat-prototype">-->
         <!--<img src="images/vampower/Vampower_Title.png" alt="Vampower Title text" width="748" height="150">-->
         <!--<h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Chat Prototype</h1>
-    </div>-->
+        </div>-->
 
 
 
@@ -60,10 +64,20 @@
                         <li><p>UI portraying a mobile chatting app</p></li>
                     </ul>
                 </div>
-                <iframe class="ytVid" src="https://www.youtube.com/embed/5-Kd7oZkdxY?si=mUWz6Sm2-pIScdaV"
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
+                <div>
+                    <iframe class="ytVid" src="https://www.youtube.com/embed/5-Kd7oZkdxY?si=mUWz6Sm2-pIScdaV"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div class="divide-line"></div>
+                    <div class="three-grid-layout">
+                        <img src="images/ChatGame_Prog_04.gif" alt="Showcasing the animation of chatbubbles and reply choices.">
+                        <img class="center" src="images/chatprototype/Mockup.png"
+                             alt="Mobile chat UI layout in Figma">
+                    </div>
+                    
+                </div>
+
 
             </div>
 
@@ -75,10 +89,10 @@
         </div>
 
         <!-- Technical Design -->
-        <div class="wrapper-main">
+        <div class="fairway">
             <!-- Dialogue System -->
             <div class="wrapper outer">
-                <h2 style="text-align:center;">Dialogue System</h2>
+                <h2>DIALOG SYSTEM</h2>
                 <div class="divide-line"></div>
                 <div class="two-column-layout">
                     <div>
@@ -104,22 +118,21 @@
             </div>
 
             <!-- Game Mode -->
-            <div class="wrapper outer">
-                <h2 style="text-align:center;">Game Mode</h2>
-                <div class="divide-line"></div>
-                <div class="two-column-layout">
-                    <p>
-                        I use a custom GameMode class to handle the games content as it's globally referenced, and the lack of replication isn't an issue in a single player game.
-                        It has all two actor components, one that contains the data and the other for parsing it.
-                    </p>
-                    <img src="images/chatprototype/Chat_GameModeComponents.jpg">
-                </div>
+            <!--<div class="wrapper outer">
+        <h2 style="text-align:center;">Game Mode</h2>
+        <div class="divide-line"></div>
+        <div class="two-column-layout">
+            <p>
+                I use a custom GameMode class to handle the games content as it's globally referenced, and the lack of replication isn't an issue in a single player game.
+                It has all two actor components, one that contains the data and the other for parsing it.
+            </p>
+            <img src="images/chatprototype/Chat_GameModeComponents.jpg">
+        </div>
 
-            </div>
-
+    </div>-->
             <!-- Data/ content structure -->
             <div class="wrapper outer">
-                <h3 style="text-align:center;">Data/ Content structure</h3>
+                <h2>DATA STRUCTURE</h2>
                 <div class="divide-line"></div>
                 <p>
                     The games content comes from <span>Data tables</span> that I manually <span>imported</span> as <span>CSV-files</span> into <span>Unreal Engine</span>.
@@ -130,7 +143,7 @@
 
                 <!-- Story content -->
                 <div>
-                    <h4>Story content</h4>
+                    <h3 class="margin-bottom-small">STORY CONTENT</h3>
                     <p>
                         The story content is a data table with references to the ChatroomID and dialogue content. All case sensitive.
                     </p>
@@ -164,18 +177,19 @@
 
                 <!-- Dialogue content -->
                 <div>
-                    <h4>Dialogue content</h4>
+                    <h3 class="margin-bottom-small">DIALOGUE CONTENT</h3>
                     <p>
                         The dialogue content is also a data table, <span>one data table per conversation</span>, where a <span>row represents one dialogue line</span>.
                         <br>
                         I used <span>Honkai: Stair Rail</span> as inspiration for the <span>dialogue formatting</span>, as I found it concise and readable.
                     </p>
                     <br>
+
                     <!-- OG size: 1464, 485 -->
                     <!--<img src="images/chatprototype/ChatProt_DialogueDataTable.png" width="1097" height="363" alt="Dialogue Data table showing the games first conversation." class="center">-->
                     <img src="images/chatprototype/Chat_DialogueDataTable.png" alt="Dialogue Data table showing the games first conversation." class="center">
                     <br>
-                    <h6>Syntax explanation</h6>
+                    <h4 class="margin-bottom-small">SYNTAX EXPLANATION:</h4>
                     <div class="container" style="flex-wrap: wrap;">
 
                         <div class="item" style="flex: 100%">
@@ -218,9 +232,9 @@
                                 Note that style notations can’t be nested, the previous styling needs to be ended before starting a new one.
                                 This is a limitation with how RichTextStyles work.
                                 <!--<br>
-                            Emojis use a different font so need to be wrapped with styling notation in order to be displayed properly. All emojis should however be possible.
-                            Emoji styling has 3 versions, normal text size, font size 48, font size 68.
-                            The latter two are only recommended when no text is used as the larger ones will increase the breadtexts fontsize, leaving unwanted gaps.-->
+                        Emojis use a different font so need to be wrapped with styling notation in order to be displayed properly. All emojis should however be possible.
+                        Emoji styling has 3 versions, normal text size, font size 48, font size 68.
+                        The latter two are only recommended when no text is used as the larger ones will increase the breadtexts fontsize, leaving unwanted gaps.-->
                             </p>
                         </div>
                     </div>
@@ -230,7 +244,7 @@
 
             <!-- Widgets -->
             <div class="wrapper outer">
-                <h2 style="text-align:center;">Widgets</h2>
+                <h2>WIDGETS</h2>
                 <div class="divide-line"></div>
 
                 <p>
@@ -240,8 +254,8 @@
                 <br><br>
                 <div class="two-column-layout">
                     <div>
-                        <h6>
-                            Singular Chatroom Widget
+                        <h6 class="margin-bottom-small">
+                            SINGULAR CHATROOM WIDGET
                         </h6>
                         <p>
                             One chatroom widget. Widget updates when swapping chatrooms.
@@ -252,8 +266,8 @@
                         </p>
                     </div>
                     <div>
-                        <h6>
-                            Multiple Chatroom Widgets
+                        <h6 class="margin-bottom-small">
+                            MULTIPLE CHATROOM WIDGETS
                         </h6>
                         <p>
                             One chatroom widget per chatroom. Widget is collapsed when not used.
@@ -268,11 +282,11 @@
 
                 <br><br>
                 <p>
-                    I went with the second approach as I felt it made the most sense for the scope.
+                    I went with the second approach as I felt it made the most sense for the projects scope.
                 </p>
                 <div class="divide-line"></div>
-                <h3 style="text-align:center;">Widget Hierarchy</h3>
-                <div class="divide-line"></div>
+
+                <h3 class="margin-bottom-small">WIDGET HIERARCHY</h3>
                 <div class="two-column-layout">
                     <div>
                         <img src="images/chatprototype/Chat_WindowHierarchy.jpg" alt="Chat Gameplay">
@@ -319,7 +333,7 @@
 
             <!-- References without casting -->
             <div class="wrapper outer">
-                <h2 style="text-align:center;">References without casting</h2>
+                <h2>REFERENCES WITHOUT CASTING</h2>
 
                 <div class="divide-line"></div>
                 <p>
@@ -331,38 +345,9 @@
                 <img src="images/chatprototype/Chat_ReferenceInterface.jpg">
             </div>
 
-        </div>
-
-
-        <div class="header chat-prototype">
-            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">UI/UX DESIGN</h1>
-        </div>
-
-        <!-- UI/ UX Design -->
-        <div class="wrapper-main">
-            <!-- Figma Layout + Animation showcase-->
-            <div class="wrapper outer">
-
-                <div class="two-column-layout">
-                    <div>
-                        <h2 style="text-align:center;">Figma Layout</h2>
-                        <br>
-                        <img class="center" src="images/chatprototype/Mockup.png" 
-                             alt="Mobile chat UI layout in Figma">
-                    </div>
-                    <div>
-                        <h2 style="text-align:center;">Animation showcase</h2>
-                        <br>
-                        <img src="images/ChatGame_Prog_04.gif" alt="Chat Gameplay" class="center">
-                    </div>
-                </div>
-
-
-            </div>
-
             <!-- Debug Menu -->
             <div class="wrapper outer">
-                <h2 style="text-align:center;">Debug menu</h2>
+                <h2>DEBUG MENU</h2>
                 <div class="divide-line"></div>
 
                 <div class="two-column-layout">
@@ -381,6 +366,7 @@
                     </iframe>
                 </div>
             </div>
+
         </div>
 
         <div class="header chat-prototype-2">
@@ -389,8 +375,8 @@
 
         <div class="wrapper-main">
             <div class="wrapper outer">
-                <h2>Technical designer</h2>
-                
+                <h2>TECHNICAL DESIGNER</h2>
+                <div class="divide-line"></div>
                 <ul>
                     <li><p>Better ways to get references without having to cast.</p></li>
                     <li><p>How to write a technical design document.</p></li>
@@ -402,9 +388,9 @@
 
 
         <!--<iframe width="768" height="432"
-            src="https://miro.com/app/embed/uXjVL5hUvhw=/?pres=1&frameId=3458764610146073731&embedId=865046017667"
-            frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen>
-    </iframe>-->
+                src="https://miro.com/app/embed/uXjVL5hUvhw=/?pres=1&frameId=3458764610146073731&embedId=865046017667"
+                frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen>
+        </iframe>-->
 
     </main>
 

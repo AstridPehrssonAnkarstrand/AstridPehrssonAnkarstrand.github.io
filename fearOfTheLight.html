@@ -24,6 +24,10 @@
 
     <div id="overlay" onclick="CloseNavbar()" aria-hidden="true"></div>
 
+    <div id="modal" class="modal no-display">
+        <img id="modal-img" src="images/gradproj/gradproj_radial.gif">
+    </div>
+
     <main>
         <!--<div class="header fearofthelight">
         <img src="images/fearofthelight/Fearofthelight_Logo.png" alt="Fear of the Light Title text" width="1069" height="142">
@@ -46,7 +50,7 @@
             </div>
         </div>
     </div>-->
-        
+
 
         <div class="fairway">
             <!--<h1>Equinox: Homecoming</h1>-->
@@ -78,34 +82,60 @@
                         <li><p>Diegetic UI for player tools and data terminal</p></li>
                         <li><p>The overall user experience</p></li>
                     </ul>
+
+                    <!--<div class="divide-line"></div>
+                    <p class="margin-bottom-small"><b>READ MORE ABOUT THE DEVELOPMENT:</b></p>
+                    <a href="fearofthelightUI.html" class="btn btn2 center margin-bottom-small">UI/UX Design & Implementation</a>-->
                 </div>
                 <div>
                     <iframe class="ytVid margin-bottom-small" src="https://www.youtube.com/embed/yljS435vGw8">
                         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                     </iframe>
-                    
+
                     <p><b>Awards:</b></p>
                     <ul>
                         <li><p>BEST DESIGN Nominee at SGA 2024</p></li>
                         <li><p>BEST TECH winner at the FGA 2024</p></li>
                     </ul>
-                    
+
+                    <div class="divide-line"></div>
+                    <div class="three-grid-layout">
+                        <img src="images/fearofthelight/Screenshot (496).png">
+                        <!--<img src="images/fearofthelight/Screenshot (497).png">-->
+                        <img src="images/fearofthelight/Screenshot (498).png">
+                        <img src="images/fearofthelight/Screenshot (499).png">
+                        <img src="images/fearofthelight/Screenshot (500).png">
+                        <img src="images/fearofthelight/Screenshot (501).png">
+                        <img src="images/fearofthelight/Screenshot (503).png">
+                        <!--<img src="images/fearofthelight/Screenshot (504).png">-->
+                        <img src="images/fearofthelight/Screenshot (509).png">
+                        <img src="images/fearofthelight/Screenshot (491).png">
+                        <img src="images/fearofthelight/Screenshot (490).png">
+                        <img src="images/fearofthelight/Screenshot (492).png">
+                        <img src="images/fearofthelight/Screenshot (494).png">
+                    </div>
                 </div>
             </div>
 
         </div>
 
         <div class="header fearofthelight-1">
-            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">UI/UX DESIGN</h1>
+            <img class="center" src="images/fearofthelight/Fearofthelight_Logo.png" alt="Fear of the Light Title text" width="1069" height="142">
+            <br><br><br>
+            <h1 style="text-align:center;">UI/UX DESIGN & IMPLEMENTATION</h1>
         </div>
 
+        <!--<div class="header fearofthelight-1">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">UI/UX DESIGN</h1>
+        </div>-->
+
         <!-- UI / UX -->
-        <div class="wrapper-main">
+        <div class="fairway">
 
             <!-- Data Terminal -->
             <div class="wrapper outer">
-                <h2 style="text-align: center;">DATA TERMINAL</h2>
+                <h2>DATA TERMINAL</h2>
                 <div class="divide-line"></div>
                 <div class="two-column-layout">
                     <iframe class="ytVid" src="https://www.youtube.com/embed/PQB7IBVX_Go?si=a4vGlAdrXkSZ9u5L"
@@ -124,8 +154,9 @@
                 <div class="divide-line"></div>
 
                 <!-- Technical Implementation -->
-                <div class="wrapper">
-                    <h3 style="text-align: center;">TECHNICAL IMPLEMENTATION</h3><br>
+                <div>
+                    <h3>TECHNICAL IMPLEMENTATION</h3>
+                    <div class="divide-line"></div>
                     <div class="two-column-layout">
                         <div>
                             <img src="images/fearofthelight/FOTL_DataTerminal_Diagram.jpg">
@@ -151,7 +182,7 @@
 
                     <div class="two-column-layout">
                         <div>
-                            <h5>Page Data</h5>
+                            <h5 class="margin-bottom-small">PAGE DATA</h5>
                             <br>
                             <p><span><b>Logs:</b></span> Takes in a string array of LogID's. The log content is stored in a data table, one row represents one log. The LogID matches the data table row name.</p>
                             <br>
@@ -168,8 +199,8 @@
 
 
                     <!-- Log page -->
-                    <div class="wrapper">
-                        <h4 style="text-align: center;">LOG PAGE</h4>
+                    <div>
+                        <h4 class="margin-bottom-small">LOG PAGE</h4>
                         <p>
                             The log page consists of <span>two containers</span>. First one holds a <span>sidebar</span> listing all the available logs.
                             The second holds the <span>log content</span>, with a <span>header</span> and the <span>bread text</span>. I experimented with formatting the bread text by using <span>Rich Text Styles</span> so the writer can emphasize certain words.
@@ -179,19 +210,19 @@
                     <div class="divide-line"></div>
 
                     <!-- Map page -->
-                    <div class="wrapper">
-                        <h4 style="text-align: center;">MAP PAGE</h4>
+                    <div>
+                        <h4 class="margin-bottom-small">MAP PAGE</h4>
                         <p>
                             The map needed to convey a lot of information in a <span>limited space</span>.
                             The entire level would undoubtedly <span>not fit</span> whilst still being readable so <span>zoom in/out and panning functionality</span> would be suitable.
                         </p>
                         <div class="divide-line"></div>
                         <div class="two-column-layout">
-                            <div >
-                                <h5>Early version</h5>
-                                <br>
+                            <div>
+                                <h5 class="margin-bottom-small">FIRST VERSION</h5>
                                 <p>
-                                    I was unsure how to implement this so for early playtests I nested two scroll boxes inside each other. It works, be it awkwardly.
+                                    For the first playtests I nested two scroll boxes inside each other, one vertical and one horizontal.
+                                    It works, but is very awkward to control.
                                 </p>
                             </div>
                             <div>
@@ -205,8 +236,7 @@
                                 <img src="images/fearofthelight/FOTL_MapFunctionality.gif" alt="">
                             </div>
                             <div>
-                                <h5>Final version</h5>
-                                <br>
+                                <h5 class="margin-bottom-small">FINAL VERSION</h5>
                                 <p>
                                     After researching I saw a smarter solution using 2 canvases. The <span>outer canvas</span> functions as a <span>mask</span> and is the <span>required window size</span>.
                                     The <span>inner canvas</span> is the size of the full map. The <span>position and size</span> of the inner canvas can then be <span>panned and zoomed</span> based on user input and mouse position.
@@ -218,12 +248,13 @@
                                 <a target="_blank" href="https://forums.unrealengine.com/t/how-to-scale-zoom-a-widget-with-blueprints/430983"><p>Original source with full explanation and code</p></a>
                             </div>
                         </div>
-                        <br><br>
+
+                        <div class="divide-line"></div>
 
                         <!-- Icons -->
                         <div class="two-column-layout">
                             <div>
-                                <h5>Icons</h5>
+                                <h5 class="margin-bottom-small">ICONS</h5>
                                 <p>
                                     The old icons had <span>clarity issues</span>, particularly for the radar because of the <span>small size</span> combined with the <span>emissive color</span> making them <span>unreadable</span>.
                                     <br><br>
@@ -246,17 +277,17 @@
             <!-- Tools -->
             <div class="wrapper outer">
 
-                <h2 style="text-align: center;">TOOLS</h2>
+                <h2>TOOLS</h2>
                 <div class="divide-line"></div>
                 <p>
                     <span>Navigating</span> in the dark is difficult, especially when you're being hunted down by alien moths.
                     To help the player out a bit they have <span>3 tools</span>, 2 of which have UI.
                 </p>
 
+                <div class="divide-line"></div>
                 <!-- Radar -->
                 <div>
-                    <h3 style="text-align: center;">RADAR</h3>
-                    <br>
+                    <h3 class="margin-bottom-small">RADAR</h3>
                     <div class="two-column-layout">
                         <div>
                             <p>
@@ -277,21 +308,21 @@
 
                 <!-- EMP -->
                 <div>
-                    <h3 style="text-align: center;">EMP</h3>
-                    <br>
+                    <h3 class="margin-bottom-small">EMP</h3>
                     <div class="two-column-layout">
                         <div>
                             <!--<div class="outerVideoWrapper">
-                            <div class="videoWrapper">
-                                <iframe width="720" height="405" src="https://www.youtube.com/embed/SEHo5Va9iOY?si=dbZ0zB6znTE7i-zQ"
-                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-                                        web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                                </iframe>
-                            </div>
-                        </div>-->
+                    <div class="videoWrapper">
+                        <iframe width="720" height="405" src="https://www.youtube.com/embed/SEHo5Va9iOY?si=dbZ0zB6znTE7i-zQ"
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+                                web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>-->
                             <img src="images/fearofthelight/FOTL_EMP_Old.gif" alt="">
                         </div>
                         <div>
+                            <h5 class="margin-bottom-small">FIRST VERSION</h5>
                             <p>
                                 The EMP can <span>turn off lights</span> for a duration at the cost of battery charge.
                                 <br><br>
@@ -302,6 +333,7 @@
                     <div class="divide-line"></div>
                     <div class="two-column-layout">
                         <div>
+                            <h5 class="margin-bottom-small">FINAL VERSION</h5>
                             <p>
                                 I added a <span>crosshair</span> to the HUD to <span>improve aiming</span>. This let me give more <span>feedback</span> to the player on when they can or can’t shoot.
                                 <br><br>
@@ -317,7 +349,7 @@
 
             <!-- Menus -->
             <div class="wrapper outer">
-                <h2 style="text-align: center;">MAIN & PAUSE MENU</h2>
+                <h2>MAIN & PAUSE MENU</h2>
                 <div class="divide-line"></div>
                 <iframe class="ytVid" src="https://www.youtube.com/embed/1PtceXc2kBI?si=s72dCYUdXM-D3OLc"
                         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

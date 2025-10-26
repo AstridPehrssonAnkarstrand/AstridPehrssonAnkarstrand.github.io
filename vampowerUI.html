@@ -1,0 +1,475 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vampower - Astrid Pehrsson Ankarstrand | Tech & UI/UX Designer</title>
+    <link rel="stylesheet" href="projectStyle.css">
+    <script type="text/javascript" src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/ccef3511e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo"><!--<img src="images/Logo.png" width="344" height="50">--><h5>Astrid Pehrsson Ankarstrand | Technical & UI/UX Designer</h5></a>
+        <ul id="navbar">
+            <li><i class="fa-solid fa-xmark button close" onclick="CloseNavbar()" aria-label="close sidebar"></i></li>
+            <li><a href="index.html" onclick="CloseNavbar()">PROJECTS</a></li>
+            <li><a href="resume.html" onclick="CloseNavbar()">RESUME</a></li>
+            <li><a href="about.html" onclick="CloseNavbar()">ABOUT ME</a></li>
+            <li><a href="contact.html" onclick="CloseNavbar()">CONTACT</a></li>
+        </ul>
+        <i class="fa-solid fa-bars button open" onclick="OpenNavbar()" aria-label="open sidebar"></i>
+    </nav>
+
+    <div id="overlay" onclick="CloseNavbar()" aria-hidden="true"></div>
+
+    <div id="modal" class="modal no-display">
+        <img id="modal-img" src="images/gradproj/gradproj_radial.gif">
+    </div>
+
+    <main>
+        <div class="header vampower">
+            <img class="center" src="images/vampower/Vampower_Title.png" alt="Vampower Title text" width="748" height="150">
+            <br><br><br>
+            <h1 style="text-align:center;">UI/UX DESIGN</h1>
+        </div>
+
+        <!-- UI/UX -->
+        <div class="fairway">
+            <!-- Main learning points -->
+            <!--<div>
+        <h2 class="margin-bottom-small">MAIN LEARNING POINTS</h2>
+        <div class="divide-line"></div>
+        <br><br>
+        <div class="list">
+            <div class="item">
+                <h5>HUD blueprint class</h5>
+                <p>
+                    Use the HUD-class for <span>creating and storing references</span> to the <span>widgets</span> instead of the player or controller blueprints.
+                    This greatly <span>helped</span> this <span>project's structure</span> and <span>improved communication</span> within the team.
+                </p>
+            </div>
+            <div class="item">
+                <h5>Collapse Widgets</h5>
+                <p>
+                    <span>Collapse and reuse widgets</span> instead of continuously creating and destroying them.
+                </p>
+            </div>
+            <div class="item">
+                <h5>RichTextBlocks & RichTextStyle</h5>
+                <p>
+                    RichTextStyles helps keep <span>text consistency</span> and makes <span>font adjustment easier</span>.
+                    The setup is slower to start but the time saved later is well worth it.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="divide-line"></div>-->
+            <!-- UI workflow -->
+            <div class="wrapper outer">
+                <h2>MY UI WORKFLOW</h2>
+                <div class="divide-line"></div>
+                <div class="list">
+                    <div class="item">
+                        <i class="fa-solid fa-book icon"></i>
+                        <h6>1. PLAN & RESEARCH</h6>
+                        <p>
+                            I <span>outline</span> what UI will be necessary, in what contexts, prioritizing its importance.
+                            I <span>study other games</span> with similar mechanics and make <span>user stories</span>.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <i class="fa-brands fa-figma icon"></i>
+                        <h6>2. MOCKUP</h6>
+                        <p>
+                            Either done on paper or in <span>Figma</span>. The mockup helps <span>showcase my vision</span> and allows me to get feedback early on.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-gamepad icon"></i>
+                        <h6>3. IMPLEMENTATION</h6>
+                        <p>
+                            I recreate the mockup <span>in engine</span>, focusing on making it <span>functional</span>.
+                            The mockup helps inform the structure of the widgets and what content I'll need.
+                        </p>
+                    </div>
+                </div>
+
+                <!--<br><br>
+    <h3 style="text-align:center;">Inspiration & research</h3>
+    <p>
+        I took inspiration from games in the survival-like genre for the UI. The main ones were Brotato, Soulstone Survivor, the League of Legends gamemode Swarm and a non survival-like Thronefall.
+        Brotato was used as reference for the layout, particularly the weapon and item shop before you start a wave.
+        Soulstone Survivor was used for the overall aesthetics and the HUD layout.
+        The League of Legends temporary gamemode Swarm was mainly used as inspiration for how to word skills and item descriptions.
+        Thronefall had a big influence on both the project's design and the UI. The hold to start night mechanic is one example and the minimalist UI design for menus is another.
+    </p>
+
+    <br><br>-->
+            </div>
+            <div class="divide-line"></div>
+            <!-- Shop menu -->
+            <div class="wrapper outer">
+                <h2>SHOP MENU</h2>
+                <div class="divide-line"></div>
+                <div class="two-column-layout">
+                    <div>
+                        <h3 class="accent">FEATURE BRIEF</h3>
+                    </div>
+                    <div>
+                        <p>
+                            The shop needed to display <span>5 upgrade cards</span>.
+                            The shop has a <span>randomness</span> to what cards get displayed. There should be a <span>reroll feature</span> to reroll the shops selection.
+                            A feature to <span>lock/ unlock</span> individual cards so the player has the option to <span>not reroll locked cards</span>.
+                            The player should also be able to see their <span>current stats</span> and <span>purchased upgrades</span> to <span>informed choices</span>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="divide-line"></div>
+
+                <div class="two-column-layout">
+                    <div>
+                        <h4 class="margin-bottom-small">ORIGINAL MOCKUP</h4>
+                        <p>
+                            For the <span>upgrade cards</span> I had a lot of references to go from. The main inspirations were <span>Brotato</span> and <span>Soulstone Survivor</span> for their layouts.
+
+                        </p>
+                        <br>
+                        <p><b>DIFFICULTIES:</b></p>
+                        <p>
+                            Had issues with the <span>placement of player information</span>, such as their weapon(s), stats and upgrades.
+                            I ended up dissatisfied with what I came up with but knew I didn't have the time to fix it.
+                            <br><br>
+                            The <span>main issues</span> I have with it is that there's <span>too much packed information</span> that takes up a third of the screen.
+                            It feels <span>overwhelming</span> and doesn’t look clean.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/vampower/Vampower_ShopMenu_Blockout.png">
+                    </div>
+                </div>
+
+                <div class="divide-line"></div>
+
+                <div class="two-column-layout">
+                    <div>
+                        <img src="images/vampower/Vampower_ShopMenu_Blockout2.png">
+                    </div>
+                    <div>
+                        <h4 class="margin-bottom-small">REIMAGINED MOCKUP</h4>
+                        <p>
+                            Taken time away from the project, I tried <span>tackling the main issues</span> I had with the original layout.
+                        </p>
+                        <br>
+                        <p><b>SOLUTIONS:</b></p>
+                        <p>
+                            To solve how crowded it felt I <span>moved information into tool tips</span>, only keeping the <span>icons</span> for the weapon and upgrades.
+                            This gives a lot <span>more space</span> and allows me to make the <span>container shorter</span>. The icons could potentially be made even smaller if needed.
+                            <br><br>
+                            I also moved the active heart up to the top of the screen, as it was oddly placed with the upgrades prior.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="divide-line"></div>
+
+                <div class="container">
+                    <div class="item">
+                        <h4 class="margin-bottom-small">CARD ANIMATION</h4>
+                        <p>
+                            For the purchase animation, I made the card spin by <span>decreasing</span> the widgets render transform <span>x scale and the y shear</span> simultaneously.
+                            <br><br>
+                            Simple but effective and looks convincingly 3D!
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/vampower/Vampower_CardAnimation.gif">
+                    </div>
+                </div>
+
+                <div class="divide-line"></div>
+
+                <h3 class="margin-bottom-small">SHOP MENU INGAME</h3>
+                <iframe class="ytVid" src="https://www.youtube.com/embed/2slYKv06cQk?si=FrounMIuPS1mC5RA"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="divide-line"></div>
+
+            <!-- Build menu -->
+            <div class="wrapper outer">
+                <h2>BUILD MENU</h2>
+                <div class="divide-line"></div>
+                <div class="two-column-layout">
+                    <div>
+                        <h3 class="accent">FEATURE BRIEF</h3>
+                    </div>
+                    <div>
+                        <p>
+                            The build menu should display <span>all the structures</span> and <span>information</span> about them, such as name, description, cost.
+                            The players <span>currency balance</span> should also be present.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="divide-line"></div>
+
+                <div class="two-column-layout">
+                    <div>
+                        <img src="images/vampower/Vampower_BuildMenu_Blockout.png">
+                    </div>
+                    <div>
+                        <h4 class="margin-bottom-small">MOCKUP</h4>
+                        <p>
+                            The game has <span>3 structure types</span>: offence, defence and support.
+                            Each structure type has 3 structures, making a total of <span>9 structures</span>.
+                            <br><br>
+                            I designed a menu with <span>three tabs</span> corresponding to the structure types and <span>three structure cards</span>.
+                            <br><br>
+                            The structure cards <span>content update to fit the active tab</span>.
+                            <span>Hovering over</span> the card will show a <span>window with more details</span> about the structure.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="divide-line"></div>
+
+                <h3 class="margin-bottom-small">BUILD MENU INGAME</h3>
+                <iframe class="ytVid" src="https://www.youtube.com/embed/ZXz4zTk4q3M?si=62q--HTEU6CPFLfn"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+
+                <div class="divide-line"></div>
+                <h3>PLAYTEST FEEDBACK</h3>
+                <!-- Feedback -->
+                <div class="wrapper">
+                    <div class="two-column-layout">
+                        <div>
+                            <h5 class="margin-bottom-small">1. HOLD TO PURCHASE</h5>
+                            <p>
+                                Gives the player a chance to <span>cancel purchase</span>.
+                                <span>Confused players at first</span> but they quickly adapted without outside prompting.
+                                <br>
+                                When asked if they’d preferred not having the feature, most said no and that they <span>like it</span>.
+                                <br><br>
+                                Feedback on <span>shortening the hold time</span> requirement so it went faster.
+                                <br>
+                                The feature could also be a <span>settings option</span>, so the player gets the final say.
+                            </p>
+                        </div>
+                        <div>
+                            <img class="center" src="images/vampower/Vampower_BuildMenu_Hold.png">
+                        </div>
+
+                    </div>
+                    <div class="divide-line"></div>
+
+                    <h5 class="margin-bottom-small">2. TAB BUTTONS</h5>
+                    <div class="two-column-layout">
+                        <div>
+                            <p>Play testers frequently <span>missed the tab buttons</span>.</p>
+                            <br>
+                            <p>
+                                <span>Same design</span> is used in the class select menu but <span>not the same issue</span>.
+                                Difference is it has a <span>Header text</span> right under the buttons.
+                            </p>
+                            <br>
+                            <p>
+                                I’d be curious to see if adding that to the build's menu would help alleviate the problem.
+                                Otherwise, I’d work on <span>clarifying</span> the tab buttons <span>visual language</span> to more <span>clearly communicate</span> to the player that they are in fact buttons.
+                            </p>
+                        </div>
+                        <div>
+                            <img class="margin-bottom-small" src="images/vampower/Vampower_TabMenu_1.png">
+                            <p><i>(Build menu tab buttons)</i></p>
+                            <br>
+                            <img class="margin-bottom-small" src="images/vampower/Vampower_TabMenu_2.png">
+                            <p><i>(Select menu tab buttons)</i></p>
+
+                        </div>
+                    </div>
+
+
+                    <div class="divide-line"></div>
+
+                    <h5 class="margin-bottom-small">3. CURRENCY TEXT COLOR</h5>
+                    <div class="two-column-layout">
+                        <div>
+                            <img src="images/vampower/Vampower_BuildMenu_CardComparison_1.png">
+                            <p>
+                                The <span>red color</span> for the <span>currency text</span> gave play testers the <span>impression</span> that an <span>item they could afford wasn't purchasable</span>.
+                                From a UX standpoint <span>red</span> is used to <span>communicate an error</span> or <span>lack of resources</span> in this context.
+                            </p>
+
+                        </div>
+                        <div>
+                            <p>
+                                Knowing this I made a <span>visual distinction between elements</span> when an element can’t be afforded by lowering the opacity.
+
+                            </p>
+                            <img src="images/vampower/Vampower_BuildMenu_CardComparison.png">
+                            <p>
+                                Unfortunately, this <span>distinction isn't there when all the elements can be afforded</span>, leading to the <span>assumption that you can’t purchase it</span>.
+                                I should have done a better job communicating this visually or picked a more conventional color for better UX.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="divide-line"></div>
+
+            <!-- Selection menu -->
+            <div class="wrapper outer">
+                <h2>SELECTION MENU</h2>
+                <div class="divide-line"></div>
+                <div class="two-column-layout">
+                    <div>
+                        <h3 class="accent">FEATURE BRIEF</h3>
+                    </div>
+                    <div>
+                        <p>
+                            At the start of the game the <span>player wants to pick their playstyle</span> by selecting modifiers and class.
+                            The menu should display all the <span>available choices</span> with <span>relevant information</span> so the player can make <span>informed decisions</span>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="divide-line"></div>
+
+                <div class="two-column-layout">
+                    <div>
+                        <img src="images/vampower/Vampower_SelectMenu_Blockout.gif" alt="Select Menu work in progress">
+                    </div>
+                    <div>
+                        <h4 class="margin-bottom-small">FIRST ITERATION</h4>
+                        <p>
+                            The select menu does not have a mockup.
+                            It was made in engine by taking standards I’d made for the earlier menus.
+                            <!--I reused widgets whenever possible, for example the heart select cards are repurposed build structure cards.-->
+                        </p>
+                    </div>
+                </div>
+
+                <div class="divide-line"></div>
+
+                <div class="two-column-layout">
+                    <div>
+                        <h4 class="margin-bottom-small">MAIN MENU SEPARATION</h4>
+                        <p>
+                            For the final version of the game the <span>main menu</span> was separated out from the selection menu and put in its <span>own level</span>.
+                            This made map selection and restarting a level a lot simpler.
+                            <br><br>
+                            The <span>layout</span> was also changed to be horizontal instead of vertical, inspired by the menus in <span>Thronefall</span>. I setup a quick scene to use as backdrop and added a title.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/vampower/Vampower_MainMenu_Fin.png" alt="Vampower main menu screenshot">
+                    </div>
+                </div>
+
+                <div class="divide-line"></div>
+
+                <div class="two-column-layout">
+                    <iframe class="ytVid" src="https://www.youtube.com/embed/JuDgWzycyBo?si=jxVRRPunPSUGT0QL"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div>
+                        <h4 class="margin-bottom-small">FINAL VERSION</h4>
+                        <p>
+                            In total I made 10 different Heart types, but to fit them all I had to <span>update the design</span> of the <span>Heart select cards</span>.
+                            I <span>simplified</span> the cards design by <span>moving the description information into tooltips</span>.
+                            <br><br>
+                            The <span>Quick play button</span> was added to speedup getting into game, useful when <span>debugging</span>.
+                            It picks all the default options, <span>skipping the selection process</span> getting you <span>into the game with one click</span>.
+                            <br>
+                            Ironically the best feature I made, by skipping the other stuff I made.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divide-line"></div>
+
+            <!-- Healthbar & Damage numbers -->
+            <div class="wrapper outer">
+                <h2>HEALTHBAR & DAMAGE NUMBERS JUICE</h2>
+                <div class="divide-line"></div>
+                <img class="center" src="images/vampower/Healthbar_DmgNumbers.gif">
+
+            </div>
+            <div class="divide-line"></div>
+
+            <!-- Cutscene -->
+            <div class="wrapper outer">
+                <h2>CUTSCENE</h2>
+                <div class="divide-line"></div>
+                <div class="two-column-layout">
+                    <div>
+                        <p>
+                            I've experience doing a <span>visual novel style game</span> in Unreal Engine, so I repurposed some of that code to work for a cutscene.
+                            <br><br>
+                            The cutscene widget takes <span>two arrays</span> of the <span>same length</span>, one for <span>images (texture2D)</span> and one for <span>string</span>.
+                            <br><br>
+                            The widget goes through the arrays, <span>changing the image</span> and displaying the <span>string</span> with a <span>typing effect</span>.
+                            When the full string is displayed there's a <span>short delay</span> before <span>automatically continuing</span> to the next element.
+                            <br><br>
+                            The player can <span>click to continue</span> the story quicker.
+                            To handle this input, I made an <span>invisible button</span> that <span>covers the entire screen</span>.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/vampower/Vampower_Cutscene.gif">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="contact">
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="col-footer">
+                    <h4>Contact Me</h4>
+                    <ul>
+                        <li><p><i class="fa-solid fa-envelope"></i> astrid.pehrsson_ankarstrand@hotmail.com</p></li>
+                        <li><p><i class="fa-solid fa-phone"></i> (+46) 073-630 51 53</p></li>
+                        <li><p><i class="fa-solid fa-location-dot"></i> Stockholm, Sweden</p></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h4>Project Links</h4>
+                    <ul>
+                        <li><a href="index.html">All Projects</a></li>
+                        <li><a href="equinox.html">Equinox: Homecoming</a></li>
+                        <li><a href="projectLayout.html">Vampower</a></li>
+                        <li><a href="fearOfTheLight.html">Fear of the Light</a></li>
+                        <li><a href="gradProj.html">Graduation Project</a></li>
+                        <li><a href="chatPrototype.html">Chat Prototype</a></li>
+                        <li><a href="farmPrototype.html">Farm Prototype</a></li>
+                        <li><a href="catFished.html">Catfished</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h4>Social Links</h4>
+                    <div class="social-links">
+                        <a target="_blank" href="https://www.linkedin.com/in/astrid-pehrsson-ankarstrand-2a9680223/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://astridpehrssonankarstrand.artstation.com"><i class="fa-brands fa-artstation"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
