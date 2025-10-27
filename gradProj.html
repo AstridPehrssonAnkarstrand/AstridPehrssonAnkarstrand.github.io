@@ -24,6 +24,11 @@
 
     <div id="overlay" onclick="CloseNavbar()" aria-hidden="true"></div>
 
+
+    <div id="modal" class="modal no-display">
+        <img id="modal-img" src="images/gradproj/gradproj_radial.gif">
+    </div>
+
     <main>
         <div class="fairway">
 
@@ -49,12 +54,68 @@
                     </ul>
                 </div>
                 <div>
-
+                    <!--<img src="images/gradproj/gradproj_radial.gif">
+                <div class="divide-line"></div>-->
+                    <div class="three-grid-layout">
+                        <img class="three-grid-col-3 three-grid-row-3" src="images/gradproj/gradproj_radial.gif">
+                        <img src="images/gradproj/gradproj_pendulum_1.gif">
+                        <img src="images/gradproj/gradproj_pendulum_2.gif">
+                        <img src="images/gradproj/gradproj_pendulum_3.gif">
+                        <img src="images/gradproj/gradproj_dredge.gif">
+                        <img src="images/gradproj/gradproj_ballcatch.gif">
+                        <img src="images/gradproj/gradproj_diamond.gif">
+                    </div>
                 </div>
 
             </div>
 
         </div>
+
+        <div class="header farm-prototype">
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">DETAILS</h1>
+        </div>
+
+        <div class="fairway">
+            <div class="wrapper outer">
+                <h2>UI RECREATION</h2>
+                <div class="divide-line"></div>
+                <h3>Dredge</h3>
+                <p>
+                    I recreated the UI for all the minigame variants from the base game in Figma.
+                    I really love that the fishing line is used for the progress bar.
+                </p>
+                <img class="center" src="images/gradproj/gradproj_dredge_UI.png">
+                <div class="divide-line"></div>
+                <h3>Wuthering Waves</h3>
+                <p>
+                    Wuthering Waves has a similar fishing mechanic to Dredge so I recreated it as well.
+                </p>
+                <div class="three-grid-layout">
+                    <!--<img class="three-grid-col-3 three-grid-row-3" src="images/gradproj/gradproj_radial.gif">-->
+                    <img class="three-grid-col-2 three-grid-row-3" src="images/gradproj/gradproj_ww_UI.png">
+                    <img src="images/gradproj/gradproj_ww_UI_2.png">
+                    <img src="images/gradproj/gradproj_ww_UI_3.png">
+                    <img src="images/gradproj/gradproj_ww_UI_4.png">
+                </div>
+            </div>
+
+            <!--<div class="wrapper outer">
+                <h2>TECHNICAL IMPLEMENTATION</h2>
+                <div class="divide-line"></div>
+                <p>
+                    I made a main minigame widget for containing the different variants and handling the core logic they all share.
+
+                    Main minigame widget handles starting, updating and ending the minigame. It also handled the input and calculating the progression.
+
+                    I used an interface for communication between the main minigame widget and the child variants.
+
+                    I exposed some of the values so the minigames could be tweaked in playmode.
+                </p>
+            </div>-->
+
+        </div>
+
+
 
     </main>
 
