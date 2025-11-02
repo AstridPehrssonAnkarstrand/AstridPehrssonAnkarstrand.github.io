@@ -1,0 +1,489 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Equinox: Homecoming - Astrid Pehrsson Ankarstrand | Tech & UI/UX Designer</title>
+    <link rel="stylesheet" href="projectStyle.css">
+    <script type="text/javascript" src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/ccef3511e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <h5>
+                ASTRID PEHRSSON ANKARSTRAND
+            </h5>
+            <h6>| TECHNICAL & UI/UX DESIGNER</h6>
+        </a>
+        <ul id="navbar">
+            <li><i class="fa-solid fa-xmark button close" onclick="CloseNavbar()" aria-label="close sidebar"></i></li>
+            <li><a href="index.html" onclick="CloseNavbar()">PROJECTS</a></li>
+            <li><a href="resume.html" onclick="CloseNavbar()">RESUME</a></li>
+            <li><a href="about.html" onclick="CloseNavbar()">ABOUT ME</a></li>
+            <li><a href="contact.html" onclick="CloseNavbar()">CONTACT</a></li>
+        </ul>
+        <i class="fa-solid fa-bars button open" onclick="OpenNavbar()" aria-label="open sidebar"></i>
+    </nav>
+
+    <div id="overlay" onclick="CloseNavbar()" aria-hidden="true"></div>
+
+    <div id="modal" class="modal no-display">
+        <img id="modal-img" src="images/gradproj/gradproj_radial.gif">
+    </div>
+
+    <main>
+        <div class="header projects">
+            <img class="center" src="images/equinox/Equinox_Keyart_MainLogo_Assembly.png" style="height:200px;" alt="Equinox: Homecoming Title text">
+        </div>
+
+        <div class="fairway">
+
+            <!--Club Emblem-->
+            <div class="wrapper outer">
+                <h2>CLUB EMBLEM EDIT</h2>
+                <div class="divide-line"></div>
+
+                <p>
+                    Equinox: Homecoming has riding clubs the players can create or join to be social.
+                    Each riding club has a club emblem. I implemented club emblem customization.
+                </p>
+                <div class="divide-line"></div>
+
+                <div class="two-column-layout">
+                    <img src="images/equinox/equinox_clubemblem_edit.gif">
+                    <div>
+                        <h3 class="margin-bottom-small">CUSTOMIZATION OPTIONS</h3>
+                        <p>
+                            The player can customize the front shape, back shape + pattern.
+                            <br><br>
+                            Colors are picked from a preselected palette,
+                            with the additional option to adjust the brightness.
+                            The colors for front and back shape are separate.
+                        </p>
+
+                        <div class="divide-line"></div>
+
+                        <h4 class="margin-bottom-small">CLUB EMBLEM</h4>
+                        <p>
+                            The club emblem itself is a separate widget that gets updated with what to display.
+                            The icon is a dynamic material.
+                        </p>
+                        <br>
+                        <p>
+                            The back shape's brightness has a minimum cap to avoid the color becoming a solid black like the background.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="divide-line"></div>
+
+                <div class="two-column-layout">
+                    <div>
+                        <h3 class="margin-bottom-small">DATA ASSET</h3>
+                        <p>
+                            All the customization options are stored in arrays in a Data Asset.
+                            The array index for the different options is what is saved and retrieved.
+
+                            Only exception is the color brightness, which is a float from 0-1.
+                        </p>
+                    </div>
+                    <img src="images/equinox/equinox_clubemblem_dataasset.png">
+                </div>
+
+                <div class="divide-line"></div>
+
+                <div class="two-column-layout">
+                    <img src="images/equinox/equinox_clubemblem_random.gif">
+                    <div>
+                        <h3 class="margin-bottom-small">RANDOMIZE EMBLEM</h3>
+                        <p>
+                            I added a feature to randomize the club emblem.
+                            <br><br>
+                            Purely random had issues with the color contrast between the front shape and back shape being to low.
+                            <br><br>
+                            To fix this, I added some conditions to attempt keep the brightness of the front and back shapes at opposite ends.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!--<div class="divide-line"></div>
+
+        <div class="two-column-layout">
+            <img src="images/equinox/equinox_clubemblem_warning.gif">
+            <div>
+                <h6 class="margin-bottom-small">UNSAVED CHANGES</h6>
+                <p>Untrack Quest feature lets players track a main or side quest instead of the task.</p>
+            </div>
+        </div>-->
+
+            </div>
+
+            <!--Key rebinding-->
+            <div class="wrapper outer">
+                <h2>KEYBINDING</h2>
+                <div class="divide-line"></div>
+
+                <p>
+                    Implemented keybinding for keyboard and mouse using Unreal Engine 5's Enhanced Input System.
+                </p>
+
+                <div class="divide-line"></div>
+
+                <div class="two-column-layout">
+                    <img src="images/equinox/equinox_keybind_earlywarning.gif">
+                    <div>
+                        <h4 class="margin-bottom-small">FIRST ITERATION</h4>
+                        <p>
+                            To avoid actions being bound to the same key my first method was to use a popup that informs
+                            the player of which keys are conflicting.
+                        </p>
+                        <br>
+                        <p>
+                            Inspired by Genshin Impact and Wuthering Waves.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="divide-line"></div>
+
+                <div class="two-column-layout">
+
+                    <div>
+                        <h4 class="margin-bottom-small">SECOND ITERATION</h4>
+                        <p>The earlier popup was removed and replaced with flagging the conflicting keys.</p>
+                        <br>
+                        <p>The default bind key was also added, but can't be interacted with.</p>
+                    </div>
+                    <img src="images/equinox/equinox_keybind_iteration2.gif">
+                </div>
+
+                <div class="divide-line"></div>
+
+                <div class="two-column-layout">
+                    <img src="images/equinox/equinox_keybind_4.gif">
+                    <div>
+                        <h4 class="margin-bottom-small">FEEDBACK</h4>
+                        <ul>
+                            <li><p>View Conflicts toggles between showing all actions and only the ones currently in conflict.</p></li>
+                            <li><p>When hovering over a conflicted action, the tooltip will show which actions it is conflicting with</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--<div class="divide-line"></div>
+
+        <div class="two-column-layout">
+            <img src="images/equinox/equinox_keybind_5.gif">
+            <div>
+                <p>
+                    Added a warning when the player tries to close the keybinding menu with actions still in conflict.
+                </p>
+            </div>
+        </div>-->
+                <!--<h2>DIFFICULTIES</h2>
+        <div class="divide-line"></div>
+
+        <p>I haven't worked with key remapping in Unreal Engine before so this was an exciting opportunity to learn.</p>
+
+        <ul>
+            <li><p></p></li>
+        </ul>-->
+
+
+            </div>
+
+            <!--Compendium menu-->
+
+            <div class="wrapper outer">
+                <h2>COMPENDIUM MENU</h2>
+                <div class="divide-line"></div>
+                <p class="margin-bottom-small">
+                    The Compendium shows a variety of information about the game. When I started my internship the compendium
+                    had two pages implemented, Quests and People, but there existed plans and designs for more pages.
+                    I got tasked with implementing some and updating the existing ones.
+                </p>
+                <br>
+                <p class="margin-bottom-small"><b>PAGES I IMPLEMENTED:</b></p>
+                <ul>
+                    <li><p>Completed Quests</p></li>
+                    <li><p>Official Races</p></li>
+                    <li><p>Tutorials</p></li>
+                </ul>
+
+                <div class="divide-line"></div>
+
+                <!--Quests-->
+                <div>
+                    <h3 class="margin-bottom-small">QUESTS</h3>
+                    <p>
+                        Lists all current main and side quests.
+                    </p>
+
+                    <div class="divide-line"></div>
+                    <div class="two-column-layout">
+                        <div>
+                            <img src="images/equinox/equinox_compendium_quests_old.png">
+                        </div>
+                        <div>
+                            <h4 class="margin-bottom-small">OLD</h4>
+                            <p>
+                                Listed main quests, side quests and weekly tasks.
+                                How to track a quest was unclear, but you needed to click on the square box.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--<div class="two-column-layout">
+                <div>
+                    <h4 class="margin-bottom-small">NEW</h4>
+                    <p>
+                        Added collapsable buttons to make navigating the list of NPC's easier.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/equinox/equinox-compendium_people_new.png">
+                </div>
+
+            </div>-->
+
+                </div>
+
+                <div class="divide-line"></div>
+
+                <!--People-->
+                <div>
+                    <h3 class="margin-bottom-small">PEOPLE</h3>
+                    <p>
+                        Lists factions alongside all NPC's the player has meet.
+                    </p>
+
+                    <div class="divide-line"></div>
+                    <div class="two-column-layout">
+                        <div>
+                            <img src="images/equinox/equinox-compendium_people_old.png">
+                        </div>
+                        <div>
+                            <h4 class="margin-bottom-small">OLD</h4>
+                        </div>
+                    </div>
+                    <div class="divide-line"></div>
+
+                    <div class="two-column-layout">
+                        <div>
+                            <h4 class="margin-bottom-small">NEW</h4>
+                            <p>
+                                Added collapsable buttons to make navigating the list of NPC's easier.
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/equinox/equinox-compendium_people_new.png">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="divide-line"></div>
+
+                <!--official races-->
+                <div>
+                    <h3 class="margin-bottom-small">OFFICIAL RACES</h3>
+                    <p>
+                        Lists all available races and information on rank, personal record and leaderboard.
+                        I decided to also add a section for rewards and information on weekly races.
+                    </p>
+
+                    <div class="divide-line"></div>
+                    <img src="images/equinox/equinox_compendium_races.png">
+                </div>
+
+                <div class="divide-line"></div>
+                <!--Completed Quests-->
+                <div>
+                    <h3 class="margin-bottom-small">COMPLETED QUESTS</h3>
+                    <p>
+                        Lists all completed main and side quests. Main quests are subsectioned into chapters.
+                    </p>
+
+                    <!--<div class="divide-line"></div>
+            <img src="images/equinox/equinox_compendium_races.png">-->
+                </div>
+
+                <div class="divide-line"></div>
+
+                <!--Tutorials-->
+                <div>
+                    <h3 class="margin-bottom-small">TUTORIALS</h3>
+                    <p>
+                        A page to list tutorials.
+                    </p>
+
+                    <!--<div class="divide-line"></div>
+            <img src="images/equinox/equinox_compendium_races.png">-->
+                </div>
+
+            </div>
+
+            <!--Task App-->
+            <div class="wrapper outer">
+                <h2>TASK APP</h2>
+                <div class="divide-line"></div>
+
+                <p>
+                    Equinox: Homecoming has Weekly Tasks the player can complete for rewards.
+                </p>
+                <br>
+                <p>
+                    Previously Weekly Tasks where listed in the Compendium menu
+                    along side Main Quests and Side Quests.
+                </p>
+                <br>
+                <p>
+                    Weekly Tasks are different from the normal quests and so should be separated out into
+                    it's own menu, an app on the phone.
+                </p>
+
+                <div class="divide-line"></div>
+
+                <div class="two-column-layout">
+                    <img src="images/equinox/equinox_taskapp_before.png">
+                    <div>
+                        <h6 class="margin-bottom-small">WEEKLY TASKS IN COMPENDIUM MENU</h6>
+                        <p>
+                            Weekly tasks distinctions from quests:
+                        </p>
+                        <ul>
+                            <li><p>Tasks needs to be manually accepted by the player.</p></li>
+                            <li><p>The player can have a maximum of four tasks at a time, and has a weekly limit of how many can be given.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="divide-line"></div>
+
+                <div class="two-column-layout">
+                    <div>
+                        <p>Accepting and tracking tasks</p>
+                    </div>
+                    <img src="images/equinox/equinox_taskapp_track.gif">
+                </div>
+
+                <div class="divide-line"></div>
+
+                <div class="two-column-layout">
+                    <img src="images/equinox/equinox_taskapp_untrack.gif">
+                    <div>
+                        <p>Untrack Quest feature lets players track a main or side quest instead of the task.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--UNRELEASED STUFF-->
+            <!--Player Profile Edit-->
+            <!--<div class="wrapper outer">
+        <h2>PLAYER PROFILE CUSTOMIZAION</h2>
+        <div class="divide-line"></div>
+
+        <p>
+            Players have their own profile and to allow for some player expression, I implemented customization for the player profile.
+
+            Implementation is similar to Club Emblem's.
+        </p>
+        <div class="divide-line"></div>
+
+        <div class="two-column-layout">
+            <img src="images/equinox/equinox_playeredit.gif">
+            <div>
+                <h3 class="margin-bottom-small">CUSTOMIZATION OPTIONS</h3>
+                <p>
+                    The player can customize their avatar icon, avatar frame and banner pattern.
+                    <br><br>
+                    Colors are picked from a preselected palette,
+                    with the additional option to adjust the saturation and brightness.
+                    The colors for avatar frame and banner are separate.
+                </p>
+
+                <div class="divide-line"></div>
+
+                <h4 class="margin-bottom-small">AVATAR SELECT</h4>
+                <p>
+                    I decided to display the avatar icons in a grid similarly to the color selection.
+                    This allows the player a better overview of all the available options
+                    and reduce the amount of clicks necessary.
+                </p>
+
+                <div class="divide-line"></div>
+
+                <h4 class="margin-bottom-small">SAVE BUTTON PLACEMENT</h4>
+                <p>
+                    Early playtesting and feedback showed the save button's position lead to it easily getting missed.
+                    <br><br>
+                    I moved the save button down to be above the Back and Close buttons.
+                    Since saving closes the Profile Edit menu, this placement feels more logical.
+                </p>
+
+            </div>
+        </div>
+
+    </div>-->
+            <!--Stable Menu-->
+            <!--<div class="wrapper outer">
+        <h2>STABLE MENU</h2>
+        <div class="divide-line"></div>
+
+        <p>
+            The Stable menu lets players manage their horses placement in the stable.
+            The stable has five stalls in total. Horses can also be sent out to the pasture.
+        </p>
+        <div class="divide-line"></div>
+        <img src="images/equinox/equinox_stablemenu_final.png">
+
+    </div>-->
+
+        </div>
+
+    </main>
+
+
+    <footer id="contact">
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="col-footer">
+                    <h4>Contact Me</h4>
+                    <ul>
+                        <li><p><i class="fa-solid fa-envelope"></i> astrid.pehrsson_ankarstrand@hotmail.com</p></li>
+                        <li><p><i class="fa-solid fa-phone"></i> (+46) 073-630 51 53</p></li>
+                        <li><p><i class="fa-solid fa-location-dot"></i> Stockholm, Sweden</p></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h4>Project Links</h4>
+                    <ul>
+                        <li><a href="index.html">All Projects</a></li>
+                        <li><a href="projectLayout.html">Vampower</a></li>
+                        <li><a href="fearOfTheLight.html">Fear of the Light</a></li>
+                        <li><a href="gradProj.html">Graduation Project</a></li>
+                        <li><a href="chatPrototype.html">Chat Prototype</a></li>
+                        <li><a href="farmPrototype.html">Farm Prototype</a></li>
+                        <li><a href="catFished.html">Catfished</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h4>Social Links</h4>
+                    <div class="social-links">
+                        <a target="_blank" href="https://www.linkedin.com/in/astrid-pehrsson-ankarstrand-2a9680223/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://astridpehrssonankarstrand.artstation.com"><i class="fa-brands fa-artstation"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

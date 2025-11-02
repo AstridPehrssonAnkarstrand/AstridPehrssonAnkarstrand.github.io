@@ -63,6 +63,7 @@ img {
     background-clip: text;
 }
 
+
 body {
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
@@ -94,12 +95,22 @@ nav {
 nav .logo {
     margin-right: auto;
     width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-nav .logo img {
-    max-width: auto;
-    width: 140px;
-    height: auto;
+nav .logo h6 {
+    text-decoration: none;
+    color: #A5A5A5;
+    text-shadow: 1px 1px 2px #1E1E1E;
+    font-size: 1.25rem;
+    font-size: clamp(1.25rem, 1.21875rem + 0.15625vw, 1.40625rem);
+    font-weight: normal;
+    padding-left: 0.25em;
+}
+
+nav .logo h5 {
+    font-weight: 600;
 }
 
 nav ul {
@@ -156,6 +167,24 @@ nav .open {
     background: rgba(0, 0, 0, 0.5);
     z-index: 9;
     display: none;
+}
+
+@media screen and (max-width: 1500px) {
+    nav {
+        padding: 0 1em;
+    }
+
+    nav .logo{
+        grid-template-columns: 1fr;
+    }
+
+    nav .logo h6 {
+            font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+            font-weight: normal;
+            padding-left: 0;
+    }
+
+        
 }
 
 @media screen and (max-width: 768px) {
@@ -230,6 +259,23 @@ footer {
     margin-bottom: 80px;
 }
 
+@media only screen and (max-width: 1500px) {
+
+    .fairway {
+        padding: 40px 1em;
+    }
+}
+
+.fairway ul {
+    padding-left: 2em;
+    padding-top: 0.5em;
+}
+
+.fairway li {
+    padding-bottom: 0.5em;
+}
+
+
 .pdf-viewer {
     aspect-ratio: 1 /1.414;
     width: 100%;
@@ -290,10 +336,11 @@ footer {
 
 .projects {
 /*    background: linear-gradient(45deg, red, blue);*/
-    background: -webkit-radial-gradient(top left, ellipse, red 0%, blue);
+    /*background: -webkit-radial-gradient(top left, ellipse, red 0%, blue);
     background: -moz-radial-gradient(top left, ellipse, red 0%, blue);
     background: radial-gradient(top left, ellipse, red 0%, blue);
-    background-attachment: fixed;
+    background-attachment: fixed;*/
+    background: black;
     /*background: rgba(0, 0, 0, 0.75);*/
 }
 .vampower {
@@ -451,9 +498,9 @@ footer {
     box-shadow: 0 0 16px #080808;
 }
 
-.wrapper li {
+/*.wrapper li {
     margin-left: 2em;
-}
+}*/
 
 .center {
     display: block;
@@ -483,12 +530,20 @@ footer {
     color: #121212;
 }
 
+.link {
+    color: #a5a5a5;
+}
+
+    .link:hover {
+        color: #e1e1e1;
+    }
+
 @media only screen and (max-width: 900px) {
     #summary {
         padding: 1em 5% 3em;
     }
 
-    .wrapper {
+    .wrapper, .fairway {
         padding: 40px 1em;
     }
 
@@ -771,10 +826,14 @@ footer {
     padding-top: 40px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1500px) {
 
     #projects .wrapper-main {
         padding-top: 40px;
+    }
+
+    #projects .two-column-layout {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -864,6 +923,35 @@ footer {
     }
 }
 
+
+/*------------- Contact Me Page ----------*/
+#full-contact a {
+    color: #a5a5a5;
+    text-decoration: none;
+}
+
+#full-contact a:hover {
+    color: #bb86fc;
+}
+
+#full-contact ul {
+    list-style: none;
+}
+
+#full-contact .social-links {
+    padding-left: 0.5em;
+}
+
+    #full-contact .social-links a {
+        display: inline-block;
+        font-size: 4em;
+        color: #A5A5A5;
+        margin: 0 0.5em 0.5em 0;
+    }
+
+        #full-contact .social-links a:hover {
+            color: #bb86fc;
+        }
 
 /*------------- Video Wrapper ----------*/
 .ytVid {

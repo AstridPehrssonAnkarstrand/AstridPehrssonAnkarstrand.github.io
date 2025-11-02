@@ -4,14 +4,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Astrid PA - Catfished</title>
+    <title>ChatFished - Astrid Pehrsson Ankarstrand | Tech & UI/UX Designer</title>
     <link rel="stylesheet" href="projectStyle.css">
     <script type="text/javascript" src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/ccef3511e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo"><img src="images/Logo.png" width="344" height="50"> </a>
+        <a href="index.html" class="logo">
+            <h5>
+                ASTRID PEHRSSON ANKARSTRAND
+            </h5>
+            <h6>| TECHNICAL & UI/UX DESIGNER</h6>
+        </a>
         <ul id="navbar">
             <li><i class="fa-solid fa-xmark button close" onclick="CloseNavbar()" aria-label="close sidebar"></i></li>
             <li><a href="index.html">Home</a></li>
@@ -23,6 +28,10 @@
     </nav>
 
     <div id="overlay" onclick="CloseNavbar()" aria-hidden="true"></div>
+
+    <div id="modal" class="modal no-display">
+        <img id="modal-img" src="images/gradproj/gradproj_radial.gif">
+    </div>
 
     <main>
         <div class="header catfished">
@@ -61,11 +70,11 @@
                 <div class="divide-line"></div>
                 <div class="wrapper">
                     <p>
-                        I wrote a novel but felt the story would be more suited in a different medium. 
-                        The story? A <span>romance</span> between two young adults who meet through <span>online video games</span>. 
+                        I wrote a novel but felt the story would be more suited in a different medium.
+                        The story? A <span>romance</span> between two young adults who meet through <span>online video games</span>.
                         The catch? <span>Both</span> are <span>male pretending to be a girl</span>, desperate to keep that fact a <span>secret</span>.
                         <br><br>
-                        Catfished is a solo passion-project I started after finishing the first story draft in 2019. 
+                        Catfished is a solo passion-project I started after finishing the first story draft in 2019.
                         The concept is to make a <span>visual novel game</span> that takes place on a <span>computer desktop</span>, the <span>dialogue</span> being presented <span>through chat messages</span>.
                         <br><br>
                         The project has <span>helped me develop my skills</span> and <span>motivated</span> me to <span>keep learning</span> and <span>improving</span> myself both as a person and creator.
@@ -90,8 +99,8 @@
                     </div>
                     <div class="item">
                         <p>
-                            Catfished mainly takes place via <span>desktop interactions</span>, occasionally <span>switching perspective</span> between the two main characters. 
-                            The game should show an <span>approximation</span> of a <span>desktop</span> with a couple of different <span>window applications</span> displaying unique data. 
+                            Catfished mainly takes place via <span>desktop interactions</span>, occasionally <span>switching perspective</span> between the two main characters.
+                            The game should show an <span>approximation</span> of a <span>desktop</span> with a couple of different <span>window applications</span> displaying unique data.
                             Discord and League of Legends are the two main windows, but also a web browser.
                         </p>
                     </div>
@@ -148,7 +157,7 @@
                         <li><p>Unreal Engine Iteration</p></li>
                     </ul>
                 </div>
-                
+
             </div>
         </div>
 
@@ -298,74 +307,74 @@
         </div>
 
         <!--<div class="header catfished-1">
-        <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">The UI design iteration process</h1>
-    </div>-->
+            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">The UI design iteration process</h1>
+        </div>-->
         <!--<div class="wrapper">
-        <p>
-            The first verion I ever made I drew on my iPad by sketching over a screenshot of Discord.
-        </p>
+            <p>
+                The first verion I ever made I drew on my iPad by sketching over a screenshot of Discord.
+            </p>
 
-        <img src="images/catfished/Discord_V1.png" alt="Discord Version 1" width="1289" height="775" class="center">
-        <br><br>
-        <p>
-            Second version: I removed the server list and other unneeded details. Did keep some of the icons to fill the empty space.
-            The empty headers would be populated in the engine so it could be changed dynamically.
-        </p>
-        <img src="images/catfished/Discord_V2.png" alt="Discord Version 2" width="1290" height="779" class="center">
-
-        <br><br>
-        <p>
-            For the third version I had discovered Figma and took the opportunity to learn how to use it whilst recreating the Discord layout I was now very familiar with.
-            I did start to simplify areas by removing even more unnecessary details.
-            I got into the habit of using a consistent value for padding and margins which made the design look more professional.
+            <img src="images/catfished/Discord_V1.png" alt="Discord Version 1" width="1289" height="775" class="center">
             <br><br>
-            Previously the window had just been a background image with messages being spawned in but at this stage design wise for the project,
-            I wanted the game to be more interactive. The player should be able to go through different chats, open and close different applications,
-            so I needed to be more conscious throughout my design. This is one of the reasons I removed as many unnecessary details as possible.
-            If it wasn’t interactive it was a distraction and therefore should be removed. Buttons should be consistent and clear that it was interactive.
-        </p>
-        <img src="images/catfished/Discord_V3.png" alt="Discord Version 3" width="1288" height="770" class="center">
+            <p>
+                Second version: I removed the server list and other unneeded details. Did keep some of the icons to fill the empty space.
+                The empty headers would be populated in the engine so it could be changed dynamically.
+            </p>
+            <img src="images/catfished/Discord_V2.png" alt="Discord Version 2" width="1290" height="779" class="center">
 
-        <br><br>
-        <p>
-            Forth version: I tried with rounder shapes and less outlines. Discord light is kind of cursed though.
-        </p>
-        <img src="images/catfished/Discord_V4-Light.png" alt="Discord Version 4" width="1288" height="770" class="center">
+            <br><br>
+            <p>
+                For the third version I had discovered Figma and took the opportunity to learn how to use it whilst recreating the Discord layout I was now very familiar with.
+                I did start to simplify areas by removing even more unnecessary details.
+                I got into the habit of using a consistent value for padding and margins which made the design look more professional.
+                <br><br>
+                Previously the window had just been a background image with messages being spawned in but at this stage design wise for the project,
+                I wanted the game to be more interactive. The player should be able to go through different chats, open and close different applications,
+                so I needed to be more conscious throughout my design. This is one of the reasons I removed as many unnecessary details as possible.
+                If it wasn’t interactive it was a distraction and therefore should be removed. Buttons should be consistent and clear that it was interactive.
+            </p>
+            <img src="images/catfished/Discord_V3.png" alt="Discord Version 3" width="1288" height="770" class="center">
 
-        <br><br>
-        <p>
-            Forth version different color palette.
-            I can’t help but find light mode Discord cursed. I’m an avid darkmode user but it turns out dark mode has some interesting design nuggets.
-            Was very interesting reading up on it and learning about research on how much contrast to have between the font and the background color to make it readable.
-            After that I did some of my own experiments with darker color palettes.
-        </p>
-        <img src="images/catfished/Discord_V4-Red.png" alt="Discord Version 4 dark colorpalette red" width="1324" height="780" class="center">
-        <img src="images/catfished/Discord_V4-Blue.png" alt="Discord Version 4 dark colorpalette blue" width="1284" height="764" class="center">
+            <br><br>
+            <p>
+                Forth version: I tried with rounder shapes and less outlines. Discord light is kind of cursed though.
+            </p>
+            <img src="images/catfished/Discord_V4-Light.png" alt="Discord Version 4" width="1288" height="770" class="center">
 
-        <br><br>
-        <p>
-            Fifth version: After that darkness I wanted to play around with some more fun and colorful palettes.
-        </p>
-        <img src="images/catfished/Discord_V5.png" alt="Discord Version 5 more round and colorful" width="1282" height="722" class="center">
+            <br><br>
+            <p>
+                Forth version different color palette.
+                I can’t help but find light mode Discord cursed. I’m an avid darkmode user but it turns out dark mode has some interesting design nuggets.
+                Was very interesting reading up on it and learning about research on how much contrast to have between the font and the background color to make it readable.
+                After that I did some of my own experiments with darker color palettes.
+            </p>
+            <img src="images/catfished/Discord_V4-Red.png" alt="Discord Version 4 dark colorpalette red" width="1324" height="780" class="center">
+            <img src="images/catfished/Discord_V4-Blue.png" alt="Discord Version 4 dark colorpalette blue" width="1284" height="764" class="center">
 
-        <br><br>
-        <p>
-            Sixth version: Up until now it’s all been fun and I’ve learnt a lot but does it actually fit the game?
-            I do like the more clean digital looks of the Figma designs but my art style is more sketchy.
-            I decided to go back to my roots and redraw the original style with the new simplified design.
-        </p>
-        <img src="images/catfished/Discord_V6.png" alt="Discord Version 6 grey scale and simplified design" width="1284" height="757" class="center">
+            <br><br>
+            <p>
+                Fifth version: After that darkness I wanted to play around with some more fun and colorful palettes.
+            </p>
+            <img src="images/catfished/Discord_V5.png" alt="Discord Version 5 more round and colorful" width="1282" height="722" class="center">
 
-        <br><br>
-        <p>
-            Seventh version: I used the previous version as a template and drew over it, creating a sketchy version to use in the engine.
-        </p>
-        <img src="images/catfished/Discord_V7.png" alt="Discord Version 7, sketched over version of the previous one" width="1244" height="760" class="center">
+            <br><br>
+            <p>
+                Sixth version: Up until now it’s all been fun and I’ve learnt a lot but does it actually fit the game?
+                I do like the more clean digital looks of the Figma designs but my art style is more sketchy.
+                I decided to go back to my roots and redraw the original style with the new simplified design.
+            </p>
+            <img src="images/catfished/Discord_V6.png" alt="Discord Version 6 grey scale and simplified design" width="1284" height="757" class="center">
 
-    </div>-->
+            <br><br>
+            <p>
+                Seventh version: I used the previous version as a template and drew over it, creating a sketchy version to use in the engine.
+            </p>
+            <img src="images/catfished/Discord_V7.png" alt="Discord Version 7, sketched over version of the previous one" width="1244" height="760" class="center">
+
+        </div>-->
         <!-- Fungus Unity -->
 
-        
+
 
         <div class="header catfished-1">
             <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">INK + UNITY ITERATION</h1>
@@ -420,7 +429,7 @@
 
                 <br><br>
 
-                
+
 
             </div>
 
@@ -431,7 +440,7 @@
                 <p>
                     The UI should reflect my new design ideas of interactiveness.
                     I started with simplifying and removed unnecessary details if the player couldn’t interact with it or gain some information from it.
-                    
+
                     <br><br>
                     A struggle I had redesigning the UI was balancing aspects of the original with a consistent design for my game.
                     I wanted to keep the original’s more unique aspects so it's still recognizable but it shouldn’t be a rip-off.
@@ -476,7 +485,7 @@
             </div>
         </div>
 
-        
+
 
         <div class="header catfished-3">
             <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">UNREAL ENGINE 5 ITERATION</h1>
@@ -538,7 +547,7 @@
             </div>
 
         </div>
-        
+
 
     </main>
 

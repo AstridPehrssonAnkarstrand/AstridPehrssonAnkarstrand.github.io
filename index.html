@@ -11,10 +11,15 @@
 </head>
 <body>
     <nav>
-        <a href="#" class="logo"><!--<img src="images/Logo.png" width="344" height="50">--><h5>Astrid Pehrsson Ankarstrand | Technical & UI/UX Designer</h5></a>
+        <a href="index.html" class="logo">
+            <h5>
+                ASTRID PEHRSSON ANKARSTRAND
+            </h5>
+            <h6>| TECHNICAL & UI/UX DESIGNER</h6>
+        </a>
         <ul id="navbar">
             <li><i class="fa-solid fa-xmark button close" onclick="CloseNavbar()" aria-label="close sidebar"></i></li>
-            <li><a href="#" onclick="CloseNavbar()">PROJECTS</a></li>
+            <li><a href="index.html" onclick="CloseNavbar()">PROJECTS</a></li>
             <li><a href="resume.html" onclick="CloseNavbar()">RESUME</a></li>
             <li><a href="about.html" onclick="CloseNavbar()">ABOUT ME</a></li>
             <li><a href="contact.html" onclick="CloseNavbar()">CONTACT</a></li>
@@ -22,14 +27,16 @@
         <i class="fa-solid fa-bars button open" onclick="OpenNavbar()" aria-label="open sidebar"></i>
     </nav>
 
+    <div id="overlay" onclick="CloseNavbar()" aria-hidden="true"></div>
+
     <main>
         <!--<div id="header">
             <div class="header-text">
                 <h1>Astrid</h1>
                 <h1>Pehrsson</h1>
                 <h1>Ankarstrand</h1>-->
-                <!--<h1>Astrid Pehrsson Ankarstrand</h1>-->
-                <!--<h3>
+        <!--<h1>Astrid Pehrsson Ankarstrand</h1>-->
+        <!--<h3>
                     <span>
                         Technical Designer
                         <br>
@@ -43,8 +50,8 @@
             <!-------------Projects---------->
             <div id="projects">
                 <!--<div class="header projects">
-            <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Projects</h1>
-        </div>-->
+                    <h1 style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);">Projects</h1>
+                </div>-->
 
                 <div>
                     <h1 style="text-align: center;">PROJECTS</h1>
@@ -77,7 +84,8 @@
                             </div>
                             <div class="card-image">
                                 <!--<p>Image</p>-->
-                                <!--<img src="images/vampower/Vampower_MainMenu_Fin.png">-->
+                                <img src="images/Equinox_16-9.png">
+                                <p><i>Available on <a class="link" target="_blank" href="https://store.steampowered.com/app/3258290/Equinox_Homecoming/">Steam</a></i></p>
                             </div>
                         </div> <!--INTERNSHIP - EQUINOX: HOMECOMING-->
                         <div class="card">
@@ -106,7 +114,7 @@
                             </div>
                             <div class="card-image">
                                 <img src="images/vampower/Vampower_MainMenu_Fin.png">
-                                <p><i>Available on <a target="_blank" href="https://futuregames.itch.io/vampower">Itch.io</a></i></p>
+                                <p><i>Available on <a class="link" target="_blank" href="https://futuregames.itch.io/vampower">Itch.io</a></i></p>
 
                             </div>
                         </div> <!--VAMPOWER-->
@@ -144,7 +152,7 @@
                             </div>
                             <div class="card-image">
                                 <img src="images/FOFL.png">
-                                <p><i>Available on <a target="_blank" href="https://store.steampowered.com/app/3126140/Fear_of_the_Light/">Steam</a></i></p>
+                                <p><i>Available on <a class="link" target="_blank" href="https://store.steampowered.com/app/3126140/Fear_of_the_Light/">Steam</a></i></p>
 
                             </div>
                         </div> <!--FEAR OF THE LIGHT-->
@@ -169,8 +177,6 @@
                                     <li><p>Blueprint scripting</p></li>
                                 </ul>
                                 <br><br>
-                                <p><i>Project page is a work in progress!</i></p>
-                                <br>
                                 <a href="gradProj.html" class="btn btn2 center">Project Page</a>
                                 <!--<a href="" class="btn btn2 center">Project Page</a>-->
                             </div>
