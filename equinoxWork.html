@@ -38,7 +38,24 @@
             <img class="center" src="images/equinox/Equinox_Keyart_MainLogo_Assembly.png" style="height:200px;" alt="Equinox: Homecoming Title text">
         </div>
 
+        
+
         <div class="fairway">
+
+            <!--<div class="wrapper outer">
+                <details>
+                    <summary>
+                        <h2>CLUB EMBLEM EDIT</h2>
+                        <div class="divide-line"></div>
+                    </summary>
+                    <div>
+                        <p>
+                            Content go brrrr
+                        </p>
+                    </div>
+                </details>
+            </div>-->
+
 
             <!--Club Emblem-->
             <div class="wrapper outer">
@@ -154,9 +171,9 @@
 
                     <div>
                         <h4 class="margin-bottom-small">SECOND ITERATION</h4>
-                        <p>The earlier popup was removed and replaced with flagging the conflicting keys.</p>
+                        <p>The first iterations popup felt intrusive. I instead went with flagging the actions with a conflict.</p>
                         <br>
-                        <p>The default bind key was also added, but can't be interacted with.</p>
+                        <p>The actions default key was also added, but can't be interacted with.</p>
                     </div>
                     <img src="images/equinox/equinox_keybind_iteration2.gif">
                 </div>
@@ -166,24 +183,28 @@
                 <div class="two-column-layout">
                     <img src="images/equinox/equinox_keybind_4.gif">
                     <div>
-                        <h4 class="margin-bottom-small">FEEDBACK</h4>
+                        <h4 class="margin-bottom-small">MORE USER FEEDBACK</h4>
                         <ul>
-                            <li><p>View Conflicts toggles between showing all actions and only the ones currently in conflict.</p></li>
-                            <li><p>When hovering over a conflicted action, the tooltip will show which actions it is conflicting with</p></li>
+                            <li><p>When hovering over a conflicted action, the tooltip will show which actions it is conflicting with.</p></li>
+                            <li><p>A banner at the top warning the player of conflicted keybindings.</p></li>
+                            <li><p>View Conflicts toggles between showing all actions and the ones currently in conflict.</p></li>
                         </ul>
                     </div>
                 </div>
 
-                <!--<div class="divide-line"></div>
+                <div class="divide-line"></div>
 
-        <div class="two-column-layout">
-            <img src="images/equinox/equinox_keybind_5.gif">
-            <div>
-                <p>
-                    Added a warning when the player tries to close the keybinding menu with actions still in conflict.
-                </p>
-            </div>
-        </div>-->
+                <div class="two-column-layout">
+                    <div>
+                        <h4 class="margin-bottom-small">WARNING</h4>
+                        <p>
+                            Added a warning that stops the player from exiting the menu when they tries to close the keybinding menu with actions still in conflict.
+                            <br><br>
+                            This is to avoid weird and unpredictable behaviours for the player during gameplay.
+                        </p>
+                    </div>
+                    <img src="images/equinox/equinox_keybind_5.gif">
+                </div>
                 <!--<h2>DIFFICULTIES</h2>
         <div class="divide-line"></div>
 
@@ -219,12 +240,11 @@
                 <!--Quests-->
                 <div>
                     <h3 class="margin-bottom-small">QUESTS</h3>
-                    <p>
+                    <p class="margin-bottom-small">
                         Lists all current main and side quests.
                     </p>
 
-                    <div class="divide-line"></div>
-                    <div class="two-column-layout">
+                    <div class="two-column-layout margin-bottom-small">
                         <div>
                             <img src="images/equinox/equinox_compendium_quests_old.png">
                         </div>
@@ -232,23 +252,22 @@
                             <h4 class="margin-bottom-small">OLD</h4>
                             <p>
                                 Listed main quests, side quests and weekly tasks.
-                                How to track a quest was unclear, but you needed to click on the square box.
+                                <br><br>
+                                How to track a quest was unclear, done by clicking on the square box.
                             </p>
                         </div>
                     </div>
 
-                    <!--<div class="two-column-layout">
-                <div>
-                    <h4 class="margin-bottom-small">NEW</h4>
-                    <p>
-                        Added collapsable buttons to make navigating the list of NPC's easier.
-                    </p>
-                </div>
-                <div>
-                    <img src="images/equinox/equinox-compendium_people_new.png">
-                </div>
+                    <div class="divide-line"></div>
 
-            </div>-->
+                    <h4 class="margin-bottom-small">NEW</h4>
+
+                    <div class="two-column-layout">
+                        <div>
+                            <img src="images/equinox/equinox_compendium_quest_tracked.png">
+                        </div>
+                        <img src="images/equinox/equinox_compendium_quest_untracked.png">
+                    </div>
 
                 </div>
 
@@ -257,17 +276,19 @@
                 <!--People-->
                 <div>
                     <h3 class="margin-bottom-small">PEOPLE</h3>
-                    <p>
+                    <p class="margin-bottom-small">
                         Lists factions alongside all NPC's the player has meet.
                     </p>
 
-                    <div class="divide-line"></div>
                     <div class="two-column-layout">
                         <div>
                             <img src="images/equinox/equinox-compendium_people_old.png">
                         </div>
                         <div>
                             <h4 class="margin-bottom-small">OLD</h4>
+                            <p>
+                                Displays the area and a list of npc that belong to it.
+                            </p>
                         </div>
                     </div>
                     <div class="divide-line"></div>
@@ -292,38 +313,45 @@
                 <!--official races-->
                 <div>
                     <h3 class="margin-bottom-small">OFFICIAL RACES</h3>
-                    <p>
+                    <p class="margin-bottom-small">
                         Lists all available races and information on rank, personal record and leaderboard.
                         I decided to also add a section for rewards and information on weekly races.
                     </p>
 
-                    <div class="divide-line"></div>
-                    <img src="images/equinox/equinox_compendium_races.png">
+                    <div class="two-column-layout">
+                        <img src="images/equinox/equinox_compendium_weeklyrace.png">
+                        <img src="images/equinox/equinox_compendium_race.png">
+                    </div>
+
                 </div>
 
                 <div class="divide-line"></div>
                 <!--Completed Quests-->
                 <div>
-                    <h3 class="margin-bottom-small">COMPLETED QUESTS</h3>
-                    <p>
-                        Lists all completed main and side quests. Main quests are subsectioned into chapters.
-                    </p>
-
-                    <!--<div class="divide-line"></div>
-            <img src="images/equinox/equinox_compendium_races.png">-->
+                    <div class="two-column-layout">
+                        <div>
+                            <h3 class="margin-bottom-small">COMPLETED QUESTS</h3>
+                            <p>
+                                Lists all completed main and side quests. Main quests are subsectioned into chapters that can be collapsed.
+                            </p>
+                        </div>
+                        <img src="images/equinox/equinox_compendium_completedquests.png">
+                    </div>
                 </div>
 
                 <div class="divide-line"></div>
 
                 <!--Tutorials-->
                 <div>
-                    <h3 class="margin-bottom-small">TUTORIALS</h3>
-                    <p>
-                        A page to list tutorials.
-                    </p>
-
-                    <!--<div class="divide-line"></div>
-            <img src="images/equinox/equinox_compendium_races.png">-->
+                    <div class="two-column-layout">
+                        <div>
+                            <h3 class="margin-bottom-small">TUTORIALS</h3>
+                            <p>
+                                Lists all the tutorials a player has unlocked.
+                            </p>
+                        </div>
+                        <img src="images/equinox/equinox_compendium_tutorials.png">
+                    </div>
                 </div>
 
             </div>

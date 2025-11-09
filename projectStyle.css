@@ -63,6 +63,10 @@ img {
     background-clip: text;
 }
 
+/*:root {
+    interpolate-size: allow-keywords;
+}*/
+
 
 body {
     line-height: 1.5;
@@ -476,6 +480,14 @@ footer {
 .wrapper {
     padding: 4em;
 }
+
+/*details * {
+    margin: 0;
+}
+
+details::details-content {
+    background: red;
+}*/
 
 .outer {
     background-color: #1E1E1E;
