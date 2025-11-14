@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>spHERE WE GO! - Astrid Pehrsson Ankarstrand | Tech & UI/UX Designer</title>
+    <link rel="stylesheet" href="projectStyle.css">
+    <script type="text/javascript" src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/ccef3511e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <h5>
+                ASTRID PEHRSSON ANKARSTRAND
+            </h5>
+            <h6>| TECHNICAL & UI/UX DESIGNER</h6>
+        </a>
+        <ul id="navbar">
+            <li><i class="fa-solid fa-xmark button close" onclick="CloseNavbar()" aria-label="close sidebar"></i></li>
+            <li><a href="index.html" onclick="CloseNavbar()">PROJECTS</a></li>
+            <li><a href="resume.html" onclick="CloseNavbar()">RESUME</a></li>
+            <li><a href="about.html" onclick="CloseNavbar()">ABOUT ME</a></li>
+            <li><a href="contact.html" onclick="CloseNavbar()">CONTACT</a></li>
+        </ul>
+        <i class="fa-solid fa-bars button open" onclick="OpenNavbar()" aria-label="open sidebar"></i>
+    </nav>
+
+    <div id="overlay" onclick="CloseNavbar()" aria-hidden="true"></div>
+
+    <div id="modal" class="modal no-display">
+        <img id="modal-img" src="images/gradproj/gradproj_radial.gif">
+    </div>
+
+    <main>
+        <div class="fairway">
+
+            <h1>spHERE WE GO!</h1>
+            <div class="divide-line"></div>
+            <div class="two-column-layout">
+                <p><b>Solo Project</b></p>
+                <p><b>Engine:</b> Unity</p>
+                <p><b>Duration:</b> 4 Weeks</p>
+                <p>
+                    <b>Status:</b> Prototype available on Itch.io
+                    <br>
+                    <i>Download from <a class="link" target="_blank" href="https://astridpa.itch.io/sphere-we-go">Itch.io</a></i>
+                </p>
+            </div>
+            <div class="divide-line"></div>
+            <div class="two-column-layout">
+                <div>
+                    <p>
+                        A fun little 3D platformer where you are a sphere!
+                        Roll around or up walls, and swim in the water like the majestic orb you were always meant to be!
+                        Also avoid the evil red cubes.
+                        <br><br>
+                        spHere we go is the project that made me realize I'm really not meant to be a level designer.
+                        I loved working on designing and implementing the player movement, the different enemies and features, but when it came to actually
+                        designing the space that would let the player play with and experience those features? HELL.
+                        <br><br>
+                        A prototype made for a Intro to C# course at Futuregames.
+                    </p>
+                    <br>
+                    <p><b>Prototype Features:</b></p>
+                    <ul>
+                        <li><p>Player movement</p></li>
+                        <li><p>Enemy AI</p></li>
+                        <li><p>Interaction System</p></li>
+                        <li><p>Dialogue System using Ink</p></li>
+                        <li><p>Key rebinding</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="images/spherewego/sphere_underwater.gif">
+                    <!--<div class="divide-line"></div>-->
+                    <div class="three-grid-layout">
+                        <!--<img src="images/farmprototype/farm_InventoryDragAndDrop.gif">-->
+                        <img src="images/spherewego/sphere_sc_1.png">
+                        <img src="images/spherewego/sphere_sc_5.png">
+                        <img src="images/spherewego/sphere_sc_6.png">
+                        <img src="images/spherewego/sphere_sc_7.png">
+                        <img src="images/spherewego/sphere_sc_2.png">
+                        <img src="images/spherewego/sphere_sc_3.png">
+                        <img src="images/spherewego/sphere_sc_4.png">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="col-footer">
+                    <h4>Contact Me</h4>
+                    <ul>
+                        <li><p><i class="fa-solid fa-envelope"></i> astrid.pehrsson_ankarstrand@hotmail.com</p></li>
+                        <li><p><i class="fa-solid fa-phone"></i> (+46) 073-630 51 53</p></li>
+                        <li><p><i class="fa-solid fa-location-dot"></i> Stockholm, Sweden</p></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h4>Project Links</h4>
+                    <ul>
+                        <li><a href="index.html">All Projects</a></li>
+                        <li><a href="equinox.html">Equinox: Homecoming</a></li>
+                        <li><a href="projectLayout.html">Vampower</a></li>
+                        <li><a href="fearOfTheLight.html">Fear of the Light</a></li>
+                        <li><a href="gradProj.html">Graduation Project</a></li>
+                        <li><a href="chatPrototype.html">Chat Prototype</a></li>
+                        <li><a href="farmPrototype.html">Farm Prototype</a></li>
+                        <li><a href="catFished.html">Catfished</a></li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+                    <h4>Social Links</h4>
+                    <div class="social-links">
+                        <a target="_blank" href="https://www.linkedin.com/in/astrid-pehrsson-ankarstrand-2a9680223/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://astridpehrssonankarstrand.artstation.com"><i class="fa-brands fa-artstation"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
